@@ -1,0 +1,37 @@
+---
+import { Props } from "astro";
+
+const { title } = Astro.props as Props;
+---
+
+<h1>About pireactor</h1>
+
+<style lang="scss">
+  @font-face {
+    font-family: 'AvantGardeCTT';
+    src: url('/assets/fonts/AvantGardeCTT/AvantGardeCTT-Bold.woff2') format('woff2'),
+      url('/assets/fonts/AvantGardeCTT/AvantGardeCTT-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  h1 {
+    position: relative;
+    font-family: "AvantGardeCTT", sans-serif;
+    font-size: 100px;
+    line-height: 120px;
+    max-width: 570px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 70px;
+      left: 0;
+      width: 90%;
+      height: 2rem;
+      background-color: #FF35C7;
+      z-index: -1;
+    }
+  }
+</style>

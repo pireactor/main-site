@@ -1,0 +1,144 @@
+---
+import Logo from "./Logo.astro";
+import Container from "./shared/Container.astro";
+
+---
+
+<header class="header">
+  <Container>
+    <div class="header__wrp">
+      <Logo />
+      <nav class="header__nav nav">
+        <ul class="nav__list">
+          <li class="nav__list-item">
+            <a href="about" class="nav__link">About us</a>
+          </li>
+          <li class="nav__list-item">
+            <a href="about" class="nav__link">Work</a>
+          </li>
+          <li class="nav__list-item nav__list-item_services" tabindex={0}>
+            <a href="about" class="nav__link" tabindex={-1}>Services</a>
+            <ul class="nav__submenu submenu">
+              <li class="submenu__item">
+                <a href="" class="submenu__link">Global Strategy</a>
+              </li>
+              <li class="submenu__item">
+                <a href="" class="submenu__link">Architecture</a>
+              </li>
+              <li class="submenu__item">
+                <a href="" class="submenu__link">Automation</a>
+              </li>
+              <li class="submenu__item">
+                <a href="" class="submenu__link">Blockchain</a>
+              </li>
+              <li class="submenu__item">
+                <a href="" class="submenu__link">Wallets and Exchanges</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <button class="header__btn" type="button">Let's talk</button>
+    </div>
+  </Container>
+</header>
+
+<style lang="scss">
+  .header {
+    padding-top: 1.625rem;
+    padding-bottom: 1.25rem;
+    border-bottom: 1px solid var(--color-gray);
+    margin-bottom: 1.75rem;
+  }
+
+  .header__wrp {
+    display: flex;
+    align-items: center;
+  }
+
+  .nav__list {
+    display: flex;
+  }
+
+  a {
+    text-decoration: none;
+    color: var(--color-text);
+  }
+
+  .header__nav {
+    margin-left: auto;
+  }
+
+  .nav__list-item:not(:last-child) {
+    margin-right: 3.125rem;
+  }
+
+  .nav__list-item_services {
+    position: relative;
+    background: url("/assets/img/header/arrow.svg") no-repeat center right;
+    padding-right: 0.5rem;
+  }
+
+  .nav__list-item_services:hover .submenu,
+  .nav__list-item_services:focus .submenu {
+    opacity: 1;
+    appearance: inherit;
+    transition: opacity 0.3s ease-in-out;
+    transform: translateX(50%);
+  }
+
+  .nav__list-item_services:hover .submenu__item,
+  .nav__list-item_services:focus .submenu__item {
+    display: block;
+
+  }
+
+  .submenu {
+    opacity: 0;
+    appearance: none;
+    top: 3rem;
+    right: 50%;
+    font-size: 18px;
+    position: absolute;
+    padding: 1.25rem 1rem;
+    border: 1px solid var(--color-gray);
+    border-radius: 4px;
+    background-color: var(--color-lightBlack);
+    transition: opacity 0.3 ease-in-out;
+    transform: translateX(200%);
+  }
+
+  .submenu::before {
+    content: "";
+    height: 2rem;
+    width: 100%;
+    position: absolute;
+    top: -2rem;
+    left: 0;
+  }
+
+  .submenu__item {
+    display: none;
+    padding: 0.75rem;
+    border-bottom: 1px solid var(--color-gray);
+
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+
+  .submenu__link {
+    white-space: nowrap;
+  }
+
+  .header__btn {
+    margin-left: auto;
+    font-family: var(--btn-fontStack);
+    color: #FFFFFF;
+    padding: 0.5rem 2.875rem;
+    border: 2px solid #FFFFFF;
+    border-radius: 10px;
+    background-color: var(--color-bg);
+    cursor: pointer;
+  }
+</style>

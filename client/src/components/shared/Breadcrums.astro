@@ -1,0 +1,32 @@
+---
+import { Props } from "astro";
+
+const {currentPath} = Astro.props as Props;
+---
+
+<div class="breacrums">
+  <a href="/" class="breacrums__main-link">Homepage</a>
+  <span class="breacrums__current">{currentPath}</span>
+</div>
+
+<style>
+  .breacrums {
+    font-size: 18px;
+    margin-bottom: 3.5rem;
+  }
+.breacrums__main-link {
+  margin-right: 0.5rem;
+  text-decoration: none;
+  font-weight: 500;
+  color: #FFFFFF;
+}
+
+.breacrums__main-link::after {
+  margin-left: 0.5rem;
+  content: "/";
+}
+
+.breacrums__current {
+  opacity: 0.5;
+}
+</style>
