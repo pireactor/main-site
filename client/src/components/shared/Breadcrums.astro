@@ -15,8 +15,9 @@ const {currentPath} = Astro.props as Props;
     margin-bottom: 4rem;
   }
 .breacrums__main-link {
-  margin-right: 0.5rem;
+  position: relative;
   text-decoration: none;
+  margin-right: 0.5rem;
   font-weight: 500;
   color: #FFFFFF;
 }
@@ -24,6 +25,15 @@ const {currentPath} = Astro.props as Props;
 .breacrums__main-link::after {
   margin-left: 0.5rem;
   content: "/";
+}
+.breacrums__main-link::before {
+  content: "";
+  position: absolute;
+  bottom: -0.5rem;
+  left: 0;
+  width: 85%;
+  height: 1px;
+  background-color: #FFFFFF;
 }
 
 .breacrums__current {

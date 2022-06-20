@@ -1,7 +1,9 @@
 ---
-import Logo from "./Logo.astro";
-import Container from "./shared/Container.astro";
-import { LangPicker } from "./solid/LangPicker";
+import Logo from "../components/Logo.astro";
+import { LangPicker } from "../components/solid/LangPicker";
+import Container from "./Container.astro";
+const path = Astro.canonicalURL.pathname.replaceAll('/', '')
+
 
 ---
 
@@ -11,14 +13,14 @@ import { LangPicker } from "./solid/LangPicker";
       <Logo />
       <nav class="header__nav nav">
         <ul class="nav__list">
-          <li class="nav__list-item">
+          <li class={`nav__list-item ${path === "about" ? "nav__list-item_active" : ""}`}>
             <a href="about" class="nav__link" href="/">About us</a>
           </li>
-          <li class="nav__list-item">
-            <a href="about" class="nav__link">Work</a>
+          <li class={`nav__list-item ${path === "work" ? "nav__list-item_active" : ""}`}>
+            <a href="work" class="nav__link">Work</a>
           </li>
-          <li class="nav__list-item nav__list-item_services" tabindex={0}>
-            <a href="about" class="nav__link" tabindex={-1}>Services</a>
+          <li class={`nav__list-item nav__list-item_services ${path === "services" ? "nav__list-item_active" : ""}`} tabindex={0}>
+            <a href="services" class="nav__link" tabindex={-1}>Services</a>
             <ul class="nav__submenu submenu">
               <li class="submenu__item">
                 <a href="" class="submenu__link">Global Strategy</a>
@@ -145,5 +147,33 @@ import { LangPicker } from "./solid/LangPicker";
     border-radius: 10px;
     background-color: var(--color-bg);
     cursor: pointer;
+  }
+
+  .nav__list-item {
+    position: relative;
+  } 
+  
+  .nav__list-item:before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 1px;
+    left: 25%;
+    bottom: -1rem;
+    background-color: #FFFFFF;
+    transition: width 0.3s ease-in-out;
+  } 
+  
+  .nav__list-item:hover.nav__list-item:before {
+    width: 100%;
+  } 
+  .nav__list-item_active::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    left: 25%;
+    bottom: -1rem;
+    background-color: #FFFFFF;
   }
 </style>
