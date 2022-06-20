@@ -38,10 +38,10 @@ const sortLeads = leads.sort((a, b) => a.frontmatter.id - b.frontmatter.id);
     </section>
     <Section title="We develop projects for clients from all over the world">
       <div class="about__counter">
-        <Counter title="Projects done" countTo={32} client:only />
-        <Counter title="Unique Industries" countTo={12} client:only />
-        <Counter title="Number of employees" countTo={32} client:only />
-        <Counter title="Years on the market" countTo={12} client:only />
+        <Counter title="Projects done" countTo={32} client:load />
+        <Counter title="Unique Industries" countTo={12} client:load />
+        <Counter title="Number of employees" countTo={32} client:load />
+        <Counter title="Years on the market" countTo={12} client:load />
       </div>
     </Section>
     <Section title="Who we are">

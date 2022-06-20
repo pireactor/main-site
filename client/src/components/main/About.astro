@@ -13,10 +13,10 @@ import { Counter } from "../solid/Counter";
     Only after the core project is complete do we start a new cycle.
   </p>
   <div class="about__numbers">
-    <Counter title="Projects done" countTo={32} client:only />
-    <Counter title="Unique Industries" countTo={12} client:only />
-    <Counter title="Number of employees" countTo={32} client:only />
-    <Counter title="Years on the market" countTo={12} client:only />
+    <Counter title="Projects done" countTo={32} client:load />
+    <Counter title="Unique Industries" countTo={12} client:load />
+    <Counter title="Number of employees" countTo={32} client:load />
+    <Counter title="Years on the market" countTo={12} client:load />
   </div>
 </section>
 
