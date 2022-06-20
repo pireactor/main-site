@@ -1,0 +1,19 @@
+.label {
+  display: flex;
+  flex-direction: column;
+  font-weight: 400;
+  font-size: 18px;
+  width: 100%;
+}
+
+.input {
+  padding: 0.625rem;
+  margin-top: 0.625rem;
+  background-color: transparent;
+  border: 1px solid var(--color-gray);
+  border-radius: 5px;
+  font-family: var(--fontStack);
+  color: var(--text-color);
+  font-weight: 400;
+  font-size: 18px;
+}

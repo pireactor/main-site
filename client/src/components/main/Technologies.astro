@@ -1,0 +1,86 @@
+<section>
+  <h2 class="title">Technologies We Love</h2>
+  <p class="subtitle">Our technology expertise includes but not limited to:</p>
+  <ul class="techs__list">
+    <li class="techs__item techs__item_frontend">
+      <h3 class="techs__title">Front end</h3>
+      <p class="techs__desc">Typescript, GraphQL, Flutter, React, Angular</p>
+    </li>
+    <li class="techs__item techs__item_backend">
+      <h3 class="techs__title">Backend</h3>
+      <p class="techs__desc">Go, Rust, C</p>
+    </li>
+    <li class="techs__item techs__item_design">
+      <h3 class="techs__title">UX/UI Design</h3>
+      <p class="techs__desc">Figma, Adobe Ilustrator</p>
+    </li>
+    <li class="techs__item techs__item_data">
+      <h3 class="techs__title">Databses</h3>
+      <p class="techs__desc">PostgreSQL, MarkLogic, MongoDB, Reddis</p>
+    </li>
+    <li class="techs__item techs__item_ml">
+      <h3 class="techs__title">ML and Big Data</h3>
+      <p class="techs__desc">TensorFlow, PyTorch</p>
+    </li>
+    <li class="techs__item techs__item_cloud">
+      <h3 class="techs__title">Cloud + Containers</h3>
+      <p class="techs__desc">AWS, Docker, Kubernetes</p>
+    </li>
+  </ul>
+</section>
+
+<style lang="scss">
+  section {
+    margin-bottom: 10rem;
+  }
+  
+  .title,
+  .subtitle {
+    text-align: center;
+  }
+
+  .subtitle {
+    margin-bottom: 3.75rem;
+  }
+
+  .techs__list {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 1fr 1fr;
+    justify-content: center;
+    align-items: start;
+    row-gap: 4rem;
+  }
+  .techs__item {
+    width: 16.875rem;
+    padding-left: 4.25rem;
+    background-repeat: no-repeat;
+    background-position: left top;
+  }
+
+  .techs__desc {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 160%;
+    opacity: 0.75;
+  }
+  
+  .techs__item_frontend {
+    background-image: url("/assets/img/main/frontend.svg");
+  }
+  .techs__item_backend {
+    background-image: url("/assets/img/main/backend.svg");
+  }
+  .techs__item_design {
+    background-image: url("/assets/img/main/design.svg");
+  }
+  .techs__item_data{
+    background-image: url("/assets/img/main/data.svg");
+  }
+  .techs__item_ml {
+    background-image: url("/assets/img/main/ml.svg");
+  }
+  .techs__item_cloud {
+    background-image: url("/assets/img/main/cloud.svg");
+  }
+</style>

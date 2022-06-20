@@ -1,0 +1,86 @@
+---
+import FormSection from "../shared/FormSection.astro"
+import { FileInput } from "./FileInput";
+import { Textarea } from "./Textarea";
+import { TextInput } from "./TextInput";
+
+---
+
+<div class="container_mvp">
+  <FormSection>
+    <div class="mvp">
+      <h2 class="title">Need an MVP?</h2>
+      <p class="subtitle">Let's arrange a call where we can discuss your project and determine if you're a good fit.</p>
+      <form>
+        <fieldset>
+          <TextInput label="Name" />
+          <TextInput label="Email" />
+          <TextInput label="Phone number" />
+          <TextInput label="Subject" />
+        </fieldset>
+        <Textarea label="Message (optional)"/>
+        <FileInput />
+        <button>Get a free consultation</button>
+      </form>
+    </div>
+  </FormSection>
+</div>
+
+
+<style lang="scss">
+  .title,
+  .subtitle {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+  }
+
+  .title {
+    margin-bottom: 3.75rem;
+  }
+
+  .subtitle {
+    margin-bottom: 1.875rem;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  button {
+    border: none;
+    padding: 1.625rem 0;
+    display: block;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 18px;
+    width: 20rem;
+    text-align: center;
+    vertical-align: middle;
+    background-color: #FF35C7;
+    border-radius: 10px;
+    color: var(--text-color);
+    align-self: center;
+    margin-top: 3.65rem;
+  }
+
+  .mvp {
+    padding: 3.75rem 3.75rem 5rem 3.75rem;
+  }
+  
+  .container_mvp {
+    max-width: 60rem;
+    margin: 0 auto;
+
+  }
+
+  fieldset {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    column-gap: 2.5rem;
+    row-gap: 1.875rem;
+    margin-bottom: 1.875rem;
+  }
+</style>

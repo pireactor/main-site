@@ -1,0 +1,217 @@
+<section class="how-it-goes">
+  <h2>How it goes</h2>
+  <ul class="how-it-goes__list how-it-goes__list_first">
+    <li class="how-it-goes__item how-it-goes__item_planning">
+      <h3 class="how-it-goes__title">Planning</h3>
+      <p class="how-it-goes__desc">
+        Our team examines your requirements and expectations, takes account
+        of your needs, and creates a preliminary plan for your approval.
+      </p>
+    </li>
+    <li class="how-it-goes__item how-it-goes__item_designing">
+      <h3 class="how-it-goes__title">Designing</h3>
+      <p class="how-it-goes__desc">
+        Everything from an efficient framework to an easy-to-use interface is drawn up,
+        examined, evaluated, and approved during the design phase.
+      </p>
+    </li>
+    <li class="how-it-goes__item how-it-goes__item_defining">
+      <h3 class="how-it-goes__title">Defining</h3>
+      <p class="how-it-goes__desc">
+        We run due diligence checks, we have you approve features,
+        we agree on timelines, run feasibility tests, and finalize the design.
+      </p>
+    </li>
+  </ul>
+  <ul class="how-it-goes__list how-it-goes__list_second">
+    <li class="how-it-goes__item how-it-goes__item_testing">
+      <h3 class="how-it-goes__title">Testing</h3>
+      <p class="how-it-goes__desc">
+        We apply all kinds of tests to both check the function of the software
+        and test its security. We follow test-driven development.
+      </p>
+    </li>
+    <li class="how-it-goes__item how-it-goes__item_building">
+      <h3 class="how-it-goes__title">Building</h3>
+      <p class="how-it-goes__desc">
+        Our coders, graphic designers, and development management team
+        get hard to work ensuring that your software is as efficient as possible.
+      </p>
+    </li>
+  </ul>
+  <ul class="how-it-goes__list how-it-goes__list_third">
+    <li class="how-it-goes__item how-it-goes__item_deployment">
+      <h3 class="how-it-goes__title">Deployment</h3>
+      <p class="how-it-goes__desc">
+        With your approval, the software is delivered to the environment you need.
+        All rights to the custom solution are transferred to you.
+      </p>
+    </li>
+    <li class="how-it-goes__item how-it-goes__item_maintenance">
+      <h3 class="how-it-goes__title">Maintenance</h3>
+      <p class="how-it-goes__desc">
+        We work to ensure all maintenance can be done easily by your own staff,
+        but we also offer ongoing maintenance for highly complex and/or larger programs.
+      </p>
+    </li>
+  </ul>
+</section>
+
+<style lang="scss">
+  .how-it-goes {
+    margin-bottom: 10rem;
+
+    h2 {
+      margin-bottom: 6.75rem;
+      text-align: center;
+    }
+  }
+
+  .how-it-goes__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    &>li {
+      flex-basis: 18.75rem;
+    }
+  }
+
+  .how-it-goes__list {
+    position: relative;
+    padding-left: 8.4375rem;
+    padding-right: 8.4375rem;
+    padding-top: 2rem;
+    z-index: 2;
+  }
+
+  .how-it-goes__list_first::before {
+    content: "";
+    position: absolute;
+    width: 75%;
+    height: 1px;
+    background-color: var(--color-gray);
+    top: 0;
+    left: 0;
+  }
+
+  .how-it-goes__list_first::after {
+    content: "";
+    position: absolute;
+    width: 25%;
+    height: calc(100% + 0.5px);
+    right: 0;
+    top: 0;
+    border-top: 1px solid var(--color-gray);
+    border-right: 1px solid var(--color-gray);
+    border-bottom: 1px solid var(--color-gray);
+    transform: translateX(-25%);
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+    z-index: 1;
+    margin-bottom: -2px;
+  }
+
+
+  .how-it-goes__list_second {
+    justify-content: flex-end;
+    padding-top: 1.25rem;
+
+    &>li {
+      flex-basis: 25rem;
+      margin-left: 6.25rem;
+    }
+  }
+
+  .how-it-goes__list_second::after {
+    content: "";
+    position: absolute;
+    width: 45%;
+    height: 1px;
+    background-color: var(--color-gray);
+    top: 1.5px;
+    right: 25%;
+  }
+
+  .how-it-goes__list_second::before {
+    content: "";
+    position: absolute;
+    width: 25%;
+    height: 100%;
+    left: 0;
+    top: 1.5px;
+    border-top: 1px solid var(--color-gray);
+    border-left: 1px solid var(--color-gray);
+    border-bottom: 1px solid var(--color-gray);
+    transform: translateX(25%);
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+    z-index: 1;
+  }
+
+  .how-it-goes__list_third {
+    justify-content: flex-start;
+    padding-top: 1.5rem;
+
+    &>li {
+      margin-left: 6.25rem;
+      flex-basis: 25rem;
+    }
+  }
+
+  .how-it-goes__list_third::after {
+    content: "";
+    position: absolute;
+    width: 75%;
+    height: 1px;
+    background-color: var(--color-gray);
+    top: 2.5px;
+    right: 0;
+  }
+
+  .how-it-goes__item {
+    padding-top: 2.5rem;
+    margin-bottom: 3.75rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-basis: 30%;
+    z-index: 5;
+  }
+
+  .how-it-goes__item::after {
+    position: absolute;
+    top: -50%;
+    transform: translateY(50%);
+  }
+
+  .how-it-goes__item_planning::after {
+    content: url("/assets/img/main/planning.svg");
+  }
+  .how-it-goes__item_designing::after {
+    content: url("/assets/img/main/designing.svg");
+  }
+  .how-it-goes__item_defining::after {
+    content: url("/assets/img/main/defining.svg");
+  }
+  .how-it-goes__item_testing::after {
+    content: url("/assets/img/main/testing.svg");
+  }
+  .how-it-goes__item_building::after {
+    content: url("/assets/img/main/building.svg");
+  }
+  .how-it-goes__item_deployment::after {
+    content: url("/assets/img/main/deployment.svg");
+  }
+  .how-it-goes__item_maintenance::after {
+    content: url("/assets/img/main/maintenance.svg");
+  }
+
+  .how-it-goes__desc {
+    text-align: center;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 160%;
+  }
+</style>

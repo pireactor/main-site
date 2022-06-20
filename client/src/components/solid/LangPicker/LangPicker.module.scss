@@ -1,0 +1,39 @@
+.langPicker {
+  position: relative;
+  margin-right: 4rem;
+}
+
+.langPicker__button {
+  padding: 0;
+  padding-right: 1rem;
+  display: flex;
+  border: none;
+  background-color: transparent;
+  background-image: url("assets/img/header/arrow.svg");
+  background-repeat: no-repeat;
+  background-position: right center;
+  cursor: pointer;
+}
+
+.langPicker__picker {
+  position: absolute;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 1.25rem;
+  background: #1D1F1F;
+  border: 1px solid #C4C4C4;
+  border-radius: 4px;
+  padding: 1.25rem;
+  right: 0;
+  top: 2.25rem;
+  opacity: 0;
+  transform: translateY(-200%);
+  transition: opacity 0.5s ease-in-out;
+}
+
+.langPicker__picker_show {
+  transform: translateY(0);
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+}

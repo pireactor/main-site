@@ -1,0 +1,55 @@
+.counter {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.counter__counter {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.counter__input {
+  -webkit-appearance: textfield;
+  -moz-appearance: textfield;
+  appearance: textfield;
+  background-color: transparent;
+  border: none;
+  color: var(--text-color);
+  max-width: 1.5625rem;
+  text-align: center;
+  font-family: var(--fontStack);
+}
+  .counter__input::-webkit-inner-spin-button,
+  .counter__input::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+  }
+
+  .label__tooltipInfo {
+    display: none;
+  }
+
+  .counter__btn {
+    background: #C4C4C4;
+    border-radius: 100px;
+    border: none  ;
+    padding: 0;
+    width: 1.25rem;
+    height: 1.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  .counter__btn:disabled {
+    filter: brightness(0.5);
+  }
+
+  .counter__label {
+    display: flex;
+    flex-wrap: nowrap;
+    margin-right: 1rem;
+  }
+  .counter__labelText {
+    margin-right: 0.5rem;
+  }

@@ -1,0 +1,49 @@
+---
+import { Counter } from "../solid/Counter";
+
+---
+
+<section class="about">
+  <h2 class="about__title" aria-label="about"></h2>
+  <p class="about__desc">
+    We help clients explore requirements and work out what they really
+    need today and to plan for tomorrow tomorrow. Instead of reiterating
+    every week, we architect space for modular features and functionality
+    expansions. Wepractice discipline to keep all parties on track and avoid scope creep.
+    Only after the core project is complete do we start a new cycle.
+  </p>
+  <div class="about__numbers">
+    <Counter title="Projects done" countTo={32} client:only />
+    <Counter title="Unique Industries" countTo={12} client:only />
+    <Counter title="Number of employees" countTo={32} client:only />
+    <Counter title="Years on the market" countTo={12} client:only />
+  </div>
+</section>
+
+<style lang="scss">
+  .about__title {
+    appearance: none;
+  }
+
+  .about {
+    display: flex;
+    margin-bottom: 10rem;
+  }
+
+  .about__desc {
+    margin: 0;
+    flex-basis: 50%;
+    margin-right: 3.125rem;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 160%;
+  }
+
+  .about__numbers {
+    flex-basis: 50%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 2.625rem;
+  }
+</style>

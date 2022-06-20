@@ -1,0 +1,30 @@
+---
+import MainTitle from "../MainTitle.astro";
+import Button from "../shared/Button.astro";
+
+---
+
+<section class="hero">
+  <div class="hero__title">
+    <MainTitle redLine="Startup &" title="product catalyzer" />
+    <Button title="Boost my project" />
+  </div>
+  <div class="hero__img"></div>
+</section>
+
+<style lang="scss">
+  .hero__img {
+    content: url("/assets/img/main/main.webp");
+  }
+
+  .hero {
+    display: flex;
+    margin-bottom: 10.5rem;
+  }
+
+  .hero__title {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+</style>

@@ -1,6 +1,7 @@
 ---
 import Logo from "./Logo.astro";
 import Container from "./shared/Container.astro";
+import { LangPicker } from "./solid/LangPicker";
 
 ---
 
@@ -11,7 +12,7 @@ import Container from "./shared/Container.astro";
       <nav class="header__nav nav">
         <ul class="nav__list">
           <li class="nav__list-item">
-            <a href="about" class="nav__link">About us</a>
+            <a href="about" class="nav__link" href="/">About us</a>
           </li>
           <li class="nav__list-item">
             <a href="about" class="nav__link">Work</a>
@@ -38,6 +39,7 @@ import Container from "./shared/Container.astro";
           </li>
         </ul>
       </nav>
+      <LangPicker client:load />
       <button class="header__btn" type="button">Let's talk</button>
     </div>
   </Container>
@@ -45,10 +47,11 @@ import Container from "./shared/Container.astro";
 
 <style lang="scss">
   .header {
-    padding-top: 1.625rem;
-    padding-bottom: 1.25rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+    margin-bottom: 2.5rem;
     border-bottom: 1px solid var(--color-gray);
-    margin-bottom: 1.75rem;
   }
 
   .header__wrp {
@@ -63,10 +66,11 @@ import Container from "./shared/Container.astro";
   a {
     text-decoration: none;
     color: var(--color-text);
+    font-weight: 700;
   }
 
   .header__nav {
-    margin-left: auto;
+    margin-right: 10rem;
   }
 
   .nav__list-item:not(:last-child) {
@@ -76,7 +80,7 @@ import Container from "./shared/Container.astro";
   .nav__list-item_services {
     position: relative;
     background: url("/assets/img/header/arrow.svg") no-repeat center right;
-    padding-right: 0.5rem;
+    padding-right: 1rem;
   }
 
   .nav__list-item_services:hover .submenu,
@@ -132,10 +136,11 @@ import Container from "./shared/Container.astro";
   }
 
   .header__btn {
-    margin-left: auto;
+    font-size: 18px;
+    font-weight: 600;
     font-family: var(--btn-fontStack);
     color: #FFFFFF;
-    padding: 0.5rem 2.875rem;
+    padding: 0.5rem 2.75rem;
     border: 2px solid #FFFFFF;
     border-radius: 10px;
     background-color: var(--color-bg);

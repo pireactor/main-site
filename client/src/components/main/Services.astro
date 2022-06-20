@@ -1,0 +1,114 @@
+---
+import Section from "../shared/Section.astro"
+
+---
+
+<Section title="Our Services">
+  <ul class="services__list">
+    <li class="services__item services__item_strategy">
+      <h3 class="services__title">Global Strategy</h3>
+      <p class="services__desc">
+        Powered by worldclass doers familiar with the bleeding
+        edge, we help businesses achieve better business outcomes with honesty.
+        Analyzing your usecase, we will choose the best technology, not the most
+        popular.
+      </p>
+    </li>
+    <li class="services__item services__item_architecture">
+      <h3 class="services__title">Architecture</h3>
+      <p class="services__desc">
+        Above all, we pride ourselves in clearly documenting your business logic
+        and processes in order to craft productivity boosting solutions or automate
+        them entirely. We then create the most practical and expandable architecture
+        for your unique use cases allowing quick, clean implementation.
+      </p>
+    </li>
+    <li class="services__item services__item_automation">
+      <h3 class="services__title">Automation</h3>
+      <p class="services__desc">
+        Expand your data engineering with AI
+        augmented and RPA driven approaches. With dozens of
+        projects behind us, we build scalable, efficient operations and drive powerful growth.
+        Replace outdated manual processes with the smarter reusable algorithms,
+        artificial intelligence, and BOTS.
+      </p>
+    </li>
+    <li class="services__item services__item_blockchain">
+      <h3 class="services__title">Blockchain</h3>
+      <p class="services__desc">
+        Embrace digital transactions by harnessing [pi|reactor]'s
+        strategic coin development services to foster your business growth. Our
+        globalized experts craft intelligent strategies around centered on core use
+        cases and implementation. We have real-world experience delivering comprehensive
+        offerings from ideation and coin development, to ICO and marketing for clients
+        across all industries.
+      </p>
+    </li>
+    <li class="services__item services__item_wallets">
+      <h3 class="services__title">Wallets and Exchanges</h3>
+      <p class="services__desc">
+        Our strategically designed services cater to your neesd, whether centralized, decentralized or P2P.
+        Multicoin wallets are key to securely storing the full spectrum of crypto assets.
+        We offer turnkey best practices to add extra layers of security to any exchange or
+        app, using industry standard features like 2FA, multisig support and biometric
+        authentication.
+      </p>
+    </li>
+  </ul>
+</Section>
+
+<style lang="scss">
+  .services__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr auto 1fr;
+    gap: 1.875rem;
+  }
+
+  .services__item {
+    padding: 2.5rem 2.5rem 22.375rem 2.5rem;
+    border-radius: 20px;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+  }
+
+  .services__title {
+    font-weight: 700;
+    font-size: 24px;
+  }
+
+  .services__desc {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 160%;
+    opacity: 0.75;
+  }
+
+  .services__item_strategy {
+    background-color: #FC6383;
+    background-image: url("/assets/img/main/strategy.svg");
+  }
+  
+  .services__item_architecture {
+    background-color: #29243D;
+    background-image: url("/assets/img/main/architecture.svg");
+  }
+  
+  .services__item_automation {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    padding-bottom: 2.5rem;
+    padding-right: 45rem;
+    background: #2D6889 url("/assets/img/main/automation.svg") no-repeat right center;
+  }
+  
+  .services__item_blockchain {
+    background-color: #29243D;
+    background-image: url("/assets/img/main/blockchain.svg");
+  }
+  
+  .services__item_wallets {
+    background-color: #FC6383;
+    background-image: url("/assets/img/main/wallets.svg");
+  }
+</style>

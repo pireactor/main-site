@@ -1,0 +1,12 @@
+.label {
+  padding: 0.625rem;
+  cursor: pointer;
+  display: flex;
+  align-items: flex-start;
+}
+
+.input {
+  opacity: 0;
+  position: absolute;
+  z-index: -1;
+}

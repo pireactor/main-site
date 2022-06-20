@@ -1,0 +1,49 @@
+.radio__label {
+  display: flex;
+  align-items: center;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 160%;
+  cursor: pointer;
+}
+
+.radio__input {
+  position: absolute;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.radio__box {
+  width: 20px;
+  height: 20px;
+  margin-right: 20px;
+}
+
+.radio__focus {
+  fill: var(--color-lightBlack);
+  stroke: var(--color-gray);
+}
+
+.radio__mark {
+  fill: none;
+  stroke: none;
+}
+
+/* Checked */
+
+.radio__input:checked + * .radio__focus {
+  fill: #f100ae;
+  stroke: #f100ae;
+}
+
+.radio__input:checked + * .radio__mark {
+  fill: #f100ae;
+  stroke: var(--color-lightBlack);
+  stroke-width: 1.5px;
+}
+/* Focused */
+
+.radio__input:focus + * .radio__focus {
+  stroke: #f100ae;
+}

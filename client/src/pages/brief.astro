@@ -2,6 +2,7 @@
 import Breadcrums from "../components/shared/Breadcrums.astro";
 import Container from "../components/shared/Container.astro";
 import FormSection from "../components/shared/FormSection.astro";
+import Form from "../components/solid/Form/Form";
 import Layout from "../layouts/Layout.astro"
 
 ---
@@ -10,49 +11,11 @@ import Layout from "../layouts/Layout.astro"
   <Container>
     <Breadcrums currentPath="Brief"/>
     <FormSection>
-      <div class="form__header">
-        <div class="form__header-wrp">
-          <h2 class="form__header-title">Request an IT project cost estimate</h2>
-          <div class="form__selectors">
-            <button class="form__select-btn">CUSTOM SOFTWARE DEVELOPMENT</button>
-            <button class="form__select-btn">TEAM AUGMENTATION</button>
-            <button class="form__select-btn">I DON’T KNOW WHAT I NEED</button>
-          </div>
-        </div>
-      </div>
+      <Form client:load/>
     </FormSection>
   </Container>
 </Layout>
 
 <style>
-  .form__header {
-    border-bottom: 1px solid var(--color-gray);
-  }
 
-  .form__header-wrp {
-    padding-left: 3.75rem;
-  }
-
-  .form__header-title {
-    margin: 0;
-    padding: 0;
-    margin-bottom: 2.5rem;
-    font-weight: 700;
-  }
-
-  .form__selectors {
-    display: flex;
-  }
-
-  .form__select-btn {
-    background-color: transparent;
-    border: none;
-    font-family: var(--fomtStack);
-    text-transform: uppercase;
-    padding-bottom: 1.25rem;
-    color: #FFFFFF;
-    font-weight: 500;
-    margin-right: 2.5rem;
-    cursor: pointer;
-  }
 </style>
