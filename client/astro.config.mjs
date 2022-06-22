@@ -7,5 +7,4 @@ import netlify from '@astrojs/netlify/functions';
 export default defineConfig({
   integrations: [solid(),],
   experimental: astro(),
-  adapter: netlify(),
 });
