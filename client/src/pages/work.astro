@@ -17,7 +17,14 @@ support: string;
 slug: string;
 }
 
-type TTags = "Strategy" | "Development" | "Design";
+type TTags = ETags.srategy | ETags.dev | ETags.des | ETags.all;
+
+enum ETags {
+  all,
+  srategy = "Strategy",
+  dev = "Development",
+  des = "Design"
+}
 
 const projectsRaw = await Astro.glob<IProject>('/public/assets/projects/*.md');
 const projects = projectsRaw.map(i => {
