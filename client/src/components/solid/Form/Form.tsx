@@ -4,7 +4,11 @@ import styles from "./Form.module.scss"
 import { Custom, DontKnow, Team } from "./FormTabs";
 
 export default function Form() {
-  const [tab, setTab] = createSignal(EForms.custom)
+  const [tab, setTab] = createSignal(EForms.team)
+  function handleClick(tab: EForms) {
+    console.log("click => ", tab)
+    setTab(tab)
+  }
   function handleSubmit(e: { preventDefault: () => void; currentTarget: HTMLFormElement; }) {
     e.preventDefault();
     const data = new FormData(e.currentTarget)
@@ -23,21 +27,21 @@ export default function Form() {
           <h2 class={styles.form__headerTitle}>Request an IT project cost estimate</h2>
           <div class={styles.form__selectors}>
             <button
-              onClick={() => {setTab(EForms.custom)}}
+              onClick={() => handleClick(EForms.custom)}
               class={styles.form__selectBtn} 
               classList={{[styles.form__selectBtn_active]: tab() === EForms.custom}}
             >
               custom software development
             </button>
             <button
-              onClick={() => {setTab(EForms.team)}}
+              onClick={() => handleClick(EForms.team)}
               class={styles.form__selectBtn} 
               classList={{[styles.form__selectBtn_active]: tab() === EForms.team}}
             >
               team augmentation
             </button>
             <button
-              onClick={() => {setTab(EForms.dontKnow)}}
+              onClick={() => handleClick(EForms.dontKnow)}
               class={styles.form__selectBtn} 
               classList={{[styles.form__selectBtn_active]: tab() === EForms.dontKnow}}
             >
