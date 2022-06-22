@@ -17,7 +17,7 @@ const path = Astro.canonicalURL.pathname.replaceAll('/', '')
             <a href="about" class="nav__link" href="/">About us</a>
           </li>
           <li class={`nav__list-item ${path === "work" ? "nav__list-item_active" : ""}`}>
-            <a href="/works" class="nav__link">Work</a>
+            <a href="/work" class="nav__link">Work</a>
           </li>
           <li class={`nav__list-item nav__list-item_services ${path === "services" ? "nav__list-item_active" : ""}`} tabindex={0}>
             <a href="services" class="nav__link" tabindex={-1}>Services</a>
