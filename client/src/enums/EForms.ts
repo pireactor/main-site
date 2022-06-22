@@ -1,5 +1,5 @@
 export enum EForms {
-  custom,
-  team,
-  dontKnow,
+  custom = "custom",
+  team = "team",
+  dontKnow = "dontKnow",
 }

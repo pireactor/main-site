@@ -17,6 +17,7 @@ export default function Form() {
   }
   return (
     <div class={styles.form}>
+      {tab()}
       <div class={styles.form__header}>
         <div class={styles.form__headerWrp}>
           <h2 class={styles.form__headerTitle}>Request an IT project cost estimate</h2>
