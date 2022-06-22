@@ -3,7 +3,7 @@ import { EForms } from "../../../enums/EForms";
 import styles from "./Form.module.scss"
 import { Custom, DontKnow, Team } from "./FormTabs";
 
-export default function Form() {
+export function Form() {
   const [tab, setTab] = createSignal(EForms.team)
   function handleClick(tab: EForms) {
     console.log("click => ", tab)
