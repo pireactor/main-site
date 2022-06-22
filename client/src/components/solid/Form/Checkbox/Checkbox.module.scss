@@ -23,6 +23,14 @@
 .checkbox__focus {
   fill: var(--color-lightBlack);
   stroke: var(--color-gray);
+  transition: all 0.3s ease-in-out;
+}
+
+.checkbox__box:hover {
+  & .checkbox__focus {
+    stroke: var(--color-hover);
+    transition: all 0.3s ease-in-out;
+  }
 }
 
 .checkbox__mark {

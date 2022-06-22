@@ -1,7 +1,7 @@
 .formSection {
   display: flex;
   flex-direction: column;
-  margin-bottom: 4.5px;
+  margin-bottom: 4.5rem;
   width: 100%;
 }
 .formSection__header {
@@ -22,6 +22,16 @@
   text-decoration: underline;
   background-color: transparent;
   cursor: pointer;
+  white-space: nowrap;
+  transition: color 0.3s ease-in-out;
+}
+
+.formSection__clear:hover {
+  color: var(--color-hover);
+  transition: color 0.3s ease-in-out;
+}
+.formSection__clear:active {
+  color: var(--color-active);
 }
 
 .formSection__fieldset {
@@ -54,4 +64,23 @@
 .formSection__duration {
   margin-top: 2.25rem;
   margin-bottom: 3rem;
+}
+
+.fieldset_textInput {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  column-gap: 2.5rem;
+  row-gap: 1.875rem;
+  margin-bottom: 1.875rem;
+}
+
+.dontKnow {
+  width: 100%;
+}
+
+.formSection__contacts {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 2.5rem;
 }

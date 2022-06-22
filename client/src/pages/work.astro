@@ -1,8 +1,77 @@
 ---
-import Layout from "../layouts/Layout.astro"
+import MainTitle from "../components/MainTitle.astro";
+import Breadcrums from "../components/shared/Breadcrums.astro";
+import { Projects } from "../components/solid/Projects";
+import Container from "../layouts/Container.astro";
+import Layout from "../layouts/Layout.astro";
 
+export interface IProject {
+title: string;
+developers: number;
+months: number;
+tags: TTags[];
+desc: string;
+phases: string;
+release: string;
+support: string;
+slug: string;
+}
+
+type TTags = "Strategy" | "Development" | "Design";
+
+const projectsRaw = await Astro.glob<IProject>('/public/assets/projects/*.md');
+const projects = projectsRaw.map(i => {
+  return {
+    desc: i.frontmatter.desc,
+    developers: i.frontmatter.developers,
+    months: i.frontmatter.months,
+    phases: i.frontmatter.phases,
+    release: i.frontmatter.release,
+    slug: i.frontmatter.slug,
+    support: i.frontmatter.support,
+    title: i.frontmatter.title,
+    tags: i.frontmatter.tags
+  }
+})
 ---
 
-<Layout title="work">
-
+<Layout title="Portfolio" preloadImg="works/star.svg">
+  <Container>
+    <Breadcrums currentPath="Portfolio" />
+    <section class="hero">
+      <div class="hero__title">
+        <MainTitle redLine="Explore" title="our Works" />
+        <p class="about__desc">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tempor vehicula enim sit integer scelerisque nunc
+          potenti. Elementum, nunc, arcu suspendisse platea quis et velit venenatis urna. Non bibendum integer quam
+          amet.
+        </p>
+      </div>
+      <div class="hero__img"></div>
+    </section>
+    <Projects client:load projects={projects}/>
+  </Container>
 </Layout>
+
+<style>
+    .hero__img {
+    content: url("/assets/img/works/star.svg");
+  }
+
+  .hero {
+    display: flex;
+    margin-bottom: 10rem;
+  }
+
+  .hero__title {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .about__desc {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 160%;
+  }
+</style>

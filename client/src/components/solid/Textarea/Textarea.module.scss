@@ -16,4 +16,15 @@
   color: var(--text-color);
   font-weight: 400;
   font-size: 18px;
+  transition: all 0.3s ease-in-out;
+}
+
+.input:hover {
+  border-color: var(--color-hover);
+  transition: all 0.3s ease-in-out;
+}
+.input:focus, .input:focus-visible {
+  outline: 3px solid var(--color-active);
+  border-color: var(--color-active);
+  transition: all 0.3s ease-in-out;
 }

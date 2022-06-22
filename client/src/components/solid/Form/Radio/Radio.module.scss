@@ -7,6 +7,10 @@
   cursor: pointer;
 }
 
+.radio__label:hover .radio__focus {
+  stroke: var(--color-hover);
+}
+
 .radio__input {
   position: absolute;
   -webkit-appearance: none;
@@ -23,11 +27,13 @@
 .radio__focus {
   fill: var(--color-lightBlack);
   stroke: var(--color-gray);
+  transition: all 0.3s ease-in-out;
 }
 
 .radio__mark {
   fill: none;
   stroke: none;
+  transition: all 0.3s ease-in-out;
 }
 
 /* Checked */

@@ -1,10 +1,10 @@
 import { createSignal } from "solid-js";
 import { EForms } from "../../../enums/EForms";
 import styles from "./Form.module.scss"
-import { Custom, Team } from "./FormTabs";
+import { Custom, DontKnow, Team } from "./FormTabs";
 
 export default function Form() {
-  const [tab, setTab] = createSignal(EForms.team)
+  const [tab, setTab] = createSignal(EForms.custom)
   function handleSubmit(e: { preventDefault: () => void; currentTarget: HTMLFormElement; }) {
     e.preventDefault();
     const data = new FormData(e.currentTarget)
@@ -45,12 +45,12 @@ export default function Form() {
           </div>
         </div>
       </div>
-      <form class={styles.form__form} onsubmit={handleSubmit}>
+      <form class={styles.form__form} onsubmit={handleSubmit} data-netlify="true">
         {tab() === EForms.custom && <Custom />}
         {tab() === EForms.team && <Team />}
+        {tab() === EForms.dontKnow && <DontKnow />}
         <button class={styles.form__SubmitBtn} type="submit" >Get Price</button>
       </form>
-
     </div>
   )
 }

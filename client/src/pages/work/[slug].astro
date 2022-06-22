@@ -1,0 +1,28 @@
+---
+import Container from "../../layouts/Container.astro";
+import Layout from "../../layouts/Layout.astro"
+
+export async function getStaticPaths() {
+  const projects = await Astro.glob('/public/assets/projects/*.md');
+
+  return projects.map((project) => {
+    return {
+      params: {slug: project.frontmatter.slug},
+      props: {project}
+    }
+    ;
+
+  })
+}
+
+const {project} = Astro.props;
+---
+
+<Layout title={project.frontmatter.title}>
+  <Container>
+    <div class="">
+      {<project.Content />}
+    </div>
+
+  </Container>
+</Layout>

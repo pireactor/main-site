@@ -1,4 +1,3 @@
-import { Accessor, createEffect, Signal } from "solid-js";
 import styles from "./Checkbox.module.scss"
 
 interface ICheckboxProps {

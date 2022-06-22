@@ -1,3 +1,4 @@
+import { TextInput } from "../../TextInput";
 import Checkbox from "../Checkbox/Checkbox"
 import Radio from "../Radio/Radio"
 import { TimeRange } from "../TimeRange"
@@ -87,6 +88,14 @@ export function Custom() {
       <div class={styles.formSection__duration}>
         <TimeRange ref={range}/>
       </div>
+      <div class={styles.formSection__header}>
+        <h3>6. Contacts</h3>
+      </div>
+      <fieldset class={styles.formSection__contacts}>
+        <TextInput label="Name" />
+        <TextInput label="Email" />
+        <TextInput label="Phone number" />
+      </fieldset>
     </div>
   )
 }

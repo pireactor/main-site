@@ -21,7 +21,7 @@ const leads = await Astro.glob<LeadsFrontmatter>('/public/assets/leads/*.md');
 const sortLeads = leads.sort((a, b) => a.frontmatter.id - b.frontmatter.id);
 ---
 
-<Layout title="About Us">
+<Layout title="About Us" preloadImg="about/about.svg">
 
   <Container>
     <Breadcrums currentPath="About Us" />

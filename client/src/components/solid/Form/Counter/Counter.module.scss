@@ -40,9 +40,26 @@
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    transition: background 0.3s ease-in-out;
   }
+  
   .counter__btn:disabled {
     filter: brightness(0.5);
+  }
+  
+  .counter__btn:disabled:hover {
+    background: #C4C4C4;
+  }
+  
+  .counter__btn:hover {
+    background-color: var(--color-hover);
+    transition: background 0.3s ease-in-out;
+  }
+  
+  .counter__btn:active {
+    background-color: var(--color-active);
+    transition: background 0.1s ease-in-out;
+
   }
 
   .counter__label {

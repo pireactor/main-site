@@ -16,6 +16,9 @@ const { title, preloadImg } = Astro.props as Props;
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width">
   <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+  <link rel="preload" href="/assets/fonts/AvantGardeCTT/AvantGardeCTT-Bold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/assets/fonts/AvantGardeCTT/AvantGardeCTT-Bold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/assets/fonts/PlusJakartaSans/PlusJakartaSans-Bold.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" as="image" href={`/assets/img/${preloadImg}`}>
   <title>{title}</title>
 </head>
@@ -31,6 +34,14 @@ const { title, preloadImg } = Astro.props as Props;
 </html>
 
 <style>
+    @font-face {
+    font-family: 'AvantGardeCTT';
+    src: url('/assets/fonts/AvantGardeCTT/AvantGardeCTT-Bold.woff2') format('woff2'),
+      url('/assets/fonts/AvantGardeCTT/AvantGardeCTT-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+  }
   @font-face {
     font-family: 'Inter';
     src: url('/assets/fonts/inter/Inter-SemiBold.woff2') format('woff2'),
