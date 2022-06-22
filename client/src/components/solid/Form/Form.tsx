@@ -1,10 +1,11 @@
-import { createSignal } from "solid-js";
+import { createSignal, onMount } from "solid-js";
 import { EForms } from "../../../enums/EForms";
 import styles from "./Form.module.scss"
 import { Custom, DontKnow, Team } from "./FormTabs";
 
 export function Form() {
   const [tab, setTab] = createSignal(EForms.team)
+  
   function handleClick(tab: EForms) {
     console.log("click => ", tab)
     setTab(tab)
@@ -22,6 +23,7 @@ export function Form() {
   return (
     <div class={styles.form}>
       {tab()}
+
       <div class={styles.form__header}>
         <div class={styles.form__headerWrp}>
           <h2 class={styles.form__headerTitle}>Request an IT project cost estimate</h2>
@@ -50,7 +52,7 @@ export function Form() {
           </div>
         </div>
       </div>
-      <form class={styles.form__form} onsubmit={handleSubmit} data-netlify="true">
+      <form class={styles.form__form} onsubmit={handleSubmit}>
         {tab() === EForms.custom && <Custom />}
         {tab() === EForms.team && <Team />}
         {tab() === EForms.dontKnow && <DontKnow />}
