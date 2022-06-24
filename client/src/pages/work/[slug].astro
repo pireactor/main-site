@@ -1,28 +1,178 @@
 ---
+import Section from "../../components/shared/Section.astro";
+import CallbackForm from "../../components/solid/CallbackForm.astro";
+import { Counter } from "../../components/solid/Counter";
+import { EPhases } from "../../enums/EPhases";
 import Container from "../../layouts/Container.astro";
 import Layout from "../../layouts/Layout.astro"
+import { ProjectModel } from "../../models/projectModel";
 
 export async function getStaticPaths() {
-  const projects = await Astro.glob('/public/assets/projects/*.md');
+  const projects = await Astro.glob<ProjectModel>('/public/assets/projects/*.md');
 
   return projects.map((project) => {
     return {
-      params: {slug: project.frontmatter.slug},
-      props: {project}
-    }
-    ;
-
+      params: { slug: project.frontmatter.slug },
+      props: {
+        content: project.Content,
+        title: project.frontmatter.title,
+        img: project.frontmatter.img,
+        phases: project.frontmatter.phases,
+        bullets: project.frontmatter.bullets,
+        result: project.frontmatter.result,
+      }
+    };
   })
 }
 
-const {project} = Astro.props;
+const props = Astro.props as ProjectModel;
+function phasesClass(item: EPhases) {
+  switch (item) {
+    case EPhases.dev:
+      return "stages__item_dev";
+    case EPhases.rel:
+      return "stages__item_rel";
+    case EPhases.sup:
+      return "stages__item_sup";
+    default: ""
+  }
+}
 ---
 
-<Layout title={project.frontmatter.title}>
+<Layout title={props.title}>
   <Container>
-    <div class="">
-      {<project.Content />}
+    <div class="hero" style={`--url: url("${props.img}")`}>
+      <h1>{props.title}</h1>
     </div>
+    <Section title="Stages of project">
+      <ul class="stages__list">
+        {props.phases.map(i => (
+        <li class={`stages__item ${phasesClass(i.icon)}`}>
+          <div class="stages__title">{i.name}</div>
+          <div class="stages__period">{i.period}</div>
+        </li>
+        ))}
+      </ul>
+    </Section>
 
+    <Section title="Application functionality">
+      <ul class="bullets">
+        {props.bullets.map(i => <li class="bullets__item">{i}</li>)}
+      </ul>
+    </Section>
+
+    <Section title="Solution">
+      <div class="solution">
+        <props.content />
+      </div>
+    </Section>
+
+    <Section title="Results">
+      <div class="counter">
+        {props.result.map(i => (
+          <Counter client:load countTo={i.value} title={i.name} format={i.format} />
+        ))}
+
+      </div>
+    </Section>
+    <CallbackForm />
   </Container>
 </Layout>
+
+<style lang="scss">
+  :root {
+    --url: url("https://via.placeholder.com/1000/000000/808080?text=NoImage");
+  }
+
+  .hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 37.5rem;
+    background-image: var(--url);
+    background-size: contain;
+    border-radius: 20px;
+    margin-bottom: 10rem;
+  }
+
+  h2 {
+    text-align: center;
+  }
+
+  .stages__list {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+  }
+
+  .stages__item {
+    flex-basis: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 6.125rem;
+    background-image: url("/assets/img/project/d.svg");
+    background-position: center top;
+    background-repeat: no-repeat;
+  }
+
+  .stages__title {
+    position: relative;
+    margin-bottom: 2.375rem;
+    padding-bottom: 2.375rem;
+    font-weight: 700;
+    font-size: 24px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .stages__title::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(to right, transparent 50%, #FF35C7 50%);
+    background-position: bottom;
+    background-size: 15px 2px;
+    background-repeat: repeat-x;
+  }
+
+  .stages__title::before {
+    content: "";
+    position: absolute;
+    width: 36px;
+    height: 36px;
+    bottom: -18px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #FF35C7;
+    border-radius: 100%;
+  }
+
+  .bullets {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .bullets__item {
+    flex-basis: 40%;
+    flex-grow: 1;
+    padding-left: 4.25rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background: transparent url("/assets/img/project/check.svg") no-repeat left center;
+  }
+
+  .solution {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2rem;
+  }
+
+  .counter {
+    display: flex;
+    justify-content: space-between;
+  }
+</style>

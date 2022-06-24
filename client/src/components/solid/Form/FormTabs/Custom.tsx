@@ -11,10 +11,9 @@ export function Custom() {
   let industryEl: HTMLFieldSetElement;
   let range: Element;
   function clear(ref: Element) {
-    console.log(ref)
-      ref.querySelectorAll("input").forEach(el => el.checked = false)
-    }
-    function clearRange(ref: Element) {
+    ref.querySelectorAll("input").forEach(el => el.checked = false)
+  }
+  function clearRange(ref: Element) {
     ref.querySelectorAll("input").forEach(el => el.checked = false);
     ref.querySelectorAll(".timerange__item_checked").forEach(el => el.classList.remove("timerange__item_checked"));
 
@@ -27,9 +26,9 @@ export function Custom() {
       </div>
       <fieldset ref={devEl} class={styles.formSection__fieldset}>
         <Checkbox category="develop-solution" label="Desktop" />
-        <Checkbox category="develop-solution" label="Mobile"/>
+        <Checkbox category="develop-solution" label="Mobile" />
         <Checkbox category="develop-solution" label="Web" />
-        <Checkbox category="develop-solution" label="Consultancy needed"/>
+        <Checkbox category="develop-solution" label="Consultancy needed" />
       </fieldset>
       <div class={styles.formSection__header}>
         <h3>2. What is the current stage of your software development process?</h3>
@@ -45,7 +44,7 @@ export function Custom() {
         <h3>3. Do you need a professional consultation from any of the specialists below?</h3>
         <button type="button" class={styles.formSection__clear} onClick={() => clear(specEl)}>Clear all</button>
       </div>
-      <fieldset ref={specEl}class={styles.formSection__fieldset}>
+      <fieldset ref={specEl} class={styles.formSection__fieldset}>
         <Checkbox category="specialist" label="Project Manager" />
         <Checkbox category="specialist" label="Business Analyst" />
         <Checkbox category="specialist" label="UI/UX Designer" />
@@ -86,7 +85,7 @@ export function Custom() {
         <button type="button" class={styles.formSection__clear} onClick={() => clearRange(range)}>Clear all</button>
       </div>
       <div class={styles.formSection__duration}>
-        <TimeRange ref={range}/>
+        <TimeRange ref={range} />
       </div>
       <div class={styles.formSection__header}>
         <h3>6. Contacts</h3>

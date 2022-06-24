@@ -4,44 +4,25 @@ import Breadcrums from "../components/shared/Breadcrums.astro";
 import { Projects } from "../components/solid/Projects";
 import Container from "../layouts/Container.astro";
 import Layout from "../layouts/Layout.astro";
+import { ProjectModel } from "../models/projectModel";
 
-export interface IProject {
-title: string;
-developers: number;
-months: number;
-tags: TTags[];
-desc: string;
-phases: string;
-release: string;
-support: string;
-slug: string;
-}
-
-type TTags = ETags.srategy | ETags.dev | ETags.des | ETags.all;
-
-enum ETags {
-  all,
-  srategy = "Strategy",
-  dev = "Development",
-  des = "Design"
-}
-
-const projectsRaw = await Astro.glob<IProject>('/public/assets/projects/*.md');
+const projectsRaw = await Astro.glob<ProjectModel>('/public/assets/projects/*.md');
 const projects = projectsRaw.map(i => {
   return {
     desc: i.frontmatter.desc,
     developers: i.frontmatter.developers,
     months: i.frontmatter.months,
     phases: i.frontmatter.phases,
-    release: i.frontmatter.release,
     slug: i.frontmatter.slug,
-    support: i.frontmatter.support,
     title: i.frontmatter.title,
-    tags: i.frontmatter.tags
+    tags: i.frontmatter.tags,
+    img: i.frontmatter.img,
   }
 })
----
 
+const url = Astro.request.url
+
+---
 <Layout title="Portfolio" preloadImg="works/star.svg">
   <Container>
     <Breadcrums currentPath="Portfolio" />
@@ -56,7 +37,7 @@ const projects = projectsRaw.map(i => {
       </div>
       <div class="hero__img"></div>
     </section>
-    <Projects client:load projects={projects}/>
+    <Projects client:load projects={projects} url={url}/>
   </Container>
 </Layout>
 

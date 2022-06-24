@@ -14,4 +14,10 @@
   font-size: 100px;
   -webkit-text-stroke: 1px #FF35C7;
   color: transparent;
+  display: flex;
+  align-items: center;
+}
+
+.styles.counter__count_format {
+  margin-right: 1rem;
 }

@@ -1,59 +1,38 @@
 ---
-import Section from "../shared/Section.astro"
+import { ServicesModel } from "../../models/ServicesModel";
+import Section from "../shared/Section.astro";
+const unsortServices = await Astro.glob<ServicesModel>('/public/assets/services/*.md');
+const services = unsortServices.sort((a, b) => a.frontmatter.id - b.frontmatter.id);
+
+function setClass(id: number) {
+  switch(id) {
+    case(1):
+      return "services__item_strategy";
+    case(2):
+      return "services__item_architecture";
+    case(3):
+      return "services__item_automation";
+    case(4):
+      return "services__item_blockchain";
+    case(5):
+      return "services__item_wallets";
+    default:
+      return "";
+  }
+}
 
 ---
 
 <Section title="Our Services">
   <ul class="services__list">
-    <li class="services__item services__item_strategy">
-      <h3 class="services__title">Global Strategy</h3>
-      <p class="services__desc">
-        Powered by worldclass doers familiar with the bleeding
-        edge, we help businesses achieve better business outcomes with honesty.
-        Analyzing your usecase, we will choose the best technology, not the most
-        popular.
-      </p>
-    </li>
-    <li class="services__item services__item_architecture">
-      <h3 class="services__title">Architecture</h3>
-      <p class="services__desc">
-        Above all, we pride ourselves in clearly documenting your business logic
-        and processes in order to craft productivity boosting solutions or automate
-        them entirely. We then create the most practical and expandable architecture
-        for your unique use cases allowing quick, clean implementation.
-      </p>
-    </li>
-    <li class="services__item services__item_automation">
-      <h3 class="services__title">Automation</h3>
-      <p class="services__desc">
-        Expand your data engineering with AI
-        augmented and RPA driven approaches. With dozens of
-        projects behind us, we build scalable, efficient operations and drive powerful growth.
-        Replace outdated manual processes with the smarter reusable algorithms,
-        artificial intelligence, and BOTS.
-      </p>
-    </li>
-    <li class="services__item services__item_blockchain">
-      <h3 class="services__title">Blockchain</h3>
-      <p class="services__desc">
-        Embrace digital transactions by harnessing [pi|reactor]'s
-        strategic coin development services to foster your business growth. Our
-        globalized experts craft intelligent strategies around centered on core use
-        cases and implementation. We have real-world experience delivering comprehensive
-        offerings from ideation and coin development, to ICO and marketing for clients
-        across all industries.
-      </p>
-    </li>
-    <li class="services__item services__item_wallets">
-      <h3 class="services__title">Wallets and Exchanges</h3>
-      <p class="services__desc">
-        Our strategically designed services cater to your neesd, whether centralized, decentralized or P2P.
-        Multicoin wallets are key to securely storing the full spectrum of crypto assets.
-        We offer turnkey best practices to add extra layers of security to any exchange or
-        app, using industry standard features like 2FA, multisig support and biometric
-        authentication.
-      </p>
-    </li>
+    {services.map(i => (
+      <li class={`services__item ${setClass(i.frontmatter.id)}`}>
+        <a href={`/services/${i.frontmatter.slug}`}>
+          <h3 class="services__title">{i.frontmatter.title}</h3>
+        </a>
+        <p class="services__desc">{i.frontmatter.desc}</p>
+      </li>
+    ))}
   </ul>
 </Section>
 
@@ -70,6 +49,16 @@ import Section from "../shared/Section.astro"
     border-radius: 20px;
     background-repeat: no-repeat;
     background-position: center bottom;
+
+    a {
+      text-decoration: none;
+      color: #FFFFFF;
+      transition: color 0.3s ease-in-out;
+    }
+
+    a:hover {
+      color: var(--color-hover)
+    }
   }
 
   .services__title {

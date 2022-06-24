@@ -6,7 +6,7 @@ import { setStore, store } from "../store";
 import { TimeRange } from "../TimeRange"
 import styles from "./FormTabs.module.scss"
 
-type TEl = {name: string, value: number, tooltip: string}
+type TEl = { name: string, value: number, tooltip: string }
 
 export function Team() {
   let range: Element;
@@ -16,8 +16,7 @@ export function Team() {
   }
 
   function clearCounter(groups) {
-    setStore(groups , produce<TEl[]>(el => el.forEach(i => i.value = 0)))
-    console.log(store.frameworks[0].value)
+    setStore(groups, produce<TEl[]>(el => el.forEach(i => i.value = 0)))
   }
   function clearRange(ref: Element) {
     ref.querySelectorAll("input").forEach(el => el.checked = false);
@@ -55,7 +54,7 @@ export function Team() {
         <h3>3. Please, specify your business industry</h3>
         <button type="button" class={styles.formSection__clear} onClick={() => clear(industryEl)}>Clear all</button>
       </div>
-        <fieldset ref={industryEl} id="industry" class={styles.formSection__fieldset}>
+      <fieldset ref={industryEl} id="industry" class={styles.formSection__fieldset}>
         <div class={styles.formSection__itemsBlock}>
           <Radio name="industry" label="Financial Services" />
           <Radio name="industry" label="Media & Entertainment" />

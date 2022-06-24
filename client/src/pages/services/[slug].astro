@@ -1,0 +1,161 @@
+---
+import MainTitle from "../../components/MainTitle.astro";
+import Button from "../../components/shared/Button.astro";
+import { Counter } from "../../components/solid/Counter";
+import Container from "../../layouts/Container.astro";
+import Layout from "../../layouts/Layout.astro";
+import { ServicesModel } from "../../models/ServicesModel";
+
+export async function getStaticPaths() {
+  const services = await Astro.glob<ServicesModel>('/public/assets/services/*.md');
+
+  return services.map((service) => {
+    return {
+      params: { slug: service.frontmatter.slug },
+      props: {
+        content: service.Content,
+        title: service.frontmatter.title,
+        desc: service.frontmatter.desc,
+        values: service.frontmatter.values,
+        content: service.Content,
+        articles: service.frontmatter.articles,
+        id: service.frontmatter.id,
+      }
+    };
+  })
+}
+
+const props = Astro.props as ServicesModel;
+const pathName = Astro.canonicalURL.pathname
+---
+
+<Layout title={props.title}>
+  <Container>
+    <section class="hero">
+      <div class="hero__title">
+        <MainTitle redLine={props.title} />
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo sint dicta nihil fugit deserunt repudiandae
+          ullam inventore assumenda molestiae? Exercitationem quidem autem voluptate repudiandae dolorum nihil voluptas
+          impedit. Vero, enim.
+        </p>
+        <Button title="Boost my project" />
+      </div>
+      <div class="hero__img"></div>
+    </section>
+
+    <section class="desc">
+      <h2>About</h2>
+      <div class="desc__wrp">
+        <p>{props.desc}</p>
+        <div class="desc__counter">
+          {props.values.map(i =>
+          <Counter client:load countTo={i.value} title={i.name} />)}
+        </div>
+      </div>
+    </section>
+    {props.articles.map(i => (
+    <section class="article">
+      <h3 class="article__title">{i.title}</h3>
+      <div class="article__wrp">
+        <img class="article__img" src={i.img} alt={i.title} />
+        <p class="article__desc">{i.desc}</p>
+      </div>
+    </section>
+    ))}
+
+    <a class="link" href={`/work/?last=${props.id}`}>View projects</a>
+  </Container>
+</Layout>
+
+<style lang="scss">
+  .hero__img {
+    content: url("/assets/img/main/main.webp");
+  }
+
+  .hero {
+    display: flex;
+    margin-bottom: 10.5rem;
+  }
+
+  .hero__title {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    p {
+      margin-bottom: 3rem;
+    }
+  }
+
+  .desc {
+    margin-bottom: 10rem;
+  }
+
+  .desc h2 {
+    visibility: hidden;
+
+  }
+
+  .desc__wrp {
+    display: flex;
+    flex-wrap: nowrap;
+
+    p {
+      margin: 0;
+      margin-right: auto;
+      flex-basis: 50%;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 160%;
+    }
+  }
+
+  .desc__counter {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2rem;
+  }
+
+  .article {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 10rem;
+  }
+
+  .article:nth-child(2n) {
+    .article__desc {
+      order: 0;
+    }
+    .article__img {
+      order: 1;
+    }
+  }
+
+  .article__title {
+    flex-basis: 100%;
+    text-align: center;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 45px;
+    margin-bottom: 3rem;
+  }
+
+  .article__wrp {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .article__desc {
+    flex-basis: 60%;
+  }
+
+  .link {
+    display: block;
+    margin: 0 auto;
+  }
+</style>
+<script is:inline>
+  console.log(pathName)
+</script>

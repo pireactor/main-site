@@ -1,8 +1,15 @@
 ---
 import Logo from "../components/Logo.astro";
 import { LangPicker } from "../components/solid/LangPicker";
+import { servicesPaths } from "../enums/servicesPaths";
+import { ServicesModel } from "../models/ServicesModel";
 import Container from "./Container.astro";
-const path = Astro.canonicalURL.pathname.replaceAll('/', '')
+
+const unsortServices = await Astro.glob<ServicesModel>('/public/assets/services/*.md');
+const services = unsortServices.sort((a, b) => a.frontmatter.id - b.frontmatter.id);
+
+const path = Astro.canonicalURL.pathname.replaceAll('/', '');
+
 
 
 ---
@@ -22,21 +29,11 @@ const path = Astro.canonicalURL.pathname.replaceAll('/', '')
           <li class={`nav__list-item nav__list-item_services ${path === "services" ? "nav__list-item_active" : ""}`} tabindex={0}>
             <a href="/services" class="nav__link" tabindex={-1}>Services</a>
             <ul class="nav__submenu submenu">
-              <li class="submenu__item">
-                <a href="" class="submenu__link">Global Strategy</a>
-              </li>
-              <li class="submenu__item">
-                <a href="" class="submenu__link">Architecture</a>
-              </li>
-              <li class="submenu__item">
-                <a href="" class="submenu__link">Automation</a>
-              </li>
-              <li class="submenu__item">
-                <a href="" class="submenu__link">Blockchain</a>
-              </li>
-              <li class="submenu__item">
-                <a href="" class="submenu__link">Wallets and Exchanges</a>
-              </li>
+              {services.map(i => (
+                <li class="submenu__item">
+                  <a href={`/services/${i.frontmatter.slug}`} class="submenu__link">{i.frontmatter.title}</a>
+                </li>
+              ))}
             </ul>
           </li>
         </ul>
@@ -133,8 +130,13 @@ const path = Astro.canonicalURL.pathname.replaceAll('/', '')
     }
   }
 
+  .submenu__item a:hover {
+    color: var(--color-hover);
+  }
+
   .submenu__link {
     white-space: nowrap;
+    transition: color 0.3s ease-in-out;
   }
 
   .header__btn {

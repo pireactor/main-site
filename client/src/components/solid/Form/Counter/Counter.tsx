@@ -21,7 +21,6 @@ export function Counter(props: ICounterProps) {
     tooltip: string;
   }
   function incr(name: string) {
-    console.log(store[props.group])
     setStore(props.group, el => el.name === name, produce<TEl>((el) => (el.value++)));
     if (curEl.value < 0) {
       setStore(props.group, el => el.name === name, produce<TEl>((el) => (el.value = 0)));

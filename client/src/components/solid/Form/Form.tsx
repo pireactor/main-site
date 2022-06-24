@@ -7,13 +7,11 @@ export function Form() {
   const [tab, setTab] = createSignal(EForms.team)
   
   function handleClick(tab: EForms) {
-    console.log("click => ", tab)
     setTab(tab)
   }
   function handleSubmit(e: { preventDefault: () => void; currentTarget: HTMLFormElement; }) {
     e.preventDefault();
     const data = new FormData(e.currentTarget)
-    console.log(Array.from(data.entries()).forEach(el => console.log(el)))
     fetch("http://localhost:8081/project", {
       body: data,
       method: "POST",

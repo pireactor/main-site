@@ -1,0 +1,41 @@
+---
+id: 3
+slug: "automation"
+title: "Automation"
+desc: "Expand your data engineering with AI augmented and RPA driven approaches. With dozens of projects behind us, we build scalable, efficient operations and drive powerful growth. Replace outdated manual processes with the smarter reusable algorithms, artificial intelligence, and BOTS."
+values: [
+  {
+    name: "Projects done",
+    value: 32
+  },
+  {
+    name: "Unique Industries",
+    value: 12
+  },
+]
+
+---
+
+### Section title 1
+
+![PF](http://mywishlist.ru/pic/i/wish/300x300/007/917/281.png)
+
+Porttitor mattis morbi a, condimentum vitae sit adipiscing. Tempor, diam porttitor at justo in. Non eu malesuada mauris in velit adipiscing et, neque. Iaculis a est elementum, neque orci cursus eget praesent massa. Non lectus enim et vitae. Sed aenean magna vel sed non. Euismod tristique pulvinar at ipsum lectus tempus. Tellus nisl facilisis dui id varius suspendisse est. Adipiscing urna nunc velit faucibus interdum pretium malesuada. Lobortis leo sit sed morbi.
+Interdum sit risus sapien habitant in. Adipiscing nisl sagittis, proin vivamus tellus sit amet orci elit. Posuere lacus diam, ut pellentesque. Lorem cursus ornare non venenatis. Enim malesuada netus ut urna blandit eget praesent porttitor euismod. Sed turpis et odio orci massa ultrices est.
+
+### Section title 2
+
+![PF](http://mywishlist.ru/pic/i/wish/300x300/007/917/281.png)
+
+Porttitor mattis morbi a, condimentum vitae sit adipiscing. Tempor, diam porttitor at justo in. Non eu malesuada mauris in velit adipiscing et, neque. Iaculis a est elementum, neque orci cursus eget praesent massa. Non lectus enim et vitae. Sed aenean magna vel sed non. Euismod tristique pulvinar at ipsum lectus tempus. Tellus nisl facilisis dui id varius suspendisse est. Adipiscing urna nunc velit faucibus interdum pretium malesuada. Lobortis leo sit sed morbi.
+Interdum sit risus sapien habitant in. Adipiscing nisl sagittis, proin vivamus tellus sit amet orci elit. Posuere lacus diam, ut pellentesque. Lorem cursus ornare non venenatis. Enim malesuada netus ut urna blandit eget praesent porttitor euismod. Sed turpis et odio orci massa ultrices est.
+
+### Section title 3
+
+![PF](http://mywishlist.ru/pic/i/wish/300x300/007/917/281.png)
+
+Porttitor mattis morbi a, condimentum vitae sit adipiscing. Tempor, diam porttitor at justo in. Non eu malesuada mauris in velit adipiscing et, neque. Iaculis a est elementum, neque orci cursus eget praesent massa. Non lectus enim et vitae. Sed aenean magna vel sed non. Euismod tristique pulvinar at ipsum lectus tempus. Tellus nisl facilisis dui id varius suspendisse est. Adipiscing urna nunc velit faucibus interdum pretium malesuada. Lobortis leo sit sed morbi.
+Interdum sit risus sapien habitant in. Adipiscing nisl sagittis, proin vivamus tellus sit amet orci elit. Posuere lacus diam, ut pellentesque. Lorem cursus ornare non venenatis. Enim malesuada netus ut urna blandit eget praesent porttitor euismod. Sed turpis et odio orci massa ultrices est.
+
+
+
