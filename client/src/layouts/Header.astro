@@ -149,6 +149,12 @@ const path = Astro.canonicalURL.pathname.replaceAll('/', '');
     border-radius: 10px;
     background-color: var(--color-bg);
     cursor: pointer;
+    transition: 0.3s ease-in-out;
+  }
+
+  .header__btn:hover {
+    color: var(--color-hover);
+    border-color: var(--color-hover);
   }
 
   .nav__list-item {
