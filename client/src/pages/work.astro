@@ -4,7 +4,7 @@ import Breadcrums from "../components/shared/Breadcrums.astro";
 import { Projects } from "../components/solid/Projects";
 import Container from "../layouts/Container.astro";
 import Layout from "../layouts/Layout.astro";
-import { ProjectModel } from "../models/projectModel";
+import { ProjectModel } from "../models/ProjectModel";
 
 const projectsRaw = await Astro.glob<ProjectModel>('/public/assets/projects/*.md');
 const projects = projectsRaw.map(i => {
