@@ -5,16 +5,16 @@ const unsortServices = await Astro.glob<ServicesModel>('/public/assets/services/
 const services = unsortServices.sort((a, b) => a.frontmatter.id - b.frontmatter.id);
 
 function setClass(id: number) {
-  switch(id) {
-    case(1):
+  switch (id) {
+    case (1):
       return "services__item_strategy";
-    case(2):
+    case (2):
       return "services__item_architecture";
-    case(3):
+    case (3):
       return "services__item_automation";
-    case(4):
+    case (4):
       return "services__item_blockchain";
-    case(5):
+    case (5):
       return "services__item_wallets";
     default:
       return "";
@@ -26,12 +26,12 @@ function setClass(id: number) {
 <Section title="Our Services">
   <ul class="services__list">
     {services.map(i => (
-      <li class={`services__item ${setClass(i.frontmatter.id)}`}>
-        <a href={`/services/${i.frontmatter.slug}`}>
-          <h3 class="services__title">{i.frontmatter.title}</h3>
-        </a>
-        <p class="services__desc">{i.frontmatter.desc}</p>
-      </li>
+    <li class={`services__item ${setClass(i.frontmatter.id)}`}>
+      <a href={`/services/${i.frontmatter.slug}`}>
+        <h3 class="services__title">{i.frontmatter.title}</h3>
+      </a>
+      <p class="services__desc">{i.frontmatter.desc}</p>
+    </li>
     ))}
   </ul>
 </Section>
@@ -49,16 +49,33 @@ function setClass(id: number) {
     border-radius: 20px;
     background-repeat: no-repeat;
     background-position: center bottom;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+    z-index: 50;
 
     a {
       text-decoration: none;
       color: #FFFFFF;
       transition: color 0.3s ease-in-out;
     }
+    a:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      cursor: pointer;
+      z-index: 100;
 
-    a:hover {
-      color: var(--color-hover)
     }
+  }
+
+  .services__item:hover {
+    transform: translate(-0.5rem, -0.5rem);
+    -webkit-box-shadow: 4px 4px 8px 0px var(--color-hover);
+    -moz-box-shadow: 4px 4px 8px 0px var(--color-hover);
+    box-shadow: 4px 4px 8px 0px var(--color-hover);
   }
 
   .services__title {
@@ -77,12 +94,12 @@ function setClass(id: number) {
     background-color: #FC6383;
     background-image: url("/assets/img/main/strategy.svg");
   }
-  
+
   .services__item_architecture {
     background-color: #29243D;
     background-image: url("/assets/img/main/architecture.svg");
   }
-  
+
   .services__item_automation {
     grid-column-start: 1;
     grid-column-end: 3;
@@ -90,12 +107,12 @@ function setClass(id: number) {
     padding-right: 45rem;
     background: #2D6889 url("/assets/img/main/automation.svg") no-repeat right center;
   }
-  
+
   .services__item_blockchain {
     background-color: #29243D;
     background-image: url("/assets/img/main/blockchain.svg");
   }
-  
+
   .services__item_wallets {
     background-color: #FC6383;
     background-image: url("/assets/img/main/wallets.svg");

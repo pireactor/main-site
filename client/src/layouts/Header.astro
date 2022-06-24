@@ -27,7 +27,7 @@ const path = Astro.canonicalURL.pathname.replaceAll('/', '');
             <a href="/work" class="nav__link">Work</a>
           </li>
           <li class={`nav__list-item nav__list-item_services ${path === "services" ? "nav__list-item_active" : ""}`} tabindex={0}>
-            <a href="/services" class="nav__link" tabindex={-1}>Services</a>
+            <a href="/#services" class="nav__link" tabindex={-1}>Services</a>
             <ul class="nav__submenu submenu">
               {services.map(i => (
                 <li class="submenu__item">
@@ -39,7 +39,7 @@ const path = Astro.canonicalURL.pathname.replaceAll('/', '');
         </ul>
       </nav>
       <LangPicker client:load />
-      <button class="header__btn" type="button">Let's talk</button>
+      <a href="/#callback-form" class="header__btn" type="button">Let's talk</a>
     </div>
   </Container>
 </header>

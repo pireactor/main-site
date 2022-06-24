@@ -18,14 +18,20 @@ import Container from '../layouts/Container.astro';
   </Container>
   <How />
   <Container>
-    <Services />
+    <div class="services-wrp" id="services">
+      <Services />
+    </div>
     <Technologies />
-    <CallbackForm />
+    <div id="callback-form">
+      <CallbackForm />
+    </div>
   </Container>
 </Layout>
 
 <style lang="scss">
   
-
+html {
+  scroll-behavior: smooth;
+}
   
 </style>
