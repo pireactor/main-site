@@ -3,6 +3,7 @@ package main
 import (
 	"github.com/aws/aws-lambda-go/events"
 	"github.com/aws/aws-lambda-go/lambda"
+	"log"
 	"net/smtp"
 	"os"
 )
@@ -37,8 +38,10 @@ func handler(request events.APIGatewayProxyRequest) (*events.APIGatewayProxyResp
 		"RECIPIENT":    "",
 	}
 
+	log.Println("looking up environment variables")
 	for k, _ := range conf {
 		val, ok := os.LookupEnv(k)
+		log.Println("looking up " + k)
 		if !ok {
 			return buildResponse(responseBadEnvVar, nil), nil
 		}
@@ -47,6 +50,7 @@ func handler(request events.APIGatewayProxyRequest) (*events.APIGatewayProxyResp
 	}
 
 	// establishing a smtp connection
+	log.Println("establishing an smtp connection")
 	auth := smtp.PlainAuth("pireactor", conf["SENDER_LOGIN"], conf["SENDER_PASS"], conf["SMTP_SERVER"])
 
 	// composing the message
@@ -56,11 +60,13 @@ func handler(request events.APIGatewayProxyRequest) (*events.APIGatewayProxyResp
 		request.Body + "\r\n")
 
 	// sending it
+	log.Println("sending an e-mail")
 	err := smtp.SendMail(conf["SMTP_SERVER"]+":"+conf["SMTP_PORT"], auth, conf["SENDER_LOGIN"], to, msg)
 	if err != nil {
 		return buildResponse(responseSMTPError, err), nil
 	}
 
+	log.Println("returning OK")
 	return buildResponse(responseOK, nil), nil
 }
 
