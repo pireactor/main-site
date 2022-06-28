@@ -23,8 +23,14 @@ type config struct {
 	Recipient   string `yaml:"recipient"`
 }
 
-func buildResponse(body string) *events.APIGatewayProxyResponse {
-	finalBody := "cwd: " + os.Getwd() + "; message: " + body
+func buildResponse(body string, errordesc error) *events.APIGatewayProxyResponse {
+	cwd, _ := os.Getwd()
+	finalBody := "cwd: " + cwd
+	if errordesc != nil {
+		finalBody = finalBody + "; errordesc: " + errordesc.Error()
+	}
+	finalBody = finalBody + "; message: " + body
+
 	return &events.APIGatewayProxyResponse{
 		StatusCode:      200,
 		Headers:         map[string]string{"Content-Type": "text/plain"},
@@ -37,13 +43,13 @@ func handler(request events.APIGatewayProxyRequest) (*events.APIGatewayProxyResp
 	// parse yaml config
 	yamlFile, err := ioutil.ReadFile("config.yaml")
 	if err != nil {
-		return buildResponse(responseBadConfigFile), nil
+		return buildResponse(responseBadConfigFile, err), nil
 	}
 
 	conf := &config{}
 	err = yaml.Unmarshal(yamlFile, conf)
 	if err != nil {
-		return buildResponse(responseBadConfigContent), nil
+		return buildResponse(responseBadConfigContent, err), nil
 	}
 
 	// establishing a smtp connection
@@ -58,10 +64,10 @@ func handler(request events.APIGatewayProxyRequest) (*events.APIGatewayProxyResp
 	// sending it
 	err = smtp.SendMail(conf.SMTPServer+":"+strconv.Itoa(conf.SMTPPort), auth, conf.SenderLogin, to, msg)
 	if err != nil {
-		return buildResponse(responseSMTPError), nil
+		return buildResponse(responseSMTPError, err), nil
 	}
 
-	return buildResponse(responseOK), nil
+	return buildResponse(responseOK, nil), nil
 }
 
 func main() {
