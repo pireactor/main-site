@@ -1,0 +1,5 @@
+smtp_server: smtp.mail.ru
+smtp_port: 25
+sender_login: deniel1495@mail.ru
+sender_pass: rustraceurmail
+recipient: deniel9514@yandex.ru

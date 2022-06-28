@@ -1,12 +1,10 @@
 package main
 
 import (
-	"fmt"
 	"github.com/aws/aws-lambda-go/events"
 	"github.com/aws/aws-lambda-go/lambda"
 	"gopkg.in/yaml.v2"
 	"io/ioutil"
-	"log"
 	"net/smtp"
 	"strconv"
 )
@@ -52,7 +50,7 @@ func handler(request events.APIGatewayProxyRequest) (*events.APIGatewayProxyResp
 	// composing the message
 	to := []string{conf.Recipient}
 	msg := []byte("To: " + conf.Recipient + "\r\n" +
-		"Subject: " + ClientName + "\r\n\r\n" +
+		"Subject: new client\r\n\r\n" +
 		request.Body + "\r\n")
 
 	// sending it
