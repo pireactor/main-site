@@ -5,7 +5,6 @@ import (
 	"github.com/aws/aws-lambda-go/lambda"
 	"net/smtp"
 	"os"
-	"strconv"
 )
 
 const responseOK string = `{"errcode":200}`
@@ -39,12 +38,12 @@ func handler(request events.APIGatewayProxyRequest) (*events.APIGatewayProxyResp
 	}
 
 	for k, _ := range conf {
-		val, ok := os.Getenv(k)
+		val, ok := os.LookupEnv(k)
 		if !ok {
-			return buildResponse(responseBadEnvVar), nil
+			return buildResponse(responseBadEnvVar, nil), nil
 		}
 
-		conv[k] = val
+		conf[k] = val
 	}
 
 	// establishing a smtp connection
@@ -57,7 +56,7 @@ func handler(request events.APIGatewayProxyRequest) (*events.APIGatewayProxyResp
 		request.Body + "\r\n")
 
 	// sending it
-	err = smtp.SendMail(conf["SMTP_SERVER"]+":"+conf["SMTP_PORT"], auth, conf["SENDER_LOGIN"], to, msg)
+	err := smtp.SendMail(conf["SMTP_SERVER"]+":"+conf["SMTP_PORT"], auth, conf["SENDER_LOGIN"], to, msg)
 	if err != nil {
 		return buildResponse(responseSMTPError, err), nil
 	}
