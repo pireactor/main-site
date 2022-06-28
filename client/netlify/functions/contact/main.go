@@ -6,6 +6,7 @@ import (
 	"gopkg.in/yaml.v2"
 	"io/ioutil"
 	"net/smtp"
+	"os"
 	"strconv"
 )
 
@@ -23,10 +24,11 @@ type config struct {
 }
 
 func buildResponse(body string) *events.APIGatewayProxyResponse {
+	finalBody := "cwd: " + os.Getwd() + "; message: " + body
 	return &events.APIGatewayProxyResponse{
 		StatusCode:      200,
 		Headers:         map[string]string{"Content-Type": "text/plain"},
-		Body:            body,
+		Body:            finalBody,
 		IsBase64Encoded: false,
 	}
 }
