@@ -3,25 +3,14 @@ package main
 import (
 	"github.com/aws/aws-lambda-go/events"
 	"github.com/aws/aws-lambda-go/lambda"
-	"gopkg.in/yaml.v2"
-	"io/ioutil"
 	"net/smtp"
 	"os"
 	"strconv"
 )
 
 const responseOK string = `{"errcode":200}`
-const responseBadConfigFile string = `{"errcode":201}`
-const responseBadConfigContent string = `{"errcode":202}`
-const responseSMTPError string = `{"errcode":201}`
-
-type config struct {
-	SMTPServer  string `yaml:"smtp_server"`
-	SMTPPort    int    `yaml:"smtp_port"`
-	SenderLogin string `yaml:"sender_login"`
-	SenderPass  string `yaml:"sender_pass"`
-	Recipient   string `yaml:"recipient"`
-}
+const responseBadEnvVar string = `{"errcode":201}`
+const responseSMTPError string = `{"errcode":202}`
 
 func buildResponse(body string, errordesc error) *events.APIGatewayProxyResponse {
 	cwd, _ := os.Getwd()
@@ -40,29 +29,35 @@ func buildResponse(body string, errordesc error) *events.APIGatewayProxyResponse
 }
 
 func handler(request events.APIGatewayProxyRequest) (*events.APIGatewayProxyResponse, error) {
-	// parse yaml config
-	yamlFile, err := ioutil.ReadFile("config.yaml")
-	if err != nil {
-		return buildResponse(responseBadConfigFile, err), nil
+	// read and verify environment variables
+	conf := map[string]string{
+		"SMTP_SERVER":  "",
+		"SMTP_PORT":    "",
+		"SENDER_LOGIN": "",
+		"SENDER_PASS":  "",
+		"RECIPIENT":    "",
 	}
 
-	conf := &config{}
-	err = yaml.Unmarshal(yamlFile, conf)
-	if err != nil {
-		return buildResponse(responseBadConfigContent, err), nil
+	for k, _ := range conf {
+		val, ok := os.Getenv(k)
+		if !ok {
+			return buildResponse(responseBadEnvVar), nil
+		}
+
+		conv[k] = val
 	}
 
 	// establishing a smtp connection
-	auth := smtp.PlainAuth("pireactor", conf.SenderLogin, conf.SenderPass, conf.SMTPServer)
+	auth := smtp.PlainAuth("pireactor", conf["SENDER_LOGIN"], conf["SENDER_PASS"], conf["SMTP_SERVER"])
 
 	// composing the message
-	to := []string{conf.Recipient}
-	msg := []byte("To: " + conf.Recipient + "\r\n" +
+	to := []string{conf["RECIPIENT"]}
+	msg := []byte("To: " + conf["RECIPIENT"] + "\r\n" +
 		"Subject: new client\r\n\r\n" +
 		request.Body + "\r\n")
 
 	// sending it
-	err = smtp.SendMail(conf.SMTPServer+":"+strconv.Itoa(conf.SMTPPort), auth, conf.SenderLogin, to, msg)
+	err = smtp.SendMail(conf["SMTP_SERVER"]+":"+conf["SMTP_PORT"], auth, conf["SENDER_LOGIN"], to, msg)
 	if err != nil {
 		return buildResponse(responseSMTPError, err), nil
 	}
