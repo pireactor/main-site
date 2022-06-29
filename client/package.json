@@ -19,6 +19,7 @@
   "dependencies": {
     "@astrojs/netlify": "^0.4.7",
     "@netlify/functions": "^1.0.0",
-    "busboy": "^1.6.0"
+    "busboy": "^1.6.0",
+    "lambda-multipart-parser": "^1.0.1"
   }
 }

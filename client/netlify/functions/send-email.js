@@ -1,4 +1,5 @@
 const Busboy = require('busboy');
+const parser = require('lambda-multipart-parser');
 
 // function parseMultipartForm(event) {
 //   return new Promise((resolve) => {
@@ -48,8 +49,9 @@ const Busboy = require('busboy');
 
 exports.handler = async function (event, context) {
   // const fields = await parseMultipartForm(event)
+  const res = await parser.parse(event);
   return {
     statusCode: 200,
-    body: "ok",
+    body: res,
   };
 }
