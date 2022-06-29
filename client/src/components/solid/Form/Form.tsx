@@ -11,7 +11,7 @@ export function Form() {
   }
   function handleSubmit(e: { preventDefault: () => void; currentTarget: HTMLFormElement; }) {
     e.preventDefault();
-    const data = new FormData(e.currentTarget)
+    const data = new FormData(e.currentTarget);
     fetch("https://main-pireactor.netlify.app/.netlify/functions/send-email", {
       body: JSON.stringify(data),
       method: "POST",
@@ -48,7 +48,7 @@ export function Form() {
           </div>
         </div>
       </div>
-      <form class={styles.form__form} onsubmit={handleSubmit}>
+      <form class={styles.form__form} onsubmit={(e) => handleSubmit(e)}>
         {tab() === EForms.custom && <Custom />}
         {tab() === EForms.team && <Team />}
         {tab() === EForms.dontKnow && <DontKnow />}
