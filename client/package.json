@@ -15,5 +15,8 @@
     "astro-robots-txt": "^0.3.3",
     "sass": "^1.52.3",
     "solid-js": "^1.4.4"
+  },
+  "dependencies": {
+    "@netlify/functions": "^1.0.0"
   }
 }
