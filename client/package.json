@@ -17,6 +17,7 @@
     "solid-js": "^1.4.4"
   },
   "dependencies": {
+    "@astrojs/netlify": "^0.4.7",
     "@netlify/functions": "^1.0.0"
   }
 }
