@@ -50,6 +50,6 @@ exports.handler = async function (event, context) {
   const fields = await parseMultipartForm(event)
   return {
     statusCode: 200,
-    body: JSON.stringify({ message: fields }),
+    body: "ok",
   };
 }
