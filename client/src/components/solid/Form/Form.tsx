@@ -12,7 +12,7 @@ export function Form() {
   function handleSubmit(e: { preventDefault: () => void; currentTarget: HTMLFormElement; }) {
     e.preventDefault();
     const data = new FormData(e.currentTarget)
-    fetch("http://localhost:8081/project", {
+    fetch("https://main-pireactor.netlify.app/.netlify/functions/send-email", {
       body: data,
       method: "POST",
       mode: "no-cors"
