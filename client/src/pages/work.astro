@@ -2,13 +2,15 @@
 import MainTitle from "../components/MainTitle.astro";
 import Breadcrums from "../components/shared/Breadcrums.astro";
 import { Projects } from "../components/solid/Projects";
+import { ETags } from "../enums/ETags";
 import Container from "../layouts/Container.astro";
 import Layout from "../layouts/Layout.astro";
 import { ProjectModel } from "../models/ProjectModel";
+import { ServicesModel } from "../models/ServicesModel";
 
 const projectsRaw = await Astro.glob<ProjectModel>('/public/assets/projects/*.md');
-const projects = projectsRaw.map(i => {
-  return {
+  const projects = projectsRaw.map(i => {
+    return {
     desc: i.frontmatter.desc,
     developers: i.frontmatter.developers,
     months: i.frontmatter.months,
@@ -21,6 +23,10 @@ const projects = projectsRaw.map(i => {
 })
 
 const url = Astro.request.url
+const services = await Astro.glob<ServicesModel>('/public/assets/services/*.md');
+const servicesNames = services.map(i => ({
+  name: i.frontmatter.title
+}))
 
 ---
 <Layout title="Portfolio" preloadImg="works/star.svg">
@@ -37,7 +43,7 @@ const url = Astro.request.url
       </div>
       <div class="hero__img"></div>
     </section>
-    <Projects client:load projects={projects} url={url}/>
+    <Projects client:load servicesNames={servicesNames} projects={projects} url={url}/>
   </Container>
 </Layout>
 

@@ -1,7 +1,9 @@
+import { ETags } from "../enums/ETags";
+
 export interface ServicesModel {
   id: number;
   slug: string;
-  title: string;
+  title: ETags;
   desc: string;
   values: Array<{ name: string, value: number }>
   content: any;

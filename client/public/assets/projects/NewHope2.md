@@ -3,7 +3,7 @@ slug: "Episode-IV-A-New-Hope"
 title: "Star Wars: Episode IV A New Hope"
 developers: 12
 months: 12
-tags: ["Strategy", "Development", "Design"]
+tags: ["Global Strategy"]
 desc: "It is a period of civil war. Rebel spaceships, striking from a hidden base, have won their first victory against the evil Galactic Empire. During the battle, Rebel spies managed to steal secret plans to the Empire's ultimate weapon, the DEATH STAR, an armored space station with enough power to destroy an entire planet."
 img: "https://api.time.com/wp-content/uploads/2017/05/star-wars_1024.jpg"
 phases: [

@@ -2,6 +2,7 @@
 import MainTitle from "../../components/MainTitle.astro";
 import Button from "../../components/shared/Button.astro";
 import { Counter } from "../../components/solid/Counter";
+import { ETags } from "../../enums/ETags";
 import Container from "../../layouts/Container.astro";
 import Layout from "../../layouts/Layout.astro";
 import { ServicesModel } from "../../models/ServicesModel";
@@ -19,14 +20,13 @@ export async function getStaticPaths() {
         values: service.frontmatter.values,
         content: service.Content,
         articles: service.frontmatter.articles,
-        id: service.frontmatter.id,
       }
     };
   })
 }
 
 const props = Astro.props as ServicesModel;
-const pathName = Astro.canonicalURL.pathname
+const uri = encodeURI(`/work/?${props.title}`)
 ---
 
 <Layout title={props.title}>
@@ -39,7 +39,7 @@ const pathName = Astro.canonicalURL.pathname
           ullam inventore assumenda molestiae? Exercitationem quidem autem voluptate repudiandae dolorum nihil voluptas
           impedit. Vero, enim.
         </p>
-        <Button title="Boost my project" />
+        <Button title="Boost my project" path="/#callback-form"/>
       </div>
       <div class="hero__img"></div>
     </section>
@@ -63,8 +63,9 @@ const pathName = Astro.canonicalURL.pathname
       </div>
     </section>
     ))}
-
-    <a class="link" href={`/work/?last=${props.id}`}>View projects</a>
+    <div class="article__view">
+      <Button path={uri} title="View projects"/>
+    </div>
   </Container>
 </Layout>
 
@@ -155,7 +156,9 @@ const pathName = Astro.canonicalURL.pathname
     display: block;
     margin: 0 auto;
   }
+
+  .article__view {
+    display: flex;
+    justify-content: center;
+  }
 </style>
-<script is:inline>
-  console.log(pathName)
-</script>

@@ -1,6 +1,8 @@
 export enum ETags {
   all,
-  srategy = "Strategy",
-  dev = "Development",
-  des = "Design"
+  automation = "Automation",
+  blockchain = "Blockchain",
+  srategy = "Global Strategy",
+  wallets = "Wallets and Exchanges",
+  architecture = "Architecture",
 }

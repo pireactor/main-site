@@ -1,5 +1,10 @@
 ---
-const {title, path} = Astro.props;
+
+export interface Props {
+  title: string;
+  path: string;
+}
+const {title, path} = Astro.props as Props;
 ---
 
 <a href={path}>{title}</a>
