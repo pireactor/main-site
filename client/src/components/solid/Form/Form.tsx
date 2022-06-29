@@ -13,7 +13,7 @@ export function Form() {
     e.preventDefault();
     const data = new FormData(e.currentTarget)
     fetch("https://main-pireactor.netlify.app/.netlify/functions/send-email", {
-      body: data,
+      body: JSON.stringify(data),
       method: "POST",
       mode: "no-cors"
     }).then((res) => console.log(res))
