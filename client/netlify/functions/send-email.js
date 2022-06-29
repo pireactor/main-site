@@ -52,6 +52,6 @@ exports.handler = async function (event, context) {
   const res = await parser.parse(event);
   return {
     statusCode: 200,
-    body: res,
+    body: JSON.stringify(res),
   };
 }
