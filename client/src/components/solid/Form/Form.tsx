@@ -48,7 +48,7 @@ export function Form() {
           </div>
         </div>
       </div>
-      <form class={styles.form__form} onsubmit={(e) => handleSubmit(e)}>
+      <form class={styles.form__form} enctype="multipart/form-data" method="post" onsubmit={(e) => handleSubmit(e)}>
         {tab() === EForms.custom && <Custom />}
         {tab() === EForms.team && <Team />}
         {tab() === EForms.dontKnow && <DontKnow />}
