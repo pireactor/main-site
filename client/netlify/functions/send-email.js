@@ -47,7 +47,7 @@ const Busboy = require('busboy');
 
 
 exports.handler = async function (event, context) {
-  const fields = await parseMultipartForm(event)
+  // const fields = await parseMultipartForm(event)
   return {
     statusCode: 200,
     body: "ok",
