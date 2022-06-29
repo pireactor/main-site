@@ -1,4 +1,4 @@
-import * as Busboy from "busboy"
+const Busboy = require('busboy');
 
 function parseMultipartForm(event) {
   return new Promise((resolve) => {
