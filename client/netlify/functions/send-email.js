@@ -2,7 +2,7 @@ const parser = require('lambda-multipart-parser');
 const formData = require('form-data');
 const Mailgun = require('mailgun.js');
 
-const mailgun = new Mailgun(formData);
+const mailgun = new Mailgun(parser);
 const mg = mailgun.client({username: 'api', key: process.env.MAILGUN_API_KEY || '24d28a56c41161849195ad8edfbe5ad3-77985560-3a02edb4'});
 
 
@@ -11,6 +11,7 @@ const mg = mailgun.client({username: 'api', key: process.env.MAILGUN_API_KEY || 
 exports.handler = async function (event, context) {
   // const fields = await parseMultipartForm(event)
   const res = await parser.parse(event);
+
   mg.messages.create('sandboxe5bc820059fc4283964d1c37c6911670.mailgun.org', {
     from: "Excited User <mailgun@sandbox-123.mailgun.org>",
     to: ["bolkunatz@gmail.com"],
@@ -20,7 +21,7 @@ exports.handler = async function (event, context) {
     attachment: res,
   })
   .then(msg => console.log(msg)) // logs response data
-  .catch(err => console.error(err)); // logs any error
+  .catch(err => console.error("Ошибка мэйлгана", err)); // logs any error
   return {
     statusCode: 200,
     body: JSON.stringify(res),
