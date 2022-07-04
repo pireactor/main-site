@@ -12,21 +12,18 @@ exports.handler = async function (event, context) {
   // const fields = await parseMultipartForm(event)
   const res = await parser.parse(event);
 
-  mg.messages.create('sandboxe5bc820059fc4283964d1c37c6911670.mailgun.org', {
-    from: "Excited User <mailgun@sandbox-123.mailgun.org>",
-    to: ["bolkunatz@gmail.com"],
-    subject: "Hello",
-    text: "Testing some Mailgun awesomness!",
-    html: "<h1>Testing some Mailgun awesomness!</h1>",
-    attachment: res,
-  })
-  .then(msg => console.log(msg)) // logs response data
-  .catch(err => console.error("Ошибка мэйлгана", err)); // logs any error
-  return {
-    statusCode: 200,
-    body: JSON.stringify(res),
+  return mg.messages.create('sandboxe5bc820059fc4283964d1c37c6911670.mailgun.org', {
+      from: "Excited User <mailgun@sandbox-123.mailgun.org>",
+      to: ["bolkunatz@gmail.com"],
+      subject: "Hello",
+      text: "Testing some Mailgun awesomness!",
+      html: "<h1>Testing some Mailgun awesomness!</h1>",
+      attachment: res,
+    })
+    .then(msg => console.log(msg)) // logs response data
+    .catch(err => console.error("Ошибка мэйлгана", err)); // logs any error
   };
-}
+
 
 
 
