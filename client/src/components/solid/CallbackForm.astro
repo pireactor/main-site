@@ -3,6 +3,7 @@ import FormSection from "../shared/FormSection.astro"
 import { FileInput } from "./FileInput";
 import { Textarea } from "./Textarea";
 import { TextInput } from "./TextInput";
+import { FormSubmit } from "./FormSubmit";
 
 ---
 
@@ -11,19 +12,9 @@ import { TextInput } from "./TextInput";
     <div class="mvp">
       <h2 class="title">Need an MVP?</h2>
       <p class="subtitle">Let's arrange a call where we can discuss your project and determine if you're a good fit.</p>
-      <form>
-        <fieldset>
-          <TextInput label="Name" />
-          <TextInput label="Email" />
-          <TextInput label="Phone number" />
-          <TextInput label="Subject" />
-        </fieldset>
-        <Textarea label="Message (optional)"/>
-        <FileInput />
-        <button>Get a free consultation</button>
-      </form>
-    </div>
-  </FormSection>
+        <FormSubmit client:load />
+      </div>
+    </FormSection>
 </div>
 
 

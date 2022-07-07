@@ -24,16 +24,18 @@ function setClass(id: number) {
 ---
 
 <Section title="Our Services">
-  <ul class="services__list">
-    {services.map(i => (
-    <li class={`services__item ${setClass(i.frontmatter.id)}`}>
-      <a href={`/services/${i.frontmatter.slug}`}>
-        <h3 class="services__title">{i.frontmatter.title}</h3>
-      </a>
-      <p class="services__desc">{i.frontmatter.desc}</p>
-    </li>
-    ))}
-  </ul>
+  <div class="services__wrp">
+    <ul class="services__list">
+      {services.map(i => (
+      <li class={`services__item ${setClass(i.frontmatter.id)}`}>
+        <a href={`/services/${i.frontmatter.slug}`}>
+          <h3 class="services__title">{i.frontmatter.title}</h3>
+        </a>
+        <p class="services__desc">{i.frontmatter.desc}</p>
+      </li>
+      ))}
+    </ul>
+  </div>
 </Section>
 
 <style lang="scss">
@@ -116,5 +118,33 @@ function setClass(id: number) {
   .services__item_wallets {
     background-color: #FC6383;
     background-image: url("/assets/img/main/wallets.svg");
+  }
+
+  @media(max-width: 1023px) {
+    .services__list {
+      display: flex;
+    }
+    
+    .services__wrp {
+      overflow-y: auto;
+      width: 100%;
+    }
+    
+    .services__item {
+      padding: 1rem 1rem 18rem;
+      max-height: 31rem;
+      flex-basis: 30%;
+      flex-shrink: 0;
+      background-size: 90%;
+      background-position: center bottom;
+    }
+
+    .services__title {
+      font-size: 1rem;
+    }
+
+    .services__desc {
+      font-size: 14px;
+    }
   }
 </style>

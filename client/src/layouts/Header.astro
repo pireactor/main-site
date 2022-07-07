@@ -1,7 +1,6 @@
 ---
 import Logo from "../components/Logo.astro";
 import { LangPicker } from "../components/solid/LangPicker";
-import { servicesPaths } from "../enums/servicesPaths";
 import { ServicesModel } from "../models/ServicesModel";
 import Container from "./Container.astro";
 
@@ -9,48 +8,73 @@ const unsortServices = await Astro.glob<ServicesModel>('/public/assets/services/
 const services = unsortServices.sort((a, b) => a.frontmatter.id - b.frontmatter.id);
 
 const path = Astro.canonicalURL.pathname.replaceAll('/', '');
-
-
-
 ---
 
-<header class="header">
+<script>
+  const burgerEl = document.querySelector(".burger");
+  const menuEl = document.querySelector(".js-h-menu");
+  const closeBtnEl = document.querySelector(".js-close")
+  function handleClick() {
+    menuEl.classList.toggle("header__menu_active");
+  }
+
+  burgerEl.addEventListener("click", handleClick)
+  closeBtnEl.addEventListener("click", handleClick)
+
+</script>
+
+<header class="header js-header">
   <Container>
     <div class="header__wrp">
       <Logo />
-      <nav class="header__nav nav">
-        <ul class="nav__list">
-          <li class={`nav__list-item ${path === "about" ? "nav__list-item_active" : ""}`}>
-            <a href="/about" class="nav__link" href="/">About us</a>
-          </li>
-          <li class={`nav__list-item ${path === "work" ? "nav__list-item_active" : ""}`}>
-            <a href="/work" class="nav__link">Work</a>
-          </li>
-          <li class={`nav__list-item nav__list-item_services ${path === "services" ? "nav__list-item_active" : ""}`} tabindex={0}>
-            <a href="/#services" class="nav__link" tabindex={-1}>Services</a>
-            <ul class="nav__submenu submenu">
-              {services.map(i => (
-                <li class="submenu__item">
-                  <a href={`/services/${i.frontmatter.slug}`} class="submenu__link">{i.frontmatter.title}</a>
-                </li>
-              ))}
+        <div class="header__menu js-h-menu">
+          <button type="button" class="header__menu-close-btn js-close" aria-label="close menu"/>
+          <nav class="header__nav nav">
+            <ul class="nav__list">
+              <li class={`nav__list-item ${path==="about" ? "nav__list-item_active" : "" }`}>
+                <a href="/about" class="nav__link" href="/">About us</a>
+              </li>
+              <li class={`nav__list-item ${path==="work" ? "nav__list-item_active" : "" }`}>
+                <a href="/work" class="nav__link">Work</a>
+              </li>
+              <li class={`nav__list-item nav__list-item_services ${path==="services" ? "nav__list-item_active" : "" }`}
+                tabindex={0}>
+                <a href="/#services" class="nav__link" tabindex={-1}>Services</a>
+                <ul class="nav__submenu submenu">
+                  {services.map(i => (
+                  <li class="submenu__item">
+                    <a href={`/services/${i.frontmatter.slug}`} class="submenu__link">{i.frontmatter.title}</a>
+                  </li>
+                  ))}
+                </ul>
+              </li>
             </ul>
-          </li>
-        </ul>
-      </nav>
-      <LangPicker client:load />
-      <a href="/#callback-form" class="header__btn" type="button">Let's talk</a>
+          </nav>
+          <LangPicker client:load />
+          <a href="/#callback-form" class="header__btn" type="button">Let's talk</a>
+      </div>
+
+      <button class="header__burger burger js-burger" aria-label="open nav menu">
+        <div class="burger__line"></div>
+      </button>
     </div>
   </Container>
 </header>
 
+
 <style lang="scss">
+  .header__menu {
+    display: flex;
+    align-items: center;
+    flex-basis: 100%;
+  }
   .header {
     padding-top: 1rem;
     padding-bottom: 1rem;
     padding-left: 1rem;
     margin-bottom: 2.5rem;
     border-bottom: 1px solid var(--color-gray);
+    z-index: 500;
   }
 
   .header__wrp {
@@ -69,11 +93,15 @@ const path = Astro.canonicalURL.pathname.replaceAll('/', '');
   }
 
   .header__nav {
-    margin-right: 10rem;
+    margin: 0 auto;
   }
 
-  .nav__list-item:not(:last-child) {
+  .nav__list-item {
     margin-right: 3.125rem;
+  }
+
+  .nav__list-item:last-child {
+    margin-right: 0;
   }
 
   .nav__list-item_services {
@@ -107,7 +135,7 @@ const path = Astro.canonicalURL.pathname.replaceAll('/', '');
     border: 1px solid var(--color-gray);
     border-radius: 4px;
     background-color: var(--color-lightBlack);
-    transition: opacity 0.3 ease-in-out;
+    transition: opacity 0.3s ease-in-out;
     transform: translateX(200%);
   }
 
@@ -159,8 +187,8 @@ const path = Astro.canonicalURL.pathname.replaceAll('/', '');
 
   .nav__list-item {
     position: relative;
-  } 
-  
+  }
+
   .nav__list-item:before {
     content: "";
     position: absolute;
@@ -170,11 +198,12 @@ const path = Astro.canonicalURL.pathname.replaceAll('/', '');
     bottom: -1rem;
     background-color: #FFFFFF;
     transition: width 0.3s ease-in-out;
-  } 
-  
+  }
+
   .nav__list-item:hover.nav__list-item:before {
     width: 100%;
-  } 
+  }
+
   .nav__list-item_active::after {
     content: "";
     position: absolute;
@@ -183,5 +212,91 @@ const path = Astro.canonicalURL.pathname.replaceAll('/', '');
     left: 25%;
     bottom: -1rem;
     background-color: #FFFFFF;
+  }
+
+  .header__burger {
+    display: none;
+  }
+  
+  .burger {
+    content: url("assets/img/header/menu_btn.svg");
+  }
+
+  .header__menu-close-btn {
+    display: none;
+  }
+
+  @media (max-width: 1279px) {
+    .header {
+      position: sticky;
+      top: 0;
+      background-color: var(--color-bg);
+      margin-bottom: 1rem;
+    }
+    .header__menu {
+      display: none;
+      position: absolute;
+      padding: 4rem 1rem 4rem 2.5rem;
+      padding-top: 4rem;
+      padding-left: 2rem;
+      padding-left: 2rem;
+      right: 0;
+      top: 0;
+      flex-direction: column;
+      border: 1px solid var(--color-gray);
+      border-radius: 8px 0px 0px 8px;
+      height: 90vh;
+      background-color: var(--color-bg);
+      align-items: flex-start;
+    }
+
+    .header__nav {
+      margin: 0;
+      width: 100%;
+      margin-bottom: 2.5rem;
+    }
+    .header__burger {
+      display: flex;
+    }
+
+    .nav__list {
+      flex-direction: column;
+    }
+
+    .nav__list-item {
+      margin-right: 0;
+      padding: 1rem 0;
+      border-bottom: 1px solid var(--color-gray);
+    }
+    .nav__list-item:before {
+    content: none;
+  }
+
+  .nav__list-item_services {
+    background-image: none;
+  }
+
+  .submenu {
+    display: none;
+  }
+
+  .header__menu-close-btn {
+    display: flex;
+    content: url("assets/img/header/close.svg");
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+  }
+
+  .header__menu_active {
+    display: flex;
+  }
+
+  @media (max-width: 1023px) {
+    .header {
+      padding: 0;
+    }
+  }
+
   }
 </style>

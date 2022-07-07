@@ -1,7 +1,6 @@
 ---
 import MainTitle from "../MainTitle.astro";
 import Button from "../shared/Button.astro";
-
 ---
 
 <section class="hero">
@@ -9,22 +8,28 @@ import Button from "../shared/Button.astro";
     <MainTitle redLine="Startup &" title="product catalyzer" />
     <Button title="Boost my project" path="/#callback-form"/>
   </div>
-  <div class="hero__img"></div>
 </section>
 
 <style lang="scss">
-  .hero__img {
-    content: url("/assets/img/main/main.webp");
-  }
 
   .hero {
     display: flex;
     margin-bottom: 10.5rem;
+    background: transparent url("/assets/img/main/main.webp") no-repeat center right;
   }
-
-  .hero__title {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+  
+  @media(max-width: 1279px) {
+    .hero {
+      background-position: center center;
+      background-size: 50%;
+      flex-direction: column;
+      align-items: center;
+    }
+    .hero__title {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
   }
+  
 </style>

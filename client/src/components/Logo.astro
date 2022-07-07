@@ -54,8 +54,8 @@
 
 <style lang="scss">
   .header__logo {
-    margin-right: auto;
     margin-left: 1rem;
+    margin-right: auto;
     display: flex;
     flex-wrap: nowrap;
     align-items: center;
@@ -63,5 +63,15 @@
 
   .logo__img {
     margin-right: 1.25rem;
+  }
+
+  @media(max-width: 1023px) {
+    .header__logo {
+      width: 8rem;
+    }
+    .logo__img {
+      width: 2rem;
+      margin-right: 0.5rem;
+    }
   }
 </style>

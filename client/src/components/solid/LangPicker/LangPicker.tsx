@@ -7,7 +7,7 @@ export function LangPicker() {
   const [lang, setLang] = createSignal(ELangs.us)
   const [isOpen, setIsOpen] = createSignal(false);
   return (
-    <div classList={{[styles.header__langPicker]: true, [styles.langPicker]: true}}>
+    <div class={styles.langPicker}>
       <button type="button" class={styles.langPicker__button} onClick={() => setIsOpen(!isOpen())}>
         {lang() === ELangs.es && <FlagES />}
         {lang() === ELangs.pl && <FlagPL />}

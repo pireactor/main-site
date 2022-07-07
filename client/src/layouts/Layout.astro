@@ -107,10 +107,6 @@ const { title, preloadImg } = Astro.props as Props;
   }
 
   :root {
-    --font-size-base: clamp(1rem, 0.34vw + 0.91rem, 1.19rem);
-    --font-size-lg: clamp(1.2rem, 0.7vw + 1.2rem, 1.5rem);
-    --font-size-xl: clamp(2.44rem, 2.38vw + 1.85rem, 3.75rem);
-
     --color-bg: #111111;
     --color-gray: #C4C4C4;
     --color-black: #111111;
@@ -120,14 +116,15 @@ const { title, preloadImg } = Astro.props as Props;
     --color-active: #B50083;
 
     --btn-fontStack: "Inter", sans-serif;
-    --fontStack: "Plus Jakarta Sans", sans-serif
-  }
+    --fontStack: "Plus Jakarta Sans", sans-serif;
 
+  }
+  
   * {
     margin: 0;
     padding: 0;
   }
-
+  
   html {
     font-family: system-ui, sans-serif;
     font-size: 16px;

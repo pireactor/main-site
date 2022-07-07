@@ -11,7 +11,7 @@ export function Form() {
   }
   function handleSubmit(e: { preventDefault: () => void; currentTarget: HTMLFormElement; }) {
     e.preventDefault();
-    fetch("https://main-pireactor.netlify.app/.netlify/functions/send-email", {
+    fetch("http://localhost:8888/brief/.netlify/functions/send-email", {
       body: new FormData(e.currentTarget),
       method: "POST",
     }).then((res) => console.log(res))

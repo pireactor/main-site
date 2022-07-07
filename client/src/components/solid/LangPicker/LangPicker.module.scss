@@ -37,3 +37,26 @@
   opacity: 1;
   transition: opacity 0.5s ease-in-out;
 }
+
+@media (max-width: 1279px) {
+  .langPicker__button {
+    display: none;
+  }
+
+  .langPicker {
+    margin: 0 auto 2.5rem auto;
+  }
+
+  .langPicker__picker {
+    width: 100%;
+    align-items: center;
+    position: static;
+    opacity: 1;
+    transform: translate(0);
+    border: none;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    background-color: transparent;
+    padding: 0;
+  }
+}

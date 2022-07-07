@@ -1,0 +1,37 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Hero from '../components/main/Hero.astro';
+import About from '../components/main/About.astro';
+import Map from '../components/main/Map.astro';
+import How from '../components/main/How.astro';
+import Services from '../components/main/Services.astro';
+import Technologies from '../components/main/Technologies.astro';
+import CallbackForm from '../components/solid/CallbackForm.astro';
+import Container from '../layouts/Container.astro';
+---
+
+<Layout title="Pireactor" preloadImg="main/main.svg">
+  <Container>
+    <Hero />
+    <About />
+    <Map />
+  </Container>
+  <How />
+  <Container>
+    <div class="services-wrp" id="services">
+      <Services />
+    </div>
+    <Technologies />
+    <div id="callback-form">
+      <CallbackForm />
+    </div>
+  </Container>
+</Layout>
+
+<style lang="scss">
+  
+html {
+  scroll-behavior: smooth;
+}
+  
+</style>

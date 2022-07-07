@@ -1,6 +1,6 @@
 <section class="how-it-goes">
   <h2>How it goes</h2>
-  <ul class="how-it-goes__list how-it-goes__list_first">
+  <ul class="how-it-goes__list">
     <li class="how-it-goes__item how-it-goes__item_planning">
       <h3 class="how-it-goes__title">Planning</h3>
       <p class="how-it-goes__desc">
@@ -22,8 +22,6 @@
         we agree on timelines, run feasibility tests, and finalize the design.
       </p>
     </li>
-  </ul>
-  <ul class="how-it-goes__list how-it-goes__list_second">
     <li class="how-it-goes__item how-it-goes__item_testing">
       <h3 class="how-it-goes__title">Testing</h3>
       <p class="how-it-goes__desc">
@@ -38,8 +36,6 @@
         get hard to work ensuring that your software is as efficient as possible.
       </p>
     </li>
-  </ul>
-  <ul class="how-it-goes__list how-it-goes__list_third">
     <li class="how-it-goes__item how-it-goes__item_deployment">
       <h3 class="how-it-goes__title">Deployment</h3>
       <p class="how-it-goes__desc">
@@ -72,140 +68,91 @@
     flex-wrap: wrap;
     justify-content: space-between;
 
-    &>li {
-      flex-basis: 18.75rem;
-    }
   }
 
   .how-it-goes__list {
-    position: relative;
+    display: flex;
     padding-left: 8.4375rem;
     padding-right: 8.4375rem;
     padding-top: 2rem;
     z-index: 2;
+    background: transparent url("assets/img/main/how.webp") no-repeat;
+    background-size: 100vw 690px;
   }
 
-  .how-it-goes__list_first::before {
-    content: "";
-    position: absolute;
-    width: 75%;
-    height: 1px;
-    background-color: var(--color-gray);
-    top: 0;
-    left: 0;
-  }
-
-  .how-it-goes__list_first::after {
-    content: "";
-    position: absolute;
-    width: 25%;
-    height: calc(100% + 0.5px);
-    right: 0;
-    top: 0;
-    border-top: 1px solid var(--color-gray);
-    border-right: 1px solid var(--color-gray);
-    border-bottom: 1px solid var(--color-gray);
-    transform: translateX(-25%);
-    border-top-right-radius: 50%;
-    border-bottom-right-radius: 50%;
-    z-index: 1;
-    margin-bottom: -2px;
-  }
-
-
-  .how-it-goes__list_second {
-    justify-content: flex-end;
-    padding-top: 1.25rem;
-
-    &>li {
-      flex-basis: 25rem;
-      margin-left: 6.25rem;
-    }
-  }
-
-  .how-it-goes__list_second::after {
-    content: "";
-    position: absolute;
-    width: 45%;
-    height: 1px;
-    background-color: var(--color-gray);
-    top: 1.5px;
-    right: 25%;
-  }
-
-  .how-it-goes__list_second::before {
-    content: "";
-    position: absolute;
-    width: 25%;
-    height: 100%;
-    left: 0;
-    top: 1.5px;
-    border-top: 1px solid var(--color-gray);
-    border-left: 1px solid var(--color-gray);
-    border-bottom: 1px solid var(--color-gray);
-    transform: translateX(25%);
-    border-top-left-radius: 50%;
-    border-bottom-left-radius: 50%;
-    z-index: 1;
-  }
-
-  .how-it-goes__list_third {
-    justify-content: flex-start;
-    padding-top: 1.5rem;
-
-    &>li {
-      margin-left: 6.25rem;
-      flex-basis: 25rem;
-    }
-  }
-
-  .how-it-goes__list_third::after {
-    content: "";
-    position: absolute;
-    width: 75%;
-    height: 1px;
-    background-color: var(--color-gray);
-    top: 2.5px;
-    right: 0;
-  }
 
   .how-it-goes__item {
     padding-top: 2.5rem;
-    margin-bottom: 3.75rem;
+    margin-bottom: 5.75rem;
     position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
-    flex-basis: 30%;
     z-index: 5;
+    flex-basis: 33%;
+
+    p {
+      max-width: 18.125rem;
+    }
   }
 
   .how-it-goes__item::after {
     position: absolute;
+    content: "";
+    width: 90px;
+    height: 90px;
     top: -50%;
     transform: translateY(50%);
+    background-repeat: no-repeat;
+    background-position: center;
   }
 
   .how-it-goes__item_planning::after {
-    content: url("/assets/img/main/planning.svg");
+    background-image: url("/assets/img/main/planning.svg");
   }
+
   .how-it-goes__item_designing::after {
-    content: url("/assets/img/main/designing.svg");
+    background-image: url("/assets/img/main/designing.svg");
   }
+
   .how-it-goes__item_defining::after {
-    content: url("/assets/img/main/defining.svg");
+    background-image: url("/assets/img/main/defining.svg");
   }
+
+  .how-it-goes__item_testing {
+    flex-basis: 50%;
+    margin-bottom: 7rem;
+
+  }
+
   .how-it-goes__item_testing::after {
-    content: url("/assets/img/main/testing.svg");
+    background-image: url("/assets/img/main/testing.svg");
   }
+
+  .how-it-goes__item_building {
+    flex-basis: 50%;
+    margin-bottom: 7rem;
+  }
+
   .how-it-goes__item_building::after {
-    content: url("/assets/img/main/building.svg");
+    background-image: url("/assets/img/main/building.svg");
   }
+
+  .how-it-goes__item_deployment {
+    margin-left: auto;
+  }
+
   .how-it-goes__item_deployment::after {
-    content: url("/assets/img/main/deployment.svg");
+    background-image: url("/assets/img/main/deployment.svg");
   }
+
+
+  .how-it-goes__item_maintenance {
+    flex-basis: 65%;
+  }
+
   .how-it-goes__item_maintenance::after {
-    content: url("/assets/img/main/maintenance.svg");
+    background-image: url("/assets/img/main/maintenance.svg");
   }
 
   .how-it-goes__desc {
@@ -213,5 +160,101 @@
     font-weight: 400;
     font-size: 18px;
     line-height: 160%;
+  }
+
+  @media(max-width: 1023px) {
+    .how-it-goes__list {
+      position: relative;
+      background-image: none;
+      background-size: contain;
+      flex-direction: column;
+      background-position: center;
+      padding-top: 29px;
+      display: grid;
+      grid-template-columns: 1fr;
+      overflow: hidden;
+
+      &::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 85%;
+        top: 25px;
+        left: 0;
+        background: url("assets/img/main/how_mob.webp") no-repeat center;
+      }
+    }
+
+    .how-it-goes__item {
+      flex-basis: 100%;
+      height: 184px;
+      margin-bottom: 0;
+
+      p {
+        max-width: 40%;
+        font-size: 14px;
+      }
+
+    }
+
+    .how-it-goes__item::after {
+      width: 48px;
+      height: 48px;
+      background-size: 100%;
+      top: -3rem;
+    }
+
+    .how-it-goes__item_defining {
+      transform: translateY(-19px);
+    }
+
+    .how-it-goes__item_testing {
+      transform: translateY(-13px);
+    }
+
+    .how-it-goes__item_building {
+      transform: translateY(-6px);
+    }
+
+    .how-it-goes__item_designing {
+      transform: translateY(-17px);
+    }
+
+    .how-it-goes__item_planning::before {
+      content: "";
+      position: absolute;
+      top: -1.45px;
+      left: -50%;
+      height: 2px;
+      width: 100%;
+      background-color: var(--color-gray);
+      filter: brightness(0.3);
+
+      // todo
+
+      // top: 0;
+      // right: -50%;
+      // height: 100%;
+      // width: 100%;
+      // background-repeat: no-repeat;
+      // background-position: center;
+      // background-size: contain;
+      // background-image: url("data:image/svg+xml,%0A%3Csvg width='208' height='239' viewBox='0 0 208 239' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0.165894 1.67279C0.165894 1.67279 71.8676 1.62061 116.848 1.65332C235.756 1.65331 236.535 237.994 116.848 237.994H10.1815' stroke='%23FFFFFF' stroke-width='2'/%3E%3C/svg%3E%0A");
+    }
+
+    .how-it-goes__item_maintenance {
+      transform: translate(6px);
+    }
+
+    .how-it-goes__item_maintenance::before {
+      content: "";
+      position: absolute;
+      top: 4px;
+      right: -50%;
+      height: 2px;
+      width: 100%;
+      background-color: var(--color-gray);
+      filter: brightness(0.3);
+    }
   }
 </style>
