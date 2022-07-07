@@ -1,20 +1,35 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Hero from '../components/main/Hero.astro';
-import About from '../components/main/About.astro';
-import Map from '../components/main/Map.astro';
-import How from '../components/main/How.astro';
-import Services from '../components/main/Services.astro';
-import Technologies from '../components/main/Technologies.astro';
-import CallbackForm from '../components/solid/CallbackForm.astro';
-import Container from '../layouts/Container.astro';
+import About from "../../components/main/About.astro";
+import Hero from "../../components/main/Hero.astro";
+import How from "../../components/main/How.astro";
+import Map from "../../components/main/Map.astro";
+import Services from "../../components/main/Services.astro";
+import Technologies from "../../components/main/Technologies.astro";
+import CallbackForm from "../../components/solid/CallbackForm.astro";
+import Container from "../../layouts/Container.astro";
+import Layout from "../../layouts/Layout.astro";
+import { MainSectionModel } from "../../models/MainSectionModel";
+
+
+const [main] = await Astro.glob<MainSectionModel>("/public/assets/content/es/main/*.md")
+
 ---
 
 <Layout title="Pireactor" preloadImg="main/main.svg">
   <Container>
-    <Hero />
-    <About />
-    <Map />
+    <Hero 
+      redLine="Catalizador"
+      title="de puesta en marcha y producto"
+      path="/es/#callback-form"
+    />
+    <About 
+      counters={main.frontmatter.counters}
+      desc={main.frontmatter.desc}
+      title="Sobre nosotras"
+    />
+    <Map 
+      title="Desarrollamos proyectos para clientes de todo el mundo"
+    />
   </Container>
   <How />
   <Container>

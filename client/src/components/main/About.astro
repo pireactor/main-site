@@ -1,22 +1,28 @@
 ---
 import { Counter } from "../solid/Counter";
+export interface Props {
+  desc: string;
+  counters: Array<{title: string, value: number}>;
+  title: string;
+}
 
+const {desc, counters, title} = Astro.props as Props;
 ---
 
 <section class="about">
-  <h2 class="about__title" aria-label="about"></h2>
+  <h2 class="about__title" aria-label={title}></h2>
   <p class="about__desc">
-    We help clients explore requirements and work out what they really
-    need today and to plan for tomorrow tomorrow. Instead of reiterating
-    every week, we architect space for modular features and functionality
-    expansions. Wepractice discipline to keep all parties on track and avoid scope creep.
-    Only after the core project is complete do we start a new cycle.
+    {desc}
   </p>
   <div class="about__numbers">
-    <Counter title="Projects done" countTo={32} client:load />
+    {counters.map(el => (
+      <Counter title={el.title} countTo={el.value} client:load />
+      
+    ))}
+    <!-- <Counter title="Projects done" countTo={32} client:load />
     <Counter title="Unique Industries" countTo={12} client:load />
     <Counter title="Number of employees" countTo={32} client:load />
-    <Counter title="Years on the market" countTo={12} client:load />
+    <Counter title="Years on the market" countTo={12} client:load /> -->
   </div>
 </section>
 

@@ -1,12 +1,22 @@
 ---
 import MainTitle from "../MainTitle.astro";
 import Button from "../shared/Button.astro";
+
+export interface Props {
+  redLine: string;
+  title: string;
+  path: string;
+}
+const {redLine, title, path} = Astro.props as Props;
 ---
+<script>
+  console.log(window.location.pathname)
+</script>
 
 <section class="hero">
   <div class="hero__title">
-    <MainTitle redLine="Startup &" title="product catalyzer" />
-    <Button title="Boost my project" path="/#callback-form"/>
+    <MainTitle redLine={redLine} title={title} />
+    <Button title="Boost my project" path={path}/>
   </div>
 </section>
 

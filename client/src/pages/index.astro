@@ -8,13 +8,27 @@ import Services from '../components/main/Services.astro';
 import Technologies from '../components/main/Technologies.astro';
 import CallbackForm from '../components/solid/CallbackForm.astro';
 import Container from '../layouts/Container.astro';
+import { MainSectionModel } from '../models/MainSectionModel';
+
+const [main] = await Astro.glob<MainSectionModel>("/public/assets/content/en/main/*.md")
+
 ---
 
 <Layout title="Pireactor" preloadImg="main/main.svg">
   <Container>
-    <Hero />
-    <About />
-    <Map />
+    <Hero 
+      redLine="Startup &"
+      title="product catalyzer"
+      path="#callback-form"
+    />
+    <About 
+      counters={main.frontmatter.counters}
+      desc={main.frontmatter.desc}
+      title="About"
+    />
+    <Map 
+      title="We develop projects for clients from all over the world"
+    />
   </Container>
   <How />
   <Container>

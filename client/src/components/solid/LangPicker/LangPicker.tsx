@@ -1,4 +1,4 @@
-import { createSignal } from "solid-js";
+import { createSignal, onMount } from "solid-js";
 import { ELangs } from "../../../enums/ELangs";
 import { FlagES, FlagPL, FlagRU, FlagTR, FlagUA, FlagUS } from "./Flags";
 import styles from "./LangPicker.module.scss"
@@ -6,6 +6,8 @@ import styles from "./LangPicker.module.scss"
 export function LangPicker() {
   const [lang, setLang] = createSignal(ELangs.us)
   const [isOpen, setIsOpen] = createSignal(false);
+  onMount(() => setLang(window.location.pathname as ELangs))
+  
   return (
     <div class={styles.langPicker}>
       <button type="button" class={styles.langPicker__button} onClick={() => setIsOpen(!isOpen())}>
@@ -17,12 +19,16 @@ export function LangPicker() {
         {lang() === ELangs.us && <FlagUS />}
       </button>
       <div class={styles.langPicker__picker} classList={{[styles.langPicker__picker_show]: isOpen()}}>
-        <FlagES />
+        <a href={ELangs.es}>
+          <FlagES />
+        </a>
         <FlagPL />
         <FlagRU />
         <FlagTR />
         <FlagUA />
-        <FlagUS />
+        <a href={ELangs.us}>
+          <FlagUS />
+        </a>
       </div>
     </div>
   );
