@@ -9,20 +9,6 @@ const services = unsortServices.sort((a, b) => a.frontmatter.id - b.frontmatter.
 
 const path = Astro.canonicalURL.pathname.replaceAll('/', '');
 ---
-
-<script is:inline>
-  const burgerEl = document.querySelector(".burger");
-  const menuEl = document.querySelector(".js-h-menu");
-  const closeBtnEl = document.querySelector(".js-close")
-  function handleClick() {
-    menuEl.classList.toggle("header__menu_active");
-  }
-
-  burgerEl.addEventListener("click", handleClick)
-  closeBtnEl.addEventListener("click", handleClick)
-
-</script>
-
 <header class="header js-header">
   <Container>
     <div class="header__wrp">
@@ -299,3 +285,16 @@ const path = Astro.canonicalURL.pathname.replaceAll('/', '');
 
   }
 </style>
+
+<script is:inline>
+  const burgerEl = document.querySelector(".burger");
+  const menuEl = document.querySelector(".js-h-menu");
+  const closeBtnEl = document.querySelector(".js-close")
+  function handleClick() {
+    menuEl.classList.toggle("header__menu_active");
+  }
+
+  burgerEl.addEventListener("click", handleClick)
+  closeBtnEl.addEventListener("click", handleClick)
+
+</script>
