@@ -55,7 +55,6 @@ const path = Astro.canonicalURL.pathname.replaceAll('/', '');
       </div>
 
       <button class="header__burger burger js-burger" aria-label="open nav menu">
-        <div class="burger__line"></div>
       </button>
     </div>
   </Container>
@@ -219,7 +218,7 @@ const path = Astro.canonicalURL.pathname.replaceAll('/', '');
   }
   
   .burger {
-    content: url("assets/img/header/menu_btn.svg");
+    content: url("/assets/img/header/menu_btn.svg");
   }
 
   .header__menu-close-btn {
@@ -282,7 +281,7 @@ const path = Astro.canonicalURL.pathname.replaceAll('/', '');
 
   .header__menu-close-btn {
     display: flex;
-    content: url("assets/img/header/close.svg");
+    content: url("/assets/img/header/close.svg");
     position: absolute;
     right: 1rem;
     top: 1rem;
