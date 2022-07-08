@@ -10,7 +10,7 @@ const services = unsortServices.sort((a, b) => a.frontmatter.id - b.frontmatter.
 const path = Astro.canonicalURL.pathname.replaceAll('/', '');
 ---
 
-<script>
+<script is:inline>
   const burgerEl = document.querySelector(".burger");
   const menuEl = document.querySelector(".js-h-menu");
   const closeBtnEl = document.querySelector(".js-close")
