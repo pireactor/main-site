@@ -17,18 +17,14 @@ const {desc, counters, title} = Astro.props as Props;
   <div class="about__numbers">
     {counters.map(el => (
       <Counter title={el.title} countTo={el.value} client:load />
-      
     ))}
-    <!-- <Counter title="Projects done" countTo={32} client:load />
-    <Counter title="Unique Industries" countTo={12} client:load />
-    <Counter title="Number of employees" countTo={32} client:load />
-    <Counter title="Years on the market" countTo={12} client:load /> -->
   </div>
 </section>
 
 <style lang="scss">
   .about__title {
     appearance: none;
+    margin: 0;
   }
 
   .about {
@@ -51,6 +47,7 @@ const {desc, counters, title} = Astro.props as Props;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     gap: 2.625rem;
+    align-items: end;
   }
 
   @media(max-width: 1023px) {
@@ -59,4 +56,18 @@ const {desc, counters, title} = Astro.props as Props;
       padding: 0 2.5rem;
     }
   }
+
+  
+  @media(max-width: 767px) {
+
+    .about {
+      margin-bottom: 9.5rem;
+    }
+    .about__desc {
+      font-size: 14px;
+      margin-bottom: 1.75rem;
+      margin-right: 0;
+    }
+  }
+
 </style>

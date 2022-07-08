@@ -9,15 +9,9 @@ export interface Props {
 }
 const {redLine, title, path} = Astro.props as Props;
 ---
-<script>
-  console.log(window.location.pathname)
-</script>
-
 <section class="hero">
-  <div class="hero__title">
-    <MainTitle redLine={redLine} title={title} />
-    <Button title="Boost my project" path={path}/>
-  </div>
+  <MainTitle redLine={redLine} title={title} />
+  <Button title="Boost my project" path={path}/>
 </section>
 
 <style lang="scss">
@@ -26,19 +20,36 @@ const {redLine, title, path} = Astro.props as Props;
     display: flex;
     margin-bottom: 10.5rem;
     background: transparent url("/assets/img/main/main.webp") no-repeat center right;
+    flex-direction: column;
   }
   
   @media(max-width: 1279px) {
     .hero {
       background-position: center center;
-      background-size: 50%;
+      background-size: contain;
       flex-direction: column;
       align-items: center;
+      height: calc(100vh - 10rem);
     }
-    .hero__title {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
+  }
+  @media(max-width: 1023px) {
+    .hero {
+      background-size: 35vh;
+      background-position-y: 100%;
+      max-height: 35rem;
+    }
+  }
+
+  @media(max-width: 767px) {
+    .hero {
+      margin-bottom: 10.5rem;
+      height: auto;
+    }
+  }
+  @media(max-width: 1023px) and (orientation: landscape) {
+    .hero {
+      background: none;
+      height: 20vh;
     }
   }
   

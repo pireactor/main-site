@@ -72,8 +72,8 @@
 
   .how-it-goes__list {
     display: flex;
-    padding-left: 8.4375rem;
-    padding-right: 8.4375rem;
+    padding-right: 7rem;
+    padding-top: 2rem;
     padding-top: 2rem;
     z-index: 2;
     background: transparent url("/assets/img/main/how.webp") no-repeat;
@@ -191,7 +191,7 @@
       margin-bottom: 0;
 
       p {
-        max-width: 40%;
+        max-width: 55%;
         font-size: 14px;
       }
 
@@ -255,6 +255,23 @@
       width: 100%;
       background-color: var(--color-gray);
       filter: brightness(0.3);
+    }
+  }
+
+  @media(max-width: 1023px) {
+    .how-it-goes__list {
+      padding-right: 0;
+    }
+
+    .how-it-goes__item {
+      width: 100%;
+      p {
+        max-width: 16.25rem;
+      }
+    }
+
+    h2 {
+      font-size: 22px;
     }
   }
 </style>

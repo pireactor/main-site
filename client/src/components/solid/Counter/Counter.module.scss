@@ -21,3 +21,18 @@
 .styles.counter__count_format {
   margin-right: 1rem;
 }
+
+@media(max-width: 767px) {
+  .counter {
+    flex-basis: 45%;
+  }
+
+  .counter__title {
+    font-size: 15px;
+    white-space: normal;
+  }
+
+  .counter__count {
+    font-size: 48px;
+  }
+}

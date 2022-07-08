@@ -29,4 +29,13 @@ const {title, path} = Astro.props as Props;
   a:hover {
     background-color: var(--color-hover);
   }
+
+  @media(max-width: 767px) {
+    a {
+      width: 12.5rem;
+      padding: 1rem 0;
+      font-size: 13px;
+      border-radius: 5px;
+    }
+  }
 </style>

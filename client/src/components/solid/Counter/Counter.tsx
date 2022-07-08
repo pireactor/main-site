@@ -1,4 +1,4 @@
-import { createSignal, onCleanup, onMount, Show } from "solid-js";
+import { createSignal, onMount } from "solid-js";
 import { TFormat } from "../../../models/ProjectModel";
 import styles from "./Counter.module.scss"
 

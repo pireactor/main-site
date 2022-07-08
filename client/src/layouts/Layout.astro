@@ -185,4 +185,10 @@ const { title, preloadImg } = Astro.props as Props;
     margin: 0;
     border: none;
   }
+
+  @media (max-width: 767) {
+    :global(h2) {
+    font-size: 22px;
+  }
+  }
 </style>

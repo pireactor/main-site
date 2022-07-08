@@ -114,4 +114,18 @@ import Container from "./Container.astro";
       margin-right: 0;
     }
   }
+
+  @media (max-width: 1023px) {
+    .footer__footer {
+      flex-direction: column;
+
+      small, .footer__locations {
+        margin-bottom: 1.5rem;
+      }
+
+      .footer__socials {
+        margin-top: 1.5rem;
+      }
+    }
+  }
 </style>
