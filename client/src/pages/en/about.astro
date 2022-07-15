@@ -6,7 +6,7 @@ import Section from "../../components/shared/Section.astro";
 import { Counter } from "../../components/solid/Counter";
 import Container from "../../layouts/Container.astro";
 import Layout from "../../layouts/Layout.astro";
-import { MainSectionModel } from "../../models/MainSectionModel";
+import { ContentModel } from "../../models/ContentModel";
 
 export interface LeadsFrontmatter {
   desc: string;
@@ -20,7 +20,7 @@ export interface LeadsFrontmatter {
 
 const leads = await Astro.glob<LeadsFrontmatter>('/public/assets/leads/en/*.md');
 const sortLeads = leads.sort((a, b) => a.frontmatter.id - b.frontmatter.id);
-const [content] = await Astro.glob<MainSectionModel>("/public/assets/content/en/*.md");
+const [content] = await Astro.glob<ContentModel>("/public/assets/content/en/*.md");
 
 ---
 

@@ -7,47 +7,10 @@ import How from '../../components/main/How.astro';
 import Services from '../../components/main/Services.astro';
 import Technologies from '../../components/main/Technologies.astro';
 import Container from '../../layouts/Container.astro';
-import { MainSectionModel } from '../../models/MainSectionModel';
 import CallbackForm from '../../components/shared/CallbackForm.astro';
+import { ContentModel } from '../../models/ContentModel';
 
-const [main] = await Astro.glob<MainSectionModel>("/public/assets/content/en/main/*.md");
+const [main] = await Astro.glob<ContentModel>("/public/assets/content/en/main/*.md");
 const path = Astro.canonicalURL.pathname as string;
 
 ---
-
-<Layout title="Pireactor" preloadImg="main/main.svg">
-  <Container>
-    {path}
-    <Hero 
-      redLine="Startup &"
-      title="product catalyzer"
-      path={`${path}#callback-form`}
-    />
-    <About 
-      counters={main.frontmatter.counters}
-      desc={main.frontmatter.desc}
-      title="About"
-    />
-    <Map 
-      title="We develop projects for clients from all over the world"
-    />
-  </Container>
-  <How />
-  <Container>
-    <div class="services-wrp" id="services">
-      <Services />
-    </div>
-    <Technologies />
-    <div id="callback-form">
-      <CallbackForm />
-    </div>
-  </Container>
-</Layout>
-
-<style lang="scss">
-  
-html {
-  scroll-behavior: smooth;
-}
-  
-</style>
