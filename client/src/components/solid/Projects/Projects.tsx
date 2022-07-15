@@ -1,4 +1,5 @@
 import { createEffect, createSignal, onMount } from "solid-js";
+import { ELangs } from "../../../enums/ELangs";
 import { ETags } from "../../../enums/ETags";
 import styles from "./Projects.module.scss";
 
@@ -18,6 +19,7 @@ interface IProjectsProps {
   servicesNames: Array<{name: ETags}>
   allBtnTitle: string;
   learnMoreText: string;
+  langHref: ELangs;
 }
 
 
@@ -95,7 +97,7 @@ export function Projects(props: IProjectsProps) {
 
               }
               <div class={styles.item__header}>
-                <a href={`/work/${i.slug}`} class={styles.item__link}>
+                <a href={`${props.langHref}/work/${i.slug}`} class={styles.item__link}>
                   <h3>{i.title}</h3>
                 </a>
                 <div class={styles.list__countsWrp}>
@@ -112,7 +114,7 @@ export function Projects(props: IProjectsProps) {
                 }
               </ul>
               <p class={styles.item__desc}>{i.desc}</p>
-              <a class={styles.item__link_mob} href={`/work/${i.slug}`}>{props.learnMoreText}</a>
+              <a class={styles.item__link_mob} href={`${props.langHref}/work/${i.slug}`}>{props.learnMoreText}</a>
             </li>
           ))}
         </ul>

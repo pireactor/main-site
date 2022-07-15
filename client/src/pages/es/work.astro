@@ -23,17 +23,17 @@ const projectsRaw = await Astro.glob<ProjectModel>('/public/assets/projects/es/*
 })
 
 const url = Astro.request.url
-const services = await Astro.glob<ServicesModel>('/public/assets/services/es/*.md');
+const services = await Astro.glob<ServicesModel>('/public/assets/services/en/*.md');
 const servicesNames = services.map(i => ({
   name: i.frontmatter.title
 }))
 
 ---
-<Layout title="Portfolio"  lang="en">
+<Layout title="Portfolio" lang="es">
   <Container>
     <Breadcrums currentPath="Portfolio" />
     <section class="hero">
-        <MainTitle redLine="Explorar" title="nuestros Trabajos" />
+        <MainTitle redLine="Explore" title="our Works" />
         <p class="hero__desc">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tempor vehicula enim sit integer scelerisque nunc
           potenti. Elementum, nunc, arcu suspendisse platea quis et velit venenatis urna. Non bibendum integer quam
@@ -45,9 +45,9 @@ const servicesNames = services.map(i => ({
       servicesNames={servicesNames} 
       projects={projects} 
       url={url} 
-      allBtnTitle="Todos los proyectos" 
-      learnMoreText="Más información"
-      langHref={ELangs.es}
+      allBtnTitle="All projects" 
+      learnMoreText="Learn more"
+      langHref={ELangs.en}
       />
   </Container>
 </Layout>

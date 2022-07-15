@@ -31,7 +31,7 @@ const props = Astro.props as ServicesModel;
 const uri = encodeURI(`/en/work/?${props.title}`)
 ---
 
-<Layout title={props.title} lang="en">
+<Layout title={props.title}>
   <Container>
     <section class="hero">
         <MainTitle redLine={props.title} />

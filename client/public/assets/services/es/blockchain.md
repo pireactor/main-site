@@ -2,6 +2,10 @@
 id: 4
 slug: "blockchain"
 title: "Blockchain"
+titleDesc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo sint dicta nihil fugit deserunt repudiandae ullam inventore assumenda molestiae? Exercitationem quidem autem voluptate repudiandae dolorum nihil voluptas impedit. Vero, enim."
+heroBtn: "Boost my project"
+viewBtn: "View projects"
+aboutTiltle: "About"
 desc: "Embrace digital transactions by harnessing [pi|reactor]'s strategic coin development services to foster your business growth. Our globalized experts craft intelligent strategies around centered on core use cases and implementation. We have real-world experience delivering comprehensive offerings from ideation and coin development, to ICO and marketing for clients across all industries."
 values: [
   {

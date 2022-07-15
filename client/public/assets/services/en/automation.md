@@ -1,8 +1,12 @@
 ---
-id: 5
-slug: "wallets-and-exchanges"
-title: "Wallets and Exchanges"
-desc: "Our strategically designed services cater to your neesd, whether centralized, decentralized or P2P. Multicoin wallets are key to securely storing the full spectrum of crypto assets. We offer turnkey best practices to add extra layers of security to any exchange or app, using industry standard features like 2FA, multisig support and biometric authentication."
+id: 3
+slug: "automation"
+title: "Automation"
+titleDesc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo sint dicta nihil fugit deserunt repudiandae ullam inventore assumenda molestiae? Exercitationem quidem autem voluptate repudiandae dolorum nihil voluptas impedit. Vero, enim."
+heroBtn: "Boost my project"
+viewBtn: "View projects"
+aboutTiltle: "About"
+desc: "Expand your data engineering with AI augmented and RPA driven approaches. With dozens of projects behind us, we build scalable, efficient operations and drive powerful growth. Replace outdated manual processes with the smarter reusable algorithms, artificial intelligence, and BOTS."
 values: [
   {
     name: "Projects done",
@@ -12,9 +16,7 @@ values: [
     name: "Unique Industries",
     value: 12
   },
-]
-
-articles: [
+]articles: [
   {
     title: Section title 1,
     img: http://mywishlist.ru/pic/i/wish/300x300/007/917/281.png,
@@ -35,8 +37,6 @@ Interdum sit risus sapien habitant in. Adipiscing nisl sagittis, proin vivamus t
   },
 ]
 
+
+
 ---
-
-
-
-

@@ -1,6 +1,6 @@
 export enum ELangs {
   ua = "/ua",
-  us = "/",
+  en = "/en",
   tr = "/tr",
   pl = "/pl",
   ru = "/ru",

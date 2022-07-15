@@ -2,6 +2,7 @@
 lang: "en"
 title: "Pireactor"
 description: "Global Resource Solutions"
+href: "en"
 
 nav: {
   about: "About us",
@@ -93,5 +94,53 @@ counters: [
     title: "Years on the market" 
   },
 ]
+
+howSection: {
+  title: How it goes,
+  list: [
+    {
+      title: Planning,
+      desc: "Our team examines your requirements and expectations, takes account
+        of your needs, and creates a preliminary plan for your approval.",
+      class: Planning
+    },
+    {
+      title: Designing,
+      desc: "Everything from an efficient framework to an easy-to-use interface is drawn up,
+        examined, evaluated, and approved during the design phase.",
+        class: Designing
+    },
+    {
+      title: Defining,
+      desc: "We run due diligence checks, we have you approve features,
+        we agree on timelines, run feasibility tests, and finalize the design.",
+        class: Defining
+    },
+    {
+      title: Testing,
+      desc: "We apply all kinds of tests to both check the function of the software
+        and test its security. We follow test-driven development.",
+        class: Testing
+    },
+    {
+      title: Building,
+      desc: "Our coders, graphic designers, and development management team
+        get hard to work ensuring that your software is as efficient as possible.",
+        class: Building
+    },
+    {
+      title: Deployment,
+      desc: "With your approval, the software is delivered to the environment you need.
+        All rights to the custom solution are transferred to you.",
+      class: Deployment
+    },
+    {
+      title: Maintenance,
+      desc: "We work to ensure all maintenance can be done easily by your own staff,
+        but we also offer ongoing maintenance for highly complex and/or larger programs.",
+      class: Maintenance
+    }
+  ]
+}
 
 ---

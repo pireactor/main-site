@@ -1,7 +1,7 @@
 ---
 import { ServicesModel } from "../../models/ServicesModel";
 import Section from "../shared/Section.astro";
-const unsortServices = await Astro.glob<ServicesModel>('/public/assets/services/*.md');
+const unsortServices = await Astro.glob<ServicesModel>('/public/assets/services/en/*.md');
 const services = unsortServices.sort((a, b) => a.frontmatter.id - b.frontmatter.id);
 
 function setClass(id: number) {

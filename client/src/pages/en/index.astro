@@ -15,7 +15,7 @@ const path = Astro.canonicalURL.pathname;
 
 ---
 
-<Layout title={content.frontmatter.title}>
+<Layout title={content.frontmatter.title} lang="en">
   <Container>
     <Hero 
       redLine={content.frontmatter?.index.hero.redline}
@@ -32,7 +32,7 @@ const path = Astro.canonicalURL.pathname;
       title={content.frontmatter.index.mapTitle}
     />
   </Container>
-  <How />
+  <How content={content.frontmatter.howSection}/>
   <Container>
     <div class="services-wrp" id="services">
       <Services />

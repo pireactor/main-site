@@ -1,15 +1,19 @@
 ---
-id: 1
-slug: "global-strategy"
-title: "Global Strategy"
-desc: "Powered by worldclass doers familiar with the bleeding edge, we help businesses achieve better business outcomes with honesty. Analyzing your usecase, we will choose the best technology, not the most popular."
+id: 3
+slug: "automation"
+title: "Automatización"
+titleDesc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo sint dicta nihil fugit deserunt repudiandae ullam inventore assumenda molestiae? Exercitationem quidem autem voluptate repudiandae dolorum nihil voluptas impedit. Vero, enim."
+heroBtn: "Impulsa mi proyecto"
+viewBtn: "Ver proyectos"
+aboutTiltle: "Sobre"
+desc: "Por encima de todo, nos enorgullecemos de documentar claramente la lógica y los procesos de su negocio para crear soluciones que aumenten la productividad o automatizarlas por completo. A continuación, creamos la arquitectura más práctica y ampliable para sus casos de uso únicos, lo que permite una implementación rápida y limpia."
 values: [
   {
-    name: "Projects done",
+    name: "Proyectos realizados",
     value: 32
   },
   {
-    name: "Unique Industries",
+    name: "Industrias Únicas",
     value: 12
   },
 ]
@@ -35,7 +39,6 @@ Interdum sit risus sapien habitant in. Adipiscing nisl sagittis, proin vivamus t
   },
 ]
 
+
+
 ---
-
-
-

@@ -10,7 +10,44 @@ import Container from '../../layouts/Container.astro';
 import CallbackForm from '../../components/shared/CallbackForm.astro';
 import { ContentModel } from '../../models/ContentModel';
 
-const [main] = await Astro.glob<ContentModel>("/public/assets/content/en/main/*.md");
-const path = Astro.canonicalURL.pathname as string;
+const [content] = await Astro.glob<ContentModel>("/public/assets/content/es/*.md");
+const path = Astro.canonicalURL.pathname;
 
 ---
+
+<Layout title={content.frontmatter.title} lang="es">
+  <Container>
+    <Hero 
+      redLine={content.frontmatter?.index.hero.redline}
+      title={content.frontmatter.index.hero.title}
+      path="#callback-form"
+      btnText={content.frontmatter.index.hero.btnText}
+    />
+    <About 
+      counters={content.frontmatter.counters}
+      desc={content.frontmatter.index.desc}
+      title="About"
+    />
+    <Map 
+      title={content.frontmatter.index.mapTitle}
+    />
+  </Container>
+  <How content={content.frontmatter.howSection}/>
+  <Container>
+    <div class="services-wrp" id="services">
+      <Services />
+    </div>
+    <Technologies />
+    <div id="callback-form">
+      <CallbackForm />
+    </div>
+  </Container>
+</Layout>
+
+<style lang="scss">
+  
+html {
+  scroll-behavior: smooth;
+}
+  
+</style>

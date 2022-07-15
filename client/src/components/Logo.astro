@@ -1,4 +1,13 @@
-<a href="/" class="header__logo logo">
+---
+
+export interface Props {
+  langHref: string;
+}
+const {langHref} = Astro.props as Props;
+---
+
+
+<a href={"/" + langHref} class="header__logo logo" aria-label="Logo">
   <svg class="logo__img" width="36" height="64" viewBox="0 0 36 64" fill="none" xmlns="http://www.w3.org/2000/svg">
     <rect width="27.4291" height="42.2732" rx="5" transform="matrix(0.867831 0.49686 3.77346e-05 1 0.458984 7.2851)"
       fill="url(#paint0_linear_510_685)" />
