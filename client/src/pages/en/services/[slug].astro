@@ -1,11 +1,10 @@
 ---
-import MainTitle from "../../components/MainTitle.astro";
-import Button from "../../components/shared/Button.astro";
-import { Counter } from "../../components/solid/Counter";
-import { ETags } from "../../enums/ETags";
-import Container from "../../layouts/Container.astro";
-import Layout from "../../layouts/Layout.astro";
-import { ServicesModel } from "../../models/ServicesModel";
+import MainTitle from "../../../components/MainTitle.astro";
+import Button from "../../../components/shared/Button.astro";
+import { Counter } from "../../../components/solid/Counter";
+import Container from "../../../layouts/Container.astro";
+import Layout from "../../../layouts/Layout.astro";
+import { ServicesModel } from "../../../models/ServicesModel";
 
 export async function getStaticPaths() {
   const services = await Astro.glob<ServicesModel>('/public/assets/services/*.md');
@@ -32,7 +31,6 @@ const uri = encodeURI(`/work/?${props.title}`)
 <Layout title={props.title}>
   <Container>
     <section class="hero">
-      <div class="hero__title">
         <MainTitle redLine={props.title} />
         <p>
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo sint dicta nihil fugit deserunt repudiandae
@@ -40,8 +38,6 @@ const uri = encodeURI(`/work/?${props.title}`)
           impedit. Vero, enim.
         </p>
         <Button title="Boost my project" path="/#callback-form"/>
-      </div>
-      <div class="hero__img"></div>
     </section>
 
     <section class="desc">
@@ -70,24 +66,23 @@ const uri = encodeURI(`/work/?${props.title}`)
 </Layout>
 
 <style lang="scss">
-  .hero__img {
-    content: url("/assets/img/main/main.webp");
+
+.hero {
+    display: flex;
+    margin-bottom: 10.5rem;
+    background: transparent url("/assets/img/main/main.webp") no-repeat center right;
+    flex-direction: column;
+    background-size: contain;
   }
 
   .hero {
     display: flex;
     margin-bottom: 10.5rem;
   }
-
-  .hero__title {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-
     p {
       margin-bottom: 3rem;
+      max-width: 500px;
     }
-  }
 
   .desc {
     margin-bottom: 10rem;
@@ -160,5 +155,47 @@ const uri = encodeURI(`/work/?${props.title}`)
   .article__view {
     display: flex;
     justify-content: center;
+  }
+
+  @media(max-width: 1279px) {
+    .hero {
+      background-position: center center;
+      background-size: contain;
+      flex-direction: column;
+      align-items: center;
+      min-height: 75vh;
+      background-size: 35vh;
+      background-position-y: 50%;
+    }
+  }
+  @media(max-width: 1023px) {
+
+    .article__wrp {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      width: 100%;
+    }
+
+    .article__desc {
+      flex-basis: 100%;
+    }
+    .desc__wrp {
+      flex-direction: column;
+      p {
+        margin: 2rem 0;
+      }
+    }
+  }
+  
+  @media(max-width: 767px) {
+    .hero {
+      margin-bottom: 5rem;
+      height: auto;
+      background-position: center calc(50% - 4rem);
+      // background-size: 15vh;
+    }
   }
 </style>

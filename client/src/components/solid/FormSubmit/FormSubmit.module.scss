@@ -1,0 +1,62 @@
+.form__wrp {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  margin-bottom: 3rem;
+}
+
+.form__SubmitBtn {
+  display: block;
+  margin: 1rem auto;
+  background-color: #ff35c7;
+  border: none;
+  padding: 25px 60px;
+  font-family: var(--btn-fontStack);
+  font-weight: 700;
+  font-size: 18px;
+  color: #ffffff;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+  white-space: nowrap;
+}
+
+.form__SubmitBtn:hover {
+  background-color: var(--color-hover);
+  transition: background 0.3s ease-in-out;
+}
+
+.form__SubmitBtn:active {
+  background-color: var(--color-active);
+}
+
+.hiddenInput {
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+
+.error {
+  text-align: center;
+  color: var(--color-active);
+}
+
+.success {
+  text-align: center;
+  color: var(--color-active);
+}
+
+@media (max-width: 1022px) {
+  .form__wrp {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .form__SubmitBtn {
+    width: 12.5rem;
+    padding: 1rem 0;
+    font-size: 13px;
+    border-radius: 5px;
+  }
+}

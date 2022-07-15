@@ -1,12 +1,11 @@
 ---
-import MainTitle from "../components/MainTitle.astro";
-import Breadcrums from "../components/shared/Breadcrums.astro";
-import { Projects } from "../components/solid/Projects";
-import { ETags } from "../enums/ETags";
-import Container from "../layouts/Container.astro";
-import Layout from "../layouts/Layout.astro";
-import { ProjectModel } from "../models/ProjectModel";
-import { ServicesModel } from "../models/ServicesModel";
+import MainTitle from "../../components/MainTitle.astro";
+import Breadcrums from "../../components/shared/Breadcrums.astro";
+import { Projects } from "../../components/solid/Projects";
+import Container from "../../layouts/Container.astro";
+import Layout from "../../layouts/Layout.astro";
+import { ProjectModel } from "../../models/ProjectModel";
+import { ServicesModel } from "../../models/ServicesModel";
 
 const projectsRaw = await Astro.glob<ProjectModel>('/public/assets/projects/*.md');
   const projects = projectsRaw.map(i => {
@@ -29,43 +28,64 @@ const servicesNames = services.map(i => ({
 }))
 
 ---
-<Layout title="Portfolio" preloadImg="works/star.svg">
+<Layout title="Portfolio">
   <Container>
     <Breadcrums currentPath="Portfolio" />
     <section class="hero">
-      <div class="hero__title">
         <MainTitle redLine="Explore" title="our Works" />
-        <p class="about__desc">
+        <p class="hero__desc">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tempor vehicula enim sit integer scelerisque nunc
           potenti. Elementum, nunc, arcu suspendisse platea quis et velit venenatis urna. Non bibendum integer quam
           amet.
         </p>
-      </div>
-      <div class="hero__img"></div>
     </section>
-    <Projects client:load servicesNames={servicesNames} projects={projects} url={url}/>
+    <Projects client:load servicesNames={servicesNames} projects={projects} url={url} allBtnTitle="All projects" learnMoreText="Learn more"/>
   </Container>
 </Layout>
 
 <style>
-    .hero__img {
+    .hero {
+    display: flex;
+    margin-bottom: 10rem;
+    flex-direction: column;
+    background: url("/assets/img/works/star.svg") no-repeat center right / 40vw;
+  }
+  .hero__img {
     content: url("/assets/img/works/star.svg");
   }
-
+  
   .hero {
     display: flex;
     margin-bottom: 10rem;
   }
-
+  
   .hero__title {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
   }
-
-  .about__desc {
+  
+  .hero__desc {
     font-weight: 700;
     font-size: 24px;
     line-height: 160%;
+    max-width: 500px;
+  }
+  @media(max-width: 1279px) {
+    .hero {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10rem;
+      flex-direction: column;
+      padding-bottom: 40vw;
+      background: url("/assets/img/works/star.svg") no-repeat center bottom / 40vw;
+    }
+    
+  }
+
+  @media(max-width: 767px) {
+    .hero__desc {
+      font-size: 14px;
+    }
   }
 </style>

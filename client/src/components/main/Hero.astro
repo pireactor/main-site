@@ -6,12 +6,15 @@ export interface Props {
   redLine: string;
   title: string;
   path: string;
+  btnText: string;
 }
-const {redLine, title, path} = Astro.props as Props;
+const {redLine, title, path, btnText} = Astro.props as Props;
 ---
 <section class="hero">
   <MainTitle redLine={redLine} title={title} />
-  <Button title="Boost my project" path={path}/>
+  <div class="btn-wrp">
+    <Button title={btnText} path={path}/>
+  </div>
 </section>
 
 <style lang="scss">
@@ -25,31 +28,31 @@ const {redLine, title, path} = Astro.props as Props;
   
   @media(max-width: 1279px) {
     .hero {
-      background-position: center center;
+      background-position: center bottom;
       background-size: contain;
       flex-direction: column;
       align-items: center;
-      height: calc(100vh - 10rem);
+      min-height: 75vh;
     }
   }
   @media(max-width: 1023px) {
     .hero {
       background-size: 35vh;
-      background-position-y: 100%;
-      max-height: 35rem;
+      background-position-y: 50%;
     }
   }
-
+  
   @media(max-width: 767px) {
     .hero {
-      margin-bottom: 10.5rem;
+      margin-bottom: 5rem;
       height: auto;
+      background-position: center calc(100% - 4rem);
+      // background-size: 15vh;
     }
   }
   @media(max-width: 1023px) and (orientation: landscape) {
     .hero {
-      background: none;
-      height: 20vh;
+      // background-size: 45vh;
     }
   }
   

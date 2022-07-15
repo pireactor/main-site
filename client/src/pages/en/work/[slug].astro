@@ -1,11 +1,11 @@
 ---
-import Section from "../../components/shared/Section.astro";
-import CallbackForm from "../../components/solid/CallbackForm.astro";
-import { Counter } from "../../components/solid/Counter";
-import { EPhases } from "../../enums/EPhases";
-import Container from "../../layouts/Container.astro";
-import Layout from "../../layouts/Layout.astro"
-import { ProjectModel } from "../../models/ProjectModel";
+import CallbackForm from "../../../components/shared/CallbackForm.astro";
+import Section from "../../../components/shared/Section.astro";
+import { Counter } from "../../../components/solid/Counter";
+import { EPhases } from "../../../enums/EPhases";
+import Container from "../../../layouts/Container.astro";
+import Layout from "../../../layouts/Layout.astro"
+import { ProjectModel } from "../../../models/ProjectModel";
 
 export async function getStaticPaths() {
   const projects = await Astro.glob<ProjectModel>('/public/assets/projects/*.md');
@@ -72,7 +72,6 @@ function phasesClass(item: EPhases) {
         {props.result.map(i => (
           <Counter client:load countTo={i.value} title={i.name} format={i.format} />
         ))}
-
       </div>
     </Section>
     <CallbackForm />
@@ -83,7 +82,6 @@ function phasesClass(item: EPhases) {
   :root {
     --url: url("https://via.placeholder.com/1000/000000/808080?text=NoImage");
   }
-
   .hero {
     display: flex;
     align-items: center;
@@ -93,6 +91,12 @@ function phasesClass(item: EPhases) {
     background-size: contain;
     border-radius: 20px;
     margin-bottom: 10rem;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  h1 {
+    text-align: center;
   }
 
   h2 {
@@ -174,5 +178,77 @@ function phasesClass(item: EPhases) {
   .counter {
     display: flex;
     justify-content: space-between;
+  }
+
+  @media(max-width: 1022px) {
+
+    h1 {
+      font-size: 22px;
+    }
+
+    .hero {
+      margin-bottom: 0;
+    }
+    .stages__list {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .stages__item {
+      width: 100%;
+      margin-bottom: 2rem;
+    }
+
+    .stages__title::before {
+      bottom: 0;
+      left: 5vw;
+      width: 20px;
+      height: 20px;
+    }
+    .stages__title::after {
+      content: none;
+    }
+
+    .stages__title {
+      margin-bottom: 0.5rem;
+      padding-bottom: 0.5rem;
+      white-space: normal;
+      font-size: 15px;
+    }
+
+    .stages__period {
+      font-size: 14px;
+      text-align: end;
+    }
+
+    .stages__list {
+      position: relative;
+    }
+
+    .stages__list::before {
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 100%;
+    top: 0;
+    left: 5vw;
+    background-image: linear-gradient(to top, transparent 50%, #FF35C7 50%);
+    background-position: top;
+    background-size: 2px 15px;
+    background-repeat: repeat-y;
+    }
+
+    .solution {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .counter {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
   }
 </style>

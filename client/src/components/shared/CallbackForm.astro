@@ -1,9 +1,6 @@
 ---
-import FormSection from "../shared/FormSection.astro"
-import { FileInput } from "./FileInput";
-import { Textarea } from "./Textarea";
-import { TextInput } from "./TextInput";
-import { FormSubmit } from "./FormSubmit";
+import { FormSubmit } from "../solid/FormSubmit";
+import FormSection from "./FormSection.astro";
 
 ---
 
@@ -12,7 +9,7 @@ import { FormSubmit } from "./FormSubmit";
     <div class="mvp">
       <h2 class="title">Need an MVP?</h2>
       <p class="subtitle">Let's arrange a call where we can discuss your project and determine if you're a good fit.</p>
-        <FormSubmit client:load />
+          <FormSubmit client:load />
       </div>
     </FormSection>
 </div>
@@ -73,5 +70,11 @@ import { FormSubmit } from "./FormSubmit";
     column-gap: 2.5rem;
     row-gap: 1.875rem;
     margin-bottom: 1.875rem;
+  }
+
+  @media (max-width: 767px) {
+    .mvp {
+      padding: 1.5rem;
+    }
   }
 </style>

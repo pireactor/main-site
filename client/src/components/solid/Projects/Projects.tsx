@@ -16,6 +16,8 @@ interface IProjectsProps {
   projects: IProject[];
   url?: any;
   servicesNames: Array<{name: ETags}>
+  allBtnTitle: string;
+  learnMoreText: string;
 }
 
 
@@ -46,7 +48,8 @@ export function Projects(props: IProjectsProps) {
   }
   return (
     <div class={styles.project}>
-      <div class={styles.project__controls}>
+      <div class={styles.project__controlsWrp}>
+        <div class={styles.project__controls}>
         <button
           class={styles.project__control}
           classList={{ [styles.project__control_active]: active() === ETags.all }}
@@ -57,7 +60,7 @@ export function Projects(props: IProjectsProps) {
             <path d="M16 4.50001C20.418 2.29101 22.209 4.08201 20 8.50001C17.79 12.918 12.418 18.29 8.00003 20.5C3.58203 22.709 1.79003 20.918 4.00003 16.5C6.20903 12.082 11.582 6.71001 16 4.50001Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
             <path d="M12.2502 12.625C12.2502 12.5918 12.2371 12.5601 12.2136 12.5366C12.1902 12.5132 12.1584 12.5 12.1252 12.5C12.0921 12.5 12.0603 12.5132 12.0369 12.5366C12.0134 12.5601 12.0002 12.5918 12.0002 12.625C12.0002 12.6582 12.0134 12.6899 12.0369 12.7134C12.0603 12.7368 12.0921 12.75 12.1252 12.75C12.1584 12.75 12.1902 12.7368 12.2136 12.7134C12.2371 12.6899 12.2502 12.6582 12.2502 12.625" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
           </svg>
-          All projects
+          {props.allBtnTitle}
         </button>
         {props.servicesNames.map(i => (
           <button
@@ -77,6 +80,8 @@ export function Projects(props: IProjectsProps) {
 
         ))}
         </div>
+
+      </div>
       <div class={styles.project__projects}>
         <ul class={styles.project__list}>
           {sort().map(i => (
@@ -93,8 +98,10 @@ export function Projects(props: IProjectsProps) {
                 <a href={`/work/${i.slug}`} class={styles.item__link}>
                   <h3>{i.title}</h3>
                 </a>
-                <span class={`${styles.list__counts} ${styles.list__counts_devs}`}>{`${i.developers} developers`}</span>
-                <span class={`${styles.list__counts} ${styles.list__counts_time}`}>{`${i.months} months`}</span>
+                <div class={styles.list__countsWrp}>
+                  <span class={`${styles.list__counts} ${styles.list__counts_devs}`}>{`${i.developers} developers`}</span>
+                  <span class={`${styles.list__counts} ${styles.list__counts_time}`}>{`${i.months} months`}</span>
+                </div>
               </div>
               <ul class={styles.item__tags}>
                 {
@@ -105,6 +112,7 @@ export function Projects(props: IProjectsProps) {
                 }
               </ul>
               <p class={styles.item__desc}>{i.desc}</p>
+              <a class={styles.item__link_mob} href={`/work/${i.slug}`}>{props.learnMoreText}</a>
             </li>
           ))}
         </ul>

@@ -1,9 +1,11 @@
-import "./TimeRange.scss"
 import { createSignal } from "solid-js";
 import { range } from "../../../../../helpers/range";
+import "./TimeRange.scss"
 
-function mounthValue(n: number) {
-  return n === 0 ? `${n + 1} month` : `${n + 1} months`;
+function mounthValue(n: number, isMob?: boolean) {
+  let text = n === 0 ? `${n + 1} month` : `${n + 1} months`;
+  isMob ? text = `${n + 1} m` : text;
+  return text;
 }
 
 interface ITimeRangeProps {
@@ -47,9 +49,16 @@ export function TimeRange({ duration = 24, ...props}: ITimeRangeProps) {
             const isNotEverySix = (n + 1) % 6;
             if (isNotEverySix && n !== 0) return
             let monthString: string;
-            if (n === 0 || !isNotEverySix) monthString = mounthValue(n)
+            let monthStringMob: string;
+            if (n === 0 || !isNotEverySix) {
+              monthString = mounthValue(n)
+              monthStringMob = mounthValue(n, true)
+            }
             return (
-              <span class="timerange__label">{monthString}</span>
+              <>
+                <span class="timerange__label">{monthString}</span>
+                <span class="timerange__label timerange__label_mob">{monthStringMob}</span>
+              </>
             )
           })
         }

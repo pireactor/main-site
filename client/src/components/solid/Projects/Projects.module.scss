@@ -91,6 +91,7 @@
 
 .list__counts_devs {
   background-image: url("/assets/img/works/devs.svg");
+  margin-right: 1rem;
 }
 .list__counts_time {
   background-image: url("/assets/img/works/clocks.svg");
@@ -110,6 +111,7 @@
   background-position: 0.75rem center;
   background-repeat: no-repeat;
   border: 1px solid #ff35c7;
+  white-space: nowrap;
 }
 
 .item__link {
@@ -118,6 +120,10 @@
   color: #ffffff;
   text-decoration: none;
   transition: all 0.3s ease-in-out;
+}
+
+.item__link_mob {
+  display: none;
 }
 
 .item__link:hover {
@@ -154,4 +160,72 @@
   opacity: 1;
   height: 100%;
   transition: opacity 0.3s ease-in-out;
+}
+
+.list__countsWrp {
+  flex-shrink: 0;
+}
+
+@media (max-width: 1279px) {
+  .project__controlsWrp {
+    overflow-x: auto;
+  }
+
+  .project__controls {
+    white-space: nowrap;
+  }
+
+  .project__list {
+    padding: 0;
+  }
+
+  .project__item {
+    overflow: hidden;
+  }
+
+  .item__header {
+    flex-wrap: wrap;
+  }
+
+  .list__countsWrp {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .list__counts_devs {
+    margin-right: 0;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+  }
+
+  .item__tags {
+    flex-wrap: wrap;
+  }
+
+  .tag {
+    margin-bottom: 1rem;
+  }
+
+  .item__link {
+    flex-basis: 100%;
+  }
+  .item__img {
+    opacity: 1;
+    width: 100px;
+    height: auto;
+    top: 50px;
+    right: 120px;
+  }
+  
+  .project__item:hover .item__img {
+    opacity: 1;
+    height: auto;
+    transition: opacity 0.3s ease-in-out;
+  }
+
+  .item__link_mob {
+    display: block;
+    color: var(--color-active);
+    margin-bottom: 1rem;
+  }
 }

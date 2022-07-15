@@ -1,4 +1,6 @@
 import { produce } from "solid-js/store";
+import { EmailInput } from "../../EmailInput";
+import { NameInput } from "../../NameInput";
 import { TextInput } from "../../TextInput";
 import { Counter } from "../Counter";
 import Radio from "../Radio/Radio"
@@ -8,7 +10,12 @@ import styles from "./FormTabs.module.scss"
 
 type TEl = { name: string, value: number, tooltip: string }
 
-export function Team() {
+interface ITeamProps {
+  ref: any;
+  emailRefCallback: any;
+}
+
+export function Team(props: ITeamProps) {
   let range: Element;
   let industryEl: HTMLFieldSetElement;
   function clear(ref: Element) {
@@ -26,7 +33,7 @@ export function Team() {
   return (
     <div class={styles.formSection}>
       <div class={styles.formSection__header}>
-        <h3>1. Specify the tech stack and the number of developers you need per each technology</h3>
+        <h3 class={styles.formSection__caption}>1. Specify the tech stack and the number of developers you need per each technology</h3>
         <button type="button" class={styles.formSection__clear} onClick={() => clearCounter(["frameworks", "db", "langs", "mobiles"])}>Clear all</button>
       </div>
       <fieldset class={styles.formSection__fieldset}>
@@ -44,14 +51,14 @@ export function Team() {
         </div>
       </fieldset>
       <div class={styles.formSection__header}>
-        <h3>2. Extra specialists you need to add to the team</h3>
+        <h3 class={styles.formSection__caption}>2. Extra specialists you need to add to the team</h3>
         <button type="button" class={styles.formSection__clear} onClick={() => clearCounter("specs")}>Clear all</button>
       </div>
       <fieldset class={`${styles.formSection__fieldset} ${styles.formSection__fieldsetGrid}`}>
         {store.specs.map(i => <Counter label={i.name} value={i.value} group="specs" />)}
       </fieldset>
       <div class={styles.formSection__header}>
-        <h3>3. Please, specify your business industry</h3>
+        <h3 class={styles.formSection__caption}>3. Please, specify your business industry</h3>
         <button type="button" class={styles.formSection__clear} onClick={() => clear(industryEl)}>Clear all</button>
       </div>
       <fieldset ref={industryEl} id="industry" class={styles.formSection__fieldset}>
@@ -81,18 +88,18 @@ export function Team() {
         </div>
       </fieldset>
       <div class={styles.formSection__header}>
-        <h3>4. What is the expected duration of your project?</h3>
+        <h3 class={styles.formSection__caption}>4. What is the expected duration of your project?</h3>
         <button type="button" class={styles.formSection__clear} onClick={() => clearRange(range)}>Clear all</button>
       </div>
       <div class={styles.formSection__duration}>
         <TimeRange ref={range} />
       </div>
       <div class={styles.formSection__header}>
-        <h3>5. Contacts</h3>
+        <h3 class={styles.formSection__caption}>5. Contacts</h3>
       </div>
       <fieldset class={styles.formSection__contacts}>
-        <TextInput label="Name" />
-        <TextInput label="Email" />
+        <NameInput ref={props.ref}/>
+        <EmailInput ref={props.emailRefCallback}/>
         <TextInput label="Phone number" />
       </fieldset>
     </div>

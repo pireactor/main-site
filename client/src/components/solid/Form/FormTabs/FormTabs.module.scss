@@ -84,3 +84,51 @@
   grid-template-columns: 1fr 1fr 1fr;
   column-gap: 2.5rem;
 }
+
+@media(max-width: 768px) {
+  .formSection__caption {
+    font-size: 22px;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .formSection__header {
+    flex-direction: column;
+    margin-bottom: 1rem;
+  }
+
+  .formSection__fieldset {
+    flex-wrap: wrap;
+    gap: 1rem;
+    flex-direction: column;
+    margin-bottom: 1.5rem;
+  }
+
+  .formSection__itemsBlock {
+  
+    & > label:not(:last-of-type) {
+      margin-bottom: 1rem;
+    }
+  
+    & > div:not(:last-of-type) {
+      margin-bottom: 1rem;
+    }
+  }
+
+  .formSection__contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .formSection {
+    margin-bottom: 2rem;
+  }
+
+  .formSection__fieldsetGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .fieldset_textInput {
+    grid-template-columns: 1fr;
+  }
+}

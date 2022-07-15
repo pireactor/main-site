@@ -98,3 +98,41 @@ color: var(--color-active);
 .form__SubmitBtn:active {
   background-color: var(--color-active);
 }
+
+@media (max-width: 1022px) {
+  .form__selectors {
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  .form__headerWrp {
+    padding: 1rem 1rem 0;
+  }
+
+  .form__selectBtn {
+    font-size: 14px;
+    margin-right: 0.75rem;
+  }
+
+  .form__headerTitle {
+    font-size: 22px;
+  }
+
+  .form__form {
+    padding: 1rem 0.5rem;
+    overflow: hidden;
+  }
+
+  .form__SubmitBtn {
+    background: #FF35C7;
+    border-radius: 5px;
+    width: 200px;
+    white-space: nowrap;
+    padding: 1rem;
+    font-size: 13px;
+  }
+
+  .form {
+    padding-bottom: 1rem;
+  }
+}

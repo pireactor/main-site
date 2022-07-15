@@ -7,29 +7,29 @@ import How from '../../components/main/How.astro';
 import Services from '../../components/main/Services.astro';
 import Technologies from '../../components/main/Technologies.astro';
 import Container from '../../layouts/Container.astro';
-import { MainSectionModel } from '../../models/MainSectionModel';
 import CallbackForm from '../../components/shared/CallbackForm.astro';
+import { ContentModel } from '../../models/ContentModel';
 
-const [main] = await Astro.glob<MainSectionModel>("/public/assets/content/en/main/*.md");
-const path = Astro.canonicalURL.pathname as string;
+const [content] = await Astro.glob<ContentModel>("/public/assets/content/en/*.md");
+const path = Astro.canonicalURL.pathname;
 
 ---
 
-<Layout title="Pireactor" preloadImg="main/main.svg">
+<Layout title={content.frontmatter.title}>
   <Container>
-    {path}
     <Hero 
-      redLine="Startup &"
-      title="product catalyzer"
-      path={`${path}#callback-form`}
+      redLine={content.frontmatter?.index.hero.redline}
+      title={content.frontmatter.index.hero.title}
+      path="#callback-form"
+      btnText={content.frontmatter.index.hero.btnText}
     />
     <About 
-      counters={main.frontmatter.counters}
-      desc={main.frontmatter.desc}
+      counters={content.frontmatter.counters}
+      desc={content.frontmatter.index.desc}
       title="About"
     />
     <Map 
-      title="We develop projects for clients from all over the world"
+      title={content.frontmatter.index.mapTitle}
     />
   </Container>
   <How />

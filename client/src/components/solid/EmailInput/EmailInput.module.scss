@@ -1,0 +1,57 @@
+.label {
+  display: flex;
+  flex-direction: column;
+  font-weight: 400;
+  font-size: 18px;
+  width: 100%;
+  position: relative;
+}
+
+.label::after {
+  content: "*";
+  position: absolute;
+  top: 0;
+  left: 3.5rem;
+  color: var(--color-active);
+}
+
+.input {
+  padding: 0.625rem;
+  margin-top: 0.625rem;
+  background-color: transparent;
+  border: 1px solid var(--color-gray);
+  border-radius: 5px;
+  font-family: var(--fontStack);
+  color: var(--text-color);
+  font-weight: 400;
+  font-size: 18px;
+  transition: all 0.3s ease-in-out;
+}
+
+.input:hover {
+  border-color: var(--color-hover);
+  transition: all 0.3s ease-in-out;
+}
+.input:focus, .input:focus-visible {
+  outline: 3px solid var(--color-active);
+  border-color: var(--color-active);
+  transition: all 0.3s ease-in-out;
+}
+
+.error, .error:hover {
+  border-color: #ff0000;
+}
+
+.input__wrp {
+  position: relative;
+}
+
+.errMsg {
+  position: absolute;
+  bottom: -1rem;
+  left: 0;
+  width: 100%;
+  color: #ff0000;
+  font-size: 0.625rem;
+  white-space: nowrap;
+}

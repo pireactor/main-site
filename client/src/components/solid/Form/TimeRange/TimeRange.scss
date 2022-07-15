@@ -203,3 +203,21 @@
 .timerange__item:hover .timerange__tooltip {
   display: block;
 }
+
+.timerange__label_mob {
+  display: none;
+}
+
+@media(max-width: 768px) {
+  .timerange__box {
+    width: 2px;
+  }
+
+  .timerange__label {
+    display: none;
+  }
+
+  .timerange__label_mob {
+    display: block;
+  }
+}

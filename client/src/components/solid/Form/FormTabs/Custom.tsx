@@ -1,15 +1,24 @@
+import { onMount } from "solid-js";
+import { EmailInput } from "../../EmailInput";
+import { NameInput } from "../../NameInput";
 import { TextInput } from "../../TextInput";
 import Checkbox from "../Checkbox/Checkbox"
 import Radio from "../Radio/Radio"
 import { TimeRange } from "../TimeRange"
 import styles from "./FormTabs.module.scss"
 
-export function Custom() {
+
+interface ICustomProps {
+  ref: any;
+  emailRefCallback: any;
+}
+export function Custom(props: ICustomProps) {
   let devEl: HTMLFieldSetElement;
   let stageEl: HTMLFieldSetElement;
   let specEl: HTMLFieldSetElement;
   let industryEl: HTMLFieldSetElement;
   let range: Element;
+
   function clear(ref: Element) {
     ref.querySelectorAll("input").forEach(el => el.checked = false)
   }
@@ -21,7 +30,7 @@ export function Custom() {
   return (
     <div class={styles.formSection}>
       <div class={styles.formSection__header}>
-        <h3>1. What type of software solution would you like to develop with Andersen?</h3>
+        <h3 class={styles.formSection__caption}>1. What type of software solution would you like to develop with Andersen?</h3>
         <button type="button" class={styles.formSection__clear} onClick={() => clear(devEl)}>Clear all</button>
       </div>
       <fieldset ref={devEl} class={styles.formSection__fieldset}>
@@ -31,7 +40,7 @@ export function Custom() {
         <Checkbox category="develop-solution" label="Consultancy needed" />
       </fieldset>
       <div class={styles.formSection__header}>
-        <h3>2. What is the current stage of your software development process?</h3>
+        <h3 class={styles.formSection__caption}>2. What is the current stage of your software development process?</h3>
         <button type="button" class={styles.formSection__clear} onClick={() => clear(stageEl)}>Clear all</button>
       </div>
       <fieldset ref={stageEl} id="stage" class={styles.formSection__fieldset}>
@@ -41,7 +50,7 @@ export function Custom() {
         <Radio name="stage" label="MVP" />
       </fieldset>
       <div class={styles.formSection__header}>
-        <h3>3. Do you need a professional consultation from any of the specialists below?</h3>
+        <h3 class={styles.formSection__caption}>3. Do you need a professional consultation from any of the specialists below?</h3>
         <button type="button" class={styles.formSection__clear} onClick={() => clear(specEl)}>Clear all</button>
       </div>
       <fieldset ref={specEl} class={styles.formSection__fieldset}>
@@ -51,7 +60,7 @@ export function Custom() {
         <Checkbox category="specialist" label="Architect" />
       </fieldset>
       <div class={styles.formSection__header}>
-        <h3>4. Please, specify your business industry</h3>
+        <h3 class={styles.formSection__caption}>4. Please, specify your business industry</h3>
         <button type="button" class={styles.formSection__clear} onClick={() => clear(industryEl)}>Clear all</button>
       </div>
       <fieldset ref={industryEl} id="industry" class={styles.formSection__fieldset}>
@@ -81,7 +90,7 @@ export function Custom() {
         </div>
       </fieldset>
       <div class={styles.formSection__header}>
-        <h3>5. What is the expected duration of your project?</h3>
+        <h3 class={styles.formSection__caption}>5. What is the expected duration of your project?</h3>
         <button type="button" class={styles.formSection__clear} onClick={() => clearRange(range)}>Clear all</button>
       </div>
       <div class={styles.formSection__duration}>
@@ -91,8 +100,8 @@ export function Custom() {
         <h3>6. Contacts</h3>
       </div>
       <fieldset class={styles.formSection__contacts}>
-        <TextInput label="Name" />
-        <TextInput label="Email" />
+        <NameInput ref={props.ref}/>
+        <EmailInput ref={props.emailRefCallback}/>
         <TextInput label="Phone number" />
       </fieldset>
     </div>

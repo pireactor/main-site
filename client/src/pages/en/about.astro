@@ -1,0 +1,199 @@
+---
+import MainTitle from "../../components/MainTitle.astro";
+import AboutCard from "../../components/shared/AboutCard.astro";
+import Breadcrums from "../../components/shared/Breadcrums.astro";
+import Section from "../../components/shared/Section.astro";
+import { Counter } from "../../components/solid/Counter";
+import Container from "../../layouts/Container.astro";
+import Layout from "../../layouts/Layout.astro";
+import { MainSectionModel } from "../../models/MainSectionModel";
+
+export interface LeadsFrontmatter {
+  desc: string;
+  name: string;
+  linkT: string;
+  linkLI: string;
+  imgSource: string;
+  info: string;
+  id: number;
+}
+
+const leads = await Astro.glob<LeadsFrontmatter>('/public/assets/leads/en/*.md');
+const sortLeads = leads.sort((a, b) => a.frontmatter.id - b.frontmatter.id);
+const [content] = await Astro.glob<MainSectionModel>("/public/assets/content/en/*.md");
+
+---
+
+<Layout title="About Us">
+
+  <Container>
+    <Breadcrums currentPath="About Us" />
+    <section class="hero">
+      <MainTitle redLine={content?.frontmatter.about.hero.redline} title={content?.frontmatter.about.hero.title} />
+      <p class="about__desc">
+        {content?.frontmatter.about.desc}
+      </p>
+    </section>
+    <Section title={content?.frontmatter.about.counterTitle}>
+      <div class="about__counter">
+        {content.frontmatter.counters.map(el => (
+        <Counter title={el.title} countTo={el.value} client:load />
+        ))}
+      </div>
+    </Section>
+    <Section title={content.frontmatter.about.whoWeAreTitle}>
+      <div class="about__who">
+        {content.frontmatter.about.text.map(i => <p>{i}</p>)}
+      </div>
+    </Section>
+
+    <Section title={content?.frontmatter.about.leadsTitle}>
+      <div class="leads">
+        <ul class="leads-list">
+          {sortLeads.map(lead => (
+          <AboutCard desc={lead.frontmatter.desc} imgSource={lead.frontmatter.imgSource} name={lead.frontmatter.name}
+            info={lead.frontmatter.info} linkLI={lead.frontmatter.linkLI} linkT={lead.frontmatter.linkT} />
+          ))}
+        </ul>
+      </div>
+    </Section>
+
+    <Section title={content?.frontmatter.about.locationsTitle}>
+      <ul class="location">
+        {content.frontmatter.about.locations.map(i => (
+        <li class="location__item">
+          <img src={i.img} alt={i.name} class="location__img" />
+          {i.name}
+        </li>
+        ))}
+      </ul>
+    </Section>
+  </Container>
+</Layout>
+
+<style lang="scss">
+  .hero {
+    display: flex;
+    margin-bottom: 10rem;
+    flex-direction: column;
+    background: url("/assets/img/about/about.svg") no-repeat center right / 40vw;
+  }
+
+  .hero__title {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .about__desc {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 160%;
+    max-width: 400px;
+  }
+
+  .about__counter {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  .about__who {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 1.875rem;
+  }
+
+  .leads {
+    padding-top: 2rem;
+  }
+
+  .leads-list {
+    display: grid;
+    flex-wrap: wrap;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    column-gap: 1.875rem;
+    row-gap: 5.625rem;
+  }
+
+  .location {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    font-weight: 700;
+    font-size: 24px;
+  }
+
+  .location__item {
+    text-align: center;
+    margin-right: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+
+
+  .location__item:last-child {
+    margin-right: 0;
+  }
+
+  .location__img {
+    margin-bottom: 1.875rem;
+    width: 100%;
+  }
+
+  .location__item:nth-child(2) {
+    transform: translateY(-7rem);
+  }
+
+  @media(max-width: 1279px) {
+    
+    .hero {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10rem;
+      flex-direction: column;
+      background: url("/assets/img/about/about.svg") no-repeat center bottom / 40vw;
+      padding-bottom: 40vw;
+    }
+    
+    .about__counter {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      justify-content: center;
+    }
+    
+    .leads {
+      overflow-x: auto;
+    }
+    
+    .leads-list {
+      display: flex;
+      flex-wrap: nowrap;
+    }
+    
+  }
+  @media(max-width: 767px) {
+    .location {
+      flex-direction: column;
+      justify-content: center;
+    }
+    .location__item:nth-child(2) {
+      transform: translate(0);
+    }
+  
+    .location__item {
+      margin-right: 0;
+    }
+
+    .about__desc {
+      font-size: 14px;
+    }
+
+    .about__who {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+</style>

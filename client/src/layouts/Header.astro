@@ -1,10 +1,12 @@
 ---
 import Logo from "../components/Logo.astro";
 import { LangPicker } from "../components/solid/LangPicker";
+import { ContentModel } from "../models/ContentModel";
 import { ServicesModel } from "../models/ServicesModel";
 import Container from "./Container.astro";
 
 const unsortServices = await Astro.glob<ServicesModel>('/public/assets/services/*.md');
+const content = await Astro.glob<ContentModel>('/public/assets/content/en/content.md');
 const services = unsortServices.sort((a, b) => a.frontmatter.id - b.frontmatter.id);
 
 const path = Astro.canonicalURL.pathname.replaceAll('/', '');
@@ -18,18 +20,18 @@ const path = Astro.canonicalURL.pathname.replaceAll('/', '');
           <nav class="header__nav nav">
             <ul class="nav__list">
               <li class={`nav__list-item ${path==="about" ? "nav__list-item_active" : "" }`}>
-                <a href="about" class="nav__link" href="/">About us</a>
+                <a href="/about" class="nav__link" href="/">About us</a>
               </li>
               <li class={`nav__list-item ${path==="work" ? "nav__list-item_active" : "" }`}>
-                <a href="work" class="nav__link">Work</a>
+                <a href="/work" class="nav__link">Work</a>
               </li>
               <li class={`nav__list-item nav__list-item_services ${path==="services" ? "nav__list-item_active" : "" }`}
                 tabindex={0}>
-                <a href="#services" class="nav__link" tabindex={-1}>Services</a>
+                <a href="/#services" class="nav__link" tabindex={-1}>Services</a>
                 <ul class="nav__submenu submenu">
                   {services.map(i => (
                   <li class="submenu__item">
-                    <a href={`services/${i.frontmatter.slug}`} class="submenu__link">{i.frontmatter.title}</a>
+                    <a href={`/services/${i.frontmatter.slug}`} class="submenu__link">{i.frontmatter.title}</a>
                   </li>
                   ))}
                 </ul>
@@ -37,7 +39,7 @@ const path = Astro.canonicalURL.pathname.replaceAll('/', '');
             </ul>
           </nav>
           <LangPicker client:load />
-          <a href="#callback-form" class="header__btn" type="button">Let's talk</a>
+          <a href="/#callback-form" class="header__btn" type="button">Let's talk</a>
       </div>
 
       <button class="header__burger burger js-burger" aria-label="open nav menu">
@@ -101,6 +103,7 @@ const path = Astro.canonicalURL.pathname.replaceAll('/', '');
     appearance: inherit;
     transition: opacity 0.3s ease-in-out;
     transform: translateX(50%);
+    z-index: 500;
   }
 
   .nav__list-item_services:hover .submenu__item,
@@ -256,6 +259,9 @@ const path = Astro.canonicalURL.pathname.replaceAll('/', '');
     .nav__list-item:before {
     content: none;
   }
+    .nav__list-item::after {
+    content: none;
+  }
 
   .nav__list-item_services {
     background-image: none;
@@ -286,15 +292,13 @@ const path = Astro.canonicalURL.pathname.replaceAll('/', '');
   }
 </style>
 
-<script is:inline>
+<script>
   const burgerEl = document.querySelector(".burger");
   const menuEl = document.querySelector(".js-h-menu");
   const closeBtnEl = document.querySelector(".js-close")
   function handleClick() {
     menuEl.classList.toggle("header__menu_active");
   }
-
   burgerEl.addEventListener("click", handleClick)
   closeBtnEl.addEventListener("click", handleClick)
-
 </script>

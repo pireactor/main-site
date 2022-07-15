@@ -2,6 +2,16 @@ import { createStore } from "solid-js/store";
 
 export const [store, setStore] = createStore(
   {
+    validation: {
+      name: {
+        touched: false,
+        errMsg: "This field is required",
+      },
+      email: {
+        touched: false,
+        errMsg: "This field is required",
+      },
+    },
     frameworks: [
       {
         name: "Vue.js",
