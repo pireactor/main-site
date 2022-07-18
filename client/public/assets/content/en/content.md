@@ -14,8 +14,8 @@ nav: {
 index: {
   hero: {
     redline: "Startup &",
-    title: "product catalyzer",
-    btnText: "Boost my project",
+    title: "Product Catalyzer",
+    btnText: "Accelerate my Roadmap",
   },
     desc: "We help clients explore requirements and work out what they really
       need today and to plan for tomorrow tomorrow. Instead of reiterating
@@ -47,14 +47,10 @@ about: {
   leanmax global resourcing system.
   ",
   "
-  We do not seek equity stake and are currently accepting select, funded member
-  engagements: ranging from feature add to product line, across the project
-  depth from initial conception/scoping through release-to-market. We also provide
-  whole venture transformation over visioning, planning, implementation, and handoff.
-  Platea congue tellus iaculis viverra id duis dolor. Hac integer lacus, augue
-  viverra quis egestas viverra habitant. Cras in ipsum nisi congue egestas nisi,
-  ullamcorper. Euismod bibendum donec porta scelerisque. Consequat quisque diam
-  dui sem sagittis vitae et, lacus. Morbi vivamus elementum amet, senectus posuere.
+  We do not seek equity and. We accept select, funded member
+  engagements: ranging from feature addition to functionality extension to full product development,
+  from initial conception/scoping through release-to-market. We also provide
+  venture transformation including visioning, planning, implementation and handoff.
   "
   ],
 
@@ -78,8 +74,8 @@ about: {
 
 counters: [
   {
-    value: 32,
-    title: "Projects done" 
+    value: 72,
+    title: "Projects Completed" 
   },
   {
     value: 12,
@@ -90,30 +86,30 @@ counters: [
     title: "Number of employees" 
   },
   {
-    value: 12,
+    value: 5,
     title: "Years on the market" 
   },
 ]
 
 howSection: {
-  title: How it goes,
+  title: How We Work,
   list: [
     {
       title: Planning,
       desc: "Our team examines your requirements and expectations, takes account
-        of your needs, and creates a preliminary plan for your approval.",
+        of your needs and creates a preliminary plan.",
       class: Planning
     },
     {
       title: Designing,
       desc: "Everything from an efficient framework to an easy-to-use interface is drawn up,
-        examined, evaluated, and approved during the design phase.",
+        examined, evaluated and approved during the design phase.",
         class: Designing
     },
     {
       title: Defining,
       desc: "We run due diligence checks, we have you approve features,
-        we agree on timelines, run feasibility tests, and finalize the design.",
+        we agree on timelines, run feasibility tests and finalize the design.",
         class: Defining
     },
     {
@@ -124,20 +120,20 @@ howSection: {
     },
     {
       title: Building,
-      desc: "Our coders, graphic designers, and development management team
+      desc: "Our developpers, graphic designers and development management team
         get hard to work ensuring that your software is as efficient as possible.",
         class: Building
     },
     {
       title: Deployment,
-      desc: "With your approval, the software is delivered to the environment you need.
+      desc: "With your approval, the software is deployed to the needed environment.
         All rights to the custom solution are transferred to you.",
       class: Deployment
     },
     {
       title: Maintenance,
-      desc: "We work to ensure all maintenance can be done easily by your own staff,
-        but we also offer ongoing maintenance for highly complex and/or larger programs.",
+      desc: "We ensure all maintenance can be done easily by your own staff,
+        but we also offer ongoing maintenance for highly complex and/or larger projects.",
       class: Maintenance
     }
   ]
