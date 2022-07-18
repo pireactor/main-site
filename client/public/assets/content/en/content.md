@@ -6,8 +6,8 @@ href: "en"
 
 nav: {
   about: "About us",
-  work: "Work",
-  services: "Services",
+  work: "Our Work",
+  services: "Our Services",
   btn: "Let's talk",
 }
 
