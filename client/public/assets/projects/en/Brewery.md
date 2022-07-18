@@ -2,7 +2,7 @@
 slug: "Crowd-Sourced-Brewing"
 title: "Crowd Sourced Brewing"
 developers: 12
-months: 12
+months: 55
 tags: ["Automation", "Product Developpment", "Architecture"]
 desc: "A Croatian-Belgian craftbrewer wanted a webshop and marketing campaign to bring customers to the new platform. He got much more."
 img: "https://api.time.com/wp-content/uploads/2017/05/star-wars_1024.jpg"
