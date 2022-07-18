@@ -4,9 +4,10 @@ desc: "Solutions and Releases"
 name: "Alex Alejandre"
 imgSource: "/assets/img/about/team/2.webp"
 linkT: "#"
-linkLI: "#"
+linkLI: "https://www.linkedin.com/in/alexalejandre/"
 info: "
-An LA, Alex was a polyglot by his late teens and leveraged his talent to attend a German engineering school's cross-vertical program, rooted in highly ‘production-process hands-on’ industrial engineering, with co-ops in specialist application metallurgy steel mill manufacturing lines. \n\ \n\
-Applying those principles to the bloated software engineering space across inception to delivery to maintenance together with an innate entrepreneurial mindset, he set to tinkering innovations in the software delivery lifecycle (SDLC).
+Alex specializes in solution-tailored and team-centric architecture and implementation. Starting from a organization's business model and availible resources, he makes the proper compromises to achieve an optimal deployment able to be modularly updated in accordance to future needs. \n\ \n\
+Applying the principles of industrial engineering and efficient factory planning to the bloated software engineering space, Alex applies his innate entrepreneurial mindset to optimize the software delivery lifecycle (SDLC).  \n\ \n\
+A language lover, Alex speaks German, Russian, French, Spanish and is delving into Persian and Arabic.
   "
 ---
