@@ -1,13 +1,13 @@
 ---
 id: 2
-desc: "Soluciones y Lanzamientos"
+desc: "Solutions and Releases"
 name: "Alex Alejandre"
 imgSource: "/assets/img/about/team/2.webp"
 linkT: "#"
 linkLI: "https://www.linkedin.com/in/alexalejandre/"
 info: "
-Alex se especializa en arquitectura e implementación a medida de soluciones y centradas en el equipo. Partiendo del modelo de negocio de una organización y de los recursos disponibles, realiza los compromisos adecuados para lograr una implementación óptima que se pueda actualizar de forma modular de acuerdo con las necesidades futuras. \n\ \n\
-Aplicando los principios de la ingeniería industrial y la planificación eficiente de la fábrica al inflado espacio de la ingeniería de software, Alex aplica su mentalidad empresarial innata para optimizar el ciclo de vida de entrega de software (SDLC). \n\ \n\
-Amante de los idiomas, Alex habla alemán, Ruso, Francés, Español y se adentra en el persa y el árabe.
+Alex specializes in solution-tailored and team-centric architecture and implementation. Starting from a organization's business model and availible resources, he makes the proper compromises to achieve an optimal deployment able to be modularly updated in accordance to future needs. \n\ \n\
+Applying the principles of industrial engineering and efficient factory planning to the bloated software engineering space, Alex applies his innate entrepreneurial mindset to optimize the software delivery lifecycle (SDLC).  \n\ \n\
+A language lover, Alex speaks German, Russian, French, Spanish and is delving into Persian and Arabic.
   "
 ---

@@ -1,13 +1,11 @@
 ---
 id: 3
-desc: "Recursos y Perspectivas"
+desc: "Resourcing and Insights"
 name: "Steven Vermazen"
 imgSource: "/assets/img/about/team/3.webp"
 linkT: "#"
 linkLI: "#"
 info: "
-En la industria actual, que cambia rápidamente, Steven podría decirse que se habría graduado como científico de datos, pero en el mundo de ayer se hizo ingeniero con una inclinación por las matemáticas algorítmicas de alta carga.
-\n\ \n\
-Eligió viajar ligero y seleccionó proyectos que mantuvieron su trabajo y su vida equilibrados y su intelecto claro. En efecto, practicó el triaje de campo como una cirugía de trauma de entrega para proyectos de software que se encontraron volteados con los 6 ejes girando. Trae la post mortem de abajo hacia arriba de la industria del software contemporáneo.
-"
+In today's rapidly changing industry, Steven would have arguably graduated as a data scientist, but in the world of yesterday he made himself an engineer with a bent for high-load algorithmic mathematics. \n\ \n\
+He chose to travel light and selected projects that kept his work and life balanced and his intellect clear. In effect, he practiced field triage as a delivery trauma surgery for software projects found flipped with all 6 axels spinning. He brings the bottom-up post mortem of the contemporary software industry."
 ---

@@ -1,12 +1,11 @@
 ---
 id: 4
-desc: "Propiedad del Producto"
+desc: "Product Ownership"
 name: "Justyna Borwik"
 imgSource: "/assets/img/about/team/4.webp"
 linkT: "#"
 linkLI: "https://www.linkedin.com/in/justynaborwik/"
 info: "
-Responsable de la asignación de esfuerzos, el control del flujo de trabajo y la coordinación de líneas de negocio discretas, Justyna utiliza herramientas actuariales avanzadas y experiencia en gestión de proyectos para fijar el precio de nuevas empresas y asignarles recursos adecuados. \n\ \ n\
-Es una mentora clave para los gerentes de productos y desarrolla activamente recursos y relaciones de ingeniería en toda Europa Central.
-"
+Responsible for effort allocations, workflow control and coordinating discrete business lines, Justyna uses advanced actuarial tools and project management expertiese to price new ventures and allocate comesmurate resources to them. \n\ \n\
+She is a key mentor to product managers and actively develops resources and engineering relationships throughout Central Europe."
 ---

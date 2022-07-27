@@ -3,10 +3,10 @@ id: 2
 slug: "architecture"
 title: "Architecture"
 titleDesc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo sint dicta nihil fugit deserunt repudiandae ullam inventore assumenda molestiae? Exercitationem quidem autem voluptate repudiandae dolorum nihil voluptas impedit. Vero, enim."
-heroBtn: "Impulsa mi proyecto"
-viewBtn: "Ver proyectos"
-aboutTiltle: "Sobre"
-desc: "Por encima de todo, nos enorgullecemos de documentar claramente la lógica y los procesos de su negocio para crear soluciones que aumenten la productividad o automatizarlas por completo. A continuación, creamos la arquitectura más práctica y ampliable para sus casos de uso únicos, lo que permite una implementación rápida y limpia."
+heroBtn: "Boost my project"
+viewBtn: "View projects"
+aboutTiltle: "About"
+desc: "Above all, we pride ourselves in clearly documenting your business logic and processes in order to craft productivity boosting solutions or automate them entirely. We then create the most practical and expandable architecture for your unique use cases allowing quick, clean implementation."
 values: [
   {
     name: "Projects done",

@@ -1,63 +1,60 @@
 ---
-lang: "es"
+lang: "en"
 title: "Pireactor"
-description: "Soluciones de Recursos Globales"
+description: "Global Resource Solutions"
 href: "en"
 
 nav: {
-  about: "Sobre nosotros",
-  work: "Nuestro Trabajo",
-  services: "Nuestros Servicios",
-  btn: "Hablemos",
+  about: "About us",
+  work: "Our Work",
+  services: "Our Services",
+  btn: "Let's talk",
 }
 
 index: {
   hero: {
-    redline: "Catalizador de",
-    title: "Producto y Puesta en Marcha",
-    btnText: "Acelera mi Hoja de Ruta",
+    redline: "Startup &",
+    title: "Product Catalyzer",
+    btnText: "Accelerate my Roadmap",
   },
-    desc: "Ayudamos a los clientes a explorar los requisitos y a descubrir lo que realmente necesitan
-      necesita hoy y planificar para mañana mañana. En lugar de reiterar
-      cada semana, diseñamos espacios para características y funcionalidades modulares
-      ampliación. Practique la disciplina para mantener a todas las partes en el camino y evitar la fluencia del alcance.
-      Solo después de que el proyecto central esté completo, comenzamos un nuevo ciclo",
-    mapTitle: Desarrollamos proyectos para clientes de todo el mundo,
+    desc: "We help clients explore requirements and work out what they really
+      need today and to plan for tomorrow tomorrow. Instead of reiterating
+      every week, we architect space for modular features and functionality
+      expansions. Wepractice discipline to keep all parties on track and avoid scope creep.
+      Only after the core project is complete do we start a new cycle",
+    mapTitle: We develop projects for clients from all over the world,
 }
 about: {
   hero: {
-    redline: Acerca de,
+    redline: About,
     title: pireactor,
   },
-  counterTitle: "Desarrollamos proyectos para clientes de todo el mundo",
-  desc: "
-          Alguna vez te has preguntado qué son todos los PMP, el Kata del Proceso de Quinto Grado
-          Expertos certificados en Judo tailandés en proyecto... ¿de verdad? Incluso con décadas de
-          por experiencia, no pudimos responder a esa pregunta. Así que hicimos una mejor manera.
-          ",
-  whoWeAreTitle: Quiénes somos,
-  leadsTitle: Nuestros Clientes Potenciales Globales,
+  counterTitle: "We develop projects for clients from all over the world",
+  desc: "Have you ever wondered what all the PMPs, the Fifth Degree Process Kata
+          Thai Judo certified experts in project... actually do? Even with decades of
+          aggregate experience, we couldn't answer that question. So we made a better way.",
+  whoWeAreTitle: Who we are,
+  leadsTitle: Our Global Leads,
   text: [
-    "
-  [pi reactor] se reinventa a través de soluciones globales de calidad a velocidad
-  desde el aprovisionamiento hasta la entrega, habilitada por nuestra tecnología probada y patentada, Micro-Ágil para
-  Beyond: Metodologías ágiles, especializadas de principio a fin y nuestro talento totalmente global
-  gestión construida sobre treinta años de experiencia combinada en la industria en todo nuestro
-  equipo central.
-  En resumen, somos un catalizador de startups y productos, acelerando la entrega de la mejor calidad
-  a un costo fraccionario para: diseño, implementación y escalado de productos, por lo tanto
-  desencadenando fundadores financiados y negocios establecidos con nuestro incomparable
-  sistema de recursos globales lean max.
+    "  [pi┃reactor] is reinventing straight through quality at speed global solutions
+  from resourcing to delivery—enabled by our proven & proprietary, Micro-Agile to
+  Beyond-Agile, specialized end-to-end methodologies & our fully global talent
+  management built atop of thirty years of combined industry experience across our
+  core team.
+  In short, we are a startup & product catalyzer, accelerating delivery of top quality
+  at fractional cost for: product design, implementation and scaling, thereby
+  unchaining funded founders and established businesses with our unparalleled
+  leanmax global resourcing system.
   ",
   "
-No buscamos la equidad y. Aceptamos miembros selectos y financiados
-  compromisos: que van desde la adición de características hasta la extensión de la funcionalidad y el desarrollo completo del producto,
-  desde la concepción/alcance inicial hasta el lanzamiento al mercado. También ofrecemos
-  transformación de la empresa, incluida la visión, la planificación, la implementación y la transferencia.
+  We do not seek equity and. We accept select, funded member
+  engagements: ranging from feature addition to functionality extension to full product development,
+  from initial conception/scoping through release-to-market. We also provide
+  venture transformation including visioning, planning, implementation and handoff.
   "
   ],
 
-  locationsTitle: Ubicación,
+  locationsTitle: Locations,
 
   locations: [
      {
@@ -78,92 +75,92 @@ No buscamos la equidad y. Aceptamos miembros selectos y financiados
 counters: [
   {
     value: 72,
-    title: "Proyectos Finalizados" 
+    title: "Projects Completed" 
   },
   {
     value: 12,
-    title: "Industrias Únicas" 
+    title: "Unique Industries" 
   },
   {
     value: 32,
-    title: "Número de empleados" 
+    title: "Number of employees" 
   },
   {
     value: 5,
-    title: "Años en el mercado" 
+    title: "Years on the market" 
   },
 ]
 
 howSection: {
-  title: Cómo Trabajamos,
+  title: How We Work,
   list: [
     {
-      title: Planear,
-      desc: "Nuestro equipo examina sus requisitos y expectativas, tiene en cuenta
-        de sus necesidades y crea un plan preliminar.",
+      title: Planning,
+      desc: "Our team examines your requirements and expectations, takes account
+        of your needs and creates a preliminary plan.",
       class: Planning
     },
     {
-      title: Diseño,
-      desc: "Todo, desde un marco eficiente hasta una interfaz fácil de usar, está elaborado,
-        examinados, evaluados y aprobados durante la fase de diseño.",
+      title: Designing,
+      desc: "Everything from an efficient framework to an easy-to-use interface is drawn up,
+        examined, evaluated and approved during the design phase.",
         class: Designing
     },
     {
-      title: Definir,
-      desc: "Realizamos comprobaciones de diligencia debida, tenemos que aprobar las funciones,
-        acordamos plazos, realizamos pruebas de viabilidad y finalizamos el diseño.",
+      title: Defining,
+      desc: "We run due diligence checks, we have you approve features,
+        we agree on timelines, run feasibility tests and finalize the design.",
         class: Defining
     },
     {
-      title: Prueba,
-      desc: "Aplicamos todo tipo de pruebas tanto para comprobar el funcionamiento del software
-        y probar su seguridad. Seguimos el desarrollo basado en pruebas.",
+      title: Testing,
+      desc: "We apply all kinds of tests to both check the function of the software
+        and test its security. We follow test-driven development.",
         class: Testing
     },
     {
-      title: Edificio,
-      desc: "Nuestros desarrolladores, diseñadores gráficos y equipo de gestión de desarrollo
-        esfuércese por asegurarse de que su software sea lo más eficiente posible.",
+      title: Building,
+      desc: "Our developpers, graphic designers and development management team
+        get hard to work ensuring that your software is as efficient as possible.",
         class: Building
     },
     {
-      title: Despliegue,
-      desc: "Con su aprobación, el software se implementa en el entorno necesario.
-        Se le transfieren todos los derechos de la solución personalizada.",
+      title: Deployment,
+      desc: "With your approval, the software is deployed to the needed environment.
+        All rights to the custom solution are transferred to you.",
       class: Deployment
     },
     {
-      title: Mantenimiento,
-      desc: "Nos aseguramos de que todo el mantenimiento pueda ser realizado fácilmente por su propio personal,
-        pero también ofrecemos mantenimiento continuo para proyectos de gran complejidad y/o envergadura.",
+      title: Maintenance,
+      desc: "We ensure all maintenance can be done easily by your own staff,
+        but we also offer ongoing maintenance for highly complex and/or larger projects.",
       class: Maintenance
     }
   ]
 }
 
 services: {
-  title: "Nuestros Servicios",
+  title: "Our Services",
 }
 
 tech: {
-  title: Tecnologías Que Nos Encantan,
-  desc: "Nuestra experiencia en tecnología incluye, entre otros:",
+  title: Technologies We Love,
+  desc: "Our technology expertise includes but not limited to:",
 }
 
 form: {
-  title: "¿Necesitas un MVP?",
-  desc: "Organicemos una llamada en la que podamos analizar su proyecto y determinar si es una buena opción.",
+  title: "Need an MVP?",
+  desc: "Let's arrange a call where we can discuss your project and determine if you're a good fit.",
   fields: {
-    name: "Nombre",
+    name: "Name",
     email: "Email",
-    phone: "Teléfono",
-    subj: "Tema",
-    textArea: "Mensaje (opcional)",
-    fetchErr: "¡Algo anda mal! Por favor, vuelva a cargar la página e inténtelo de nuevo",
-    sucMsg: "El formulario se envió correctamente",
-    loading: "Envío...",
-    btnText: "Obtenga una consulta gratuita"
+    phone: "Phone",
+    subj: "Subject",
+    textArea: "Message (optional)",
+    fetchErr: "Something wrong! Please reload the page and try again",
+    sucMsg: "The form was sent successfully",
+    loading: "Sending...",
+    btnText: "Get a free consultation"
   }
 }
 

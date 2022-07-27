@@ -1,14 +1,14 @@
 ---
 slug: "Crowd-Sourced-Brewing"
-title: "Elaboración de Cerveza de Origen Colectivo"
+title: "Crowd Sourced Brewing"
 developers: 12
 months: 55
 tags: ["Automation", "Product Developpment", "Architecture"]
-desc: "Una cervecera artesanal croata-belga quería una tienda web y una campaña de marketing para atraer a los clientes a la nueva plataforma. Tiene mucho más."
+desc: "A Croatian-Belgian craftbrewer wanted a webshop and marketing campaign to bring customers to the new platform. He got much more."
 img: "https://api.time.com/wp-content/uploads/2017/05/star-wars_1024.jpg"
 phases: [
   {
-    name: desarrollar,
+    name: development,
     period: December 2017,
     icon: Development phase
   },
@@ -18,7 +18,7 @@ phases: [
     icon: Development phase
   },
   {
-    name: lanzar,
+    name: support,
     period: April 2018 — May 2021,
     icon: Development phase
   }
@@ -50,11 +50,11 @@ result: [
 
 
 ---
-Hicimos una lluvia de ideas, luego desarrollamos un sistema de colaboración colectiva para que los usuarios voten sobre recetas, etiquetado, arte, etc. de lotes (concurrentes) de cerveza. Esto hizo que invitaran a amigos a la plataforma para votar y debatir, lo que provocó un mayor sentimiento de propiedad y lealtad a la marca, lo que resultó en ventas por encima del mercado y retención por cliente, al tiempo que evitaba la necesidad de investigación de mercado, pruebas A/B de diseños, etc.
+We brainstormed, then developped a crowsourcing system for users to vote on recipes, labeling, art etc. of (concurrent) batches of beer. This caused them to invite friends onto the platform to vote and debate, causing increased feelings of ownership and brand loyalty, resulting in above market sales and retention per customer, while avoiding the need for market research, A/B testing of designs etc.
  
-En un año de implementación, el nuevo enfoque aumentó las ventas totales en más del 600%, elevó la tasa de clientes repetidos al 72% y el net promoter score al 63.
+Within a year of implementation, the new approach increased total sales by over 600%, brought the repeat customer rate to 72% and net promoter score to 63.
 
-Como la competencia principal del cliente se encontraba fuera del espacio tecnológico, nos comprometimos aún más a mantener y alojar el sistema. Manejamos el mantenimiento y ampliamos la funcionalidad cuando fue necesario, incluida una autenticación más segura, parches de vulnerabilidad necesarios, optimizaciones para disminuir la carga del servidor, etc.
+As the client's core competency lied outside of the tech space, we were further engaged to maintain and host the system. We handled maitenance and expanded functionality when necessary, including more secure authentification, necessary vulnerability patching, optimizations to decrease server load etc.
 
 
 
