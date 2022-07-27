@@ -39,7 +39,6 @@ export function Projects(props: IProjectsProps) {
     }
   })
 
-
   function handleClick(tag: ETags) {
     if (tag === ETags.all) {
       setSort(props.projects);
@@ -97,7 +96,7 @@ export function Projects(props: IProjectsProps) {
 
               }
               <div class={styles.item__header}>
-                <a href={`${props.langHref}/work/${i.slug}`} class={styles.item__link}>
+                <a href={`/${props.langHref}/work/${i.slug}`} class={styles.item__link}>
                   <h3>{i.title}</h3>
                 </a>
                 <div class={styles.list__countsWrp}>
@@ -114,7 +113,7 @@ export function Projects(props: IProjectsProps) {
                 }
               </ul>
               <p class={styles.item__desc}>{i.desc}</p>
-              <a class={styles.item__link_mob} href={`${props.langHref}/work/${i.slug}`}>{props.learnMoreText}</a>
+              <a class={styles.item__link_mob} href={`/${props.langHref}/work/${i.slug}`}>{props.learnMoreText}</a>
             </li>
           ))}
         </ul>

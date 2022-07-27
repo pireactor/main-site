@@ -4,11 +4,24 @@ import { setStore, store } from "../Form/store";
 import { NameInput } from "../NameInput";
 import { Textarea } from "../Textarea";
 import { TextInput } from "../TextInput";
-import styles from "./FormSubmit.module.scss"
+import styles from "./FormSubmit.module.scss";
+
+export interface IFormSubmitProps {
+  fields: {
+    name: string;
+    email: string;
+    phone: string;
+    subj: string;
+    textArea: string;
+    fetchErr: string;
+    sucMsg: string;
+    loading: string;
+    btnText: string;
+  }
+} 
 
 
-
-export function FormSubmit() {
+export function FormSubmit(props: IFormSubmitProps) {
   const [location, setLocation] = createSignal({});
   const [isLoading, setIsLoading] = createSignal(false);
   const [isFormSended, setIsFormSended] = createSignal(false);
@@ -18,8 +31,8 @@ export function FormSubmit() {
   let email;
   createEffect(() => {
     setLocation(window.location.origin)
-    console.log("location", location())
   })
+
   function handleSubmit(e: { preventDefault: () => void; currentTarget: HTMLFormElement; }) {
     e.preventDefault();
     if (store.validation.name.errMsg || !store.validation.name.touched) {
@@ -27,7 +40,6 @@ export function FormSubmit() {
     } else if (store.validation.email.errMsg || !store.validation.email.touched) {
       email.focus();
     } else {
-      console.log("OK")
       setIsLoading(true);
       fetch(`${location()}/.netlify/functions/send-email`, {
         body: new FormData(e.currentTarget),
@@ -39,7 +51,6 @@ export function FormSubmit() {
           setIsFormSended(true)
         } else {
           setErr("Something wrong! Please reload the page and try again")
-          console.log
         }
       })
       .catch(e => console.log(e))
@@ -56,21 +67,21 @@ export function FormSubmit() {
   return (
     <form class={styles.form} onSubmit={handleSubmit} ref={form}>
       <div class={styles.form__wrp}>
-        <NameInput ref={name} />
-        <EmailInput ref={email} />
-        <TextInput label="Phone number" />
-        <TextInput label="Subject" />
+        <NameInput ref={name} name={props.fields.name}/>
+        <EmailInput ref={email} name={props.fields.email}/>
+        <TextInput label={props.fields.phone} />
+        <TextInput label={props.fields.subj} />
       </div>
-      <Textarea label="Message (optional)" />
+      <Textarea label={props.fields.textArea} />
       <input tabindex={-1} class={styles.hiddenInput} name="form-link"type="text" value={location().toString()} />
       <button
         class={styles.form__SubmitBtn}
       >
-        {!isLoading() && "Get a free consultation"}
-        {isLoading() && "Sending..."}
+        {!isLoading() && props.fields.btnText}
+        {isLoading() && props.fields.loading}
       </button>
-      {isFormSended() && <div class={styles.success}>The form was sent successfully</div>}
-      {err() && <div class={styles.error}>{err()}</div>}
+      {isFormSended() && <div class={styles.success}>{props.fields.sucMsg}</div>}
+      {err() && <div class={styles.error}>{props.fields.fetchErr}</div>}
     </form>
   )
 }

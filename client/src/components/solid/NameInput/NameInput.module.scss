@@ -7,14 +7,6 @@
   position: relative;
 }
 
-.label::after {
-  content: "*";
-  position: absolute;
-  top: 0;
-  left: 3.5rem;
-  color: var(--color-active);
-}
-
 .input {
   padding: 0.625rem;
   margin-top: 0.625rem;
@@ -54,4 +46,8 @@
   color: #ff0000;
   font-size: 0.625rem;
   white-space: nowrap;
+}
+
+.input_req {
+  color: var(--color-active);
 }

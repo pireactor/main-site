@@ -1,0 +1,63 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Hero from '../../components/main/Hero.astro';
+import About from '../../components/main/About.astro';
+import Map from '../../components/main/Map.astro';
+import How from '../../components/main/How.astro';
+import Services from '../../components/main/Services.astro';
+import Technologies from '../../components/main/Technologies.astro';
+import Container from '../../layouts/Container.astro';
+import CallbackForm from '../../components/shared/CallbackForm.astro';
+import { ContentModel } from '../../models/ContentModel';
+import { ELangs } from '../../enums/ELangs';
+
+
+const [content] = await Astro.glob<ContentModel>("/public/assets/content/pl/*.md");
+---
+
+<Layout title={content.frontmatter.title} lang={ELangs.pl}>
+  <Container>
+    <Hero 
+      redLine={content.frontmatter?.index.hero.redline}
+      title={content.frontmatter.index.hero.title}
+      path="pl/#callback-form"
+      btnText={content.frontmatter.index.hero.btnText}
+    />
+    <About 
+      counters={content.frontmatter.counters}
+      desc={content.frontmatter.index.desc}
+      title="About"
+    />
+    <Map 
+      title={content.frontmatter.index.mapTitle}
+    />
+  </Container>
+  <How content={content.frontmatter.howSection}/>
+  <Container>
+    <div class="services-wrp" id="services">
+      <Services 
+        title={content.frontmatter.services.title}
+        lang={ELangs.en}
+      />
+    </div>
+    <Technologies 
+      title={content?.frontmatter.tech.title} 
+      desc={content?.frontmatter.tech.desc}
+    />
+    <div id="callback-form">
+      <CallbackForm 
+        desc={content.frontmatter?.form.desc}
+        title={content.frontmatter?.form.title}
+        fields={content.frontmatter?.form.fields}
+      />
+    </div>
+  </Container>
+</Layout>
+
+<style lang="scss">
+  
+html {
+  scroll-behavior: smooth;
+}
+  
+</style>

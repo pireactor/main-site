@@ -2,13 +2,30 @@
 import CallbackForm from "../../../components/shared/CallbackForm.astro";
 import Section from "../../../components/shared/Section.astro";
 import { Counter } from "../../../components/solid/Counter";
+import { ELangs } from "../../../enums/ELangs";
 import { EPhases } from "../../../enums/EPhases";
 import Container from "../../../layouts/Container.astro";
 import Layout from "../../../layouts/Layout.astro"
+import { ContentModel } from "../../../models/ContentModel";
 import { ProjectModel } from "../../../models/ProjectModel";
 
+const props = Astro.props as ProjectModel;
+function phasesClass(item: EPhases) {
+  switch (item) {
+    case EPhases.dev:
+      return "stages__item_dev";
+    case EPhases.rel:
+      return "stages__item_rel";
+    case EPhases.sup:
+      return "stages__item_sup";
+    default: ""
+  }
+}
+
+const [content] = await Astro.glob<ContentModel>("/public/assets/content/en/*.md")
+
 export async function getStaticPaths() {
-  const projects = await Astro.glob<ProjectModel>('/public/assets/projects/es/*.md');
+  const projects = await Astro.glob<ProjectModel>('/public/assets/content/en/projects/*.md');
 
   return projects.map((project) => {
     return {
@@ -25,21 +42,9 @@ export async function getStaticPaths() {
   })
 }
 
-const props = Astro.props as ProjectModel;
-function phasesClass(item: EPhases) {
-  switch (item) {
-    case EPhases.dev:
-      return "stages__item_dev";
-    case EPhases.rel:
-      return "stages__item_rel";
-    case EPhases.sup:
-      return "stages__item_sup";
-    default: ""
-  }
-}
 ---
 
-<Layout title={props.title} lang="es">
+<Layout title={props.title} lang={ELangs.en}>
   <Container>
     <div class="hero" style={`--url: url("${props.img}")`}>
       <h1>{props.title}</h1>
@@ -74,7 +79,11 @@ function phasesClass(item: EPhases) {
         ))}
       </div>
     </Section>
-    <CallbackForm />
+    <CallbackForm
+      desc={content.frontmatter?.form.desc}
+      title={content.frontmatter?.form.title}
+      fields={content.frontmatter?.form.fields}
+    />
   </Container>
 </Layout>
 

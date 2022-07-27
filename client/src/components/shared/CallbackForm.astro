@@ -2,14 +2,32 @@
 import { FormSubmit } from "../solid/FormSubmit";
 import FormSection from "./FormSection.astro";
 
+export interface Props {
+  title: string;
+  desc: string;
+  fields: {
+    name: string;
+    email: string;
+    phone: string;
+    subj: string;
+    textArea: string;
+    fetchErr: string;
+    sucMsg: string;
+    loading: string;
+    btnText: string;
+  }
+}
+
+  const props = Astro.props as Props;
+
 ---
 
 <div class="container_mvp">
   <FormSection>
     <div class="mvp">
-      <h2 class="title">Need an MVP?</h2>
-      <p class="subtitle">Let's arrange a call where we can discuss your project and determine if you're a good fit.</p>
-          <FormSubmit client:load />
+      <h2 class="title">{props.title}</h2>
+      <p class="subtitle">{props.desc}</p>
+          <FormSubmit client:load fields={props.fields}/>
       </div>
     </FormSection>
 </div>

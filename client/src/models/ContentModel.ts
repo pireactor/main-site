@@ -29,6 +29,31 @@ export interface ContentModel {
     title: string;
     list: Array<{title: string, desc: string, class: string}>
   }
+
+  tech: {
+    title: string;
+    desc: string
+  }
+
+  services: {
+    title: string;
+  }
+
+  form: {
+    title: string;
+    desc: string;
+    fields: {
+      name: string;
+      email: string;
+      phone: string;
+      subj: string;
+      textArea: string;
+      fetchErr: string;
+      sucMsg: string;
+      loading: string;
+      btnText: string;
+    }
+  }
 }
 
 type THero = {

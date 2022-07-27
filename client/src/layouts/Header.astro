@@ -1,61 +1,68 @@
 ---
 import Logo from "../components/Logo.astro";
 import { LangPicker } from "../components/solid/LangPicker";
+import { ELangs } from "../enums/ELangs";
 import { ContentModel } from "../models/ContentModel";
 import { ServicesModel } from "../models/ServicesModel";
 import Container from "./Container.astro";
 
 export interface Props {
-  lang: string;
+  lang: ELangs;
 }
 
-const {lang} = Astro.props as Props;
+const { lang } = Astro.props as Props;
 
-  const unsortServices = lang === "en" ? 
-    await Astro.glob<ServicesModel>('/public/assets/services/en/*.md') :
-    await Astro.glob<ServicesModel>('/public/assets/services/es/*.md');
-
-
-  const [content] = lang === "en" ? 
-    await Astro.glob<ContentModel>('/public/assets/content/en/content.md') :
-    await Astro.glob<ContentModel>('/public/assets/content/es/content.md');
-  const services = unsortServices.sort((a, b) => a.frontmatter.id - b.frontmatter.id);
-  
-const langHref = content.frontmatter.href;
+const unsortServices =
+  lang === ELangs.es ? await Astro.glob<ServicesModel>("/public/assets/content/es/services/*.md") :
+    lang === ELangs.pl ? await Astro.glob<ServicesModel>("/public/assets/content/pl/services/*.md") :
+      lang === ELangs.ru ? await Astro.glob<ServicesModel>("/public/assets/content/ru/services/*.md") :
+        lang === ELangs.tr ? await Astro.glob<ServicesModel>("/public/assets/content/tr/services/*.md") :
+          lang === ELangs.ua ? await Astro.glob<ServicesModel>("/public/assets/content/ua/services/*.md") :
+            await Astro.glob<ServicesModel>("/public/assets/content/en/services/*.md");
 
 
-const navLink = Astro.canonicalURL.pathname.split('/')[2];
-const navLinkLang = Astro.canonicalURL.pathname.split('/')[2];
+const [content] =
+  lang === ELangs.es ? await Astro.glob<ContentModel>("/public/assets/content/es/*.md") :
+    lang === ELangs.pl ? await Astro.glob<ContentModel>("/public/assets/content/pl/*.md") :
+      lang === ELangs.ru ? await Astro.glob<ContentModel>("/public/assets/content/ru/*.md") :
+        lang === ELangs.tr ? await Astro.glob<ContentModel>("/public/assets/content/tr/*.md") :
+          lang === ELangs.ua ? await Astro.glob<ContentModel>("/public/assets/content/ua/*.md") :
+            await Astro.glob<ContentModel>("/public/assets/content/en/*.md")
+const services = unsortServices.sort((a, b) => a.frontmatter.id - b.frontmatter.id);
+
+const navLink = Astro.canonicalURL?.pathname.split('/')[2];
+const domain = Astro.canonicalURL?.origin
 ---
+
 <header class="header js-header">
   <Container>
     <div class="header__wrp">
-      <Logo langHref={lang}/>
-        <div class="header__menu js-h-menu">
-          <button type="button" class="header__menu-close-btn js-close" aria-label="close menu"/>
-          <nav class="header__nav nav">
-            <ul class="nav__list">
-              <li class={`nav__list-item ${navLink==="about" ? "nav__list-item_active" : "" }`}>
-                <a href={`/${lang}/about`} class="nav__link">{content.frontmatter.nav.about}</a>
-              </li>
-              <li class={`nav__list-item ${navLink==="work" ? "nav__list-item_active" : "" }`}>
-                <a href={`/${lang}/work`} class="nav__link">{content.frontmatter.nav.work}</a>
-              </li>
-              <li class={`nav__list-item nav__list-item_services ${navLink==="services" ? "nav__list-item_active" : "" }`}
-                tabindex={0}>
-                <a href={`/${lang}/#services`} class="nav__link" tabindex={-1}>{content.frontmatter.nav.services}</a>
-                <ul class="nav__submenu submenu">
-                  {services.map(i => (
-                  <li class="submenu__item">
-                    <a href={`/${lang}/services/${i.frontmatter.slug}`} class="submenu__link">{i.frontmatter.title}</a>
-                  </li>
-                  ))}
-                </ul>
-              </li>
-            </ul>
-          </nav>
-          <LangPicker client:load />
-          <a href="/#callback-form" class="header__btn" type="button">{content.frontmatter.nav.btn}</a>
+      <Logo langHref={lang} />
+      <div class="header__menu js-h-menu">
+        <button type="button" class="header__menu-close-btn js-close" aria-label="close menu" />
+        <nav class="header__nav nav">
+          <ul class="nav__list">
+            <li class={`nav__list-item ${navLink==="about" ? "nav__list-item_active" : "" }`}>
+              <a href={`/${lang}/about`} class="nav__link">{content.frontmatter.nav.about}</a>
+            </li>
+            <li class={`nav__list-item ${navLink==="work" ? "nav__list-item_active" : "" }`}>
+              <a href={`/${lang}/work`} class="nav__link">{content.frontmatter.nav.work}</a>
+            </li>
+            <li class={`nav__list-item nav__list-item_services ${navLink==="services" ? "nav__list-item_active" : "" }`}
+              tabindex={0}>
+              <a href={`/${lang}/#services`} class="nav__link" tabindex={-1}>{content.frontmatter.nav.services}</a>
+              <ul class="nav__submenu submenu">
+                {services.map(i => (
+                <li class="submenu__item">
+                  <a href={`/${lang}/services/${i.frontmatter.slug}`} class="submenu__link">{i.frontmatter.title}</a>
+                </li>
+                ))}
+              </ul>
+            </li>
+          </ul>
+        </nav>
+        <LangPicker client:load />
+        <a href="/#callback-form" class="header__btn" type="button">{content.frontmatter.nav.btn}</a>
       </div>
 
       <button class="header__burger burger js-burger" aria-label="open nav menu">
@@ -71,6 +78,7 @@ const navLinkLang = Astro.canonicalURL.pathname.split('/')[2];
     align-items: center;
     flex-basis: 100%;
   }
+
   .header {
     padding-top: 1rem;
     padding-bottom: 1rem;
@@ -221,7 +229,7 @@ const navLinkLang = Astro.canonicalURL.pathname.split('/')[2];
   .header__burger {
     display: none;
   }
-  
+
   .burger {
     content: url("/assets/img/header/menu_btn.svg");
   }
@@ -237,6 +245,7 @@ const navLinkLang = Astro.canonicalURL.pathname.split('/')[2];
       background-color: var(--color-bg);
       margin-bottom: 1rem;
     }
+
     .header__menu {
       display: none;
       position: absolute;
@@ -259,6 +268,7 @@ const navLinkLang = Astro.canonicalURL.pathname.split('/')[2];
       width: 100%;
       margin-bottom: 2.5rem;
     }
+
     .header__burger {
       display: flex;
     }
@@ -272,38 +282,40 @@ const navLinkLang = Astro.canonicalURL.pathname.split('/')[2];
       padding: 1rem 0;
       border-bottom: 1px solid var(--color-gray);
     }
+
     .nav__list-item:before {
-    content: none;
-  }
-    .nav__list-item::after {
-    content: none;
-  }
-
-  .nav__list-item_services {
-    background-image: none;
-  }
-
-  .submenu {
-    display: none;
-  }
-
-  .header__menu-close-btn {
-    display: flex;
-    content: url("/assets/img/header/close.svg");
-    position: absolute;
-    right: 1rem;
-    top: 1rem;
-  }
-
-  .header__menu_active {
-    display: flex;
-  }
-
-  @media (max-width: 1023px) {
-    .header {
-      padding: 0;
+      content: none;
     }
-  }
+
+    .nav__list-item::after {
+      content: none;
+    }
+
+    .nav__list-item_services {
+      background-image: none;
+    }
+
+    .submenu {
+      display: none;
+    }
+
+    .header__menu-close-btn {
+      display: flex;
+      content: url("/assets/img/header/close.svg");
+      position: absolute;
+      right: 1rem;
+      top: 1rem;
+    }
+
+    .header__menu_active {
+      display: flex;
+    }
+
+    @media (max-width: 1023px) {
+      .header {
+        padding: 0;
+      }
+    }
 
   }
 </style>

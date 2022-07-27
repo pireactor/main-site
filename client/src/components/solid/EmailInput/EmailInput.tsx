@@ -14,13 +14,13 @@ function handleChange(e) {
     setStore("validation", "email", "errMsg", "This email is invalid")
   } else {
     setStore("validation", "email", "errMsg", "")
-    console.log(store.validation.email.errMsg)
   }
 }
 
 interface IEmailInputProps {
   value?: string;
   ref?: any;
+  name?: string;
 }
 
 export function EmailInput(props: IEmailInputProps) {
@@ -36,7 +36,7 @@ export function EmailInput(props: IEmailInputProps) {
   return (
     <div class={styles.input__wrp}>
       <label class={styles.label}>
-        Email
+      <span>{props.name ?? "Email"}<span class={styles.input_req}>&nbsp;*</span></span>
         <input 
           ref={props.ref}
           name="Email"

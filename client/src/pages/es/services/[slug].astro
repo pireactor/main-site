@@ -2,12 +2,13 @@
 import MainTitle from "../../../components/MainTitle.astro";
 import Button from "../../../components/shared/Button.astro";
 import { Counter } from "../../../components/solid/Counter";
+import { ELangs } from "../../../enums/ELangs";
 import Container from "../../../layouts/Container.astro";
 import Layout from "../../../layouts/Layout.astro";
 import { ServicesModel } from "../../../models/ServicesModel";
 
 export async function getStaticPaths() {
-  const services = await Astro.glob<ServicesModel>('/public/assets/services/en/*.md');
+  const services = await Astro.glob<ServicesModel>('/public/assets/content/es/services/*.md');
 
   return services.map((service) => {
     return {
@@ -31,7 +32,7 @@ const props = Astro.props as ServicesModel;
 const uri = encodeURI(`/en/work/?${props.title}`)
 ---
 
-<Layout title={props.title} lang="es">
+<Layout title={props.title} lang={ELangs.en}>
   <Container>
     <section class="hero">
         <MainTitle redLine={props.title} />

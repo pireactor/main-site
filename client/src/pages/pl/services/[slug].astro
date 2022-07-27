@@ -1,0 +1,203 @@
+---
+import MainTitle from "../../../components/MainTitle.astro";
+import Button from "../../../components/shared/Button.astro";
+import { Counter } from "../../../components/solid/Counter";
+import { ELangs } from "../../../enums/ELangs";
+import Container from "../../../layouts/Container.astro";
+import Layout from "../../../layouts/Layout.astro";
+import { ServicesModel } from "../../../models/ServicesModel";
+
+export async function getStaticPaths() {
+  const services = await Astro.glob<ServicesModel>('/public/assets/content/pl/services/*.md');
+
+  return services.map((service) => {
+    return {
+      params: { slug: service.frontmatter.slug },
+      props: {
+        content: service.Content,
+        title: service.frontmatter.title,
+        titleDesc: service.frontmatter.titleDesc,
+        desc: service.frontmatter.desc,
+        values: service.frontmatter.values,
+        content: service.Content,
+        articles: service.frontmatter.articles,
+        heroBtn: service.frontmatter.heroBtn,
+        viewBtn: service.frontmatter.viewBtn,
+      }
+    };
+  })
+}
+
+const props = Astro.props as ServicesModel;
+const uri = encodeURI(`/pl/work/?${props.title}`)
+---
+
+<Layout title={props.title} lang={ELangs.en}>
+  <Container>
+    <section class="hero">
+        <MainTitle redLine={props.title} />
+        <p>
+          {props.titleDesc}
+        </p>
+        <Button title={props.heroBtn} path="/pl/#callback-form"/>
+    </section>
+
+    <section class="desc">
+      <h2>About</h2>
+      <div class="desc__wrp">
+        <p>{props.desc}</p>
+        <div class="desc__counter">
+          {props.values.map(i =>
+          <Counter client:load countTo={i.value} title={i.name} />)}
+        </div>
+      </div>
+    </section>
+    {props.articles.map(i => (
+    <section class="article">
+      <h3 class="article__title">{i.title}</h3>
+      <div class="article__wrp">
+        <img class="article__img" src={i.img} alt={i.title} />
+        <p class="article__desc">{i.desc}</p>
+      </div>
+    </section>
+    ))}
+    <div class="article__view">
+      <Button path={uri} title={props.viewBtn}/>
+    </div>
+  </Container>
+</Layout>
+
+<style lang="scss">
+
+.hero {
+    display: flex;
+    margin-bottom: 10.5rem;
+    background: transparent url("/assets/img/main/main.webp") no-repeat center right;
+    flex-direction: column;
+    background-size: contain;
+  }
+
+  .hero {
+    display: flex;
+    margin-bottom: 10.5rem;
+  }
+    p {
+      margin-bottom: 3rem;
+      max-width: 500px;
+    }
+
+  .desc {
+    margin-bottom: 10rem;
+  }
+
+  .desc h2 {
+    visibility: hidden;
+
+  }
+
+  .desc__wrp {
+    display: flex;
+    flex-wrap: nowrap;
+
+    p {
+      margin: 0;
+      margin-right: auto;
+      flex-basis: 50%;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 160%;
+    }
+  }
+
+  .desc__counter {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2rem;
+  }
+
+  .article {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 10rem;
+  }
+
+  .article:nth-child(2n) {
+    .article__desc {
+      order: 0;
+    }
+    .article__img {
+      order: 1;
+    }
+  }
+
+  .article__title {
+    flex-basis: 100%;
+    text-align: center;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 45px;
+    margin-bottom: 3rem;
+  }
+
+  .article__wrp {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .article__desc {
+    flex-basis: 60%;
+  }
+
+  .link {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .article__view {
+    display: flex;
+    justify-content: center;
+  }
+
+  @media(max-width: 1279px) {
+    .hero {
+      background-position: center center;
+      background-size: contain;
+      flex-direction: column;
+      align-items: center;
+      min-height: 75vh;
+      background-size: 35vh;
+      background-position-y: 50%;
+    }
+  }
+  @media(max-width: 1023px) {
+
+    .article__wrp {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      width: 100%;
+    }
+
+    .article__desc {
+      flex-basis: 100%;
+    }
+    .desc__wrp {
+      flex-direction: column;
+      p {
+        margin: 2rem 0;
+      }
+    }
+  }
+  
+  @media(max-width: 767px) {
+    .hero {
+      margin-bottom: 5rem;
+      height: auto;
+      background-position: center calc(50% - 4rem);
+      // background-size: 15vh;
+    }
+  }
+</style>

@@ -1,6 +1,15 @@
+---
+export interface Props {
+  title: string;
+  desc: string;
+
+}
+const {title, desc} = Astro.props as Props;
+---
+
 <section>
-  <h2 class="title">Technologies We Love</h2>
-  <p class="subtitle">Our technology expertise includes but not limited to:</p>
+  <h2 class="title">{title}</h2>
+  <p class="subtitle">{desc}</p>
   <ul class="techs__list">
     <li class="techs__item techs__item_frontend">
       <h3 class="techs__title">Front end</h3>

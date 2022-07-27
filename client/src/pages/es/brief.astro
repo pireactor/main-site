@@ -2,12 +2,13 @@
 import Breadcrums from "../../components/shared/Breadcrums.astro";
 import FormSection from "../../components/shared/FormSection.astro";
 import { Form } from "../../components/solid/Form";
+import { ELangs } from "../../enums/ELangs";
 import Container from "../../layouts/Container.astro";
 import Layout from "../../layouts/Layout.astro"
 
 ---
 
-<Layout title="Brief" lang="es">
+<Layout title="Brief" lang={ELangs.es}>
   <Container>
     <Breadcrums currentPath="Brief"/>
     <FormSection>

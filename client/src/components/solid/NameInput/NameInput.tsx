@@ -1,4 +1,5 @@
 import { createEffect, createSignal } from "solid-js";
+import { ELangs } from "../../../enums/ELangs";
 import { setStore, store } from "../Form/store";
 import styles from "./NameInput.module.scss"
 
@@ -19,6 +20,7 @@ function handleChange(e) {
 interface INameInputProps {
   value?: string;
   ref?: any;
+  name?: string;
 }
 
 export function NameInput(props: INameInputProps) {
@@ -34,7 +36,7 @@ export function NameInput(props: INameInputProps) {
   return (
     <div class={styles.input__wrp}>
       <label class={styles.label}>
-        Name
+        <span>{props.name ?? "Name"}<span class={styles.input_req}>&nbsp;*</span></span>
         <input 
           ref={props.ref}
           name="Name"

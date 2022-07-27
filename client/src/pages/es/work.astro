@@ -8,7 +8,8 @@ import Layout from "../../layouts/Layout.astro";
 import { ProjectModel } from "../../models/ProjectModel";
 import { ServicesModel } from "../../models/ServicesModel";
 
-const projectsRaw = await Astro.glob<ProjectModel>('/public/assets/projects/es/*.md');
+  const projectsRaw = await Astro.glob<ProjectModel>('/public/assets/content/en/projects/*.md');
+
   const projects = projectsRaw.map(i => {
     return {
     desc: i.frontmatter.desc,
@@ -23,20 +24,20 @@ const projectsRaw = await Astro.glob<ProjectModel>('/public/assets/projects/es/*
 })
 
 const url = Astro.request.url
-const services = await Astro.glob<ServicesModel>('/public/assets/services/en/*.md');
+const services = await Astro.glob<ServicesModel>('/public/assets/content/en/services/*.md');
 const servicesNames = services.map(i => ({
   name: i.frontmatter.title
 }))
 
 ---
-<Layout title="Portfolio" lang="es">
+<Layout title="Portfolio" lang={ELangs.en}>
   <Container>
     <Breadcrums currentPath="Portfolio" />
     <section class="hero">
-        <MainTitle redLine="Explora" title="nuestras obras" />
+        <MainTitle redLine="Explore" title="our Work" />
         <p class="hero__desc">
-          Aplicamos tecnologías modernas para desbloquearle nuevos mercados, expandir sus oportunidades comerciales y acercarle un paso más al éxito. Combinamos desarrolladores con diseñadores,
-           traductores con redactores, todos expertos en sus campos, implementando lo que funciona.
+          We apply modern technologies to unlock new markets, expand your business opportunities and bring you one step closer to success. We combine developpers with designers,
+          translators with copywriters, all subject matter experts in their fields, implementing what works. 
         </p>
     </section>
     <Projects 
@@ -44,10 +45,10 @@ const servicesNames = services.map(i => ({
       servicesNames={servicesNames} 
       projects={projects} 
       url={url} 
-      allBtnTitle="Todos los proyectos" 
-      learnMoreText="Lee más"
-      langHref={ELangs.sp}
-      />
+      allBtnTitle="All Projects" 
+      learnMoreText="More Information"
+      langHref={ELangs.en}
+    />
   </Container>
 </Layout>
 

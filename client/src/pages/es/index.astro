@@ -9,13 +9,13 @@ import Technologies from '../../components/main/Technologies.astro';
 import Container from '../../layouts/Container.astro';
 import CallbackForm from '../../components/shared/CallbackForm.astro';
 import { ContentModel } from '../../models/ContentModel';
+import { ELangs } from '../../enums/ELangs';
+
 
 const [content] = await Astro.glob<ContentModel>("/public/assets/content/es/*.md");
-const path = Astro.canonicalURL.pathname;
-
 ---
 
-<Layout title={content.frontmatter.title} lang="es">
+<Layout title={content.frontmatter?.title} lang={ELangs.es}>
   <Container>
     <Hero 
       redLine={content.frontmatter?.index.hero.redline}
@@ -35,11 +35,21 @@ const path = Astro.canonicalURL.pathname;
   <How content={content.frontmatter.howSection}/>
   <Container>
     <div class="services-wrp" id="services">
-      <Services />
+      <Services 
+        title={content.frontmatter.services.title}
+        lang={ELangs.en}
+      />
     </div>
-    <Technologies />
+    <Technologies 
+      title={content?.frontmatter.tech.title} 
+      desc={content?.frontmatter.tech.desc}
+    />
     <div id="callback-form">
-      <CallbackForm />
+      <CallbackForm 
+        desc={content.frontmatter?.form.desc}
+        title={content.frontmatter?.form.title}
+        fields={content.frontmatter?.form.fields}
+      />
     </div>
   </Container>
 </Layout>

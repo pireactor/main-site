@@ -1,7 +1,21 @@
 ---
-import { ServicesModel } from "../../models/ServicesModel";
-import Section from "../shared/Section.astro";
-const unsortServices = await Astro.glob<ServicesModel>('/public/assets/services/en/*.md');
+  import { ELangs } from "../../enums/ELangs";
+  import { ServicesModel } from "../../models/ServicesModel";
+  import Section from "../shared/Section.astro";
+export interface Props {
+  lang: ELangs,
+  title: string;
+}
+
+const {title, lang} = Astro.props as Props;
+
+const unsortServices = 
+lang === ELangs.es ? await Astro.glob<ServicesModel>("/public/assets/content/es/services/*.md") :
+    lang === ELangs.pl ? await Astro.glob<ServicesModel>("/public/assets/content/pl/services/*.md") :
+      lang === ELangs.ru ? await Astro.glob<ServicesModel>("/public/assets/content/ru/services/*.md") :
+        lang === ELangs.tr ? await Astro.glob<ServicesModel>("/public/assets/content/tr/services/*.md") :
+          lang === ELangs.ua ? await Astro.glob<ServicesModel>("/public/assets/content/ua/services/*.md") :
+            await Astro.glob<ServicesModel>("/public/assets/content/en/services/*.md");
 const services = unsortServices.sort((a, b) => a.frontmatter.id - b.frontmatter.id);
 
 function setClass(id: number) {
@@ -23,7 +37,7 @@ function setClass(id: number) {
 
 ---
 
-<Section title="Our Services">
+<Section title={title}>
   <div class="services__wrp">
     <ul class="services__list">
       {services.map(i => (
