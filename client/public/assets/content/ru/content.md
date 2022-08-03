@@ -1,21 +1,21 @@
 ---
-lang: "en"
+lang: "ru"
 title: "Pireactor"
 description: "Global Resource Solutions"
-href: "en"
+href: "ru"
 
 nav: {
-  about: "About us",
-  work: "Our Work",
-  services: "Our Services",
-  btn: "Let's talk",
+  about: "О нас",
+  work: "Портфоли",
+  services: "Услуги",
+  btn: "Связаться",
 }
 
 index: {
   hero: {
-    redline: "Startup &",
-    title: "Product Catalyzer",
-    btnText: "Accelerate my Roadmap",
+    redline: "Катализатор",
+    title: "продутов и стартапов",
+    btnText: "Прокачайте мой проект",
   },
     desc: "We help clients explore requirements and work out what they really
       need today and to plan for tomorrow tomorrow. Instead of reiterating

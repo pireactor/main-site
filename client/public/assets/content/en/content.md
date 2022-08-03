@@ -4,12 +4,12 @@ title: "Pireactor"
 description: "Global Resource Solutions"
 href: "en"
 
-nav: {
+nav: 
   about: "About us",
   work: "Our Work",
   services: "Our Services",
   btn: "Let's talk",
-}
+
 
 index: {
   hero: {
