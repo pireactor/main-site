@@ -6,10 +6,10 @@ import { createSignal, createEffect, onMount } from 'solid-js';
 /* empty css                        *//* empty css                        *//* empty css                        */import { s as styles$1 } from './chunks/chunk.67acf695.mjs';
 /* empty css                        */import { s as styles$6 } from './chunks/chunk.2fcc1150.mjs';
 import { createStore } from 'solid-js/store';
-import { s as styles$2, a as styles$3, b as styles$4, c as styles$5 } from './chunks/chunk.037f97ae.mjs';
-/* empty css                         *//* empty css                        *//* empty css                        *//* empty css                        */import { s as styles$7, a as styles$8, b as styles$9, c as styles$a, d as styles$b } from './chunks/chunk.dbf05238.mjs';
-/* empty css                         *//* empty css                         */import { s as styles$c } from './chunks/chunk.90110aa4.mjs';
-/* empty css                         *//* empty css                        *//* empty css                        *//* empty css                        *//* empty css                        *//* empty css                         *//* empty css                        *//* empty css                        *//* empty css                        *//* empty css                        *//* empty css                         *//* empty css                         *//* empty css                         *//* empty css                        *//* empty css                         *//* empty css                        *//* empty css                        *//* empty css                         *//* empty css                         *//* empty css                         *//* empty css                         *//* empty css                         *//* empty css                         *//* empty css                         *//* empty css                         */
+import { s as styles$2, a as styles$3, b as styles$4, c as styles$5 } from './chunks/chunk.fa1fc0bc.mjs';
+/* empty css                        *//* empty css                         *//* empty css                        *//* empty css                        */import { s as styles$7, a as styles$8, b as styles$9, c as styles$a, d as styles$b } from './chunks/chunk.dbf05238.mjs';
+/* empty css                         *//* empty css                        */import { s as styles$c } from './chunks/chunk.90110aa4.mjs';
+/* empty css                         *//* empty css                        *//* empty css                        *//* empty css                         *//* empty css                         *//* empty css                        *//* empty css                        *//* empty css                        *//* empty css                        *//* empty css                         *//* empty css                         *//* empty css                         *//* empty css                         *//* empty css                         *//* empty css                         *//* empty css                         *//* empty css                         *//* empty css                        *//* empty css                        *//* empty css                         *//* empty css                         *//* empty css                         *//* empty css                         *//* empty css                         *//* empty css                         */
 function check(Component, props, children) {
 	if (typeof Component !== 'function') return false;
 	const { html } = renderToStaticMarkup(Component, props, children);
@@ -673,15 +673,15 @@ var __freeze = Object.freeze;
 var __defProp$1 = Object.defineProperty;
 var __template = (cooked, raw) => __freeze(__defProp$1(cooked, "raw", { value: __freeze(raw || cooked.slice()) }));
 var _a;
-const $$metadata$S = createMetadata("/@fs/C:/work-projects/pireactor/main-site/client/src/pages/index.astro", { modules: [], hydratedComponents: [], clientOnlyComponents: [], hydrationDirectives: /* @__PURE__ */ new Set([]), hoisted: [] });
-const $$Astro$S = createAstro("/@fs/C:/work-projects/pireactor/main-site/client/src/pages/index.astro", "http://localhost:3000/", "file:///C:/work-projects/pireactor/main-site/client/");
+const $$metadata$S = createMetadata("/@fs/C:/work-projects/pireactor/main-site/src/pages/index.astro", { modules: [], hydratedComponents: [], clientOnlyComponents: [], hydrationDirectives: /* @__PURE__ */ new Set([]), hoisted: [] });
+const $$Astro$S = createAstro("/@fs/C:/work-projects/pireactor/main-site/src/pages/index.astro", "http://localhost:3000/", "file:///C:/work-projects/pireactor/main-site/");
 const $$Index$6 = createComponent(async ($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro$S, $$props, $$slots);
   Astro2.self = $$Index$6;
   return render(_a || (_a = __template(["<script>\n	window.location.pathname = `/en/`;\n<\/script>"], ["<script>\n	window.location.pathname = \\`/en/\\`;\n<\/script>"])));
 });
 
-const $$file$S = "C:/work-projects/pireactor/main-site/client/src/pages/index.astro";
+const $$file$S = "C:/work-projects/pireactor/main-site/src/pages/index.astro";
 const $$url$S = "";
 
 var _page0 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
@@ -707,8 +707,8 @@ var $$module4$2 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty(
 	ELangs: ELangs
 }, Symbol.toStringTag, { value: 'Module' }));
 
-const $$metadata$R = createMetadata("/@fs/C:/work-projects/pireactor/main-site/client/src/layouts/Container.astro", { modules: [], hydratedComponents: [], clientOnlyComponents: [], hydrationDirectives: /* @__PURE__ */ new Set([]), hoisted: [] });
-const $$Astro$R = createAstro("/@fs/C:/work-projects/pireactor/main-site/client/src/layouts/Container.astro", "http://localhost:3000/", "file:///C:/work-projects/pireactor/main-site/client/");
+const $$metadata$R = createMetadata("/@fs/C:/work-projects/pireactor/main-site/src/layouts/Container.astro", { modules: [], hydratedComponents: [], clientOnlyComponents: [], hydrationDirectives: /* @__PURE__ */ new Set([]), hoisted: [] });
+const $$Astro$R = createAstro("/@fs/C:/work-projects/pireactor/main-site/src/layouts/Container.astro", "http://localhost:3000/", "file:///C:/work-projects/pireactor/main-site/");
 const $$Container = createComponent(async ($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro$R, $$props, $$slots);
   Astro2.self = $$Container;
@@ -720,7 +720,7 @@ const $$Container = createComponent(async ($$result, $$props, $$slots) => {
 </div>`;
 });
 
-const $$file$R = "C:/work-projects/pireactor/main-site/client/src/layouts/Container.astro";
+const $$file$R = "C:/work-projects/pireactor/main-site/src/layouts/Container.astro";
 const $$url$R = undefined;
 
 var $$module5$3 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
@@ -731,8 +731,8 @@ var $$module5$3 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty(
 	url: $$url$R
 }, Symbol.toStringTag, { value: 'Module' }));
 
-const $$metadata$Q = createMetadata("/@fs/C:/work-projects/pireactor/main-site/client/src/layouts/Footer.astro", { modules: [{ module: $$module5$3, specifier: "./Container.astro", assert: {} }], hydratedComponents: [], clientOnlyComponents: [], hydrationDirectives: /* @__PURE__ */ new Set([]), hoisted: [] });
-const $$Astro$Q = createAstro("/@fs/C:/work-projects/pireactor/main-site/client/src/layouts/Footer.astro", "http://localhost:3000/", "file:///C:/work-projects/pireactor/main-site/client/");
+const $$metadata$Q = createMetadata("/@fs/C:/work-projects/pireactor/main-site/src/layouts/Footer.astro", { modules: [{ module: $$module5$3, specifier: "./Container.astro", assert: {} }], hydratedComponents: [], clientOnlyComponents: [], hydrationDirectives: /* @__PURE__ */ new Set([]), hoisted: [] });
+const $$Astro$Q = createAstro("/@fs/C:/work-projects/pireactor/main-site/src/layouts/Footer.astro", "http://localhost:3000/", "file:///C:/work-projects/pireactor/main-site/");
 const $$Footer = createComponent(async ($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro$Q, $$props, $$slots);
   Astro2.self = $$Footer;
@@ -778,7 +778,7 @@ const $$Footer = createComponent(async ($$result, $$props, $$slots) => {
 </footer>`;
 });
 
-const $$file$Q = "C:/work-projects/pireactor/main-site/client/src/layouts/Footer.astro";
+const $$file$Q = "C:/work-projects/pireactor/main-site/src/layouts/Footer.astro";
 const $$url$Q = undefined;
 
 var $$module4$1 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
@@ -789,8 +789,8 @@ var $$module4$1 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty(
 	url: $$url$Q
 }, Symbol.toStringTag, { value: 'Module' }));
 
-const $$metadata$P = createMetadata("/@fs/C:/work-projects/pireactor/main-site/client/src/components/Logo.astro", { modules: [], hydratedComponents: [], clientOnlyComponents: [], hydrationDirectives: /* @__PURE__ */ new Set([]), hoisted: [] });
-const $$Astro$P = createAstro("/@fs/C:/work-projects/pireactor/main-site/client/src/components/Logo.astro", "http://localhost:3000/", "file:///C:/work-projects/pireactor/main-site/client/");
+const $$metadata$P = createMetadata("/@fs/C:/work-projects/pireactor/main-site/src/components/Logo.astro", { modules: [], hydratedComponents: [], clientOnlyComponents: [], hydrationDirectives: /* @__PURE__ */ new Set([]), hoisted: [] });
+const $$Astro$P = createAstro("/@fs/C:/work-projects/pireactor/main-site/src/components/Logo.astro", "http://localhost:3000/", "file:///C:/work-projects/pireactor/main-site/");
 const $$Logo = createComponent(async ($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro$P, $$props, $$slots);
   Astro2.self = $$Logo;
@@ -833,7 +833,7 @@ const $$Logo = createComponent(async ($$result, $$props, $$slots) => {
 </a>`;
 });
 
-const $$file$P = "C:/work-projects/pireactor/main-site/client/src/components/Logo.astro";
+const $$file$P = "C:/work-projects/pireactor/main-site/src/components/Logo.astro";
 const $$url$P = undefined;
 
 var $$module1$4 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
@@ -891,7 +891,7 @@ var $$module8 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
 	__proto__: null
 }, Symbol.toStringTag, { value: 'Module' }));
 
-const $$metadata$O = createMetadata("/@fs/C:/work-projects/pireactor/main-site/client/src/layouts/Header.astro", { modules: [{ module: $$module1$4, specifier: "../components/Logo.astro", assert: {} }, { module: $$module2$7, specifier: "../components/solid/LangPicker", assert: {} }, { module: $$module4$2, specifier: "../enums/ELangs", assert: {} }, { module: $$module8$1, specifier: "../models/ContentModel", assert: {} }, { module: $$module8, specifier: "../models/ServicesModel", assert: {} }, { module: $$module5$3, specifier: "./Container.astro", assert: {} }], hydratedComponents: [LangPicker], clientOnlyComponents: [], hydrationDirectives: /* @__PURE__ */ new Set(["load"]), hoisted: [{ type: "inline", value: `
+const $$metadata$O = createMetadata("/@fs/C:/work-projects/pireactor/main-site/src/layouts/Header.astro", { modules: [{ module: $$module1$4, specifier: "../components/Logo.astro", assert: {} }, { module: $$module2$7, specifier: "../components/solid/LangPicker", assert: {} }, { module: $$module4$2, specifier: "../enums/ELangs", assert: {} }, { module: $$module8$1, specifier: "../models/ContentModel", assert: {} }, { module: $$module8, specifier: "../models/ServicesModel", assert: {} }, { module: $$module5$3, specifier: "./Container.astro", assert: {} }], hydratedComponents: [LangPicker], clientOnlyComponents: [], hydrationDirectives: /* @__PURE__ */ new Set(["load"]), hoisted: [{ type: "inline", value: `
   const burgerEl = document.querySelector(".burger");
   const menuEl = document.querySelector(".js-h-menu");
   const closeBtnEl = document.querySelector(".js-close")
@@ -901,47 +901,47 @@ const $$metadata$O = createMetadata("/@fs/C:/work-projects/pireactor/main-site/c
   burgerEl.addEventListener("click", handleClick)
   closeBtnEl.addEventListener("click", handleClick)
 ` }] });
-const $$Astro$O = createAstro("/@fs/C:/work-projects/pireactor/main-site/client/src/layouts/Header.astro", "http://localhost:3000/", "file:///C:/work-projects/pireactor/main-site/client/");
+const $$Astro$O = createAstro("/@fs/C:/work-projects/pireactor/main-site/src/layouts/Header.astro", "http://localhost:3000/", "file:///C:/work-projects/pireactor/main-site/");
 const $$Header = createComponent(async ($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro$O, $$props, $$slots);
   Astro2.self = $$Header;
   const { lang } = Astro2.props;
   const unsortServices = lang === ELangs.es ? await Astro2.glob(
-    { "/public/assets/content/es/services/architecture.md": () => import('./chunks/chunk.ccbb07d8.mjs'), "/public/assets/content/es/services/automation.md": () => import('./chunks/chunk.938b4c4d.mjs'), "/public/assets/content/es/services/blockchain.md": () => import('./chunks/chunk.5f73559c.mjs'), "/public/assets/content/es/services/strategy.md": () => import('./chunks/chunk.9d579503.mjs'), "/public/assets/content/es/services/wallets.md": () => import('./chunks/chunk.000bd02f.mjs'),},
+    { "/public/assets/content/es/services/architecture.md": () => import('./chunks/chunk.b31d322e.mjs'), "/public/assets/content/es/services/automation.md": () => import('./chunks/chunk.e89ab15e.mjs'), "/public/assets/content/es/services/blockchain.md": () => import('./chunks/chunk.553bc06b.mjs'), "/public/assets/content/es/services/strategy.md": () => import('./chunks/chunk.3c563026.mjs'), "/public/assets/content/es/services/wallets.md": () => import('./chunks/chunk.165e007d.mjs'),},
     () => "/public/assets/content/es/services/*.md"
   ) : lang === ELangs.pl ? await Astro2.glob(
-    { "/public/assets/content/pl/services/architecture.md": () => import('./chunks/chunk.2186ae96.mjs'), "/public/assets/content/pl/services/automation.md": () => import('./chunks/chunk.b391d7bf.mjs'), "/public/assets/content/pl/services/blockchain.md": () => import('./chunks/chunk.f9b7a791.mjs'), "/public/assets/content/pl/services/strategy.md": () => import('./chunks/chunk.64fc4e6e.mjs'), "/public/assets/content/pl/services/wallets.md": () => import('./chunks/chunk.e49a8342.mjs'),},
+    { "/public/assets/content/pl/services/architecture.md": () => import('./chunks/chunk.7ab29271.mjs'), "/public/assets/content/pl/services/automation.md": () => import('./chunks/chunk.10e50542.mjs'), "/public/assets/content/pl/services/blockchain.md": () => import('./chunks/chunk.2b4629e3.mjs'), "/public/assets/content/pl/services/strategy.md": () => import('./chunks/chunk.67f22cca.mjs'), "/public/assets/content/pl/services/wallets.md": () => import('./chunks/chunk.d3d93e58.mjs'),},
     () => "/public/assets/content/pl/services/*.md"
   ) : lang === ELangs.ru ? await Astro2.glob(
-    { "/public/assets/content/ru/services/architecture.md": () => import('./chunks/chunk.a7a267b0.mjs'), "/public/assets/content/ru/services/automation.md": () => import('./chunks/chunk.70e6007d.mjs'), "/public/assets/content/ru/services/blockchain.md": () => import('./chunks/chunk.2f9977d7.mjs'), "/public/assets/content/ru/services/strategy.md": () => import('./chunks/chunk.513b3675.mjs'), "/public/assets/content/ru/services/wallets.md": () => import('./chunks/chunk.a237989c.mjs'),},
+    { "/public/assets/content/ru/services/architecture.md": () => import('./chunks/chunk.554d4dc5.mjs'), "/public/assets/content/ru/services/automation.md": () => import('./chunks/chunk.e38eb8e6.mjs'), "/public/assets/content/ru/services/blockchain.md": () => import('./chunks/chunk.9ece0295.mjs'), "/public/assets/content/ru/services/strategy.md": () => import('./chunks/chunk.2d3f63a8.mjs'), "/public/assets/content/ru/services/wallets.md": () => import('./chunks/chunk.39677201.mjs'),},
     () => "/public/assets/content/ru/services/*.md"
   ) : lang === ELangs.tr ? await Astro2.glob(
-    { "/public/assets/content/tr/services/architecture.md": () => import('./chunks/chunk.91c8893a.mjs'), "/public/assets/content/tr/services/automation.md": () => import('./chunks/chunk.acb3f924.mjs'), "/public/assets/content/tr/services/blockchain.md": () => import('./chunks/chunk.f1a695b8.mjs'), "/public/assets/content/tr/services/strategy.md": () => import('./chunks/chunk.520832bb.mjs'), "/public/assets/content/tr/services/wallets.md": () => import('./chunks/chunk.8508d622.mjs'),},
+    { "/public/assets/content/tr/services/architecture.md": () => import('./chunks/chunk.9d601bcb.mjs'), "/public/assets/content/tr/services/automation.md": () => import('./chunks/chunk.0a29b555.mjs'), "/public/assets/content/tr/services/blockchain.md": () => import('./chunks/chunk.7363e747.mjs'), "/public/assets/content/tr/services/strategy.md": () => import('./chunks/chunk.d8c09329.mjs'), "/public/assets/content/tr/services/wallets.md": () => import('./chunks/chunk.873f2a22.mjs'),},
     () => "/public/assets/content/tr/services/*.md"
   ) : lang === ELangs.ua ? await Astro2.glob(
-    { "/public/assets/content/ua/services/architecture.md": () => import('./chunks/chunk.0b834678.mjs'), "/public/assets/content/ua/services/automation.md": () => import('./chunks/chunk.dd708ad7.mjs'), "/public/assets/content/ua/services/blockchain.md": () => import('./chunks/chunk.28640239.mjs'), "/public/assets/content/ua/services/strategy.md": () => import('./chunks/chunk.6668f04f.mjs'), "/public/assets/content/ua/services/wallets.md": () => import('./chunks/chunk.e2320abe.mjs'),},
+    { "/public/assets/content/ua/services/architecture.md": () => import('./chunks/chunk.52e3bf1b.mjs'), "/public/assets/content/ua/services/automation.md": () => import('./chunks/chunk.343126a2.mjs'), "/public/assets/content/ua/services/blockchain.md": () => import('./chunks/chunk.1c6f6212.mjs'), "/public/assets/content/ua/services/strategy.md": () => import('./chunks/chunk.2e67f1fb.mjs'), "/public/assets/content/ua/services/wallets.md": () => import('./chunks/chunk.1e8278ce.mjs'),},
     () => "/public/assets/content/ua/services/*.md"
   ) : await Astro2.glob(
-    { "/public/assets/content/en/services/architecture.md": () => import('./chunks/chunk.93527cb3.mjs'), "/public/assets/content/en/services/automation.md": () => import('./chunks/chunk.59824c95.mjs'), "/public/assets/content/en/services/blockchain.md": () => import('./chunks/chunk.7c3d0c0b.mjs'), "/public/assets/content/en/services/strategy.md": () => import('./chunks/chunk.33bb18a9.mjs'), "/public/assets/content/en/services/wallets.md": () => import('./chunks/chunk.ee134a3e.mjs'),},
+    { "/public/assets/content/en/services/architecture.md": () => import('./chunks/chunk.c6afcfdc.mjs'), "/public/assets/content/en/services/automation.md": () => import('./chunks/chunk.c98e4cd0.mjs'), "/public/assets/content/en/services/blockchain.md": () => import('./chunks/chunk.ec6459d7.mjs'), "/public/assets/content/en/services/strategy.md": () => import('./chunks/chunk.d804232d.mjs'), "/public/assets/content/en/services/wallets.md": () => import('./chunks/chunk.bf2e9b1c.mjs'),},
     () => "/public/assets/content/en/services/*.md"
   );
   const [content] = lang === ELangs.es ? await Astro2.glob(
-    { "/public/assets/content/es/content.md": () => import('./chunks/chunk.4896bd4a.mjs'),},
+    { "/public/assets/content/es/content.md": () => import('./chunks/chunk.a70b9817.mjs'),},
     () => "/public/assets/content/es/*.md"
   ) : lang === ELangs.pl ? await Astro2.glob(
-    { "/public/assets/content/pl/content.md": () => import('./chunks/chunk.832d7e87.mjs'),},
+    { "/public/assets/content/pl/content.md": () => import('./chunks/chunk.7554dae3.mjs'),},
     () => "/public/assets/content/pl/*.md"
   ) : lang === ELangs.ru ? await Astro2.glob(
-    { "/public/assets/content/ru/content.md": () => import('./chunks/chunk.a999f7dd.mjs'),},
+    { "/public/assets/content/ru/content.md": () => import('./chunks/chunk.ad1611b2.mjs'),},
     () => "/public/assets/content/ru/*.md"
   ) : lang === ELangs.tr ? await Astro2.glob(
-    { "/public/assets/content/tr/content.md": () => import('./chunks/chunk.70ae4c85.mjs'),},
+    { "/public/assets/content/tr/content.md": () => import('./chunks/chunk.ccb8540d.mjs'),},
     () => "/public/assets/content/tr/*.md"
   ) : lang === ELangs.ua ? await Astro2.glob(
-    { "/public/assets/content/ua/content.md": () => import('./chunks/chunk.164f6447.mjs'),},
+    { "/public/assets/content/ua/content.md": () => import('./chunks/chunk.76ad3dcc.mjs'),},
     () => "/public/assets/content/ua/*.md"
   ) : await Astro2.glob(
-    { "/public/assets/content/en/content.md": () => import('./chunks/chunk.440c98c3.mjs'),},
+    { "/public/assets/content/en/content.md": () => import('./chunks/chunk.c9d3957c.mjs'),},
     () => "/public/assets/content/en/*.md"
   );
   const services = unsortServices.sort((a, b) => a.frontmatter.id - b.frontmatter.id);
@@ -986,7 +986,7 @@ const $$Header = createComponent(async ($$result, $$props, $$slots) => {
 `;
 });
 
-const $$file$O = "C:/work-projects/pireactor/main-site/client/src/layouts/Header.astro";
+const $$file$O = "C:/work-projects/pireactor/main-site/src/layouts/Header.astro";
 const $$url$O = undefined;
 
 var $$module5$2 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
@@ -1012,29 +1012,29 @@ var $$module2$6 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty(
 	ETags: ETags
 }, Symbol.toStringTag, { value: 'Module' }));
 
-const $$metadata$N = createMetadata("/@fs/C:/work-projects/pireactor/main-site/client/src/layouts/Layout.astro", { modules: [{ module: $$module4$2, specifier: "../enums/ELangs", assert: {} }, { module: $$module2$6, specifier: "../enums/ETags", assert: {} }, { module: $$module8$1, specifier: "../models/ContentModel", assert: {} }, { module: $$module4$1, specifier: "./Footer.astro", assert: {} }, { module: $$module5$2, specifier: "./Header.astro", assert: {} }], hydratedComponents: [], clientOnlyComponents: [], hydrationDirectives: /* @__PURE__ */ new Set([]), hoisted: [] });
-const $$Astro$N = createAstro("/@fs/C:/work-projects/pireactor/main-site/client/src/layouts/Layout.astro", "http://localhost:3000/", "file:///C:/work-projects/pireactor/main-site/client/");
+const $$metadata$N = createMetadata("/@fs/C:/work-projects/pireactor/main-site/src/layouts/Layout.astro", { modules: [{ module: $$module4$2, specifier: "../enums/ELangs", assert: {} }, { module: $$module2$6, specifier: "../enums/ETags", assert: {} }, { module: $$module8$1, specifier: "../models/ContentModel", assert: {} }, { module: $$module4$1, specifier: "./Footer.astro", assert: {} }, { module: $$module5$2, specifier: "./Header.astro", assert: {} }], hydratedComponents: [], clientOnlyComponents: [], hydrationDirectives: /* @__PURE__ */ new Set([]), hoisted: [] });
+const $$Astro$N = createAstro("/@fs/C:/work-projects/pireactor/main-site/src/layouts/Layout.astro", "http://localhost:3000/", "file:///C:/work-projects/pireactor/main-site/");
 const $$Layout = createComponent(async ($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro$N, $$props, $$slots);
   Astro2.self = $$Layout;
   const { title, lang } = Astro2.props;
   const [content] = lang === ELangs.es ? await Astro2.glob(
-    { "/public/assets/content/es/content.md": () => import('./chunks/chunk.4896bd4a.mjs'),},
+    { "/public/assets/content/es/content.md": () => import('./chunks/chunk.a70b9817.mjs'),},
     () => "/public/assets/content/es/*.md"
   ) : lang === ELangs.pl ? await Astro2.glob(
-    { "/public/assets/content/pl/content.md": () => import('./chunks/chunk.832d7e87.mjs'),},
+    { "/public/assets/content/pl/content.md": () => import('./chunks/chunk.7554dae3.mjs'),},
     () => "/public/assets/content/pl/*.md"
   ) : lang === ELangs.ru ? await Astro2.glob(
-    { "/public/assets/content/ru/content.md": () => import('./chunks/chunk.a999f7dd.mjs'),},
+    { "/public/assets/content/ru/content.md": () => import('./chunks/chunk.ad1611b2.mjs'),},
     () => "/public/assets/content/ru/*.md"
   ) : lang === ELangs.tr ? await Astro2.glob(
-    { "/public/assets/content/tr/content.md": () => import('./chunks/chunk.70ae4c85.mjs'),},
+    { "/public/assets/content/tr/content.md": () => import('./chunks/chunk.ccb8540d.mjs'),},
     () => "/public/assets/content/tr/*.md"
   ) : lang === ELangs.ua ? await Astro2.glob(
-    { "/public/assets/content/ua/content.md": () => import('./chunks/chunk.164f6447.mjs'),},
+    { "/public/assets/content/ua/content.md": () => import('./chunks/chunk.76ad3dcc.mjs'),},
     () => "/public/assets/content/ua/*.md"
   ) : await Astro2.glob(
-    { "/public/assets/content/en/content.md": () => import('./chunks/chunk.440c98c3.mjs'),},
+    { "/public/assets/content/en/content.md": () => import('./chunks/chunk.c9d3957c.mjs'),},
     () => "/public/assets/content/en/*.md"
   );
   const STYLES = [];
@@ -1062,7 +1062,7 @@ const $$Layout = createComponent(async ($$result, $$props, $$slots) => {
 </body></html>`;
 });
 
-const $$file$N = "C:/work-projects/pireactor/main-site/client/src/layouts/Layout.astro";
+const $$file$N = "C:/work-projects/pireactor/main-site/src/layouts/Layout.astro";
 const $$url$N = undefined;
 
 var $$module6$1 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
@@ -1077,8 +1077,8 @@ var $$module1$3 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty(
 	__proto__: null
 }, Symbol.toStringTag, { value: 'Module' }));
 
-const $$metadata$M = createMetadata("/@fs/C:/work-projects/pireactor/main-site/client/src/components/MainTitle.astro", { modules: [{ module: $$module1$3, specifier: "astro", assert: {} }], hydratedComponents: [], clientOnlyComponents: [], hydrationDirectives: /* @__PURE__ */ new Set([]), hoisted: [] });
-const $$Astro$M = createAstro("/@fs/C:/work-projects/pireactor/main-site/client/src/components/MainTitle.astro", "http://localhost:3000/", "file:///C:/work-projects/pireactor/main-site/client/");
+const $$metadata$M = createMetadata("/@fs/C:/work-projects/pireactor/main-site/src/components/MainTitle.astro", { modules: [{ module: $$module1$3, specifier: "astro", assert: {} }], hydratedComponents: [], clientOnlyComponents: [], hydrationDirectives: /* @__PURE__ */ new Set([]), hoisted: [] });
+const $$Astro$M = createAstro("/@fs/C:/work-projects/pireactor/main-site/src/components/MainTitle.astro", "http://localhost:3000/", "file:///C:/work-projects/pireactor/main-site/");
 const $$MainTitle = createComponent(async ($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro$M, $$props, $$slots);
   Astro2.self = $$MainTitle;
@@ -1092,7 +1092,7 @@ const $$MainTitle = createComponent(async ($$result, $$props, $$slots) => {
 </h1>`;
 });
 
-const $$file$M = "C:/work-projects/pireactor/main-site/client/src/components/MainTitle.astro";
+const $$file$M = "C:/work-projects/pireactor/main-site/src/components/MainTitle.astro";
 const $$url$M = undefined;
 
 var $$module1$2 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
@@ -1103,8 +1103,8 @@ var $$module1$2 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty(
 	url: $$url$M
 }, Symbol.toStringTag, { value: 'Module' }));
 
-const $$metadata$L = createMetadata("/@fs/C:/work-projects/pireactor/main-site/client/src/components/shared/Button.astro", { modules: [], hydratedComponents: [], clientOnlyComponents: [], hydrationDirectives: /* @__PURE__ */ new Set([]), hoisted: [] });
-const $$Astro$L = createAstro("/@fs/C:/work-projects/pireactor/main-site/client/src/components/shared/Button.astro", "http://localhost:3000/", "file:///C:/work-projects/pireactor/main-site/client/");
+const $$metadata$L = createMetadata("/@fs/C:/work-projects/pireactor/main-site/src/components/shared/Button.astro", { modules: [], hydratedComponents: [], clientOnlyComponents: [], hydrationDirectives: /* @__PURE__ */ new Set([]), hoisted: [] });
+const $$Astro$L = createAstro("/@fs/C:/work-projects/pireactor/main-site/src/components/shared/Button.astro", "http://localhost:3000/", "file:///C:/work-projects/pireactor/main-site/");
 const $$Button = createComponent(async ($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro$L, $$props, $$slots);
   Astro2.self = $$Button;
@@ -1115,7 +1115,7 @@ const $$Button = createComponent(async ($$result, $$props, $$slots) => {
   return render`<a${addAttribute(path, "href")} class="astro-MRLPDWE2">${title}</a>`;
 });
 
-const $$file$L = "C:/work-projects/pireactor/main-site/client/src/components/shared/Button.astro";
+const $$file$L = "C:/work-projects/pireactor/main-site/src/components/shared/Button.astro";
 const $$url$L = undefined;
 
 var $$module2$5 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
@@ -1126,8 +1126,8 @@ var $$module2$5 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty(
 	url: $$url$L
 }, Symbol.toStringTag, { value: 'Module' }));
 
-const $$metadata$K = createMetadata("/@fs/C:/work-projects/pireactor/main-site/client/src/components/main/Hero.astro", { modules: [{ module: $$module1$2, specifier: "../MainTitle.astro", assert: {} }, { module: $$module2$5, specifier: "../shared/Button.astro", assert: {} }], hydratedComponents: [], clientOnlyComponents: [], hydrationDirectives: /* @__PURE__ */ new Set([]), hoisted: [] });
-const $$Astro$K = createAstro("/@fs/C:/work-projects/pireactor/main-site/client/src/components/main/Hero.astro", "http://localhost:3000/", "file:///C:/work-projects/pireactor/main-site/client/");
+const $$metadata$K = createMetadata("/@fs/C:/work-projects/pireactor/main-site/src/components/main/Hero.astro", { modules: [{ module: $$module1$2, specifier: "../MainTitle.astro", assert: {} }, { module: $$module2$5, specifier: "../shared/Button.astro", assert: {} }], hydratedComponents: [], clientOnlyComponents: [], hydrationDirectives: /* @__PURE__ */ new Set([]), hoisted: [] });
+const $$Astro$K = createAstro("/@fs/C:/work-projects/pireactor/main-site/src/components/main/Hero.astro", "http://localhost:3000/", "file:///C:/work-projects/pireactor/main-site/");
 const $$Hero = createComponent(async ($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro$K, $$props, $$slots);
   Astro2.self = $$Hero;
@@ -1143,7 +1143,7 @@ const $$Hero = createComponent(async ($$result, $$props, $$slots) => {
 </section>`;
 });
 
-const $$file$K = "C:/work-projects/pireactor/main-site/client/src/components/main/Hero.astro";
+const $$file$K = "C:/work-projects/pireactor/main-site/src/components/main/Hero.astro";
 const $$url$K = undefined;
 
 var $$module2$4 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
@@ -1183,8 +1183,8 @@ var $$module3$3 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty(
 	Counter: Counter$1
 }, Symbol.toStringTag, { value: 'Module' }));
 
-const $$metadata$J = createMetadata("/@fs/C:/work-projects/pireactor/main-site/client/src/components/main/About.astro", { modules: [{ module: $$module3$3, specifier: "../solid/Counter", assert: {} }], hydratedComponents: [Counter$1], clientOnlyComponents: [], hydrationDirectives: /* @__PURE__ */ new Set(["load"]), hoisted: [] });
-const $$Astro$J = createAstro("/@fs/C:/work-projects/pireactor/main-site/client/src/components/main/About.astro", "http://localhost:3000/", "file:///C:/work-projects/pireactor/main-site/client/");
+const $$metadata$J = createMetadata("/@fs/C:/work-projects/pireactor/main-site/src/components/main/About.astro", { modules: [{ module: $$module3$3, specifier: "../solid/Counter", assert: {} }], hydratedComponents: [Counter$1], clientOnlyComponents: [], hydrationDirectives: /* @__PURE__ */ new Set(["load"]), hoisted: [] });
+const $$Astro$J = createAstro("/@fs/C:/work-projects/pireactor/main-site/src/components/main/About.astro", "http://localhost:3000/", "file:///C:/work-projects/pireactor/main-site/");
 const $$About$6 = createComponent(async ($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro$J, $$props, $$slots);
   Astro2.self = $$About$6;
@@ -1203,7 +1203,7 @@ const $$About$6 = createComponent(async ($$result, $$props, $$slots) => {
 </section>`;
 });
 
-const $$file$J = "C:/work-projects/pireactor/main-site/client/src/components/main/About.astro";
+const $$file$J = "C:/work-projects/pireactor/main-site/src/components/main/About.astro";
 const $$url$J = undefined;
 
 var $$module3$2 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
@@ -1214,8 +1214,8 @@ var $$module3$2 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty(
 	url: $$url$J
 }, Symbol.toStringTag, { value: 'Module' }));
 
-const $$metadata$I = createMetadata("/@fs/C:/work-projects/pireactor/main-site/client/src/components/shared/Section.astro", { modules: [], hydratedComponents: [], clientOnlyComponents: [], hydrationDirectives: /* @__PURE__ */ new Set([]), hoisted: [] });
-const $$Astro$I = createAstro("/@fs/C:/work-projects/pireactor/main-site/client/src/components/shared/Section.astro", "http://localhost:3000/", "file:///C:/work-projects/pireactor/main-site/client/");
+const $$metadata$I = createMetadata("/@fs/C:/work-projects/pireactor/main-site/src/components/shared/Section.astro", { modules: [], hydratedComponents: [], clientOnlyComponents: [], hydrationDirectives: /* @__PURE__ */ new Set([]), hoisted: [] });
+const $$Astro$I = createAstro("/@fs/C:/work-projects/pireactor/main-site/src/components/shared/Section.astro", "http://localhost:3000/", "file:///C:/work-projects/pireactor/main-site/");
 const $$Section = createComponent(async ($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro$I, $$props, $$slots);
   Astro2.self = $$Section;
@@ -1229,7 +1229,7 @@ const $$Section = createComponent(async ($$result, $$props, $$slots) => {
 </section>`;
 });
 
-const $$file$I = "C:/work-projects/pireactor/main-site/client/src/components/shared/Section.astro";
+const $$file$I = "C:/work-projects/pireactor/main-site/src/components/shared/Section.astro";
 const $$url$I = undefined;
 
 var $$module2$3 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
@@ -1240,8 +1240,8 @@ var $$module2$3 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty(
 	url: $$url$I
 }, Symbol.toStringTag, { value: 'Module' }));
 
-const $$metadata$H = createMetadata("/@fs/C:/work-projects/pireactor/main-site/client/src/components/main/Map.astro", { modules: [{ module: $$module2$3, specifier: "../shared/Section.astro", assert: {} }], hydratedComponents: [], clientOnlyComponents: [], hydrationDirectives: /* @__PURE__ */ new Set([]), hoisted: [] });
-const $$Astro$H = createAstro("/@fs/C:/work-projects/pireactor/main-site/client/src/components/main/Map.astro", "http://localhost:3000/", "file:///C:/work-projects/pireactor/main-site/client/");
+const $$metadata$H = createMetadata("/@fs/C:/work-projects/pireactor/main-site/src/components/main/Map.astro", { modules: [{ module: $$module2$3, specifier: "../shared/Section.astro", assert: {} }], hydratedComponents: [], clientOnlyComponents: [], hydrationDirectives: /* @__PURE__ */ new Set([]), hoisted: [] });
+const $$Astro$H = createAstro("/@fs/C:/work-projects/pireactor/main-site/src/components/main/Map.astro", "http://localhost:3000/", "file:///C:/work-projects/pireactor/main-site/");
 const $$Map = createComponent(async ($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro$H, $$props, $$slots);
   Astro2.self = $$Map;
@@ -1252,7 +1252,7 @@ const $$Map = createComponent(async ($$result, $$props, $$slots) => {
   return render`${renderComponent($$result, "Section", $$Section, { "title": title, "class": "astro-6IJS25CO" }, { "default": () => render`<img src="/assets/img/main/map.webp" alt="" srcset="/assets/img/main/map.webp" class="astro-6IJS25CO">` })}`;
 });
 
-const $$file$H = "C:/work-projects/pireactor/main-site/client/src/components/main/Map.astro";
+const $$file$H = "C:/work-projects/pireactor/main-site/src/components/main/Map.astro";
 const $$url$H = undefined;
 
 var $$module4 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
@@ -1263,8 +1263,8 @@ var $$module4 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
 	url: $$url$H
 }, Symbol.toStringTag, { value: 'Module' }));
 
-const $$metadata$G = createMetadata("/@fs/C:/work-projects/pireactor/main-site/client/src/components/main/How.astro", { modules: [], hydratedComponents: [], clientOnlyComponents: [], hydrationDirectives: /* @__PURE__ */ new Set([]), hoisted: [] });
-const $$Astro$G = createAstro("/@fs/C:/work-projects/pireactor/main-site/client/src/components/main/How.astro", "http://localhost:3000/", "file:///C:/work-projects/pireactor/main-site/client/");
+const $$metadata$G = createMetadata("/@fs/C:/work-projects/pireactor/main-site/src/components/main/How.astro", { modules: [], hydratedComponents: [], clientOnlyComponents: [], hydrationDirectives: /* @__PURE__ */ new Set([]), hoisted: [] });
+const $$Astro$G = createAstro("/@fs/C:/work-projects/pireactor/main-site/src/components/main/How.astro", "http://localhost:3000/", "file:///C:/work-projects/pireactor/main-site/");
 const $$How = createComponent(async ($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro$G, $$props, $$slots);
   Astro2.self = $$How;
@@ -1285,7 +1285,7 @@ const $$How = createComponent(async ($$result, $$props, $$slots) => {
 </section>`;
 });
 
-const $$file$G = "C:/work-projects/pireactor/main-site/client/src/components/main/How.astro";
+const $$file$G = "C:/work-projects/pireactor/main-site/src/components/main/How.astro";
 const $$url$G = undefined;
 
 var $$module5$1 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
@@ -1296,29 +1296,29 @@ var $$module5$1 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty(
 	url: $$url$G
 }, Symbol.toStringTag, { value: 'Module' }));
 
-const $$metadata$F = createMetadata("/@fs/C:/work-projects/pireactor/main-site/client/src/components/main/Services.astro", { modules: [{ module: $$module4$2, specifier: "../../enums/ELangs", assert: {} }, { module: $$module8, specifier: "../../models/ServicesModel", assert: {} }, { module: $$module2$3, specifier: "../shared/Section.astro", assert: {} }], hydratedComponents: [], clientOnlyComponents: [], hydrationDirectives: /* @__PURE__ */ new Set([]), hoisted: [] });
-const $$Astro$F = createAstro("/@fs/C:/work-projects/pireactor/main-site/client/src/components/main/Services.astro", "http://localhost:3000/", "file:///C:/work-projects/pireactor/main-site/client/");
+const $$metadata$F = createMetadata("/@fs/C:/work-projects/pireactor/main-site/src/components/main/Services.astro", { modules: [{ module: $$module4$2, specifier: "../../enums/ELangs", assert: {} }, { module: $$module8, specifier: "../../models/ServicesModel", assert: {} }, { module: $$module2$3, specifier: "../shared/Section.astro", assert: {} }], hydratedComponents: [], clientOnlyComponents: [], hydrationDirectives: /* @__PURE__ */ new Set([]), hoisted: [] });
+const $$Astro$F = createAstro("/@fs/C:/work-projects/pireactor/main-site/src/components/main/Services.astro", "http://localhost:3000/", "file:///C:/work-projects/pireactor/main-site/");
 const $$Services = createComponent(async ($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro$F, $$props, $$slots);
   Astro2.self = $$Services;
   const { title, lang } = Astro2.props;
   const unsortServices = lang === ELangs.es ? await Astro2.glob(
-    { "/public/assets/content/es/services/architecture.md": () => import('./chunks/chunk.ccbb07d8.mjs'), "/public/assets/content/es/services/automation.md": () => import('./chunks/chunk.938b4c4d.mjs'), "/public/assets/content/es/services/blockchain.md": () => import('./chunks/chunk.5f73559c.mjs'), "/public/assets/content/es/services/strategy.md": () => import('./chunks/chunk.9d579503.mjs'), "/public/assets/content/es/services/wallets.md": () => import('./chunks/chunk.000bd02f.mjs'),},
+    { "/public/assets/content/es/services/architecture.md": () => import('./chunks/chunk.b31d322e.mjs'), "/public/assets/content/es/services/automation.md": () => import('./chunks/chunk.e89ab15e.mjs'), "/public/assets/content/es/services/blockchain.md": () => import('./chunks/chunk.553bc06b.mjs'), "/public/assets/content/es/services/strategy.md": () => import('./chunks/chunk.3c563026.mjs'), "/public/assets/content/es/services/wallets.md": () => import('./chunks/chunk.165e007d.mjs'),},
     () => "/public/assets/content/es/services/*.md"
   ) : lang === ELangs.pl ? await Astro2.glob(
-    { "/public/assets/content/pl/services/architecture.md": () => import('./chunks/chunk.2186ae96.mjs'), "/public/assets/content/pl/services/automation.md": () => import('./chunks/chunk.b391d7bf.mjs'), "/public/assets/content/pl/services/blockchain.md": () => import('./chunks/chunk.f9b7a791.mjs'), "/public/assets/content/pl/services/strategy.md": () => import('./chunks/chunk.64fc4e6e.mjs'), "/public/assets/content/pl/services/wallets.md": () => import('./chunks/chunk.e49a8342.mjs'),},
+    { "/public/assets/content/pl/services/architecture.md": () => import('./chunks/chunk.7ab29271.mjs'), "/public/assets/content/pl/services/automation.md": () => import('./chunks/chunk.10e50542.mjs'), "/public/assets/content/pl/services/blockchain.md": () => import('./chunks/chunk.2b4629e3.mjs'), "/public/assets/content/pl/services/strategy.md": () => import('./chunks/chunk.67f22cca.mjs'), "/public/assets/content/pl/services/wallets.md": () => import('./chunks/chunk.d3d93e58.mjs'),},
     () => "/public/assets/content/pl/services/*.md"
   ) : lang === ELangs.ru ? await Astro2.glob(
-    { "/public/assets/content/ru/services/architecture.md": () => import('./chunks/chunk.a7a267b0.mjs'), "/public/assets/content/ru/services/automation.md": () => import('./chunks/chunk.70e6007d.mjs'), "/public/assets/content/ru/services/blockchain.md": () => import('./chunks/chunk.2f9977d7.mjs'), "/public/assets/content/ru/services/strategy.md": () => import('./chunks/chunk.513b3675.mjs'), "/public/assets/content/ru/services/wallets.md": () => import('./chunks/chunk.a237989c.mjs'),},
+    { "/public/assets/content/ru/services/architecture.md": () => import('./chunks/chunk.554d4dc5.mjs'), "/public/assets/content/ru/services/automation.md": () => import('./chunks/chunk.e38eb8e6.mjs'), "/public/assets/content/ru/services/blockchain.md": () => import('./chunks/chunk.9ece0295.mjs'), "/public/assets/content/ru/services/strategy.md": () => import('./chunks/chunk.2d3f63a8.mjs'), "/public/assets/content/ru/services/wallets.md": () => import('./chunks/chunk.39677201.mjs'),},
     () => "/public/assets/content/ru/services/*.md"
   ) : lang === ELangs.tr ? await Astro2.glob(
-    { "/public/assets/content/tr/services/architecture.md": () => import('./chunks/chunk.91c8893a.mjs'), "/public/assets/content/tr/services/automation.md": () => import('./chunks/chunk.acb3f924.mjs'), "/public/assets/content/tr/services/blockchain.md": () => import('./chunks/chunk.f1a695b8.mjs'), "/public/assets/content/tr/services/strategy.md": () => import('./chunks/chunk.520832bb.mjs'), "/public/assets/content/tr/services/wallets.md": () => import('./chunks/chunk.8508d622.mjs'),},
+    { "/public/assets/content/tr/services/architecture.md": () => import('./chunks/chunk.9d601bcb.mjs'), "/public/assets/content/tr/services/automation.md": () => import('./chunks/chunk.0a29b555.mjs'), "/public/assets/content/tr/services/blockchain.md": () => import('./chunks/chunk.7363e747.mjs'), "/public/assets/content/tr/services/strategy.md": () => import('./chunks/chunk.d8c09329.mjs'), "/public/assets/content/tr/services/wallets.md": () => import('./chunks/chunk.873f2a22.mjs'),},
     () => "/public/assets/content/tr/services/*.md"
   ) : lang === ELangs.ua ? await Astro2.glob(
-    { "/public/assets/content/ua/services/architecture.md": () => import('./chunks/chunk.0b834678.mjs'), "/public/assets/content/ua/services/automation.md": () => import('./chunks/chunk.dd708ad7.mjs'), "/public/assets/content/ua/services/blockchain.md": () => import('./chunks/chunk.28640239.mjs'), "/public/assets/content/ua/services/strategy.md": () => import('./chunks/chunk.6668f04f.mjs'), "/public/assets/content/ua/services/wallets.md": () => import('./chunks/chunk.e2320abe.mjs'),},
+    { "/public/assets/content/ua/services/architecture.md": () => import('./chunks/chunk.52e3bf1b.mjs'), "/public/assets/content/ua/services/automation.md": () => import('./chunks/chunk.343126a2.mjs'), "/public/assets/content/ua/services/blockchain.md": () => import('./chunks/chunk.1c6f6212.mjs'), "/public/assets/content/ua/services/strategy.md": () => import('./chunks/chunk.2e67f1fb.mjs'), "/public/assets/content/ua/services/wallets.md": () => import('./chunks/chunk.1e8278ce.mjs'),},
     () => "/public/assets/content/ua/services/*.md"
   ) : await Astro2.glob(
-    { "/public/assets/content/en/services/architecture.md": () => import('./chunks/chunk.93527cb3.mjs'), "/public/assets/content/en/services/automation.md": () => import('./chunks/chunk.59824c95.mjs'), "/public/assets/content/en/services/blockchain.md": () => import('./chunks/chunk.7c3d0c0b.mjs'), "/public/assets/content/en/services/strategy.md": () => import('./chunks/chunk.33bb18a9.mjs'), "/public/assets/content/en/services/wallets.md": () => import('./chunks/chunk.ee134a3e.mjs'),},
+    { "/public/assets/content/en/services/architecture.md": () => import('./chunks/chunk.c6afcfdc.mjs'), "/public/assets/content/en/services/automation.md": () => import('./chunks/chunk.c98e4cd0.mjs'), "/public/assets/content/en/services/blockchain.md": () => import('./chunks/chunk.ec6459d7.mjs'), "/public/assets/content/en/services/strategy.md": () => import('./chunks/chunk.d804232d.mjs'), "/public/assets/content/en/services/wallets.md": () => import('./chunks/chunk.bf2e9b1c.mjs'),},
     () => "/public/assets/content/en/services/*.md"
   );
   const services = unsortServices.sort((a, b) => a.frontmatter.id - b.frontmatter.id);
@@ -1353,7 +1353,7 @@ const $$Services = createComponent(async ($$result, $$props, $$slots) => {
   </div>` })}`;
 });
 
-const $$file$F = "C:/work-projects/pireactor/main-site/client/src/components/main/Services.astro";
+const $$file$F = "C:/work-projects/pireactor/main-site/src/components/main/Services.astro";
 const $$url$F = undefined;
 
 var $$module6 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
@@ -1364,8 +1364,8 @@ var $$module6 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
 	url: $$url$F
 }, Symbol.toStringTag, { value: 'Module' }));
 
-const $$metadata$E = createMetadata("/@fs/C:/work-projects/pireactor/main-site/client/src/components/main/Technologies.astro", { modules: [], hydratedComponents: [], clientOnlyComponents: [], hydrationDirectives: /* @__PURE__ */ new Set([]), hoisted: [] });
-const $$Astro$E = createAstro("/@fs/C:/work-projects/pireactor/main-site/client/src/components/main/Technologies.astro", "http://localhost:3000/", "file:///C:/work-projects/pireactor/main-site/client/");
+const $$metadata$E = createMetadata("/@fs/C:/work-projects/pireactor/main-site/src/components/main/Technologies.astro", { modules: [], hydratedComponents: [], clientOnlyComponents: [], hydrationDirectives: /* @__PURE__ */ new Set([]), hoisted: [] });
+const $$Astro$E = createAstro("/@fs/C:/work-projects/pireactor/main-site/src/components/main/Technologies.astro", "http://localhost:3000/", "file:///C:/work-projects/pireactor/main-site/");
 const $$Technologies = createComponent(async ($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro$E, $$props, $$slots);
   Astro2.self = $$Technologies;
@@ -1405,7 +1405,7 @@ const $$Technologies = createComponent(async ($$result, $$props, $$slots) => {
 </section>`;
 });
 
-const $$file$E = "C:/work-projects/pireactor/main-site/client/src/components/main/Technologies.astro";
+const $$file$E = "C:/work-projects/pireactor/main-site/src/components/main/Technologies.astro";
 const $$url$E = undefined;
 
 var $$module7$1 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
@@ -1596,7 +1596,7 @@ const [store, setStore] = createStore({
   ]
 });
 
-const _tmpl$$d = ["<div", "><label", "><!--#-->", '<!--/--><input name="Email" class="', '" type="email"></label><!--#-->', "<!--/--></div>"], _tmpl$2$6 = ["<span", ">", "</span>"];
+const _tmpl$$d = ["<div", "><label", "><span><!--#-->", "<!--/--><span", '>\xA0*</span></span><input name="Email" class="', '" type="email"></label><!--#-->', "<!--/--></div>"], _tmpl$2$6 = ["<span", ">", "</span>"];
 function EmailInput(props) {
   const [isError, setIsError] = createSignal(false);
   createEffect(() => {
@@ -1606,10 +1606,10 @@ function EmailInput(props) {
       setIsError(false);
     }
   });
-  return ssr(_tmpl$$d, ssrHydrationKey() + ssrAttribute("class", escape$1(styles$2.input__wrp, true), false), ssrAttribute("class", escape$1(styles$2.label, true), false), escape$1(props.name) ?? "Email", `${escape$1(styles$2.input, true) || ""} ${isError() ? escape$1(escape$1(styles$2.error, true), true) : ""}`, isError() && escape$1(ssr(_tmpl$2$6, ssrHydrationKey() + ssrAttribute("class", escape$1(styles$2.errMsg, true), false), escape$1(store.validation.email.errMsg))));
+  return ssr(_tmpl$$d, ssrHydrationKey() + ssrAttribute("class", escape$1(styles$2.input__wrp, true), false), ssrAttribute("class", escape$1(styles$2.label, true), false), escape$1(props.name) ?? "Email", ssrAttribute("class", escape$1(styles$2.input_req, true), false), `${escape$1(styles$2.input, true) || ""} ${isError() ? escape$1(escape$1(styles$2.error, true), true) : ""}`, isError() && escape$1(ssr(_tmpl$2$6, ssrHydrationKey() + ssrAttribute("class", escape$1(styles$2.errMsg, true), false), escape$1(store.validation.email.errMsg))));
 }
 
-const _tmpl$$c = ["<div", "><label", "><!--#-->", '<!--/--><input name="Name" class="', '" type="text"></label><!--#-->', "<!--/--></div>"], _tmpl$2$5 = ["<span", ">", "</span>"];
+const _tmpl$$c = ["<div", "><label", "><span><!--#-->", "<!--/--><span", '>\xA0*</span></span><input name="Name" class="', '" type="text"></label><!--#-->', "<!--/--></div>"], _tmpl$2$5 = ["<span", ">", "</span>"];
 function NameInput(props) {
   const [isError, setIsError] = createSignal(false);
   createEffect(() => {
@@ -1619,7 +1619,7 @@ function NameInput(props) {
       setIsError(false);
     }
   });
-  return ssr(_tmpl$$c, ssrHydrationKey() + ssrAttribute("class", escape$1(styles$3.input__wrp, true), false), ssrAttribute("class", escape$1(styles$3.label, true), false), escape$1(props.name) ?? "Name", `${escape$1(styles$3.input, true) || ""} ${isError() ? escape$1(escape$1(styles$3.error, true), true) : ""}`, isError() && escape$1(ssr(_tmpl$2$5, ssrHydrationKey() + ssrAttribute("class", escape$1(styles$3.errMsg, true), false), escape$1(store.validation.name.errMsg))));
+  return ssr(_tmpl$$c, ssrHydrationKey() + ssrAttribute("class", escape$1(styles$3.input__wrp, true), false), ssrAttribute("class", escape$1(styles$3.label, true), false), escape$1(props.name) ?? "Name", ssrAttribute("class", escape$1(styles$3.input_req, true), false), `${escape$1(styles$3.input, true) || ""} ${isError() ? escape$1(escape$1(styles$3.error, true), true) : ""}`, isError() && escape$1(ssr(_tmpl$2$5, ssrHydrationKey() + ssrAttribute("class", escape$1(styles$3.errMsg, true), false), escape$1(store.validation.name.errMsg))));
 }
 
 const _tmpl$$b = ["<label", "><!--#-->", "<!--/--><textarea", ' placeholder="Describe your project" rows="10"></textarea></label>'];
@@ -1669,8 +1669,8 @@ var $$module1$1 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty(
 	FormSubmit: FormSubmit
 }, Symbol.toStringTag, { value: 'Module' }));
 
-const $$metadata$D = createMetadata("/@fs/C:/work-projects/pireactor/main-site/client/src/components/shared/FormSection.astro", { modules: [], hydratedComponents: [], clientOnlyComponents: [], hydrationDirectives: /* @__PURE__ */ new Set([]), hoisted: [] });
-const $$Astro$D = createAstro("/@fs/C:/work-projects/pireactor/main-site/client/src/components/shared/FormSection.astro", "http://localhost:3000/", "file:///C:/work-projects/pireactor/main-site/client/");
+const $$metadata$D = createMetadata("/@fs/C:/work-projects/pireactor/main-site/src/components/shared/FormSection.astro", { modules: [], hydratedComponents: [], clientOnlyComponents: [], hydrationDirectives: /* @__PURE__ */ new Set([]), hoisted: [] });
+const $$Astro$D = createAstro("/@fs/C:/work-projects/pireactor/main-site/src/components/shared/FormSection.astro", "http://localhost:3000/", "file:///C:/work-projects/pireactor/main-site/");
 const $$FormSection = createComponent(async ($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro$D, $$props, $$slots);
   Astro2.self = $$FormSection;
@@ -1682,7 +1682,7 @@ const $$FormSection = createComponent(async ($$result, $$props, $$slots) => {
 </section>`;
 });
 
-const $$file$D = "C:/work-projects/pireactor/main-site/client/src/components/shared/FormSection.astro";
+const $$file$D = "C:/work-projects/pireactor/main-site/src/components/shared/FormSection.astro";
 const $$url$D = undefined;
 
 var $$module2$2 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
@@ -1693,8 +1693,8 @@ var $$module2$2 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty(
 	url: $$url$D
 }, Symbol.toStringTag, { value: 'Module' }));
 
-const $$metadata$C = createMetadata("/@fs/C:/work-projects/pireactor/main-site/client/src/components/shared/CallbackForm.astro", { modules: [{ module: $$module1$1, specifier: "../solid/FormSubmit", assert: {} }, { module: $$module2$2, specifier: "./FormSection.astro", assert: {} }], hydratedComponents: [FormSubmit], clientOnlyComponents: [], hydrationDirectives: /* @__PURE__ */ new Set(["load"]), hoisted: [] });
-const $$Astro$C = createAstro("/@fs/C:/work-projects/pireactor/main-site/client/src/components/shared/CallbackForm.astro", "http://localhost:3000/", "file:///C:/work-projects/pireactor/main-site/client/");
+const $$metadata$C = createMetadata("/@fs/C:/work-projects/pireactor/main-site/src/components/shared/CallbackForm.astro", { modules: [{ module: $$module1$1, specifier: "../solid/FormSubmit", assert: {} }, { module: $$module2$2, specifier: "./FormSection.astro", assert: {} }], hydratedComponents: [FormSubmit], clientOnlyComponents: [], hydrationDirectives: /* @__PURE__ */ new Set(["load"]), hoisted: [] });
+const $$Astro$C = createAstro("/@fs/C:/work-projects/pireactor/main-site/src/components/shared/CallbackForm.astro", "http://localhost:3000/", "file:///C:/work-projects/pireactor/main-site/");
 const $$CallbackForm = createComponent(async ($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro$C, $$props, $$slots);
   Astro2.self = $$CallbackForm;
@@ -1711,7 +1711,7 @@ const $$CallbackForm = createComponent(async ($$result, $$props, $$slots) => {
 </div>`;
 });
 
-const $$file$C = "C:/work-projects/pireactor/main-site/client/src/components/shared/CallbackForm.astro";
+const $$file$C = "C:/work-projects/pireactor/main-site/src/components/shared/CallbackForm.astro";
 const $$url$C = undefined;
 
 var $$module1 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
@@ -1722,13 +1722,13 @@ var $$module1 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
 	url: $$url$C
 }, Symbol.toStringTag, { value: 'Module' }));
 
-const $$metadata$B = createMetadata("/@fs/C:/work-projects/pireactor/main-site/client/src/pages/en/index.astro", { modules: [{ module: $$module6$1, specifier: "../../layouts/Layout.astro", assert: {} }, { module: $$module2$4, specifier: "../../components/main/Hero.astro", assert: {} }, { module: $$module3$2, specifier: "../../components/main/About.astro", assert: {} }, { module: $$module4, specifier: "../../components/main/Map.astro", assert: {} }, { module: $$module5$1, specifier: "../../components/main/How.astro", assert: {} }, { module: $$module6, specifier: "../../components/main/Services.astro", assert: {} }, { module: $$module7$1, specifier: "../../components/main/Technologies.astro", assert: {} }, { module: $$module5$3, specifier: "../../layouts/Container.astro", assert: {} }, { module: $$module1, specifier: "../../components/shared/CallbackForm.astro", assert: {} }, { module: $$module8$1, specifier: "../../models/ContentModel", assert: {} }, { module: $$module4$2, specifier: "../../enums/ELangs", assert: {} }], hydratedComponents: [], clientOnlyComponents: [], hydrationDirectives: /* @__PURE__ */ new Set([]), hoisted: [] });
-const $$Astro$B = createAstro("/@fs/C:/work-projects/pireactor/main-site/client/src/pages/en/index.astro", "http://localhost:3000/", "file:///C:/work-projects/pireactor/main-site/client/");
+const $$metadata$B = createMetadata("/@fs/C:/work-projects/pireactor/main-site/src/pages/en/index.astro", { modules: [{ module: $$module6$1, specifier: "../../layouts/Layout.astro", assert: {} }, { module: $$module2$4, specifier: "../../components/main/Hero.astro", assert: {} }, { module: $$module3$2, specifier: "../../components/main/About.astro", assert: {} }, { module: $$module4, specifier: "../../components/main/Map.astro", assert: {} }, { module: $$module5$1, specifier: "../../components/main/How.astro", assert: {} }, { module: $$module6, specifier: "../../components/main/Services.astro", assert: {} }, { module: $$module7$1, specifier: "../../components/main/Technologies.astro", assert: {} }, { module: $$module5$3, specifier: "../../layouts/Container.astro", assert: {} }, { module: $$module1, specifier: "../../components/shared/CallbackForm.astro", assert: {} }, { module: $$module8$1, specifier: "../../models/ContentModel", assert: {} }, { module: $$module4$2, specifier: "../../enums/ELangs", assert: {} }], hydratedComponents: [], clientOnlyComponents: [], hydrationDirectives: /* @__PURE__ */ new Set([]), hoisted: [] });
+const $$Astro$B = createAstro("/@fs/C:/work-projects/pireactor/main-site/src/pages/en/index.astro", "http://localhost:3000/", "file:///C:/work-projects/pireactor/main-site/");
 const $$Index$5 = createComponent(async ($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro$B, $$props, $$slots);
   Astro2.self = $$Index$5;
   const [content] = await Astro2.glob(
-    { "/public/assets/content/en/content.md": () => import('./chunks/chunk.440c98c3.mjs'),},
+    { "/public/assets/content/en/content.md": () => import('./chunks/chunk.c9d3957c.mjs'),},
     () => "/public/assets/content/en/*.md"
   );
   const STYLES = [];
@@ -1741,7 +1741,7 @@ const $$Index$5 = createComponent(async ($$result, $$props, $$slots) => {
     </div>` })}` })}`;
 });
 
-const $$file$B = "C:/work-projects/pireactor/main-site/client/src/pages/en/index.astro";
+const $$file$B = "C:/work-projects/pireactor/main-site/src/pages/en/index.astro";
 const $$url$B = "/en";
 
 var _page1 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
@@ -1754,7 +1754,7 @@ var _page1 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
 
 async function getStaticPaths$b() {
   const services = await Astro$b.glob(
-    { "/public/assets/content/en/services/architecture.md": () => import('./chunks/chunk.93527cb3.mjs'), "/public/assets/content/en/services/automation.md": () => import('./chunks/chunk.59824c95.mjs'), "/public/assets/content/en/services/blockchain.md": () => import('./chunks/chunk.7c3d0c0b.mjs'), "/public/assets/content/en/services/strategy.md": () => import('./chunks/chunk.33bb18a9.mjs'), "/public/assets/content/en/services/wallets.md": () => import('./chunks/chunk.ee134a3e.mjs'),},
+    { "/public/assets/content/en/services/architecture.md": () => import('./chunks/chunk.c6afcfdc.mjs'), "/public/assets/content/en/services/automation.md": () => import('./chunks/chunk.c98e4cd0.mjs'), "/public/assets/content/en/services/blockchain.md": () => import('./chunks/chunk.ec6459d7.mjs'), "/public/assets/content/en/services/strategy.md": () => import('./chunks/chunk.d804232d.mjs'), "/public/assets/content/en/services/wallets.md": () => import('./chunks/chunk.bf2e9b1c.mjs'),},
     () => "/public/assets/content/en/services/*.md"
   );
   return services.map((service) => {
@@ -1774,8 +1774,8 @@ async function getStaticPaths$b() {
     };
   });
 }
-const $$metadata$A = createMetadata("/@fs/C:/work-projects/pireactor/main-site/client/src/pages/en/services/[slug].astro", { modules: [{ module: $$module1$2, specifier: "../../../components/MainTitle.astro", assert: {} }, { module: $$module2$5, specifier: "../../../components/shared/Button.astro", assert: {} }, { module: $$module3$3, specifier: "../../../components/solid/Counter", assert: {} }, { module: $$module4$2, specifier: "../../../enums/ELangs", assert: {} }, { module: $$module5$3, specifier: "../../../layouts/Container.astro", assert: {} }, { module: $$module6$1, specifier: "../../../layouts/Layout.astro", assert: {} }, { module: $$module8, specifier: "../../../models/ServicesModel", assert: {} }], hydratedComponents: [Counter$1], clientOnlyComponents: [], hydrationDirectives: /* @__PURE__ */ new Set(["load"]), hoisted: [] });
-const $$Astro$A = createAstro("/@fs/C:/work-projects/pireactor/main-site/client/src/pages/en/services/[slug].astro", "http://localhost:3000/", "file:///C:/work-projects/pireactor/main-site/client/");
+const $$metadata$A = createMetadata("/@fs/C:/work-projects/pireactor/main-site/src/pages/en/services/[slug].astro", { modules: [{ module: $$module1$2, specifier: "../../../components/MainTitle.astro", assert: {} }, { module: $$module2$5, specifier: "../../../components/shared/Button.astro", assert: {} }, { module: $$module3$3, specifier: "../../../components/solid/Counter", assert: {} }, { module: $$module4$2, specifier: "../../../enums/ELangs", assert: {} }, { module: $$module5$3, specifier: "../../../layouts/Container.astro", assert: {} }, { module: $$module6$1, specifier: "../../../layouts/Layout.astro", assert: {} }, { module: $$module8, specifier: "../../../models/ServicesModel", assert: {} }], hydratedComponents: [Counter$1], clientOnlyComponents: [], hydrationDirectives: /* @__PURE__ */ new Set(["load"]), hoisted: [] });
+const $$Astro$A = createAstro("/@fs/C:/work-projects/pireactor/main-site/src/pages/en/services/[slug].astro", "http://localhost:3000/", "file:///C:/work-projects/pireactor/main-site/");
 const Astro$b = $$Astro$A;
 const $$slug$b = createComponent(async ($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro$A, $$props, $$slots);
@@ -1810,7 +1810,7 @@ const $$slug$b = createComponent(async ($$result, $$props, $$slots) => {
     </div>` })}` })}`;
 });
 
-const $$file$A = "C:/work-projects/pireactor/main-site/client/src/pages/en/services/[slug].astro";
+const $$file$A = "C:/work-projects/pireactor/main-site/src/pages/en/services/[slug].astro";
 const $$url$A = "/en/services/[slug]";
 
 var _page2 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
@@ -1822,8 +1822,8 @@ var _page2 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
 	url: $$url$A
 }, Symbol.toStringTag, { value: 'Module' }));
 
-const $$metadata$z = createMetadata("/@fs/C:/work-projects/pireactor/main-site/client/src/components/shared/AboutCard.astro", { modules: [], hydratedComponents: [], clientOnlyComponents: [], hydrationDirectives: /* @__PURE__ */ new Set([]), hoisted: [] });
-const $$Astro$z = createAstro("/@fs/C:/work-projects/pireactor/main-site/client/src/components/shared/AboutCard.astro", "http://localhost:3000/", "file:///C:/work-projects/pireactor/main-site/client/");
+const $$metadata$z = createMetadata("/@fs/C:/work-projects/pireactor/main-site/src/components/shared/AboutCard.astro", { modules: [], hydratedComponents: [], clientOnlyComponents: [], hydrationDirectives: /* @__PURE__ */ new Set([]), hoisted: [] });
+const $$Astro$z = createAstro("/@fs/C:/work-projects/pireactor/main-site/src/components/shared/AboutCard.astro", "http://localhost:3000/", "file:///C:/work-projects/pireactor/main-site/");
 const $$AboutCard = createComponent(async ($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro$z, $$props, $$slots);
   Astro2.self = $$AboutCard;
@@ -1861,7 +1861,7 @@ const $$AboutCard = createComponent(async ($$result, $$props, $$slots) => {
 </li>`;
 });
 
-const $$file$z = "C:/work-projects/pireactor/main-site/client/src/components/shared/AboutCard.astro";
+const $$file$z = "C:/work-projects/pireactor/main-site/src/components/shared/AboutCard.astro";
 const $$url$z = undefined;
 
 var $$module2$1 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
@@ -1872,8 +1872,8 @@ var $$module2$1 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty(
 	url: $$url$z
 }, Symbol.toStringTag, { value: 'Module' }));
 
-const $$metadata$y = createMetadata("/@fs/C:/work-projects/pireactor/main-site/client/src/components/shared/Breadcrums.astro", { modules: [{ module: $$module1$3, specifier: "astro", assert: {} }], hydratedComponents: [], clientOnlyComponents: [], hydrationDirectives: /* @__PURE__ */ new Set([]), hoisted: [] });
-const $$Astro$y = createAstro("/@fs/C:/work-projects/pireactor/main-site/client/src/components/shared/Breadcrums.astro", "http://localhost:3000/", "file:///C:/work-projects/pireactor/main-site/client/");
+const $$metadata$y = createMetadata("/@fs/C:/work-projects/pireactor/main-site/src/components/shared/Breadcrums.astro", { modules: [{ module: $$module1$3, specifier: "astro", assert: {} }], hydratedComponents: [], clientOnlyComponents: [], hydrationDirectives: /* @__PURE__ */ new Set([]), hoisted: [] });
+const $$Astro$y = createAstro("/@fs/C:/work-projects/pireactor/main-site/src/components/shared/Breadcrums.astro", "http://localhost:3000/", "file:///C:/work-projects/pireactor/main-site/");
 const $$Breadcrums = createComponent(async ($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro$y, $$props, $$slots);
   Astro2.self = $$Breadcrums;
@@ -1887,7 +1887,7 @@ const $$Breadcrums = createComponent(async ($$result, $$props, $$slots) => {
 </div>`;
 });
 
-const $$file$y = "C:/work-projects/pireactor/main-site/client/src/components/shared/Breadcrums.astro";
+const $$file$y = "C:/work-projects/pireactor/main-site/src/components/shared/Breadcrums.astro";
 const $$url$y = undefined;
 
 var $$module2 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
@@ -1898,18 +1898,18 @@ var $$module2 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
 	url: $$url$y
 }, Symbol.toStringTag, { value: 'Module' }));
 
-const $$metadata$x = createMetadata("/@fs/C:/work-projects/pireactor/main-site/client/src/pages/en/about.astro", { modules: [{ module: $$module1$2, specifier: "../../components/MainTitle.astro", assert: {} }, { module: $$module2$1, specifier: "../../components/shared/AboutCard.astro", assert: {} }, { module: $$module2, specifier: "../../components/shared/Breadcrums.astro", assert: {} }, { module: $$module2$3, specifier: "../../components/shared/Section.astro", assert: {} }, { module: $$module3$3, specifier: "../../components/solid/Counter", assert: {} }, { module: $$module4$2, specifier: "../../enums/ELangs", assert: {} }, { module: $$module5$3, specifier: "../../layouts/Container.astro", assert: {} }, { module: $$module6$1, specifier: "../../layouts/Layout.astro", assert: {} }, { module: $$module8$1, specifier: "../../models/ContentModel", assert: {} }], hydratedComponents: [Counter$1], clientOnlyComponents: [], hydrationDirectives: /* @__PURE__ */ new Set(["load"]), hoisted: [] });
-const $$Astro$x = createAstro("/@fs/C:/work-projects/pireactor/main-site/client/src/pages/en/about.astro", "http://localhost:3000/", "file:///C:/work-projects/pireactor/main-site/client/");
+const $$metadata$x = createMetadata("/@fs/C:/work-projects/pireactor/main-site/src/pages/en/about.astro", { modules: [{ module: $$module1$2, specifier: "../../components/MainTitle.astro", assert: {} }, { module: $$module2$1, specifier: "../../components/shared/AboutCard.astro", assert: {} }, { module: $$module2, specifier: "../../components/shared/Breadcrums.astro", assert: {} }, { module: $$module2$3, specifier: "../../components/shared/Section.astro", assert: {} }, { module: $$module3$3, specifier: "../../components/solid/Counter", assert: {} }, { module: $$module4$2, specifier: "../../enums/ELangs", assert: {} }, { module: $$module5$3, specifier: "../../layouts/Container.astro", assert: {} }, { module: $$module6$1, specifier: "../../layouts/Layout.astro", assert: {} }, { module: $$module8$1, specifier: "../../models/ContentModel", assert: {} }], hydratedComponents: [Counter$1], clientOnlyComponents: [], hydrationDirectives: /* @__PURE__ */ new Set(["load"]), hoisted: [] });
+const $$Astro$x = createAstro("/@fs/C:/work-projects/pireactor/main-site/src/pages/en/about.astro", "http://localhost:3000/", "file:///C:/work-projects/pireactor/main-site/");
 const $$About$5 = createComponent(async ($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro$x, $$props, $$slots);
   Astro2.self = $$About$5;
   const leads = await Astro2.glob(
-    { "/public/assets/content/en/leads/AlexAlejandre.md": () => import('./chunks/chunk.a5de9f52.mjs'), "/public/assets/content/en/leads/JohnVermazenSt.md": () => import('./chunks/chunk.198b97c3.mjs'), "/public/assets/content/en/leads/JustynaBorwik.md": () => import('./chunks/chunk.2f992be1.mjs'), "/public/assets/content/en/leads/StevenVermazen.md": () => import('./chunks/chunk.d08d6e4f.mjs'),},
+    { "/public/assets/content/en/leads/AlexAlejandre.md": () => import('./chunks/chunk.5790b932.mjs'), "/public/assets/content/en/leads/JohnVermazenSt.md": () => import('./chunks/chunk.e09586c6.mjs'), "/public/assets/content/en/leads/JustynaBorwik.md": () => import('./chunks/chunk.6b16a774.mjs'), "/public/assets/content/en/leads/StevenVermazen.md": () => import('./chunks/chunk.6c0c45b4.mjs'),},
     () => "/public/assets/content/en/leads/*.md"
   );
   const sortLeads = leads.sort((a, b) => a.frontmatter.id - b.frontmatter.id);
   const [content] = await Astro2.glob(
-    { "/public/assets/content/en/content.md": () => import('./chunks/chunk.440c98c3.mjs'),},
+    { "/public/assets/content/en/content.md": () => import('./chunks/chunk.c9d3957c.mjs'),},
     () => "/public/assets/content/en/*.md"
   );
   const STYLES = [];
@@ -1936,7 +1936,7 @@ const $$About$5 = createComponent(async ($$result, $$props, $$slots) => {
       </ul>` })}` })}` })}`;
 });
 
-const $$file$x = "C:/work-projects/pireactor/main-site/client/src/pages/en/about.astro";
+const $$file$x = "C:/work-projects/pireactor/main-site/src/pages/en/about.astro";
 const $$url$x = "/en/about";
 
 var _page3 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
@@ -2242,8 +2242,8 @@ var $$module3$1 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty(
 	Form: Form
 }, Symbol.toStringTag, { value: 'Module' }));
 
-const $$metadata$w = createMetadata("/@fs/C:/work-projects/pireactor/main-site/client/src/pages/en/brief.astro", { modules: [{ module: $$module2, specifier: "../../components/shared/Breadcrums.astro", assert: {} }, { module: $$module2$2, specifier: "../../components/shared/FormSection.astro", assert: {} }, { module: $$module3$1, specifier: "../../components/solid/Form", assert: {} }, { module: $$module4$2, specifier: "../../enums/ELangs", assert: {} }, { module: $$module5$3, specifier: "../../layouts/Container.astro", assert: {} }, { module: $$module6$1, specifier: "../../layouts/Layout.astro", assert: {} }], hydratedComponents: [Form], clientOnlyComponents: [], hydrationDirectives: /* @__PURE__ */ new Set(["load"]), hoisted: [] });
-const $$Astro$w = createAstro("/@fs/C:/work-projects/pireactor/main-site/client/src/pages/en/brief.astro", "http://localhost:3000/", "file:///C:/work-projects/pireactor/main-site/client/");
+const $$metadata$w = createMetadata("/@fs/C:/work-projects/pireactor/main-site/src/pages/en/brief.astro", { modules: [{ module: $$module2, specifier: "../../components/shared/Breadcrums.astro", assert: {} }, { module: $$module2$2, specifier: "../../components/shared/FormSection.astro", assert: {} }, { module: $$module3$1, specifier: "../../components/solid/Form", assert: {} }, { module: $$module4$2, specifier: "../../enums/ELangs", assert: {} }, { module: $$module5$3, specifier: "../../layouts/Container.astro", assert: {} }, { module: $$module6$1, specifier: "../../layouts/Layout.astro", assert: {} }], hydratedComponents: [Form], clientOnlyComponents: [], hydrationDirectives: /* @__PURE__ */ new Set(["load"]), hoisted: [] });
+const $$Astro$w = createAstro("/@fs/C:/work-projects/pireactor/main-site/src/pages/en/brief.astro", "http://localhost:3000/", "file:///C:/work-projects/pireactor/main-site/");
 const $$Brief$5 = createComponent(async ($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro$w, $$props, $$slots);
   Astro2.self = $$Brief$5;
@@ -2253,7 +2253,7 @@ const $$Brief$5 = createComponent(async ($$result, $$props, $$slots) => {
   return render`${renderComponent($$result, "Layout", $$Layout, { "title": "Brief", "lang": ELangs.en, "class": "astro-ERY3GRSQ" }, { "default": () => render`${renderComponent($$result, "Container", $$Container, { "class": "astro-ERY3GRSQ" }, { "default": () => render`${renderComponent($$result, "Breadcrums", $$Breadcrums, { "currentPath": "Brief", "class": "astro-ERY3GRSQ" })}${renderComponent($$result, "FormSection", $$FormSection, { "class": "astro-ERY3GRSQ" }, { "default": () => render`${renderComponent($$result, "Form", Form, { "client:load": true, "client:component-hydration": "load", "client:component-path": $$metadata$w.getPath(Form), "client:component-export": $$metadata$w.getExport(Form), "class": "astro-ERY3GRSQ" })}` })}` })}` })}`;
 });
 
-const $$file$w = "C:/work-projects/pireactor/main-site/client/src/pages/en/brief.astro";
+const $$file$w = "C:/work-projects/pireactor/main-site/src/pages/en/brief.astro";
 const $$url$w = "/en/brief";
 
 var _page4 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
@@ -2280,12 +2280,12 @@ var $$module7 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
 	__proto__: null
 }, Symbol.toStringTag, { value: 'Module' }));
 
-const $$metadata$v = createMetadata("/@fs/C:/work-projects/pireactor/main-site/client/src/pages/en/work/[slug].astro", { modules: [{ module: $$module1, specifier: "../../../components/shared/CallbackForm.astro", assert: {} }, { module: $$module2$3, specifier: "../../../components/shared/Section.astro", assert: {} }, { module: $$module3$3, specifier: "../../../components/solid/Counter", assert: {} }, { module: $$module4$2, specifier: "../../../enums/ELangs", assert: {} }, { module: $$module5, specifier: "../../../enums/EPhases", assert: {} }, { module: $$module5$3, specifier: "../../../layouts/Container.astro", assert: {} }, { module: $$module6$1, specifier: "../../../layouts/Layout.astro", assert: {} }, { module: $$module8$1, specifier: "../../../models/ContentModel", assert: {} }, { module: $$module7, specifier: "../../../models/ProjectModel", assert: {} }], hydratedComponents: [Counter$1], clientOnlyComponents: [], hydrationDirectives: /* @__PURE__ */ new Set(["load"]), hoisted: [] });
-const $$Astro$v = createAstro("/@fs/C:/work-projects/pireactor/main-site/client/src/pages/en/work/[slug].astro", "http://localhost:3000/", "file:///C:/work-projects/pireactor/main-site/client/");
+const $$metadata$v = createMetadata("/@fs/C:/work-projects/pireactor/main-site/src/pages/en/work/[slug].astro", { modules: [{ module: $$module1, specifier: "../../../components/shared/CallbackForm.astro", assert: {} }, { module: $$module2$3, specifier: "../../../components/shared/Section.astro", assert: {} }, { module: $$module3$3, specifier: "../../../components/solid/Counter", assert: {} }, { module: $$module4$2, specifier: "../../../enums/ELangs", assert: {} }, { module: $$module5, specifier: "../../../enums/EPhases", assert: {} }, { module: $$module5$3, specifier: "../../../layouts/Container.astro", assert: {} }, { module: $$module6$1, specifier: "../../../layouts/Layout.astro", assert: {} }, { module: $$module8$1, specifier: "../../../models/ContentModel", assert: {} }, { module: $$module7, specifier: "../../../models/ProjectModel", assert: {} }], hydratedComponents: [Counter$1], clientOnlyComponents: [], hydrationDirectives: /* @__PURE__ */ new Set(["load"]), hoisted: [] });
+const $$Astro$v = createAstro("/@fs/C:/work-projects/pireactor/main-site/src/pages/en/work/[slug].astro", "http://localhost:3000/", "file:///C:/work-projects/pireactor/main-site/");
 const Astro$a = $$Astro$v;
 async function getStaticPaths$a() {
   const projects = await Astro$a.glob(
-    { "/public/assets/content/en/projects/Brewery.md": () => import('./chunks/chunk.29bcfbb2.mjs'), "/public/assets/content/en/projects/NewHope copy.md": () => import('./chunks/chunk.dbd11095.mjs'), "/public/assets/content/en/projects/NewHope.md": () => import('./chunks/chunk.79884e51.mjs'), "/public/assets/content/en/projects/NewHope2.md": () => import('./chunks/chunk.787538be.mjs'), "/public/assets/content/en/projects/NewHope3.md": () => import('./chunks/chunk.09debec5.mjs'),},
+    { "/public/assets/content/en/projects/Brewery.md": () => import('./chunks/chunk.c1a611e2.mjs'), "/public/assets/content/en/projects/NewHope copy.md": () => import('./chunks/chunk.1fa0ae9a.mjs'), "/public/assets/content/en/projects/NewHope.md": () => import('./chunks/chunk.8dce1602.mjs'), "/public/assets/content/en/projects/NewHope2.md": () => import('./chunks/chunk.f23f1ec4.mjs'), "/public/assets/content/en/projects/NewHope3.md": () => import('./chunks/chunk.b8b02486.mjs'),},
     () => "/public/assets/content/en/projects/*.md"
   );
   return projects.map((project) => {
@@ -2317,7 +2317,7 @@ const $$slug$a = createComponent(async ($$result, $$props, $$slots) => {
     }
   }
   const [content] = await Astro2.glob(
-    { "/public/assets/content/en/content.md": () => import('./chunks/chunk.440c98c3.mjs'),},
+    { "/public/assets/content/en/content.md": () => import('./chunks/chunk.c9d3957c.mjs'),},
     () => "/public/assets/content/en/*.md"
   );
   const STYLES = [];
@@ -2339,7 +2339,7 @@ const $$slug$a = createComponent(async ($$result, $$props, $$slots) => {
       </div>` })}${renderComponent($$result, "CallbackForm", $$CallbackForm, { "desc": content.frontmatter?.form.desc, "title": content.frontmatter?.form.title, "fields": content.frontmatter?.form.fields, "class": "astro-2CQBPXFM" })}` })}` })}`;
 });
 
-const $$file$v = "C:/work-projects/pireactor/main-site/client/src/pages/en/work/[slug].astro";
+const $$file$v = "C:/work-projects/pireactor/main-site/src/pages/en/work/[slug].astro";
 const $$url$v = "/en/work/[slug]";
 
 var _page5 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
@@ -2377,13 +2377,13 @@ var $$module3 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
 	Projects: Projects
 }, Symbol.toStringTag, { value: 'Module' }));
 
-const $$metadata$u = createMetadata("/@fs/C:/work-projects/pireactor/main-site/client/src/pages/en/work.astro", { modules: [{ module: $$module1$2, specifier: "../../components/MainTitle.astro", assert: {} }, { module: $$module2, specifier: "../../components/shared/Breadcrums.astro", assert: {} }, { module: $$module3, specifier: "../../components/solid/Projects", assert: {} }, { module: $$module4$2, specifier: "../../enums/ELangs", assert: {} }, { module: $$module5$3, specifier: "../../layouts/Container.astro", assert: {} }, { module: $$module6$1, specifier: "../../layouts/Layout.astro", assert: {} }, { module: $$module7, specifier: "../../models/ProjectModel", assert: {} }, { module: $$module8, specifier: "../../models/ServicesModel", assert: {} }], hydratedComponents: [Projects], clientOnlyComponents: [], hydrationDirectives: /* @__PURE__ */ new Set(["load"]), hoisted: [] });
-const $$Astro$u = createAstro("/@fs/C:/work-projects/pireactor/main-site/client/src/pages/en/work.astro", "http://localhost:3000/", "file:///C:/work-projects/pireactor/main-site/client/");
+const $$metadata$u = createMetadata("/@fs/C:/work-projects/pireactor/main-site/src/pages/en/work.astro", { modules: [{ module: $$module1$2, specifier: "../../components/MainTitle.astro", assert: {} }, { module: $$module2, specifier: "../../components/shared/Breadcrums.astro", assert: {} }, { module: $$module3, specifier: "../../components/solid/Projects", assert: {} }, { module: $$module4$2, specifier: "../../enums/ELangs", assert: {} }, { module: $$module5$3, specifier: "../../layouts/Container.astro", assert: {} }, { module: $$module6$1, specifier: "../../layouts/Layout.astro", assert: {} }, { module: $$module7, specifier: "../../models/ProjectModel", assert: {} }, { module: $$module8, specifier: "../../models/ServicesModel", assert: {} }], hydratedComponents: [Projects], clientOnlyComponents: [], hydrationDirectives: /* @__PURE__ */ new Set(["load"]), hoisted: [] });
+const $$Astro$u = createAstro("/@fs/C:/work-projects/pireactor/main-site/src/pages/en/work.astro", "http://localhost:3000/", "file:///C:/work-projects/pireactor/main-site/");
 const $$Work$5 = createComponent(async ($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro$u, $$props, $$slots);
   Astro2.self = $$Work$5;
   const projectsRaw = await Astro2.glob(
-    { "/public/assets/content/en/projects/Brewery.md": () => import('./chunks/chunk.29bcfbb2.mjs'), "/public/assets/content/en/projects/NewHope copy.md": () => import('./chunks/chunk.dbd11095.mjs'), "/public/assets/content/en/projects/NewHope.md": () => import('./chunks/chunk.79884e51.mjs'), "/public/assets/content/en/projects/NewHope2.md": () => import('./chunks/chunk.787538be.mjs'), "/public/assets/content/en/projects/NewHope3.md": () => import('./chunks/chunk.09debec5.mjs'),},
+    { "/public/assets/content/en/projects/Brewery.md": () => import('./chunks/chunk.c1a611e2.mjs'), "/public/assets/content/en/projects/NewHope copy.md": () => import('./chunks/chunk.1fa0ae9a.mjs'), "/public/assets/content/en/projects/NewHope.md": () => import('./chunks/chunk.8dce1602.mjs'), "/public/assets/content/en/projects/NewHope2.md": () => import('./chunks/chunk.f23f1ec4.mjs'), "/public/assets/content/en/projects/NewHope3.md": () => import('./chunks/chunk.b8b02486.mjs'),},
     () => "/public/assets/content/en/projects/*.md"
   );
   const projects = projectsRaw.map((i) => {
@@ -2400,7 +2400,7 @@ const $$Work$5 = createComponent(async ($$result, $$props, $$slots) => {
   });
   const url = Astro2.request.url;
   const services = await Astro2.glob(
-    { "/public/assets/content/en/services/architecture.md": () => import('./chunks/chunk.93527cb3.mjs'), "/public/assets/content/en/services/automation.md": () => import('./chunks/chunk.59824c95.mjs'), "/public/assets/content/en/services/blockchain.md": () => import('./chunks/chunk.7c3d0c0b.mjs'), "/public/assets/content/en/services/strategy.md": () => import('./chunks/chunk.33bb18a9.mjs'), "/public/assets/content/en/services/wallets.md": () => import('./chunks/chunk.ee134a3e.mjs'),},
+    { "/public/assets/content/en/services/architecture.md": () => import('./chunks/chunk.c6afcfdc.mjs'), "/public/assets/content/en/services/automation.md": () => import('./chunks/chunk.c98e4cd0.mjs'), "/public/assets/content/en/services/blockchain.md": () => import('./chunks/chunk.ec6459d7.mjs'), "/public/assets/content/en/services/strategy.md": () => import('./chunks/chunk.d804232d.mjs'), "/public/assets/content/en/services/wallets.md": () => import('./chunks/chunk.bf2e9b1c.mjs'),},
     () => "/public/assets/content/en/services/*.md"
   );
   const servicesNames = services.map((i) => ({
@@ -2420,7 +2420,7 @@ const $$Work$5 = createComponent(async ($$result, $$props, $$slots) => {
 `;
 });
 
-const $$file$u = "C:/work-projects/pireactor/main-site/client/src/pages/en/work.astro";
+const $$file$u = "C:/work-projects/pireactor/main-site/src/pages/en/work.astro";
 const $$url$u = "/en/work";
 
 var _page6 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
@@ -2431,26 +2431,26 @@ var _page6 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
 	url: $$url$u
 }, Symbol.toStringTag, { value: 'Module' }));
 
-const $$metadata$t = createMetadata("/@fs/C:/work-projects/pireactor/main-site/client/src/pages/es/index.astro", { modules: [{ module: $$module6$1, specifier: "../../layouts/Layout.astro", assert: {} }, { module: $$module2$4, specifier: "../../components/main/Hero.astro", assert: {} }, { module: $$module3$2, specifier: "../../components/main/About.astro", assert: {} }, { module: $$module4, specifier: "../../components/main/Map.astro", assert: {} }, { module: $$module5$1, specifier: "../../components/main/How.astro", assert: {} }, { module: $$module6, specifier: "../../components/main/Services.astro", assert: {} }, { module: $$module7$1, specifier: "../../components/main/Technologies.astro", assert: {} }, { module: $$module5$3, specifier: "../../layouts/Container.astro", assert: {} }, { module: $$module1, specifier: "../../components/shared/CallbackForm.astro", assert: {} }, { module: $$module8$1, specifier: "../../models/ContentModel", assert: {} }, { module: $$module4$2, specifier: "../../enums/ELangs", assert: {} }], hydratedComponents: [], clientOnlyComponents: [], hydrationDirectives: /* @__PURE__ */ new Set([]), hoisted: [] });
-const $$Astro$t = createAstro("/@fs/C:/work-projects/pireactor/main-site/client/src/pages/es/index.astro", "http://localhost:3000/", "file:///C:/work-projects/pireactor/main-site/client/");
+const $$metadata$t = createMetadata("/@fs/C:/work-projects/pireactor/main-site/src/pages/es/index.astro", { modules: [{ module: $$module6$1, specifier: "../../layouts/Layout.astro", assert: {} }, { module: $$module2$4, specifier: "../../components/main/Hero.astro", assert: {} }, { module: $$module3$2, specifier: "../../components/main/About.astro", assert: {} }, { module: $$module4, specifier: "../../components/main/Map.astro", assert: {} }, { module: $$module5$1, specifier: "../../components/main/How.astro", assert: {} }, { module: $$module6, specifier: "../../components/main/Services.astro", assert: {} }, { module: $$module7$1, specifier: "../../components/main/Technologies.astro", assert: {} }, { module: $$module5$3, specifier: "../../layouts/Container.astro", assert: {} }, { module: $$module1, specifier: "../../components/shared/CallbackForm.astro", assert: {} }, { module: $$module8$1, specifier: "../../models/ContentModel", assert: {} }, { module: $$module4$2, specifier: "../../enums/ELangs", assert: {} }], hydratedComponents: [], clientOnlyComponents: [], hydrationDirectives: /* @__PURE__ */ new Set([]), hoisted: [] });
+const $$Astro$t = createAstro("/@fs/C:/work-projects/pireactor/main-site/src/pages/es/index.astro", "http://localhost:3000/", "file:///C:/work-projects/pireactor/main-site/");
 const $$Index$4 = createComponent(async ($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro$t, $$props, $$slots);
   Astro2.self = $$Index$4;
   const [content] = await Astro2.glob(
-    { "/public/assets/content/es/content.md": () => import('./chunks/chunk.4896bd4a.mjs'),},
+    { "/public/assets/content/es/content.md": () => import('./chunks/chunk.a70b9817.mjs'),},
     () => "/public/assets/content/es/*.md"
   );
   const STYLES = [];
   for (const STYLE of STYLES)
     $$result.styles.add(STYLE);
-  return render`${renderComponent($$result, "Layout", $$Layout, { "title": content.frontmatter.title, "lang": ELangs.es, "class": "astro-RUN2PSDZ" }, { "default": () => render`${renderComponent($$result, "Container", $$Container, { "class": "astro-RUN2PSDZ" }, { "default": () => render`${renderComponent($$result, "Hero", $$Hero, { "redLine": content.frontmatter?.index.hero.redline, "title": content.frontmatter.index.hero.title, "path": "#callback-form", "btnText": content.frontmatter.index.hero.btnText, "class": "astro-RUN2PSDZ" })}${renderComponent($$result, "About", $$About$6, { "counters": content.frontmatter.counters, "desc": content.frontmatter.index.desc, "title": "About", "class": "astro-RUN2PSDZ" })}${renderComponent($$result, "Map", $$Map, { "title": content.frontmatter.index.mapTitle, "class": "astro-RUN2PSDZ" })}` })}${renderComponent($$result, "How", $$How, { "content": content.frontmatter.howSection, "class": "astro-RUN2PSDZ" })}${renderComponent($$result, "Container", $$Container, { "class": "astro-RUN2PSDZ" }, { "default": () => render`<div class="services-wrp astro-RUN2PSDZ" id="services">
-      ${renderComponent($$result, "Services", $$Services, { "title": content.frontmatter.services.title, "lang": ELangs.es, "class": "astro-RUN2PSDZ" })}
-    </div>${renderComponent($$result, "Technologies", $$Technologies, { "title": content?.frontmatter.tech.title, "desc": content?.frontmatter.tech.desc, "class": "astro-RUN2PSDZ" })}<div id="callback-form" class="astro-RUN2PSDZ">
-      ${renderComponent($$result, "CallbackForm", $$CallbackForm, { "desc": content.frontmatter?.form.desc, "title": content.frontmatter?.form.title, "fields": content.frontmatter?.form.fields, "class": "astro-RUN2PSDZ" })}
+  return render`${renderComponent($$result, "Layout", $$Layout, { "title": content.frontmatter?.title, "lang": ELangs.es, "class": "astro-H25IZ5QQ" }, { "default": () => render`${renderComponent($$result, "Container", $$Container, { "class": "astro-H25IZ5QQ" }, { "default": () => render`${renderComponent($$result, "Hero", $$Hero, { "redLine": content.frontmatter?.index.hero.redline, "title": content.frontmatter.index.hero.title, "path": "#callback-form", "btnText": content.frontmatter.index.hero.btnText, "class": "astro-H25IZ5QQ" })}${renderComponent($$result, "About", $$About$6, { "counters": content.frontmatter.counters, "desc": content.frontmatter.index.desc, "title": "About", "class": "astro-H25IZ5QQ" })}${renderComponent($$result, "Map", $$Map, { "title": content.frontmatter.index.mapTitle, "class": "astro-H25IZ5QQ" })}` })}${renderComponent($$result, "How", $$How, { "content": content.frontmatter.howSection, "class": "astro-H25IZ5QQ" })}${renderComponent($$result, "Container", $$Container, { "class": "astro-H25IZ5QQ" }, { "default": () => render`<div class="services-wrp astro-H25IZ5QQ" id="services">
+      ${renderComponent($$result, "Services", $$Services, { "title": content.frontmatter.services.title, "lang": ELangs.en, "class": "astro-H25IZ5QQ" })}
+    </div>${renderComponent($$result, "Technologies", $$Technologies, { "title": content?.frontmatter.tech.title, "desc": content?.frontmatter.tech.desc, "class": "astro-H25IZ5QQ" })}<div id="callback-form" class="astro-H25IZ5QQ">
+      ${renderComponent($$result, "CallbackForm", $$CallbackForm, { "desc": content.frontmatter?.form.desc, "title": content.frontmatter?.form.title, "fields": content.frontmatter?.form.fields, "class": "astro-H25IZ5QQ" })}
     </div>` })}` })}`;
 });
 
-const $$file$t = "C:/work-projects/pireactor/main-site/client/src/pages/es/index.astro";
+const $$file$t = "C:/work-projects/pireactor/main-site/src/pages/es/index.astro";
 const $$url$t = "/es";
 
 var _page7 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
@@ -2463,7 +2463,7 @@ var _page7 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
 
 async function getStaticPaths$9() {
   const services = await Astro$9.glob(
-    { "/public/assets/content/es/services/architecture.md": () => import('./chunks/chunk.ccbb07d8.mjs'), "/public/assets/content/es/services/automation.md": () => import('./chunks/chunk.938b4c4d.mjs'), "/public/assets/content/es/services/blockchain.md": () => import('./chunks/chunk.5f73559c.mjs'), "/public/assets/content/es/services/strategy.md": () => import('./chunks/chunk.9d579503.mjs'), "/public/assets/content/es/services/wallets.md": () => import('./chunks/chunk.000bd02f.mjs'),},
+    { "/public/assets/content/es/services/architecture.md": () => import('./chunks/chunk.b31d322e.mjs'), "/public/assets/content/es/services/automation.md": () => import('./chunks/chunk.e89ab15e.mjs'), "/public/assets/content/es/services/blockchain.md": () => import('./chunks/chunk.553bc06b.mjs'), "/public/assets/content/es/services/strategy.md": () => import('./chunks/chunk.3c563026.mjs'), "/public/assets/content/es/services/wallets.md": () => import('./chunks/chunk.165e007d.mjs'),},
     () => "/public/assets/content/es/services/*.md"
   );
   return services.map((service) => {
@@ -2483,43 +2483,43 @@ async function getStaticPaths$9() {
     };
   });
 }
-const $$metadata$s = createMetadata("/@fs/C:/work-projects/pireactor/main-site/client/src/pages/es/services/[slug].astro", { modules: [{ module: $$module1$2, specifier: "../../../components/MainTitle.astro", assert: {} }, { module: $$module2$5, specifier: "../../../components/shared/Button.astro", assert: {} }, { module: $$module3$3, specifier: "../../../components/solid/Counter", assert: {} }, { module: $$module4$2, specifier: "../../../enums/ELangs", assert: {} }, { module: $$module5$3, specifier: "../../../layouts/Container.astro", assert: {} }, { module: $$module6$1, specifier: "../../../layouts/Layout.astro", assert: {} }, { module: $$module8, specifier: "../../../models/ServicesModel", assert: {} }], hydratedComponents: [Counter$1], clientOnlyComponents: [], hydrationDirectives: /* @__PURE__ */ new Set(["load"]), hoisted: [] });
-const $$Astro$s = createAstro("/@fs/C:/work-projects/pireactor/main-site/client/src/pages/es/services/[slug].astro", "http://localhost:3000/", "file:///C:/work-projects/pireactor/main-site/client/");
+const $$metadata$s = createMetadata("/@fs/C:/work-projects/pireactor/main-site/src/pages/es/services/[slug].astro", { modules: [{ module: $$module1$2, specifier: "../../../components/MainTitle.astro", assert: {} }, { module: $$module2$5, specifier: "../../../components/shared/Button.astro", assert: {} }, { module: $$module3$3, specifier: "../../../components/solid/Counter", assert: {} }, { module: $$module4$2, specifier: "../../../enums/ELangs", assert: {} }, { module: $$module5$3, specifier: "../../../layouts/Container.astro", assert: {} }, { module: $$module6$1, specifier: "../../../layouts/Layout.astro", assert: {} }, { module: $$module8, specifier: "../../../models/ServicesModel", assert: {} }], hydratedComponents: [Counter$1], clientOnlyComponents: [], hydrationDirectives: /* @__PURE__ */ new Set(["load"]), hoisted: [] });
+const $$Astro$s = createAstro("/@fs/C:/work-projects/pireactor/main-site/src/pages/es/services/[slug].astro", "http://localhost:3000/", "file:///C:/work-projects/pireactor/main-site/");
 const Astro$9 = $$Astro$s;
 const $$slug$9 = createComponent(async ($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro$s, $$props, $$slots);
   Astro2.self = $$slug$9;
   const props = Astro2.props;
-  const uri = encodeURI(`/es/work/?${props.title}`);
+  const uri = encodeURI(`/en/work/?${props.title}`);
   const STYLES = [];
   for (const STYLE of STYLES)
     $$result.styles.add(STYLE);
-  return render`${renderComponent($$result, "Layout", $$Layout, { "title": props.title, "lang": ELangs.en, "class": "astro-QKCWXLNO" }, { "default": () => render`${renderComponent($$result, "Container", $$Container, { "class": "astro-QKCWXLNO" }, { "default": () => render`<section class="hero astro-QKCWXLNO">
-        ${renderComponent($$result, "MainTitle", $$MainTitle, { "redLine": props.title, "class": "astro-QKCWXLNO" })}
-        <p class="astro-QKCWXLNO">
+  return render`${renderComponent($$result, "Layout", $$Layout, { "title": props.title, "lang": ELangs.en, "class": "astro-SO5VML57" }, { "default": () => render`${renderComponent($$result, "Container", $$Container, { "class": "astro-SO5VML57" }, { "default": () => render`<section class="hero astro-SO5VML57">
+        ${renderComponent($$result, "MainTitle", $$MainTitle, { "redLine": props.title, "class": "astro-SO5VML57" })}
+        <p class="astro-SO5VML57">
           ${props.titleDesc}
         </p>
-        ${renderComponent($$result, "Button", $$Button, { "title": props.heroBtn, "path": "/es/#callback-form", "class": "astro-QKCWXLNO" })}
-    </section><section class="desc astro-QKCWXLNO">
-      <h2 class="astro-QKCWXLNO">About</h2>
-      <div class="desc__wrp astro-QKCWXLNO">
-        <p class="astro-QKCWXLNO">${props.desc}</p>
-        <div class="desc__counter astro-QKCWXLNO">
-          ${props.values.map((i) => render`${renderComponent($$result, "Counter", Counter$1, { "client:load": true, "countTo": i.value, "title": i.name, "client:component-hydration": "load", "client:component-path": $$metadata$s.getPath(Counter$1), "client:component-export": $$metadata$s.getExport(Counter$1), "class": "astro-QKCWXLNO" })}`)}
+        ${renderComponent($$result, "Button", $$Button, { "title": props.heroBtn, "path": "/en/#callback-form", "class": "astro-SO5VML57" })}
+    </section><section class="desc astro-SO5VML57">
+      <h2 class="astro-SO5VML57">About</h2>
+      <div class="desc__wrp astro-SO5VML57">
+        <p class="astro-SO5VML57">${props.desc}</p>
+        <div class="desc__counter astro-SO5VML57">
+          ${props.values.map((i) => render`${renderComponent($$result, "Counter", Counter$1, { "client:load": true, "countTo": i.value, "title": i.name, "client:component-hydration": "load", "client:component-path": $$metadata$s.getPath(Counter$1), "client:component-export": $$metadata$s.getExport(Counter$1), "class": "astro-SO5VML57" })}`)}
         </div>
       </div>
-    </section>${props.articles.map((i) => render`<section class="article astro-QKCWXLNO">
-      <h3 class="article__title astro-QKCWXLNO">${i.title}</h3>
-      <div class="article__wrp astro-QKCWXLNO">
-        <img class="article__img astro-QKCWXLNO"${addAttribute(i.img, "src")}${addAttribute(i.title, "alt")}>
-        <p class="article__desc astro-QKCWXLNO">${i.desc}</p>
+    </section>${props.articles.map((i) => render`<section class="article astro-SO5VML57">
+      <h3 class="article__title astro-SO5VML57">${i.title}</h3>
+      <div class="article__wrp astro-SO5VML57">
+        <img class="article__img astro-SO5VML57"${addAttribute(i.img, "src")}${addAttribute(i.title, "alt")}>
+        <p class="article__desc astro-SO5VML57">${i.desc}</p>
       </div>
-    </section>`)}<div class="article__view astro-QKCWXLNO">
-      ${renderComponent($$result, "Button", $$Button, { "path": uri, "title": props.viewBtn, "class": "astro-QKCWXLNO" })}
+    </section>`)}<div class="article__view astro-SO5VML57">
+      ${renderComponent($$result, "Button", $$Button, { "path": uri, "title": props.viewBtn, "class": "astro-SO5VML57" })}
     </div>` })}` })}`;
 });
 
-const $$file$s = "C:/work-projects/pireactor/main-site/client/src/pages/es/services/[slug].astro";
+const $$file$s = "C:/work-projects/pireactor/main-site/src/pages/es/services/[slug].astro";
 const $$url$s = "/es/services/[slug]";
 
 var _page8 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
@@ -2531,18 +2531,18 @@ var _page8 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
 	url: $$url$s
 }, Symbol.toStringTag, { value: 'Module' }));
 
-const $$metadata$r = createMetadata("/@fs/C:/work-projects/pireactor/main-site/client/src/pages/es/about.astro", { modules: [{ module: $$module1$2, specifier: "../../components/MainTitle.astro", assert: {} }, { module: $$module2$1, specifier: "../../components/shared/AboutCard.astro", assert: {} }, { module: $$module2, specifier: "../../components/shared/Breadcrums.astro", assert: {} }, { module: $$module2$3, specifier: "../../components/shared/Section.astro", assert: {} }, { module: $$module3$3, specifier: "../../components/solid/Counter", assert: {} }, { module: $$module4$2, specifier: "../../enums/ELangs", assert: {} }, { module: $$module5$3, specifier: "../../layouts/Container.astro", assert: {} }, { module: $$module6$1, specifier: "../../layouts/Layout.astro", assert: {} }, { module: $$module8$1, specifier: "../../models/ContentModel", assert: {} }], hydratedComponents: [Counter$1], clientOnlyComponents: [], hydrationDirectives: /* @__PURE__ */ new Set(["load"]), hoisted: [] });
-const $$Astro$r = createAstro("/@fs/C:/work-projects/pireactor/main-site/client/src/pages/es/about.astro", "http://localhost:3000/", "file:///C:/work-projects/pireactor/main-site/client/");
+const $$metadata$r = createMetadata("/@fs/C:/work-projects/pireactor/main-site/src/pages/es/about.astro", { modules: [{ module: $$module1$2, specifier: "../../components/MainTitle.astro", assert: {} }, { module: $$module2$1, specifier: "../../components/shared/AboutCard.astro", assert: {} }, { module: $$module2, specifier: "../../components/shared/Breadcrums.astro", assert: {} }, { module: $$module2$3, specifier: "../../components/shared/Section.astro", assert: {} }, { module: $$module3$3, specifier: "../../components/solid/Counter", assert: {} }, { module: $$module4$2, specifier: "../../enums/ELangs", assert: {} }, { module: $$module5$3, specifier: "../../layouts/Container.astro", assert: {} }, { module: $$module6$1, specifier: "../../layouts/Layout.astro", assert: {} }, { module: $$module8$1, specifier: "../../models/ContentModel", assert: {} }], hydratedComponents: [Counter$1], clientOnlyComponents: [], hydrationDirectives: /* @__PURE__ */ new Set(["load"]), hoisted: [] });
+const $$Astro$r = createAstro("/@fs/C:/work-projects/pireactor/main-site/src/pages/es/about.astro", "http://localhost:3000/", "file:///C:/work-projects/pireactor/main-site/");
 const $$About$4 = createComponent(async ($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro$r, $$props, $$slots);
   Astro2.self = $$About$4;
   const leads = await Astro2.glob(
-    { "/public/assets/content/es/leads/AlexAlejandre.md": () => import('./chunks/chunk.9316eb1e.mjs'), "/public/assets/content/es/leads/JohnVermazenSt.md": () => import('./chunks/chunk.521dead4.mjs'), "/public/assets/content/es/leads/JustynaBorwik.md": () => import('./chunks/chunk.35d644fe.mjs'), "/public/assets/content/es/leads/StevenVermazen.md": () => import('./chunks/chunk.3899904f.mjs'),},
+    { "/public/assets/content/es/leads/AlexAlejandre.md": () => import('./chunks/chunk.efd8f2e3.mjs'), "/public/assets/content/es/leads/JohnVermazenSt.md": () => import('./chunks/chunk.c3803efd.mjs'), "/public/assets/content/es/leads/JustynaBorwik.md": () => import('./chunks/chunk.3f76bef5.mjs'), "/public/assets/content/es/leads/StevenVermazen.md": () => import('./chunks/chunk.2e39d252.mjs'),},
     () => "/public/assets/content/es/leads/*.md"
   );
   const sortLeads = leads.sort((a, b) => a.frontmatter.id - b.frontmatter.id);
   const [content] = await Astro2.glob(
-    { "/public/assets/content/es/content.md": () => import('./chunks/chunk.4896bd4a.mjs'),},
+    { "/public/assets/content/es/content.md": () => import('./chunks/chunk.a70b9817.mjs'),},
     () => "/public/assets/content/es/*.md"
   );
   const STYLES = [];
@@ -2569,7 +2569,7 @@ const $$About$4 = createComponent(async ($$result, $$props, $$slots) => {
       </ul>` })}` })}` })}`;
 });
 
-const $$file$r = "C:/work-projects/pireactor/main-site/client/src/pages/es/about.astro";
+const $$file$r = "C:/work-projects/pireactor/main-site/src/pages/es/about.astro";
 const $$url$r = "/es/about";
 
 var _page9 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
@@ -2580,8 +2580,8 @@ var _page9 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
 	url: $$url$r
 }, Symbol.toStringTag, { value: 'Module' }));
 
-const $$metadata$q = createMetadata("/@fs/C:/work-projects/pireactor/main-site/client/src/pages/es/brief.astro", { modules: [{ module: $$module2, specifier: "../../components/shared/Breadcrums.astro", assert: {} }, { module: $$module2$2, specifier: "../../components/shared/FormSection.astro", assert: {} }, { module: $$module3$1, specifier: "../../components/solid/Form", assert: {} }, { module: $$module4$2, specifier: "../../enums/ELangs", assert: {} }, { module: $$module5$3, specifier: "../../layouts/Container.astro", assert: {} }, { module: $$module6$1, specifier: "../../layouts/Layout.astro", assert: {} }], hydratedComponents: [Form], clientOnlyComponents: [], hydrationDirectives: /* @__PURE__ */ new Set(["load"]), hoisted: [] });
-const $$Astro$q = createAstro("/@fs/C:/work-projects/pireactor/main-site/client/src/pages/es/brief.astro", "http://localhost:3000/", "file:///C:/work-projects/pireactor/main-site/client/");
+const $$metadata$q = createMetadata("/@fs/C:/work-projects/pireactor/main-site/src/pages/es/brief.astro", { modules: [{ module: $$module2, specifier: "../../components/shared/Breadcrums.astro", assert: {} }, { module: $$module2$2, specifier: "../../components/shared/FormSection.astro", assert: {} }, { module: $$module3$1, specifier: "../../components/solid/Form", assert: {} }, { module: $$module4$2, specifier: "../../enums/ELangs", assert: {} }, { module: $$module5$3, specifier: "../../layouts/Container.astro", assert: {} }, { module: $$module6$1, specifier: "../../layouts/Layout.astro", assert: {} }], hydratedComponents: [Form], clientOnlyComponents: [], hydrationDirectives: /* @__PURE__ */ new Set(["load"]), hoisted: [] });
+const $$Astro$q = createAstro("/@fs/C:/work-projects/pireactor/main-site/src/pages/es/brief.astro", "http://localhost:3000/", "file:///C:/work-projects/pireactor/main-site/");
 const $$Brief$4 = createComponent(async ($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro$q, $$props, $$slots);
   Astro2.self = $$Brief$4;
@@ -2591,7 +2591,7 @@ const $$Brief$4 = createComponent(async ($$result, $$props, $$slots) => {
   return render`${renderComponent($$result, "Layout", $$Layout, { "title": "Brief", "lang": ELangs.es, "class": "astro-O43VOKX4" }, { "default": () => render`${renderComponent($$result, "Container", $$Container, { "class": "astro-O43VOKX4" }, { "default": () => render`${renderComponent($$result, "Breadcrums", $$Breadcrums, { "currentPath": "Brief", "class": "astro-O43VOKX4" })}${renderComponent($$result, "FormSection", $$FormSection, { "class": "astro-O43VOKX4" }, { "default": () => render`${renderComponent($$result, "Form", Form, { "client:load": true, "client:component-hydration": "load", "client:component-path": $$metadata$q.getPath(Form), "client:component-export": $$metadata$q.getExport(Form), "class": "astro-O43VOKX4" })}` })}` })}` })}`;
 });
 
-const $$file$q = "C:/work-projects/pireactor/main-site/client/src/pages/es/brief.astro";
+const $$file$q = "C:/work-projects/pireactor/main-site/src/pages/es/brief.astro";
 const $$url$q = "/es/brief";
 
 var _page10 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
@@ -2602,13 +2602,13 @@ var _page10 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
 	url: $$url$q
 }, Symbol.toStringTag, { value: 'Module' }));
 
-const $$metadata$p = createMetadata("/@fs/C:/work-projects/pireactor/main-site/client/src/pages/es/work/[slug].astro", { modules: [{ module: $$module1, specifier: "../../../components/shared/CallbackForm.astro", assert: {} }, { module: $$module2$3, specifier: "../../../components/shared/Section.astro", assert: {} }, { module: $$module3$3, specifier: "../../../components/solid/Counter", assert: {} }, { module: $$module4$2, specifier: "../../../enums/ELangs", assert: {} }, { module: $$module5, specifier: "../../../enums/EPhases", assert: {} }, { module: $$module5$3, specifier: "../../../layouts/Container.astro", assert: {} }, { module: $$module6$1, specifier: "../../../layouts/Layout.astro", assert: {} }, { module: $$module8$1, specifier: "../../../models/ContentModel", assert: {} }, { module: $$module7, specifier: "../../../models/ProjectModel", assert: {} }], hydratedComponents: [Counter$1], clientOnlyComponents: [], hydrationDirectives: /* @__PURE__ */ new Set(["load"]), hoisted: [] });
-const $$Astro$p = createAstro("/@fs/C:/work-projects/pireactor/main-site/client/src/pages/es/work/[slug].astro", "http://localhost:3000/", "file:///C:/work-projects/pireactor/main-site/client/");
+const $$metadata$p = createMetadata("/@fs/C:/work-projects/pireactor/main-site/src/pages/es/work/[slug].astro", { modules: [{ module: $$module1, specifier: "../../../components/shared/CallbackForm.astro", assert: {} }, { module: $$module2$3, specifier: "../../../components/shared/Section.astro", assert: {} }, { module: $$module3$3, specifier: "../../../components/solid/Counter", assert: {} }, { module: $$module4$2, specifier: "../../../enums/ELangs", assert: {} }, { module: $$module5, specifier: "../../../enums/EPhases", assert: {} }, { module: $$module5$3, specifier: "../../../layouts/Container.astro", assert: {} }, { module: $$module6$1, specifier: "../../../layouts/Layout.astro", assert: {} }, { module: $$module8$1, specifier: "../../../models/ContentModel", assert: {} }, { module: $$module7, specifier: "../../../models/ProjectModel", assert: {} }], hydratedComponents: [Counter$1], clientOnlyComponents: [], hydrationDirectives: /* @__PURE__ */ new Set(["load"]), hoisted: [] });
+const $$Astro$p = createAstro("/@fs/C:/work-projects/pireactor/main-site/src/pages/es/work/[slug].astro", "http://localhost:3000/", "file:///C:/work-projects/pireactor/main-site/");
 const Astro$8 = $$Astro$p;
 async function getStaticPaths$8() {
   const projects = await Astro$8.glob(
-    { "/public/assets/content/es/projects/Brewery.md": () => import('./chunks/chunk.f075a1b0.mjs'), "/public/assets/content/es/projects/NewHope copy.md": () => import('./chunks/chunk.c40d7ba2.mjs'), "/public/assets/content/es/projects/NewHope.md": () => import('./chunks/chunk.474beff1.mjs'), "/public/assets/content/es/projects/NewHope2.md": () => import('./chunks/chunk.c534737f.mjs'), "/public/assets/content/es/projects/NewHope3.md": () => import('./chunks/chunk.0d4b752c.mjs'),},
-    () => "/public/assets/content/es/projects/*.md"
+    { "/public/assets/content/en/projects/Brewery.md": () => import('./chunks/chunk.c1a611e2.mjs'), "/public/assets/content/en/projects/NewHope copy.md": () => import('./chunks/chunk.1fa0ae9a.mjs'), "/public/assets/content/en/projects/NewHope.md": () => import('./chunks/chunk.8dce1602.mjs'), "/public/assets/content/en/projects/NewHope2.md": () => import('./chunks/chunk.f23f1ec4.mjs'), "/public/assets/content/en/projects/NewHope3.md": () => import('./chunks/chunk.b8b02486.mjs'),},
+    () => "/public/assets/content/en/projects/*.md"
   );
   return projects.map((project) => {
     return {
@@ -2639,29 +2639,29 @@ const $$slug$8 = createComponent(async ($$result, $$props, $$slots) => {
     }
   }
   const [content] = await Astro2.glob(
-    { "/public/assets/content/es/content.md": () => import('./chunks/chunk.4896bd4a.mjs'),},
-    () => "/public/assets/content/es/*.md"
+    { "/public/assets/content/en/content.md": () => import('./chunks/chunk.c9d3957c.mjs'),},
+    () => "/public/assets/content/en/*.md"
   );
   const STYLES = [];
   for (const STYLE of STYLES)
     $$result.styles.add(STYLE);
-  return render`${renderComponent($$result, "Layout", $$Layout, { "title": props.title, "lang": ELangs.en, "class": "astro-HA6RLDHZ" }, { "default": () => render`${renderComponent($$result, "Container", $$Container, { "class": "astro-HA6RLDHZ" }, { "default": () => render`<div class="hero astro-HA6RLDHZ"${addAttribute(`--url: url("${props.img}")`, "style")}>
-      <h1 class="astro-HA6RLDHZ">${props.title}</h1>
-    </div>${renderComponent($$result, "Section", $$Section, { "title": "Stages of project", "class": "astro-HA6RLDHZ" }, { "default": () => render`<ul class="stages__list astro-HA6RLDHZ">
-        ${props.phases.map((i) => render`<li${addAttribute(`stages__item ${phasesClass(i.icon)} astro-HA6RLDHZ`, "class")}>
-          <div class="stages__title astro-HA6RLDHZ">${i.name}</div>
-          <div class="stages__period astro-HA6RLDHZ">${i.period}</div>
+  return render`${renderComponent($$result, "Layout", $$Layout, { "title": props.title, "lang": ELangs.en, "class": "astro-2CQBPXFM" }, { "default": () => render`${renderComponent($$result, "Container", $$Container, { "class": "astro-2CQBPXFM" }, { "default": () => render`<div class="hero astro-2CQBPXFM"${addAttribute(`--url: url("${props.img}")`, "style")}>
+      <h1 class="astro-2CQBPXFM">${props.title}</h1>
+    </div>${renderComponent($$result, "Section", $$Section, { "title": "Stages of project", "class": "astro-2CQBPXFM" }, { "default": () => render`<ul class="stages__list astro-2CQBPXFM">
+        ${props.phases.map((i) => render`<li${addAttribute(`stages__item ${phasesClass(i.icon)} astro-2CQBPXFM`, "class")}>
+          <div class="stages__title astro-2CQBPXFM">${i.name}</div>
+          <div class="stages__period astro-2CQBPXFM">${i.period}</div>
         </li>`)}
-      </ul>` })}${renderComponent($$result, "Section", $$Section, { "title": "Application functionality", "class": "astro-HA6RLDHZ" }, { "default": () => render`<ul class="bullets astro-HA6RLDHZ">
-        ${props.bullets.map((i) => render`<li class="bullets__item astro-HA6RLDHZ">${i}</li>`)}
-      </ul>` })}${renderComponent($$result, "Section", $$Section, { "title": "Solution", "class": "astro-HA6RLDHZ" }, { "default": () => render`<div class="solution astro-HA6RLDHZ">
-        ${renderComponent($$result, "props.content", props.content, { "class": "astro-HA6RLDHZ" })}
-      </div>` })}${renderComponent($$result, "Section", $$Section, { "title": "Results", "class": "astro-HA6RLDHZ" }, { "default": () => render`<div class="counter astro-HA6RLDHZ">
-        ${props.result.map((i) => render`${renderComponent($$result, "Counter", Counter$1, { "client:load": true, "countTo": i.value, "title": i.name, "format": i.format, "client:component-hydration": "load", "client:component-path": $$metadata$p.getPath(Counter$1), "client:component-export": $$metadata$p.getExport(Counter$1), "class": "astro-HA6RLDHZ" })}`)}
-      </div>` })}${renderComponent($$result, "CallbackForm", $$CallbackForm, { "desc": content.frontmatter?.form.desc, "title": content.frontmatter?.form.title, "fields": content.frontmatter?.form.fields, "class": "astro-HA6RLDHZ" })}` })}` })}`;
+      </ul>` })}${renderComponent($$result, "Section", $$Section, { "title": "Application functionality", "class": "astro-2CQBPXFM" }, { "default": () => render`<ul class="bullets astro-2CQBPXFM">
+        ${props.bullets.map((i) => render`<li class="bullets__item astro-2CQBPXFM">${i}</li>`)}
+      </ul>` })}${renderComponent($$result, "Section", $$Section, { "title": "Solution", "class": "astro-2CQBPXFM" }, { "default": () => render`<div class="solution astro-2CQBPXFM">
+        ${renderComponent($$result, "props.content", props.content, { "class": "astro-2CQBPXFM" })}
+      </div>` })}${renderComponent($$result, "Section", $$Section, { "title": "Results", "class": "astro-2CQBPXFM" }, { "default": () => render`<div class="counter astro-2CQBPXFM">
+        ${props.result.map((i) => render`${renderComponent($$result, "Counter", Counter$1, { "client:load": true, "countTo": i.value, "title": i.name, "format": i.format, "client:component-hydration": "load", "client:component-path": $$metadata$p.getPath(Counter$1), "client:component-export": $$metadata$p.getExport(Counter$1), "class": "astro-2CQBPXFM" })}`)}
+      </div>` })}${renderComponent($$result, "CallbackForm", $$CallbackForm, { "desc": content.frontmatter?.form.desc, "title": content.frontmatter?.form.title, "fields": content.frontmatter?.form.fields, "class": "astro-2CQBPXFM" })}` })}` })}`;
 });
 
-const $$file$p = "C:/work-projects/pireactor/main-site/client/src/pages/es/work/[slug].astro";
+const $$file$p = "C:/work-projects/pireactor/main-site/src/pages/es/work/[slug].astro";
 const $$url$p = "/es/work/[slug]";
 
 var _page11 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
@@ -2673,14 +2673,14 @@ var _page11 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
 	url: $$url$p
 }, Symbol.toStringTag, { value: 'Module' }));
 
-const $$metadata$o = createMetadata("/@fs/C:/work-projects/pireactor/main-site/client/src/pages/es/work.astro", { modules: [{ module: $$module1$2, specifier: "../../components/MainTitle.astro", assert: {} }, { module: $$module2, specifier: "../../components/shared/Breadcrums.astro", assert: {} }, { module: $$module3, specifier: "../../components/solid/Projects", assert: {} }, { module: $$module4$2, specifier: "../../enums/ELangs", assert: {} }, { module: $$module5$3, specifier: "../../layouts/Container.astro", assert: {} }, { module: $$module6$1, specifier: "../../layouts/Layout.astro", assert: {} }, { module: $$module7, specifier: "../../models/ProjectModel", assert: {} }, { module: $$module8, specifier: "../../models/ServicesModel", assert: {} }], hydratedComponents: [Projects], clientOnlyComponents: [], hydrationDirectives: /* @__PURE__ */ new Set(["load"]), hoisted: [] });
-const $$Astro$o = createAstro("/@fs/C:/work-projects/pireactor/main-site/client/src/pages/es/work.astro", "http://localhost:3000/", "file:///C:/work-projects/pireactor/main-site/client/");
+const $$metadata$o = createMetadata("/@fs/C:/work-projects/pireactor/main-site/src/pages/es/work.astro", { modules: [{ module: $$module1$2, specifier: "../../components/MainTitle.astro", assert: {} }, { module: $$module2, specifier: "../../components/shared/Breadcrums.astro", assert: {} }, { module: $$module3, specifier: "../../components/solid/Projects", assert: {} }, { module: $$module4$2, specifier: "../../enums/ELangs", assert: {} }, { module: $$module5$3, specifier: "../../layouts/Container.astro", assert: {} }, { module: $$module6$1, specifier: "../../layouts/Layout.astro", assert: {} }, { module: $$module7, specifier: "../../models/ProjectModel", assert: {} }, { module: $$module8, specifier: "../../models/ServicesModel", assert: {} }], hydratedComponents: [Projects], clientOnlyComponents: [], hydrationDirectives: /* @__PURE__ */ new Set(["load"]), hoisted: [] });
+const $$Astro$o = createAstro("/@fs/C:/work-projects/pireactor/main-site/src/pages/es/work.astro", "http://localhost:3000/", "file:///C:/work-projects/pireactor/main-site/");
 const $$Work$4 = createComponent(async ($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro$o, $$props, $$slots);
   Astro2.self = $$Work$4;
   const projectsRaw = await Astro2.glob(
-    { "/public/assets/content/es/projects/Brewery.md": () => import('./chunks/chunk.f075a1b0.mjs'), "/public/assets/content/es/projects/NewHope copy.md": () => import('./chunks/chunk.c40d7ba2.mjs'), "/public/assets/content/es/projects/NewHope.md": () => import('./chunks/chunk.474beff1.mjs'), "/public/assets/content/es/projects/NewHope2.md": () => import('./chunks/chunk.c534737f.mjs'), "/public/assets/content/es/projects/NewHope3.md": () => import('./chunks/chunk.0d4b752c.mjs'),},
-    () => "/public/assets/content/es/projects/*.md"
+    { "/public/assets/content/en/projects/Brewery.md": () => import('./chunks/chunk.c1a611e2.mjs'), "/public/assets/content/en/projects/NewHope copy.md": () => import('./chunks/chunk.1fa0ae9a.mjs'), "/public/assets/content/en/projects/NewHope.md": () => import('./chunks/chunk.8dce1602.mjs'), "/public/assets/content/en/projects/NewHope2.md": () => import('./chunks/chunk.f23f1ec4.mjs'), "/public/assets/content/en/projects/NewHope3.md": () => import('./chunks/chunk.b8b02486.mjs'),},
+    () => "/public/assets/content/en/projects/*.md"
   );
   const projects = projectsRaw.map((i) => {
     return {
@@ -2696,8 +2696,8 @@ const $$Work$4 = createComponent(async ($$result, $$props, $$slots) => {
   });
   const url = Astro2.request.url;
   const services = await Astro2.glob(
-    { "/public/assets/content/es/services/architecture.md": () => import('./chunks/chunk.ccbb07d8.mjs'), "/public/assets/content/es/services/automation.md": () => import('./chunks/chunk.938b4c4d.mjs'), "/public/assets/content/es/services/blockchain.md": () => import('./chunks/chunk.5f73559c.mjs'), "/public/assets/content/es/services/strategy.md": () => import('./chunks/chunk.9d579503.mjs'), "/public/assets/content/es/services/wallets.md": () => import('./chunks/chunk.000bd02f.mjs'),},
-    () => "/public/assets/content/es/services/*.md"
+    { "/public/assets/content/en/services/architecture.md": () => import('./chunks/chunk.c6afcfdc.mjs'), "/public/assets/content/en/services/automation.md": () => import('./chunks/chunk.c98e4cd0.mjs'), "/public/assets/content/en/services/blockchain.md": () => import('./chunks/chunk.ec6459d7.mjs'), "/public/assets/content/en/services/strategy.md": () => import('./chunks/chunk.d804232d.mjs'), "/public/assets/content/en/services/wallets.md": () => import('./chunks/chunk.bf2e9b1c.mjs'),},
+    () => "/public/assets/content/en/services/*.md"
   );
   const servicesNames = services.map((i) => ({
     name: i.frontmatter.title
@@ -2705,18 +2705,18 @@ const $$Work$4 = createComponent(async ($$result, $$props, $$slots) => {
   const STYLES = [];
   for (const STYLE of STYLES)
     $$result.styles.add(STYLE);
-  return render`${renderComponent($$result, "Layout", $$Layout, { "title": "Portfolio", "lang": ELangs.es, "class": "astro-MFHWZIZR" }, { "default": () => render`${renderComponent($$result, "Container", $$Container, { "class": "astro-MFHWZIZR" }, { "default": () => render`${renderComponent($$result, "Breadcrums", $$Breadcrums, { "currentPath": "Portfolio", "class": "astro-MFHWZIZR" })}<section class="hero astro-MFHWZIZR">
-        ${renderComponent($$result, "MainTitle", $$MainTitle, { "redLine": "Explore", "title": "our Work", "class": "astro-MFHWZIZR" })}
-        <p class="hero__desc astro-MFHWZIZR">
+  return render`${renderComponent($$result, "Layout", $$Layout, { "title": "Portfolio", "lang": ELangs.en, "class": "astro-SMR3IJSC" }, { "default": () => render`${renderComponent($$result, "Container", $$Container, { "class": "astro-SMR3IJSC" }, { "default": () => render`${renderComponent($$result, "Breadcrums", $$Breadcrums, { "currentPath": "Portfolio", "class": "astro-SMR3IJSC" })}<section class="hero astro-SMR3IJSC">
+        ${renderComponent($$result, "MainTitle", $$MainTitle, { "redLine": "Explore", "title": "our Work", "class": "astro-SMR3IJSC" })}
+        <p class="hero__desc astro-SMR3IJSC">
           We apply modern technologies to unlock new markets, expand your business opportunities and bring you one step closer to success. We combine developpers with designers,
           translators with copywriters, all subject matter experts in their fields, implementing what works. 
         </p>
-    </section>${renderComponent($$result, "Projects", Projects, { "client:load": true, "servicesNames": servicesNames, "projects": projects, "url": url, "allBtnTitle": "All Projects", "learnMoreText": "More Information", "langHref": ELangs.en, "client:component-hydration": "load", "client:component-path": $$metadata$o.getPath(Projects), "client:component-export": $$metadata$o.getExport(Projects), "class": "astro-MFHWZIZR" })}` })}` })}
+    </section>${renderComponent($$result, "Projects", Projects, { "client:load": true, "servicesNames": servicesNames, "projects": projects, "url": url, "allBtnTitle": "All Projects", "learnMoreText": "More Information", "langHref": ELangs.en, "client:component-hydration": "load", "client:component-path": $$metadata$o.getPath(Projects), "client:component-export": $$metadata$o.getExport(Projects), "class": "astro-SMR3IJSC" })}` })}` })}
 
 `;
 });
 
-const $$file$o = "C:/work-projects/pireactor/main-site/client/src/pages/es/work.astro";
+const $$file$o = "C:/work-projects/pireactor/main-site/src/pages/es/work.astro";
 const $$url$o = "/es/work";
 
 var _page12 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
@@ -2727,13 +2727,13 @@ var _page12 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
 	url: $$url$o
 }, Symbol.toStringTag, { value: 'Module' }));
 
-const $$metadata$n = createMetadata("/@fs/C:/work-projects/pireactor/main-site/client/src/pages/pl/index.astro", { modules: [{ module: $$module6$1, specifier: "../../layouts/Layout.astro", assert: {} }, { module: $$module2$4, specifier: "../../components/main/Hero.astro", assert: {} }, { module: $$module3$2, specifier: "../../components/main/About.astro", assert: {} }, { module: $$module4, specifier: "../../components/main/Map.astro", assert: {} }, { module: $$module5$1, specifier: "../../components/main/How.astro", assert: {} }, { module: $$module6, specifier: "../../components/main/Services.astro", assert: {} }, { module: $$module7$1, specifier: "../../components/main/Technologies.astro", assert: {} }, { module: $$module5$3, specifier: "../../layouts/Container.astro", assert: {} }, { module: $$module1, specifier: "../../components/shared/CallbackForm.astro", assert: {} }, { module: $$module8$1, specifier: "../../models/ContentModel", assert: {} }, { module: $$module4$2, specifier: "../../enums/ELangs", assert: {} }], hydratedComponents: [], clientOnlyComponents: [], hydrationDirectives: /* @__PURE__ */ new Set([]), hoisted: [] });
-const $$Astro$n = createAstro("/@fs/C:/work-projects/pireactor/main-site/client/src/pages/pl/index.astro", "http://localhost:3000/", "file:///C:/work-projects/pireactor/main-site/client/");
+const $$metadata$n = createMetadata("/@fs/C:/work-projects/pireactor/main-site/src/pages/pl/index.astro", { modules: [{ module: $$module6$1, specifier: "../../layouts/Layout.astro", assert: {} }, { module: $$module2$4, specifier: "../../components/main/Hero.astro", assert: {} }, { module: $$module3$2, specifier: "../../components/main/About.astro", assert: {} }, { module: $$module4, specifier: "../../components/main/Map.astro", assert: {} }, { module: $$module5$1, specifier: "../../components/main/How.astro", assert: {} }, { module: $$module6, specifier: "../../components/main/Services.astro", assert: {} }, { module: $$module7$1, specifier: "../../components/main/Technologies.astro", assert: {} }, { module: $$module5$3, specifier: "../../layouts/Container.astro", assert: {} }, { module: $$module1, specifier: "../../components/shared/CallbackForm.astro", assert: {} }, { module: $$module8$1, specifier: "../../models/ContentModel", assert: {} }, { module: $$module4$2, specifier: "../../enums/ELangs", assert: {} }], hydratedComponents: [], clientOnlyComponents: [], hydrationDirectives: /* @__PURE__ */ new Set([]), hoisted: [] });
+const $$Astro$n = createAstro("/@fs/C:/work-projects/pireactor/main-site/src/pages/pl/index.astro", "http://localhost:3000/", "file:///C:/work-projects/pireactor/main-site/");
 const $$Index$3 = createComponent(async ($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro$n, $$props, $$slots);
   Astro2.self = $$Index$3;
   const [content] = await Astro2.glob(
-    { "/public/assets/content/pl/content.md": () => import('./chunks/chunk.832d7e87.mjs'),},
+    { "/public/assets/content/pl/content.md": () => import('./chunks/chunk.7554dae3.mjs'),},
     () => "/public/assets/content/pl/*.md"
   );
   const STYLES = [];
@@ -2746,7 +2746,7 @@ const $$Index$3 = createComponent(async ($$result, $$props, $$slots) => {
     </div>` })}` })}`;
 });
 
-const $$file$n = "C:/work-projects/pireactor/main-site/client/src/pages/pl/index.astro";
+const $$file$n = "C:/work-projects/pireactor/main-site/src/pages/pl/index.astro";
 const $$url$n = "/pl";
 
 var _page13 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
@@ -2759,7 +2759,7 @@ var _page13 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
 
 async function getStaticPaths$7() {
   const services = await Astro$7.glob(
-    { "/public/assets/content/pl/services/architecture.md": () => import('./chunks/chunk.2186ae96.mjs'), "/public/assets/content/pl/services/automation.md": () => import('./chunks/chunk.b391d7bf.mjs'), "/public/assets/content/pl/services/blockchain.md": () => import('./chunks/chunk.f9b7a791.mjs'), "/public/assets/content/pl/services/strategy.md": () => import('./chunks/chunk.64fc4e6e.mjs'), "/public/assets/content/pl/services/wallets.md": () => import('./chunks/chunk.e49a8342.mjs'),},
+    { "/public/assets/content/pl/services/architecture.md": () => import('./chunks/chunk.7ab29271.mjs'), "/public/assets/content/pl/services/automation.md": () => import('./chunks/chunk.10e50542.mjs'), "/public/assets/content/pl/services/blockchain.md": () => import('./chunks/chunk.2b4629e3.mjs'), "/public/assets/content/pl/services/strategy.md": () => import('./chunks/chunk.67f22cca.mjs'), "/public/assets/content/pl/services/wallets.md": () => import('./chunks/chunk.d3d93e58.mjs'),},
     () => "/public/assets/content/pl/services/*.md"
   );
   return services.map((service) => {
@@ -2779,8 +2779,8 @@ async function getStaticPaths$7() {
     };
   });
 }
-const $$metadata$m = createMetadata("/@fs/C:/work-projects/pireactor/main-site/client/src/pages/pl/services/[slug].astro", { modules: [{ module: $$module1$2, specifier: "../../../components/MainTitle.astro", assert: {} }, { module: $$module2$5, specifier: "../../../components/shared/Button.astro", assert: {} }, { module: $$module3$3, specifier: "../../../components/solid/Counter", assert: {} }, { module: $$module4$2, specifier: "../../../enums/ELangs", assert: {} }, { module: $$module5$3, specifier: "../../../layouts/Container.astro", assert: {} }, { module: $$module6$1, specifier: "../../../layouts/Layout.astro", assert: {} }, { module: $$module8, specifier: "../../../models/ServicesModel", assert: {} }], hydratedComponents: [Counter$1], clientOnlyComponents: [], hydrationDirectives: /* @__PURE__ */ new Set(["load"]), hoisted: [] });
-const $$Astro$m = createAstro("/@fs/C:/work-projects/pireactor/main-site/client/src/pages/pl/services/[slug].astro", "http://localhost:3000/", "file:///C:/work-projects/pireactor/main-site/client/");
+const $$metadata$m = createMetadata("/@fs/C:/work-projects/pireactor/main-site/src/pages/pl/services/[slug].astro", { modules: [{ module: $$module1$2, specifier: "../../../components/MainTitle.astro", assert: {} }, { module: $$module2$5, specifier: "../../../components/shared/Button.astro", assert: {} }, { module: $$module3$3, specifier: "../../../components/solid/Counter", assert: {} }, { module: $$module4$2, specifier: "../../../enums/ELangs", assert: {} }, { module: $$module5$3, specifier: "../../../layouts/Container.astro", assert: {} }, { module: $$module6$1, specifier: "../../../layouts/Layout.astro", assert: {} }, { module: $$module8, specifier: "../../../models/ServicesModel", assert: {} }], hydratedComponents: [Counter$1], clientOnlyComponents: [], hydrationDirectives: /* @__PURE__ */ new Set(["load"]), hoisted: [] });
+const $$Astro$m = createAstro("/@fs/C:/work-projects/pireactor/main-site/src/pages/pl/services/[slug].astro", "http://localhost:3000/", "file:///C:/work-projects/pireactor/main-site/");
 const Astro$7 = $$Astro$m;
 const $$slug$7 = createComponent(async ($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro$m, $$props, $$slots);
@@ -2815,7 +2815,7 @@ const $$slug$7 = createComponent(async ($$result, $$props, $$slots) => {
     </div>` })}` })}`;
 });
 
-const $$file$m = "C:/work-projects/pireactor/main-site/client/src/pages/pl/services/[slug].astro";
+const $$file$m = "C:/work-projects/pireactor/main-site/src/pages/pl/services/[slug].astro";
 const $$url$m = "/pl/services/[slug]";
 
 var _page14 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
@@ -2827,18 +2827,18 @@ var _page14 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
 	url: $$url$m
 }, Symbol.toStringTag, { value: 'Module' }));
 
-const $$metadata$l = createMetadata("/@fs/C:/work-projects/pireactor/main-site/client/src/pages/pl/about.astro", { modules: [{ module: $$module1$2, specifier: "../../components/MainTitle.astro", assert: {} }, { module: $$module2$1, specifier: "../../components/shared/AboutCard.astro", assert: {} }, { module: $$module2, specifier: "../../components/shared/Breadcrums.astro", assert: {} }, { module: $$module2$3, specifier: "../../components/shared/Section.astro", assert: {} }, { module: $$module3$3, specifier: "../../components/solid/Counter", assert: {} }, { module: $$module4$2, specifier: "../../enums/ELangs", assert: {} }, { module: $$module5$3, specifier: "../../layouts/Container.astro", assert: {} }, { module: $$module6$1, specifier: "../../layouts/Layout.astro", assert: {} }, { module: $$module8$1, specifier: "../../models/ContentModel", assert: {} }], hydratedComponents: [Counter$1], clientOnlyComponents: [], hydrationDirectives: /* @__PURE__ */ new Set(["load"]), hoisted: [] });
-const $$Astro$l = createAstro("/@fs/C:/work-projects/pireactor/main-site/client/src/pages/pl/about.astro", "http://localhost:3000/", "file:///C:/work-projects/pireactor/main-site/client/");
+const $$metadata$l = createMetadata("/@fs/C:/work-projects/pireactor/main-site/src/pages/pl/about.astro", { modules: [{ module: $$module1$2, specifier: "../../components/MainTitle.astro", assert: {} }, { module: $$module2$1, specifier: "../../components/shared/AboutCard.astro", assert: {} }, { module: $$module2, specifier: "../../components/shared/Breadcrums.astro", assert: {} }, { module: $$module2$3, specifier: "../../components/shared/Section.astro", assert: {} }, { module: $$module3$3, specifier: "../../components/solid/Counter", assert: {} }, { module: $$module4$2, specifier: "../../enums/ELangs", assert: {} }, { module: $$module5$3, specifier: "../../layouts/Container.astro", assert: {} }, { module: $$module6$1, specifier: "../../layouts/Layout.astro", assert: {} }, { module: $$module8$1, specifier: "../../models/ContentModel", assert: {} }], hydratedComponents: [Counter$1], clientOnlyComponents: [], hydrationDirectives: /* @__PURE__ */ new Set(["load"]), hoisted: [] });
+const $$Astro$l = createAstro("/@fs/C:/work-projects/pireactor/main-site/src/pages/pl/about.astro", "http://localhost:3000/", "file:///C:/work-projects/pireactor/main-site/");
 const $$About$3 = createComponent(async ($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro$l, $$props, $$slots);
   Astro2.self = $$About$3;
   const leads = await Astro2.glob(
-    { "/public/assets/content/pl/leads/AlexAlejandre.md": () => import('./chunks/chunk.cfba225e.mjs'), "/public/assets/content/pl/leads/JohnVermazenSt.md": () => import('./chunks/chunk.45b86101.mjs'), "/public/assets/content/pl/leads/JustynaBorwik.md": () => import('./chunks/chunk.b711c874.mjs'), "/public/assets/content/pl/leads/StevenVermazen.md": () => import('./chunks/chunk.ba210a2f.mjs'),},
+    { "/public/assets/content/pl/leads/AlexAlejandre.md": () => import('./chunks/chunk.41e9167d.mjs'), "/public/assets/content/pl/leads/JohnVermazenSt.md": () => import('./chunks/chunk.68fc1448.mjs'), "/public/assets/content/pl/leads/JustynaBorwik.md": () => import('./chunks/chunk.03a6dc40.mjs'), "/public/assets/content/pl/leads/StevenVermazen.md": () => import('./chunks/chunk.6cf3c4a4.mjs'),},
     () => "/public/assets/content/pl/leads/*.md"
   );
   const sortLeads = leads.sort((a, b) => a.frontmatter.id - b.frontmatter.id);
   const [content] = await Astro2.glob(
-    { "/public/assets/content/pl/content.md": () => import('./chunks/chunk.832d7e87.mjs'),},
+    { "/public/assets/content/pl/content.md": () => import('./chunks/chunk.7554dae3.mjs'),},
     () => "/public/assets/content/pl/*.md"
   );
   const STYLES = [];
@@ -2865,7 +2865,7 @@ const $$About$3 = createComponent(async ($$result, $$props, $$slots) => {
       </ul>` })}` })}` })}`;
 });
 
-const $$file$l = "C:/work-projects/pireactor/main-site/client/src/pages/pl/about.astro";
+const $$file$l = "C:/work-projects/pireactor/main-site/src/pages/pl/about.astro";
 const $$url$l = "/pl/about";
 
 var _page15 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
@@ -2876,8 +2876,8 @@ var _page15 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
 	url: $$url$l
 }, Symbol.toStringTag, { value: 'Module' }));
 
-const $$metadata$k = createMetadata("/@fs/C:/work-projects/pireactor/main-site/client/src/pages/pl/brief.astro", { modules: [{ module: $$module2, specifier: "../../components/shared/Breadcrums.astro", assert: {} }, { module: $$module2$2, specifier: "../../components/shared/FormSection.astro", assert: {} }, { module: $$module3$1, specifier: "../../components/solid/Form", assert: {} }, { module: $$module4$2, specifier: "../../enums/ELangs", assert: {} }, { module: $$module5$3, specifier: "../../layouts/Container.astro", assert: {} }, { module: $$module6$1, specifier: "../../layouts/Layout.astro", assert: {} }], hydratedComponents: [Form], clientOnlyComponents: [], hydrationDirectives: /* @__PURE__ */ new Set(["load"]), hoisted: [] });
-const $$Astro$k = createAstro("/@fs/C:/work-projects/pireactor/main-site/client/src/pages/pl/brief.astro", "http://localhost:3000/", "file:///C:/work-projects/pireactor/main-site/client/");
+const $$metadata$k = createMetadata("/@fs/C:/work-projects/pireactor/main-site/src/pages/pl/brief.astro", { modules: [{ module: $$module2, specifier: "../../components/shared/Breadcrums.astro", assert: {} }, { module: $$module2$2, specifier: "../../components/shared/FormSection.astro", assert: {} }, { module: $$module3$1, specifier: "../../components/solid/Form", assert: {} }, { module: $$module4$2, specifier: "../../enums/ELangs", assert: {} }, { module: $$module5$3, specifier: "../../layouts/Container.astro", assert: {} }, { module: $$module6$1, specifier: "../../layouts/Layout.astro", assert: {} }], hydratedComponents: [Form], clientOnlyComponents: [], hydrationDirectives: /* @__PURE__ */ new Set(["load"]), hoisted: [] });
+const $$Astro$k = createAstro("/@fs/C:/work-projects/pireactor/main-site/src/pages/pl/brief.astro", "http://localhost:3000/", "file:///C:/work-projects/pireactor/main-site/");
 const $$Brief$3 = createComponent(async ($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro$k, $$props, $$slots);
   Astro2.self = $$Brief$3;
@@ -2887,7 +2887,7 @@ const $$Brief$3 = createComponent(async ($$result, $$props, $$slots) => {
   return render`${renderComponent($$result, "Layout", $$Layout, { "title": "Brief", "lang": ELangs.pl, "class": "astro-E3BCZCCX" }, { "default": () => render`${renderComponent($$result, "Container", $$Container, { "class": "astro-E3BCZCCX" }, { "default": () => render`${renderComponent($$result, "Breadcrums", $$Breadcrums, { "currentPath": "Brief", "class": "astro-E3BCZCCX" })}${renderComponent($$result, "FormSection", $$FormSection, { "class": "astro-E3BCZCCX" }, { "default": () => render`${renderComponent($$result, "Form", Form, { "client:load": true, "client:component-hydration": "load", "client:component-path": $$metadata$k.getPath(Form), "client:component-export": $$metadata$k.getExport(Form), "class": "astro-E3BCZCCX" })}` })}` })}` })}`;
 });
 
-const $$file$k = "C:/work-projects/pireactor/main-site/client/src/pages/pl/brief.astro";
+const $$file$k = "C:/work-projects/pireactor/main-site/src/pages/pl/brief.astro";
 const $$url$k = "/pl/brief";
 
 var _page16 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
@@ -2898,12 +2898,12 @@ var _page16 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
 	url: $$url$k
 }, Symbol.toStringTag, { value: 'Module' }));
 
-const $$metadata$j = createMetadata("/@fs/C:/work-projects/pireactor/main-site/client/src/pages/pl/work/[slug].astro", { modules: [{ module: $$module1, specifier: "../../../components/shared/CallbackForm.astro", assert: {} }, { module: $$module2$3, specifier: "../../../components/shared/Section.astro", assert: {} }, { module: $$module3$3, specifier: "../../../components/solid/Counter", assert: {} }, { module: $$module4$2, specifier: "../../../enums/ELangs", assert: {} }, { module: $$module5, specifier: "../../../enums/EPhases", assert: {} }, { module: $$module5$3, specifier: "../../../layouts/Container.astro", assert: {} }, { module: $$module6$1, specifier: "../../../layouts/Layout.astro", assert: {} }, { module: $$module8$1, specifier: "../../../models/ContentModel", assert: {} }, { module: $$module7, specifier: "../../../models/ProjectModel", assert: {} }], hydratedComponents: [Counter$1], clientOnlyComponents: [], hydrationDirectives: /* @__PURE__ */ new Set(["load"]), hoisted: [] });
-const $$Astro$j = createAstro("/@fs/C:/work-projects/pireactor/main-site/client/src/pages/pl/work/[slug].astro", "http://localhost:3000/", "file:///C:/work-projects/pireactor/main-site/client/");
+const $$metadata$j = createMetadata("/@fs/C:/work-projects/pireactor/main-site/src/pages/pl/work/[slug].astro", { modules: [{ module: $$module1, specifier: "../../../components/shared/CallbackForm.astro", assert: {} }, { module: $$module2$3, specifier: "../../../components/shared/Section.astro", assert: {} }, { module: $$module3$3, specifier: "../../../components/solid/Counter", assert: {} }, { module: $$module4$2, specifier: "../../../enums/ELangs", assert: {} }, { module: $$module5, specifier: "../../../enums/EPhases", assert: {} }, { module: $$module5$3, specifier: "../../../layouts/Container.astro", assert: {} }, { module: $$module6$1, specifier: "../../../layouts/Layout.astro", assert: {} }, { module: $$module8$1, specifier: "../../../models/ContentModel", assert: {} }, { module: $$module7, specifier: "../../../models/ProjectModel", assert: {} }], hydratedComponents: [Counter$1], clientOnlyComponents: [], hydrationDirectives: /* @__PURE__ */ new Set(["load"]), hoisted: [] });
+const $$Astro$j = createAstro("/@fs/C:/work-projects/pireactor/main-site/src/pages/pl/work/[slug].astro", "http://localhost:3000/", "file:///C:/work-projects/pireactor/main-site/");
 const Astro$6 = $$Astro$j;
 async function getStaticPaths$6() {
   const projects = await Astro$6.glob(
-    { "/public/assets/content/pl/projects/Brewery.md": () => import('./chunks/chunk.6d7ffc88.mjs'), "/public/assets/content/pl/projects/NewHope copy.md": () => import('./chunks/chunk.dcec0156.mjs'), "/public/assets/content/pl/projects/NewHope.md": () => import('./chunks/chunk.02d4d6c8.mjs'), "/public/assets/content/pl/projects/NewHope2.md": () => import('./chunks/chunk.9053395b.mjs'), "/public/assets/content/pl/projects/NewHope3.md": () => import('./chunks/chunk.ae655f4f.mjs'),},
+    { "/public/assets/content/pl/projects/Brewery.md": () => import('./chunks/chunk.0da3919e.mjs'), "/public/assets/content/pl/projects/NewHope copy.md": () => import('./chunks/chunk.2e94afe0.mjs'), "/public/assets/content/pl/projects/NewHope.md": () => import('./chunks/chunk.7d2c8f1b.mjs'), "/public/assets/content/pl/projects/NewHope2.md": () => import('./chunks/chunk.31893b22.mjs'), "/public/assets/content/pl/projects/NewHope3.md": () => import('./chunks/chunk.726d82cf.mjs'),},
     () => "/public/assets/content/pl/projects/*.md"
   );
   return projects.map((project) => {
@@ -2935,7 +2935,7 @@ const $$slug$6 = createComponent(async ($$result, $$props, $$slots) => {
     }
   }
   const [content] = await Astro2.glob(
-    { "/public/assets/content/pl/content.md": () => import('./chunks/chunk.832d7e87.mjs'),},
+    { "/public/assets/content/pl/content.md": () => import('./chunks/chunk.7554dae3.mjs'),},
     () => "/public/assets/content/pl/*.md"
   );
   const STYLES = [];
@@ -2957,7 +2957,7 @@ const $$slug$6 = createComponent(async ($$result, $$props, $$slots) => {
       </div>` })}${renderComponent($$result, "CallbackForm", $$CallbackForm, { "desc": content.frontmatter?.form.desc, "title": content.frontmatter?.form.title, "fields": content.frontmatter?.form.fields, "class": "astro-KIAHOJOA" })}` })}` })}`;
 });
 
-const $$file$j = "C:/work-projects/pireactor/main-site/client/src/pages/pl/work/[slug].astro";
+const $$file$j = "C:/work-projects/pireactor/main-site/src/pages/pl/work/[slug].astro";
 const $$url$j = "/pl/work/[slug]";
 
 var _page17 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
@@ -2969,13 +2969,13 @@ var _page17 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
 	url: $$url$j
 }, Symbol.toStringTag, { value: 'Module' }));
 
-const $$metadata$i = createMetadata("/@fs/C:/work-projects/pireactor/main-site/client/src/pages/pl/work.astro", { modules: [{ module: $$module1$2, specifier: "../../components/MainTitle.astro", assert: {} }, { module: $$module2, specifier: "../../components/shared/Breadcrums.astro", assert: {} }, { module: $$module3, specifier: "../../components/solid/Projects", assert: {} }, { module: $$module4$2, specifier: "../../enums/ELangs", assert: {} }, { module: $$module5$3, specifier: "../../layouts/Container.astro", assert: {} }, { module: $$module6$1, specifier: "../../layouts/Layout.astro", assert: {} }, { module: $$module7, specifier: "../../models/ProjectModel", assert: {} }, { module: $$module8, specifier: "../../models/ServicesModel", assert: {} }], hydratedComponents: [Projects], clientOnlyComponents: [], hydrationDirectives: /* @__PURE__ */ new Set(["load"]), hoisted: [] });
-const $$Astro$i = createAstro("/@fs/C:/work-projects/pireactor/main-site/client/src/pages/pl/work.astro", "http://localhost:3000/", "file:///C:/work-projects/pireactor/main-site/client/");
+const $$metadata$i = createMetadata("/@fs/C:/work-projects/pireactor/main-site/src/pages/pl/work.astro", { modules: [{ module: $$module1$2, specifier: "../../components/MainTitle.astro", assert: {} }, { module: $$module2, specifier: "../../components/shared/Breadcrums.astro", assert: {} }, { module: $$module3, specifier: "../../components/solid/Projects", assert: {} }, { module: $$module4$2, specifier: "../../enums/ELangs", assert: {} }, { module: $$module5$3, specifier: "../../layouts/Container.astro", assert: {} }, { module: $$module6$1, specifier: "../../layouts/Layout.astro", assert: {} }, { module: $$module7, specifier: "../../models/ProjectModel", assert: {} }, { module: $$module8, specifier: "../../models/ServicesModel", assert: {} }], hydratedComponents: [Projects], clientOnlyComponents: [], hydrationDirectives: /* @__PURE__ */ new Set(["load"]), hoisted: [] });
+const $$Astro$i = createAstro("/@fs/C:/work-projects/pireactor/main-site/src/pages/pl/work.astro", "http://localhost:3000/", "file:///C:/work-projects/pireactor/main-site/");
 const $$Work$3 = createComponent(async ($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro$i, $$props, $$slots);
   Astro2.self = $$Work$3;
   const projectsRaw = await Astro2.glob(
-    { "/public/assets/content/en/projects/Brewery.md": () => import('./chunks/chunk.29bcfbb2.mjs'), "/public/assets/content/en/projects/NewHope copy.md": () => import('./chunks/chunk.dbd11095.mjs'), "/public/assets/content/en/projects/NewHope.md": () => import('./chunks/chunk.79884e51.mjs'), "/public/assets/content/en/projects/NewHope2.md": () => import('./chunks/chunk.787538be.mjs'), "/public/assets/content/en/projects/NewHope3.md": () => import('./chunks/chunk.09debec5.mjs'),},
+    { "/public/assets/content/en/projects/Brewery.md": () => import('./chunks/chunk.c1a611e2.mjs'), "/public/assets/content/en/projects/NewHope copy.md": () => import('./chunks/chunk.1fa0ae9a.mjs'), "/public/assets/content/en/projects/NewHope.md": () => import('./chunks/chunk.8dce1602.mjs'), "/public/assets/content/en/projects/NewHope2.md": () => import('./chunks/chunk.f23f1ec4.mjs'), "/public/assets/content/en/projects/NewHope3.md": () => import('./chunks/chunk.b8b02486.mjs'),},
     () => "/public/assets/content/en/projects/*.md"
   );
   const projects = projectsRaw.map((i) => {
@@ -2992,7 +2992,7 @@ const $$Work$3 = createComponent(async ($$result, $$props, $$slots) => {
   });
   const url = Astro2.request.url;
   const services = await Astro2.glob(
-    { "/public/assets/content/en/services/architecture.md": () => import('./chunks/chunk.93527cb3.mjs'), "/public/assets/content/en/services/automation.md": () => import('./chunks/chunk.59824c95.mjs'), "/public/assets/content/en/services/blockchain.md": () => import('./chunks/chunk.7c3d0c0b.mjs'), "/public/assets/content/en/services/strategy.md": () => import('./chunks/chunk.33bb18a9.mjs'), "/public/assets/content/en/services/wallets.md": () => import('./chunks/chunk.ee134a3e.mjs'),},
+    { "/public/assets/content/en/services/architecture.md": () => import('./chunks/chunk.c6afcfdc.mjs'), "/public/assets/content/en/services/automation.md": () => import('./chunks/chunk.c98e4cd0.mjs'), "/public/assets/content/en/services/blockchain.md": () => import('./chunks/chunk.ec6459d7.mjs'), "/public/assets/content/en/services/strategy.md": () => import('./chunks/chunk.d804232d.mjs'), "/public/assets/content/en/services/wallets.md": () => import('./chunks/chunk.bf2e9b1c.mjs'),},
     () => "/public/assets/content/en/services/*.md"
   );
   const servicesNames = services.map((i) => ({
@@ -3012,7 +3012,7 @@ const $$Work$3 = createComponent(async ($$result, $$props, $$slots) => {
 `;
 });
 
-const $$file$i = "C:/work-projects/pireactor/main-site/client/src/pages/pl/work.astro";
+const $$file$i = "C:/work-projects/pireactor/main-site/src/pages/pl/work.astro";
 const $$url$i = "/pl/work";
 
 var _page18 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
@@ -3023,26 +3023,26 @@ var _page18 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
 	url: $$url$i
 }, Symbol.toStringTag, { value: 'Module' }));
 
-const $$metadata$h = createMetadata("/@fs/C:/work-projects/pireactor/main-site/client/src/pages/ru/index.astro", { modules: [{ module: $$module6$1, specifier: "../../layouts/Layout.astro", assert: {} }, { module: $$module2$4, specifier: "../../components/main/Hero.astro", assert: {} }, { module: $$module3$2, specifier: "../../components/main/About.astro", assert: {} }, { module: $$module4, specifier: "../../components/main/Map.astro", assert: {} }, { module: $$module5$1, specifier: "../../components/main/How.astro", assert: {} }, { module: $$module6, specifier: "../../components/main/Services.astro", assert: {} }, { module: $$module7$1, specifier: "../../components/main/Technologies.astro", assert: {} }, { module: $$module5$3, specifier: "../../layouts/Container.astro", assert: {} }, { module: $$module1, specifier: "../../components/shared/CallbackForm.astro", assert: {} }, { module: $$module8$1, specifier: "../../models/ContentModel", assert: {} }, { module: $$module4$2, specifier: "../../enums/ELangs", assert: {} }], hydratedComponents: [], clientOnlyComponents: [], hydrationDirectives: /* @__PURE__ */ new Set([]), hoisted: [] });
-const $$Astro$h = createAstro("/@fs/C:/work-projects/pireactor/main-site/client/src/pages/ru/index.astro", "http://localhost:3000/", "file:///C:/work-projects/pireactor/main-site/client/");
+const $$metadata$h = createMetadata("/@fs/C:/work-projects/pireactor/main-site/src/pages/ru/index.astro", { modules: [{ module: $$module6$1, specifier: "../../layouts/Layout.astro", assert: {} }, { module: $$module2$4, specifier: "../../components/main/Hero.astro", assert: {} }, { module: $$module3$2, specifier: "../../components/main/About.astro", assert: {} }, { module: $$module4, specifier: "../../components/main/Map.astro", assert: {} }, { module: $$module5$1, specifier: "../../components/main/How.astro", assert: {} }, { module: $$module6, specifier: "../../components/main/Services.astro", assert: {} }, { module: $$module7$1, specifier: "../../components/main/Technologies.astro", assert: {} }, { module: $$module5$3, specifier: "../../layouts/Container.astro", assert: {} }, { module: $$module1, specifier: "../../components/shared/CallbackForm.astro", assert: {} }, { module: $$module8$1, specifier: "../../models/ContentModel", assert: {} }, { module: $$module4$2, specifier: "../../enums/ELangs", assert: {} }], hydratedComponents: [], clientOnlyComponents: [], hydrationDirectives: /* @__PURE__ */ new Set([]), hoisted: [] });
+const $$Astro$h = createAstro("/@fs/C:/work-projects/pireactor/main-site/src/pages/ru/index.astro", "http://localhost:3000/", "file:///C:/work-projects/pireactor/main-site/");
 const $$Index$2 = createComponent(async ($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro$h, $$props, $$slots);
   Astro2.self = $$Index$2;
   const [content] = await Astro2.glob(
-    { "/public/assets/content/en/content.md": () => import('./chunks/chunk.440c98c3.mjs'),},
-    () => "/public/assets/content/en/*.md"
+    { "/public/assets/content/ru/content.md": () => import('./chunks/chunk.ad1611b2.mjs'),},
+    () => "/public/assets/content/ru/*.md"
   );
   const STYLES = [];
   for (const STYLE of STYLES)
     $$result.styles.add(STYLE);
-  return render`${renderComponent($$result, "Layout", $$Layout, { "title": content.frontmatter.title, "lang": ELangs.en, "class": "astro-REHVHBA2" }, { "default": () => render`${renderComponent($$result, "Container", $$Container, { "class": "astro-REHVHBA2" }, { "default": () => render`${renderComponent($$result, "Hero", $$Hero, { "redLine": content.frontmatter?.index.hero.redline, "title": content.frontmatter.index.hero.title, "path": "#callback-form", "btnText": content.frontmatter.index.hero.btnText, "class": "astro-REHVHBA2" })}${renderComponent($$result, "About", $$About$6, { "counters": content.frontmatter.counters, "desc": content.frontmatter.index.desc, "title": "About", "class": "astro-REHVHBA2" })}${renderComponent($$result, "Map", $$Map, { "title": content.frontmatter.index.mapTitle, "class": "astro-REHVHBA2" })}` })}${renderComponent($$result, "How", $$How, { "content": content.frontmatter.howSection, "class": "astro-REHVHBA2" })}${renderComponent($$result, "Container", $$Container, { "class": "astro-REHVHBA2" }, { "default": () => render`<div class="services-wrp astro-REHVHBA2" id="services">
-      ${renderComponent($$result, "Services", $$Services, { "title": content.frontmatter.services.title, "lang": ELangs.en, "class": "astro-REHVHBA2" })}
-    </div>${renderComponent($$result, "Technologies", $$Technologies, { "title": content?.frontmatter.tech.title, "desc": content?.frontmatter.tech.desc, "class": "astro-REHVHBA2" })}<div id="callback-form" class="astro-REHVHBA2">
-      ${renderComponent($$result, "CallbackForm", $$CallbackForm, { "desc": content.frontmatter?.form.desc, "title": content.frontmatter?.form.title, "fields": content.frontmatter?.form.fields, "class": "astro-REHVHBA2" })}
+  return render`${renderComponent($$result, "Layout", $$Layout, { "title": content.frontmatter.title, "lang": ELangs.ru, "class": "astro-RHUMQJB3" }, { "default": () => render`${renderComponent($$result, "Container", $$Container, { "class": "astro-RHUMQJB3" }, { "default": () => render`${renderComponent($$result, "Hero", $$Hero, { "redLine": content.frontmatter?.index.hero.redline, "title": content.frontmatter.index.hero.title, "path": "#callback-form", "btnText": content.frontmatter.index.hero.btnText, "class": "astro-RHUMQJB3" })}${renderComponent($$result, "About", $$About$6, { "counters": content.frontmatter.counters, "desc": content.frontmatter.index.desc, "title": "About", "class": "astro-RHUMQJB3" })}${renderComponent($$result, "Map", $$Map, { "title": content.frontmatter.index.mapTitle, "class": "astro-RHUMQJB3" })}` })}${renderComponent($$result, "How", $$How, { "content": content.frontmatter.howSection, "class": "astro-RHUMQJB3" })}${renderComponent($$result, "Container", $$Container, { "class": "astro-RHUMQJB3" }, { "default": () => render`<div class="services-wrp astro-RHUMQJB3" id="services">
+      ${renderComponent($$result, "Services", $$Services, { "title": content.frontmatter.services.title, "lang": ELangs.en, "class": "astro-RHUMQJB3" })}
+    </div>${renderComponent($$result, "Technologies", $$Technologies, { "title": content?.frontmatter.tech.title, "desc": content?.frontmatter.tech.desc, "class": "astro-RHUMQJB3" })}<div id="callback-form" class="astro-RHUMQJB3">
+      ${renderComponent($$result, "CallbackForm", $$CallbackForm, { "desc": content.frontmatter?.form.desc, "title": content.frontmatter?.form.title, "fields": content.frontmatter?.form.fields, "class": "astro-RHUMQJB3" })}
     </div>` })}` })}`;
 });
 
-const $$file$h = "C:/work-projects/pireactor/main-site/client/src/pages/ru/index.astro";
+const $$file$h = "C:/work-projects/pireactor/main-site/src/pages/ru/index.astro";
 const $$url$h = "/ru";
 
 var _page19 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
@@ -3055,7 +3055,7 @@ var _page19 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
 
 async function getStaticPaths$5() {
   const services = await Astro$5.glob(
-    { "/public/assets/content/en/services/architecture.md": () => import('./chunks/chunk.93527cb3.mjs'), "/public/assets/content/en/services/automation.md": () => import('./chunks/chunk.59824c95.mjs'), "/public/assets/content/en/services/blockchain.md": () => import('./chunks/chunk.7c3d0c0b.mjs'), "/public/assets/content/en/services/strategy.md": () => import('./chunks/chunk.33bb18a9.mjs'), "/public/assets/content/en/services/wallets.md": () => import('./chunks/chunk.ee134a3e.mjs'),},
+    { "/public/assets/content/en/services/architecture.md": () => import('./chunks/chunk.c6afcfdc.mjs'), "/public/assets/content/en/services/automation.md": () => import('./chunks/chunk.c98e4cd0.mjs'), "/public/assets/content/en/services/blockchain.md": () => import('./chunks/chunk.ec6459d7.mjs'), "/public/assets/content/en/services/strategy.md": () => import('./chunks/chunk.d804232d.mjs'), "/public/assets/content/en/services/wallets.md": () => import('./chunks/chunk.bf2e9b1c.mjs'),},
     () => "/public/assets/content/en/services/*.md"
   );
   return services.map((service) => {
@@ -3075,8 +3075,8 @@ async function getStaticPaths$5() {
     };
   });
 }
-const $$metadata$g = createMetadata("/@fs/C:/work-projects/pireactor/main-site/client/src/pages/ru/services/[slug].astro", { modules: [{ module: $$module1$2, specifier: "../../../components/MainTitle.astro", assert: {} }, { module: $$module2$5, specifier: "../../../components/shared/Button.astro", assert: {} }, { module: $$module3$3, specifier: "../../../components/solid/Counter", assert: {} }, { module: $$module4$2, specifier: "../../../enums/ELangs", assert: {} }, { module: $$module5$3, specifier: "../../../layouts/Container.astro", assert: {} }, { module: $$module6$1, specifier: "../../../layouts/Layout.astro", assert: {} }, { module: $$module8, specifier: "../../../models/ServicesModel", assert: {} }], hydratedComponents: [Counter$1], clientOnlyComponents: [], hydrationDirectives: /* @__PURE__ */ new Set(["load"]), hoisted: [] });
-const $$Astro$g = createAstro("/@fs/C:/work-projects/pireactor/main-site/client/src/pages/ru/services/[slug].astro", "http://localhost:3000/", "file:///C:/work-projects/pireactor/main-site/client/");
+const $$metadata$g = createMetadata("/@fs/C:/work-projects/pireactor/main-site/src/pages/ru/services/[slug].astro", { modules: [{ module: $$module1$2, specifier: "../../../components/MainTitle.astro", assert: {} }, { module: $$module2$5, specifier: "../../../components/shared/Button.astro", assert: {} }, { module: $$module3$3, specifier: "../../../components/solid/Counter", assert: {} }, { module: $$module4$2, specifier: "../../../enums/ELangs", assert: {} }, { module: $$module5$3, specifier: "../../../layouts/Container.astro", assert: {} }, { module: $$module6$1, specifier: "../../../layouts/Layout.astro", assert: {} }, { module: $$module8, specifier: "../../../models/ServicesModel", assert: {} }], hydratedComponents: [Counter$1], clientOnlyComponents: [], hydrationDirectives: /* @__PURE__ */ new Set(["load"]), hoisted: [] });
+const $$Astro$g = createAstro("/@fs/C:/work-projects/pireactor/main-site/src/pages/ru/services/[slug].astro", "http://localhost:3000/", "file:///C:/work-projects/pireactor/main-site/");
 const Astro$5 = $$Astro$g;
 const $$slug$5 = createComponent(async ($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro$g, $$props, $$slots);
@@ -3111,7 +3111,7 @@ const $$slug$5 = createComponent(async ($$result, $$props, $$slots) => {
     </div>` })}` })}`;
 });
 
-const $$file$g = "C:/work-projects/pireactor/main-site/client/src/pages/ru/services/[slug].astro";
+const $$file$g = "C:/work-projects/pireactor/main-site/src/pages/ru/services/[slug].astro";
 const $$url$g = "/ru/services/[slug]";
 
 var _page20 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
@@ -3123,18 +3123,18 @@ var _page20 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
 	url: $$url$g
 }, Symbol.toStringTag, { value: 'Module' }));
 
-const $$metadata$f = createMetadata("/@fs/C:/work-projects/pireactor/main-site/client/src/pages/ru/about.astro", { modules: [{ module: $$module1$2, specifier: "../../components/MainTitle.astro", assert: {} }, { module: $$module2$1, specifier: "../../components/shared/AboutCard.astro", assert: {} }, { module: $$module2, specifier: "../../components/shared/Breadcrums.astro", assert: {} }, { module: $$module2$3, specifier: "../../components/shared/Section.astro", assert: {} }, { module: $$module3$3, specifier: "../../components/solid/Counter", assert: {} }, { module: $$module4$2, specifier: "../../enums/ELangs", assert: {} }, { module: $$module5$3, specifier: "../../layouts/Container.astro", assert: {} }, { module: $$module6$1, specifier: "../../layouts/Layout.astro", assert: {} }, { module: $$module8$1, specifier: "../../models/ContentModel", assert: {} }], hydratedComponents: [Counter$1], clientOnlyComponents: [], hydrationDirectives: /* @__PURE__ */ new Set(["load"]), hoisted: [] });
-const $$Astro$f = createAstro("/@fs/C:/work-projects/pireactor/main-site/client/src/pages/ru/about.astro", "http://localhost:3000/", "file:///C:/work-projects/pireactor/main-site/client/");
+const $$metadata$f = createMetadata("/@fs/C:/work-projects/pireactor/main-site/src/pages/ru/about.astro", { modules: [{ module: $$module1$2, specifier: "../../components/MainTitle.astro", assert: {} }, { module: $$module2$1, specifier: "../../components/shared/AboutCard.astro", assert: {} }, { module: $$module2, specifier: "../../components/shared/Breadcrums.astro", assert: {} }, { module: $$module2$3, specifier: "../../components/shared/Section.astro", assert: {} }, { module: $$module3$3, specifier: "../../components/solid/Counter", assert: {} }, { module: $$module4$2, specifier: "../../enums/ELangs", assert: {} }, { module: $$module5$3, specifier: "../../layouts/Container.astro", assert: {} }, { module: $$module6$1, specifier: "../../layouts/Layout.astro", assert: {} }, { module: $$module8$1, specifier: "../../models/ContentModel", assert: {} }], hydratedComponents: [Counter$1], clientOnlyComponents: [], hydrationDirectives: /* @__PURE__ */ new Set(["load"]), hoisted: [] });
+const $$Astro$f = createAstro("/@fs/C:/work-projects/pireactor/main-site/src/pages/ru/about.astro", "http://localhost:3000/", "file:///C:/work-projects/pireactor/main-site/");
 const $$About$2 = createComponent(async ($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro$f, $$props, $$slots);
   Astro2.self = $$About$2;
   const leads = await Astro2.glob(
-    { "/public/assets/content/en/leads/AlexAlejandre.md": () => import('./chunks/chunk.a5de9f52.mjs'), "/public/assets/content/en/leads/JohnVermazenSt.md": () => import('./chunks/chunk.198b97c3.mjs'), "/public/assets/content/en/leads/JustynaBorwik.md": () => import('./chunks/chunk.2f992be1.mjs'), "/public/assets/content/en/leads/StevenVermazen.md": () => import('./chunks/chunk.d08d6e4f.mjs'),},
+    { "/public/assets/content/en/leads/AlexAlejandre.md": () => import('./chunks/chunk.5790b932.mjs'), "/public/assets/content/en/leads/JohnVermazenSt.md": () => import('./chunks/chunk.e09586c6.mjs'), "/public/assets/content/en/leads/JustynaBorwik.md": () => import('./chunks/chunk.6b16a774.mjs'), "/public/assets/content/en/leads/StevenVermazen.md": () => import('./chunks/chunk.6c0c45b4.mjs'),},
     () => "/public/assets/content/en/leads/*.md"
   );
   const sortLeads = leads.sort((a, b) => a.frontmatter.id - b.frontmatter.id);
   const [content] = await Astro2.glob(
-    { "/public/assets/content/en/content.md": () => import('./chunks/chunk.440c98c3.mjs'),},
+    { "/public/assets/content/en/content.md": () => import('./chunks/chunk.c9d3957c.mjs'),},
     () => "/public/assets/content/en/*.md"
   );
   const STYLES = [];
@@ -3161,7 +3161,7 @@ const $$About$2 = createComponent(async ($$result, $$props, $$slots) => {
       </ul>` })}` })}` })}`;
 });
 
-const $$file$f = "C:/work-projects/pireactor/main-site/client/src/pages/ru/about.astro";
+const $$file$f = "C:/work-projects/pireactor/main-site/src/pages/ru/about.astro";
 const $$url$f = "/ru/about";
 
 var _page21 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
@@ -3172,8 +3172,8 @@ var _page21 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
 	url: $$url$f
 }, Symbol.toStringTag, { value: 'Module' }));
 
-const $$metadata$e = createMetadata("/@fs/C:/work-projects/pireactor/main-site/client/src/pages/ru/brief.astro", { modules: [{ module: $$module2, specifier: "../../components/shared/Breadcrums.astro", assert: {} }, { module: $$module2$2, specifier: "../../components/shared/FormSection.astro", assert: {} }, { module: $$module3$1, specifier: "../../components/solid/Form", assert: {} }, { module: $$module4$2, specifier: "../../enums/ELangs", assert: {} }, { module: $$module5$3, specifier: "../../layouts/Container.astro", assert: {} }, { module: $$module6$1, specifier: "../../layouts/Layout.astro", assert: {} }], hydratedComponents: [Form], clientOnlyComponents: [], hydrationDirectives: /* @__PURE__ */ new Set(["load"]), hoisted: [] });
-const $$Astro$e = createAstro("/@fs/C:/work-projects/pireactor/main-site/client/src/pages/ru/brief.astro", "http://localhost:3000/", "file:///C:/work-projects/pireactor/main-site/client/");
+const $$metadata$e = createMetadata("/@fs/C:/work-projects/pireactor/main-site/src/pages/ru/brief.astro", { modules: [{ module: $$module2, specifier: "../../components/shared/Breadcrums.astro", assert: {} }, { module: $$module2$2, specifier: "../../components/shared/FormSection.astro", assert: {} }, { module: $$module3$1, specifier: "../../components/solid/Form", assert: {} }, { module: $$module4$2, specifier: "../../enums/ELangs", assert: {} }, { module: $$module5$3, specifier: "../../layouts/Container.astro", assert: {} }, { module: $$module6$1, specifier: "../../layouts/Layout.astro", assert: {} }], hydratedComponents: [Form], clientOnlyComponents: [], hydrationDirectives: /* @__PURE__ */ new Set(["load"]), hoisted: [] });
+const $$Astro$e = createAstro("/@fs/C:/work-projects/pireactor/main-site/src/pages/ru/brief.astro", "http://localhost:3000/", "file:///C:/work-projects/pireactor/main-site/");
 const $$Brief$2 = createComponent(async ($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro$e, $$props, $$slots);
   Astro2.self = $$Brief$2;
@@ -3183,7 +3183,7 @@ const $$Brief$2 = createComponent(async ($$result, $$props, $$slots) => {
   return render`${renderComponent($$result, "Layout", $$Layout, { "title": "Brief", "lang": ELangs.en, "class": "astro-ERY3GRSQ" }, { "default": () => render`${renderComponent($$result, "Container", $$Container, { "class": "astro-ERY3GRSQ" }, { "default": () => render`${renderComponent($$result, "Breadcrums", $$Breadcrums, { "currentPath": "Brief", "class": "astro-ERY3GRSQ" })}${renderComponent($$result, "FormSection", $$FormSection, { "class": "astro-ERY3GRSQ" }, { "default": () => render`${renderComponent($$result, "Form", Form, { "client:load": true, "client:component-hydration": "load", "client:component-path": $$metadata$e.getPath(Form), "client:component-export": $$metadata$e.getExport(Form), "class": "astro-ERY3GRSQ" })}` })}` })}` })}`;
 });
 
-const $$file$e = "C:/work-projects/pireactor/main-site/client/src/pages/ru/brief.astro";
+const $$file$e = "C:/work-projects/pireactor/main-site/src/pages/ru/brief.astro";
 const $$url$e = "/ru/brief";
 
 var _page22 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
@@ -3194,12 +3194,12 @@ var _page22 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
 	url: $$url$e
 }, Symbol.toStringTag, { value: 'Module' }));
 
-const $$metadata$d = createMetadata("/@fs/C:/work-projects/pireactor/main-site/client/src/pages/ru/work/[slug].astro", { modules: [{ module: $$module1, specifier: "../../../components/shared/CallbackForm.astro", assert: {} }, { module: $$module2$3, specifier: "../../../components/shared/Section.astro", assert: {} }, { module: $$module3$3, specifier: "../../../components/solid/Counter", assert: {} }, { module: $$module4$2, specifier: "../../../enums/ELangs", assert: {} }, { module: $$module5, specifier: "../../../enums/EPhases", assert: {} }, { module: $$module5$3, specifier: "../../../layouts/Container.astro", assert: {} }, { module: $$module6$1, specifier: "../../../layouts/Layout.astro", assert: {} }, { module: $$module8$1, specifier: "../../../models/ContentModel", assert: {} }, { module: $$module7, specifier: "../../../models/ProjectModel", assert: {} }], hydratedComponents: [Counter$1], clientOnlyComponents: [], hydrationDirectives: /* @__PURE__ */ new Set(["load"]), hoisted: [] });
-const $$Astro$d = createAstro("/@fs/C:/work-projects/pireactor/main-site/client/src/pages/ru/work/[slug].astro", "http://localhost:3000/", "file:///C:/work-projects/pireactor/main-site/client/");
+const $$metadata$d = createMetadata("/@fs/C:/work-projects/pireactor/main-site/src/pages/ru/work/[slug].astro", { modules: [{ module: $$module1, specifier: "../../../components/shared/CallbackForm.astro", assert: {} }, { module: $$module2$3, specifier: "../../../components/shared/Section.astro", assert: {} }, { module: $$module3$3, specifier: "../../../components/solid/Counter", assert: {} }, { module: $$module4$2, specifier: "../../../enums/ELangs", assert: {} }, { module: $$module5, specifier: "../../../enums/EPhases", assert: {} }, { module: $$module5$3, specifier: "../../../layouts/Container.astro", assert: {} }, { module: $$module6$1, specifier: "../../../layouts/Layout.astro", assert: {} }, { module: $$module8$1, specifier: "../../../models/ContentModel", assert: {} }, { module: $$module7, specifier: "../../../models/ProjectModel", assert: {} }], hydratedComponents: [Counter$1], clientOnlyComponents: [], hydrationDirectives: /* @__PURE__ */ new Set(["load"]), hoisted: [] });
+const $$Astro$d = createAstro("/@fs/C:/work-projects/pireactor/main-site/src/pages/ru/work/[slug].astro", "http://localhost:3000/", "file:///C:/work-projects/pireactor/main-site/");
 const Astro$4 = $$Astro$d;
 async function getStaticPaths$4() {
   const projects = await Astro$4.glob(
-    { "/public/assets/content/en/projects/Brewery.md": () => import('./chunks/chunk.29bcfbb2.mjs'), "/public/assets/content/en/projects/NewHope copy.md": () => import('./chunks/chunk.dbd11095.mjs'), "/public/assets/content/en/projects/NewHope.md": () => import('./chunks/chunk.79884e51.mjs'), "/public/assets/content/en/projects/NewHope2.md": () => import('./chunks/chunk.787538be.mjs'), "/public/assets/content/en/projects/NewHope3.md": () => import('./chunks/chunk.09debec5.mjs'),},
+    { "/public/assets/content/en/projects/Brewery.md": () => import('./chunks/chunk.c1a611e2.mjs'), "/public/assets/content/en/projects/NewHope copy.md": () => import('./chunks/chunk.1fa0ae9a.mjs'), "/public/assets/content/en/projects/NewHope.md": () => import('./chunks/chunk.8dce1602.mjs'), "/public/assets/content/en/projects/NewHope2.md": () => import('./chunks/chunk.f23f1ec4.mjs'), "/public/assets/content/en/projects/NewHope3.md": () => import('./chunks/chunk.b8b02486.mjs'),},
     () => "/public/assets/content/en/projects/*.md"
   );
   return projects.map((project) => {
@@ -3231,7 +3231,7 @@ const $$slug$4 = createComponent(async ($$result, $$props, $$slots) => {
     }
   }
   const [content] = await Astro2.glob(
-    { "/public/assets/content/en/content.md": () => import('./chunks/chunk.440c98c3.mjs'),},
+    { "/public/assets/content/en/content.md": () => import('./chunks/chunk.c9d3957c.mjs'),},
     () => "/public/assets/content/en/*.md"
   );
   const STYLES = [];
@@ -3253,7 +3253,7 @@ const $$slug$4 = createComponent(async ($$result, $$props, $$slots) => {
       </div>` })}${renderComponent($$result, "CallbackForm", $$CallbackForm, { "desc": content.frontmatter?.form.desc, "title": content.frontmatter?.form.title, "fields": content.frontmatter?.form.fields, "class": "astro-2CQBPXFM" })}` })}` })}`;
 });
 
-const $$file$d = "C:/work-projects/pireactor/main-site/client/src/pages/ru/work/[slug].astro";
+const $$file$d = "C:/work-projects/pireactor/main-site/src/pages/ru/work/[slug].astro";
 const $$url$d = "/ru/work/[slug]";
 
 var _page23 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
@@ -3265,13 +3265,13 @@ var _page23 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
 	url: $$url$d
 }, Symbol.toStringTag, { value: 'Module' }));
 
-const $$metadata$c = createMetadata("/@fs/C:/work-projects/pireactor/main-site/client/src/pages/ru/work.astro", { modules: [{ module: $$module1$2, specifier: "../../components/MainTitle.astro", assert: {} }, { module: $$module2, specifier: "../../components/shared/Breadcrums.astro", assert: {} }, { module: $$module3, specifier: "../../components/solid/Projects", assert: {} }, { module: $$module4$2, specifier: "../../enums/ELangs", assert: {} }, { module: $$module5$3, specifier: "../../layouts/Container.astro", assert: {} }, { module: $$module6$1, specifier: "../../layouts/Layout.astro", assert: {} }, { module: $$module7, specifier: "../../models/ProjectModel", assert: {} }, { module: $$module8, specifier: "../../models/ServicesModel", assert: {} }], hydratedComponents: [Projects], clientOnlyComponents: [], hydrationDirectives: /* @__PURE__ */ new Set(["load"]), hoisted: [] });
-const $$Astro$c = createAstro("/@fs/C:/work-projects/pireactor/main-site/client/src/pages/ru/work.astro", "http://localhost:3000/", "file:///C:/work-projects/pireactor/main-site/client/");
+const $$metadata$c = createMetadata("/@fs/C:/work-projects/pireactor/main-site/src/pages/ru/work.astro", { modules: [{ module: $$module1$2, specifier: "../../components/MainTitle.astro", assert: {} }, { module: $$module2, specifier: "../../components/shared/Breadcrums.astro", assert: {} }, { module: $$module3, specifier: "../../components/solid/Projects", assert: {} }, { module: $$module4$2, specifier: "../../enums/ELangs", assert: {} }, { module: $$module5$3, specifier: "../../layouts/Container.astro", assert: {} }, { module: $$module6$1, specifier: "../../layouts/Layout.astro", assert: {} }, { module: $$module7, specifier: "../../models/ProjectModel", assert: {} }, { module: $$module8, specifier: "../../models/ServicesModel", assert: {} }], hydratedComponents: [Projects], clientOnlyComponents: [], hydrationDirectives: /* @__PURE__ */ new Set(["load"]), hoisted: [] });
+const $$Astro$c = createAstro("/@fs/C:/work-projects/pireactor/main-site/src/pages/ru/work.astro", "http://localhost:3000/", "file:///C:/work-projects/pireactor/main-site/");
 const $$Work$2 = createComponent(async ($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro$c, $$props, $$slots);
   Astro2.self = $$Work$2;
   const projectsRaw = await Astro2.glob(
-    { "/public/assets/content/en/projects/Brewery.md": () => import('./chunks/chunk.29bcfbb2.mjs'), "/public/assets/content/en/projects/NewHope copy.md": () => import('./chunks/chunk.dbd11095.mjs'), "/public/assets/content/en/projects/NewHope.md": () => import('./chunks/chunk.79884e51.mjs'), "/public/assets/content/en/projects/NewHope2.md": () => import('./chunks/chunk.787538be.mjs'), "/public/assets/content/en/projects/NewHope3.md": () => import('./chunks/chunk.09debec5.mjs'),},
+    { "/public/assets/content/en/projects/Brewery.md": () => import('./chunks/chunk.c1a611e2.mjs'), "/public/assets/content/en/projects/NewHope copy.md": () => import('./chunks/chunk.1fa0ae9a.mjs'), "/public/assets/content/en/projects/NewHope.md": () => import('./chunks/chunk.8dce1602.mjs'), "/public/assets/content/en/projects/NewHope2.md": () => import('./chunks/chunk.f23f1ec4.mjs'), "/public/assets/content/en/projects/NewHope3.md": () => import('./chunks/chunk.b8b02486.mjs'),},
     () => "/public/assets/content/en/projects/*.md"
   );
   const projects = projectsRaw.map((i) => {
@@ -3288,7 +3288,7 @@ const $$Work$2 = createComponent(async ($$result, $$props, $$slots) => {
   });
   const url = Astro2.request.url;
   const services = await Astro2.glob(
-    { "/public/assets/content/en/services/architecture.md": () => import('./chunks/chunk.93527cb3.mjs'), "/public/assets/content/en/services/automation.md": () => import('./chunks/chunk.59824c95.mjs'), "/public/assets/content/en/services/blockchain.md": () => import('./chunks/chunk.7c3d0c0b.mjs'), "/public/assets/content/en/services/strategy.md": () => import('./chunks/chunk.33bb18a9.mjs'), "/public/assets/content/en/services/wallets.md": () => import('./chunks/chunk.ee134a3e.mjs'),},
+    { "/public/assets/content/en/services/architecture.md": () => import('./chunks/chunk.c6afcfdc.mjs'), "/public/assets/content/en/services/automation.md": () => import('./chunks/chunk.c98e4cd0.mjs'), "/public/assets/content/en/services/blockchain.md": () => import('./chunks/chunk.ec6459d7.mjs'), "/public/assets/content/en/services/strategy.md": () => import('./chunks/chunk.d804232d.mjs'), "/public/assets/content/en/services/wallets.md": () => import('./chunks/chunk.bf2e9b1c.mjs'),},
     () => "/public/assets/content/en/services/*.md"
   );
   const servicesNames = services.map((i) => ({
@@ -3308,7 +3308,7 @@ const $$Work$2 = createComponent(async ($$result, $$props, $$slots) => {
 `;
 });
 
-const $$file$c = "C:/work-projects/pireactor/main-site/client/src/pages/ru/work.astro";
+const $$file$c = "C:/work-projects/pireactor/main-site/src/pages/ru/work.astro";
 const $$url$c = "/ru/work";
 
 var _page24 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
@@ -3319,13 +3319,13 @@ var _page24 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
 	url: $$url$c
 }, Symbol.toStringTag, { value: 'Module' }));
 
-const $$metadata$b = createMetadata("/@fs/C:/work-projects/pireactor/main-site/client/src/pages/tr/index.astro", { modules: [{ module: $$module6$1, specifier: "../../layouts/Layout.astro", assert: {} }, { module: $$module2$4, specifier: "../../components/main/Hero.astro", assert: {} }, { module: $$module3$2, specifier: "../../components/main/About.astro", assert: {} }, { module: $$module4, specifier: "../../components/main/Map.astro", assert: {} }, { module: $$module5$1, specifier: "../../components/main/How.astro", assert: {} }, { module: $$module6, specifier: "../../components/main/Services.astro", assert: {} }, { module: $$module7$1, specifier: "../../components/main/Technologies.astro", assert: {} }, { module: $$module5$3, specifier: "../../layouts/Container.astro", assert: {} }, { module: $$module1, specifier: "../../components/shared/CallbackForm.astro", assert: {} }, { module: $$module8$1, specifier: "../../models/ContentModel", assert: {} }, { module: $$module4$2, specifier: "../../enums/ELangs", assert: {} }], hydratedComponents: [], clientOnlyComponents: [], hydrationDirectives: /* @__PURE__ */ new Set([]), hoisted: [] });
-const $$Astro$b = createAstro("/@fs/C:/work-projects/pireactor/main-site/client/src/pages/tr/index.astro", "http://localhost:3000/", "file:///C:/work-projects/pireactor/main-site/client/");
+const $$metadata$b = createMetadata("/@fs/C:/work-projects/pireactor/main-site/src/pages/tr/index.astro", { modules: [{ module: $$module6$1, specifier: "../../layouts/Layout.astro", assert: {} }, { module: $$module2$4, specifier: "../../components/main/Hero.astro", assert: {} }, { module: $$module3$2, specifier: "../../components/main/About.astro", assert: {} }, { module: $$module4, specifier: "../../components/main/Map.astro", assert: {} }, { module: $$module5$1, specifier: "../../components/main/How.astro", assert: {} }, { module: $$module6, specifier: "../../components/main/Services.astro", assert: {} }, { module: $$module7$1, specifier: "../../components/main/Technologies.astro", assert: {} }, { module: $$module5$3, specifier: "../../layouts/Container.astro", assert: {} }, { module: $$module1, specifier: "../../components/shared/CallbackForm.astro", assert: {} }, { module: $$module8$1, specifier: "../../models/ContentModel", assert: {} }, { module: $$module4$2, specifier: "../../enums/ELangs", assert: {} }], hydratedComponents: [], clientOnlyComponents: [], hydrationDirectives: /* @__PURE__ */ new Set([]), hoisted: [] });
+const $$Astro$b = createAstro("/@fs/C:/work-projects/pireactor/main-site/src/pages/tr/index.astro", "http://localhost:3000/", "file:///C:/work-projects/pireactor/main-site/");
 const $$Index$1 = createComponent(async ($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro$b, $$props, $$slots);
   Astro2.self = $$Index$1;
   const [content] = await Astro2.glob(
-    { "/public/assets/content/en/content.md": () => import('./chunks/chunk.440c98c3.mjs'),},
+    { "/public/assets/content/en/content.md": () => import('./chunks/chunk.c9d3957c.mjs'),},
     () => "/public/assets/content/en/*.md"
   );
   const STYLES = [];
@@ -3338,7 +3338,7 @@ const $$Index$1 = createComponent(async ($$result, $$props, $$slots) => {
     </div>` })}` })}`;
 });
 
-const $$file$b = "C:/work-projects/pireactor/main-site/client/src/pages/tr/index.astro";
+const $$file$b = "C:/work-projects/pireactor/main-site/src/pages/tr/index.astro";
 const $$url$b = "/tr";
 
 var _page25 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
@@ -3351,7 +3351,7 @@ var _page25 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
 
 async function getStaticPaths$3() {
   const services = await Astro$3.glob(
-    { "/public/assets/content/en/services/architecture.md": () => import('./chunks/chunk.93527cb3.mjs'), "/public/assets/content/en/services/automation.md": () => import('./chunks/chunk.59824c95.mjs'), "/public/assets/content/en/services/blockchain.md": () => import('./chunks/chunk.7c3d0c0b.mjs'), "/public/assets/content/en/services/strategy.md": () => import('./chunks/chunk.33bb18a9.mjs'), "/public/assets/content/en/services/wallets.md": () => import('./chunks/chunk.ee134a3e.mjs'),},
+    { "/public/assets/content/en/services/architecture.md": () => import('./chunks/chunk.c6afcfdc.mjs'), "/public/assets/content/en/services/automation.md": () => import('./chunks/chunk.c98e4cd0.mjs'), "/public/assets/content/en/services/blockchain.md": () => import('./chunks/chunk.ec6459d7.mjs'), "/public/assets/content/en/services/strategy.md": () => import('./chunks/chunk.d804232d.mjs'), "/public/assets/content/en/services/wallets.md": () => import('./chunks/chunk.bf2e9b1c.mjs'),},
     () => "/public/assets/content/en/services/*.md"
   );
   return services.map((service) => {
@@ -3371,8 +3371,8 @@ async function getStaticPaths$3() {
     };
   });
 }
-const $$metadata$a = createMetadata("/@fs/C:/work-projects/pireactor/main-site/client/src/pages/tr/services/[slug].astro", { modules: [{ module: $$module1$2, specifier: "../../../components/MainTitle.astro", assert: {} }, { module: $$module2$5, specifier: "../../../components/shared/Button.astro", assert: {} }, { module: $$module3$3, specifier: "../../../components/solid/Counter", assert: {} }, { module: $$module4$2, specifier: "../../../enums/ELangs", assert: {} }, { module: $$module5$3, specifier: "../../../layouts/Container.astro", assert: {} }, { module: $$module6$1, specifier: "../../../layouts/Layout.astro", assert: {} }, { module: $$module8, specifier: "../../../models/ServicesModel", assert: {} }], hydratedComponents: [Counter$1], clientOnlyComponents: [], hydrationDirectives: /* @__PURE__ */ new Set(["load"]), hoisted: [] });
-const $$Astro$a = createAstro("/@fs/C:/work-projects/pireactor/main-site/client/src/pages/tr/services/[slug].astro", "http://localhost:3000/", "file:///C:/work-projects/pireactor/main-site/client/");
+const $$metadata$a = createMetadata("/@fs/C:/work-projects/pireactor/main-site/src/pages/tr/services/[slug].astro", { modules: [{ module: $$module1$2, specifier: "../../../components/MainTitle.astro", assert: {} }, { module: $$module2$5, specifier: "../../../components/shared/Button.astro", assert: {} }, { module: $$module3$3, specifier: "../../../components/solid/Counter", assert: {} }, { module: $$module4$2, specifier: "../../../enums/ELangs", assert: {} }, { module: $$module5$3, specifier: "../../../layouts/Container.astro", assert: {} }, { module: $$module6$1, specifier: "../../../layouts/Layout.astro", assert: {} }, { module: $$module8, specifier: "../../../models/ServicesModel", assert: {} }], hydratedComponents: [Counter$1], clientOnlyComponents: [], hydrationDirectives: /* @__PURE__ */ new Set(["load"]), hoisted: [] });
+const $$Astro$a = createAstro("/@fs/C:/work-projects/pireactor/main-site/src/pages/tr/services/[slug].astro", "http://localhost:3000/", "file:///C:/work-projects/pireactor/main-site/");
 const Astro$3 = $$Astro$a;
 const $$slug$3 = createComponent(async ($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro$a, $$props, $$slots);
@@ -3407,7 +3407,7 @@ const $$slug$3 = createComponent(async ($$result, $$props, $$slots) => {
     </div>` })}` })}`;
 });
 
-const $$file$a = "C:/work-projects/pireactor/main-site/client/src/pages/tr/services/[slug].astro";
+const $$file$a = "C:/work-projects/pireactor/main-site/src/pages/tr/services/[slug].astro";
 const $$url$a = "/tr/services/[slug]";
 
 var _page26 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
@@ -3419,18 +3419,18 @@ var _page26 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
 	url: $$url$a
 }, Symbol.toStringTag, { value: 'Module' }));
 
-const $$metadata$9 = createMetadata("/@fs/C:/work-projects/pireactor/main-site/client/src/pages/tr/about.astro", { modules: [{ module: $$module1$2, specifier: "../../components/MainTitle.astro", assert: {} }, { module: $$module2$1, specifier: "../../components/shared/AboutCard.astro", assert: {} }, { module: $$module2, specifier: "../../components/shared/Breadcrums.astro", assert: {} }, { module: $$module2$3, specifier: "../../components/shared/Section.astro", assert: {} }, { module: $$module3$3, specifier: "../../components/solid/Counter", assert: {} }, { module: $$module4$2, specifier: "../../enums/ELangs", assert: {} }, { module: $$module5$3, specifier: "../../layouts/Container.astro", assert: {} }, { module: $$module6$1, specifier: "../../layouts/Layout.astro", assert: {} }, { module: $$module8$1, specifier: "../../models/ContentModel", assert: {} }], hydratedComponents: [Counter$1], clientOnlyComponents: [], hydrationDirectives: /* @__PURE__ */ new Set(["load"]), hoisted: [] });
-const $$Astro$9 = createAstro("/@fs/C:/work-projects/pireactor/main-site/client/src/pages/tr/about.astro", "http://localhost:3000/", "file:///C:/work-projects/pireactor/main-site/client/");
+const $$metadata$9 = createMetadata("/@fs/C:/work-projects/pireactor/main-site/src/pages/tr/about.astro", { modules: [{ module: $$module1$2, specifier: "../../components/MainTitle.astro", assert: {} }, { module: $$module2$1, specifier: "../../components/shared/AboutCard.astro", assert: {} }, { module: $$module2, specifier: "../../components/shared/Breadcrums.astro", assert: {} }, { module: $$module2$3, specifier: "../../components/shared/Section.astro", assert: {} }, { module: $$module3$3, specifier: "../../components/solid/Counter", assert: {} }, { module: $$module4$2, specifier: "../../enums/ELangs", assert: {} }, { module: $$module5$3, specifier: "../../layouts/Container.astro", assert: {} }, { module: $$module6$1, specifier: "../../layouts/Layout.astro", assert: {} }, { module: $$module8$1, specifier: "../../models/ContentModel", assert: {} }], hydratedComponents: [Counter$1], clientOnlyComponents: [], hydrationDirectives: /* @__PURE__ */ new Set(["load"]), hoisted: [] });
+const $$Astro$9 = createAstro("/@fs/C:/work-projects/pireactor/main-site/src/pages/tr/about.astro", "http://localhost:3000/", "file:///C:/work-projects/pireactor/main-site/");
 const $$About$1 = createComponent(async ($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro$9, $$props, $$slots);
   Astro2.self = $$About$1;
   const leads = await Astro2.glob(
-    { "/public/assets/content/en/leads/AlexAlejandre.md": () => import('./chunks/chunk.a5de9f52.mjs'), "/public/assets/content/en/leads/JohnVermazenSt.md": () => import('./chunks/chunk.198b97c3.mjs'), "/public/assets/content/en/leads/JustynaBorwik.md": () => import('./chunks/chunk.2f992be1.mjs'), "/public/assets/content/en/leads/StevenVermazen.md": () => import('./chunks/chunk.d08d6e4f.mjs'),},
+    { "/public/assets/content/en/leads/AlexAlejandre.md": () => import('./chunks/chunk.5790b932.mjs'), "/public/assets/content/en/leads/JohnVermazenSt.md": () => import('./chunks/chunk.e09586c6.mjs'), "/public/assets/content/en/leads/JustynaBorwik.md": () => import('./chunks/chunk.6b16a774.mjs'), "/public/assets/content/en/leads/StevenVermazen.md": () => import('./chunks/chunk.6c0c45b4.mjs'),},
     () => "/public/assets/content/en/leads/*.md"
   );
   const sortLeads = leads.sort((a, b) => a.frontmatter.id - b.frontmatter.id);
   const [content] = await Astro2.glob(
-    { "/public/assets/content/en/content.md": () => import('./chunks/chunk.440c98c3.mjs'),},
+    { "/public/assets/content/en/content.md": () => import('./chunks/chunk.c9d3957c.mjs'),},
     () => "/public/assets/content/en/*.md"
   );
   const STYLES = [];
@@ -3457,7 +3457,7 @@ const $$About$1 = createComponent(async ($$result, $$props, $$slots) => {
       </ul>` })}` })}` })}`;
 });
 
-const $$file$9 = "C:/work-projects/pireactor/main-site/client/src/pages/tr/about.astro";
+const $$file$9 = "C:/work-projects/pireactor/main-site/src/pages/tr/about.astro";
 const $$url$9 = "/tr/about";
 
 var _page27 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
@@ -3468,8 +3468,8 @@ var _page27 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
 	url: $$url$9
 }, Symbol.toStringTag, { value: 'Module' }));
 
-const $$metadata$8 = createMetadata("/@fs/C:/work-projects/pireactor/main-site/client/src/pages/tr/brief.astro", { modules: [{ module: $$module2, specifier: "../../components/shared/Breadcrums.astro", assert: {} }, { module: $$module2$2, specifier: "../../components/shared/FormSection.astro", assert: {} }, { module: $$module3$1, specifier: "../../components/solid/Form", assert: {} }, { module: $$module4$2, specifier: "../../enums/ELangs", assert: {} }, { module: $$module5$3, specifier: "../../layouts/Container.astro", assert: {} }, { module: $$module6$1, specifier: "../../layouts/Layout.astro", assert: {} }], hydratedComponents: [Form], clientOnlyComponents: [], hydrationDirectives: /* @__PURE__ */ new Set(["load"]), hoisted: [] });
-const $$Astro$8 = createAstro("/@fs/C:/work-projects/pireactor/main-site/client/src/pages/tr/brief.astro", "http://localhost:3000/", "file:///C:/work-projects/pireactor/main-site/client/");
+const $$metadata$8 = createMetadata("/@fs/C:/work-projects/pireactor/main-site/src/pages/tr/brief.astro", { modules: [{ module: $$module2, specifier: "../../components/shared/Breadcrums.astro", assert: {} }, { module: $$module2$2, specifier: "../../components/shared/FormSection.astro", assert: {} }, { module: $$module3$1, specifier: "../../components/solid/Form", assert: {} }, { module: $$module4$2, specifier: "../../enums/ELangs", assert: {} }, { module: $$module5$3, specifier: "../../layouts/Container.astro", assert: {} }, { module: $$module6$1, specifier: "../../layouts/Layout.astro", assert: {} }], hydratedComponents: [Form], clientOnlyComponents: [], hydrationDirectives: /* @__PURE__ */ new Set(["load"]), hoisted: [] });
+const $$Astro$8 = createAstro("/@fs/C:/work-projects/pireactor/main-site/src/pages/tr/brief.astro", "http://localhost:3000/", "file:///C:/work-projects/pireactor/main-site/");
 const $$Brief$1 = createComponent(async ($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro$8, $$props, $$slots);
   Astro2.self = $$Brief$1;
@@ -3479,7 +3479,7 @@ const $$Brief$1 = createComponent(async ($$result, $$props, $$slots) => {
   return render`${renderComponent($$result, "Layout", $$Layout, { "title": "Brief", "lang": ELangs.en, "class": "astro-ERY3GRSQ" }, { "default": () => render`${renderComponent($$result, "Container", $$Container, { "class": "astro-ERY3GRSQ" }, { "default": () => render`${renderComponent($$result, "Breadcrums", $$Breadcrums, { "currentPath": "Brief", "class": "astro-ERY3GRSQ" })}${renderComponent($$result, "FormSection", $$FormSection, { "class": "astro-ERY3GRSQ" }, { "default": () => render`${renderComponent($$result, "Form", Form, { "client:load": true, "client:component-hydration": "load", "client:component-path": $$metadata$8.getPath(Form), "client:component-export": $$metadata$8.getExport(Form), "class": "astro-ERY3GRSQ" })}` })}` })}` })}`;
 });
 
-const $$file$8 = "C:/work-projects/pireactor/main-site/client/src/pages/tr/brief.astro";
+const $$file$8 = "C:/work-projects/pireactor/main-site/src/pages/tr/brief.astro";
 const $$url$8 = "/tr/brief";
 
 var _page28 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
@@ -3490,12 +3490,12 @@ var _page28 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
 	url: $$url$8
 }, Symbol.toStringTag, { value: 'Module' }));
 
-const $$metadata$7 = createMetadata("/@fs/C:/work-projects/pireactor/main-site/client/src/pages/tr/work/[slug].astro", { modules: [{ module: $$module1, specifier: "../../../components/shared/CallbackForm.astro", assert: {} }, { module: $$module2$3, specifier: "../../../components/shared/Section.astro", assert: {} }, { module: $$module3$3, specifier: "../../../components/solid/Counter", assert: {} }, { module: $$module4$2, specifier: "../../../enums/ELangs", assert: {} }, { module: $$module5, specifier: "../../../enums/EPhases", assert: {} }, { module: $$module5$3, specifier: "../../../layouts/Container.astro", assert: {} }, { module: $$module6$1, specifier: "../../../layouts/Layout.astro", assert: {} }, { module: $$module8$1, specifier: "../../../models/ContentModel", assert: {} }, { module: $$module7, specifier: "../../../models/ProjectModel", assert: {} }], hydratedComponents: [Counter$1], clientOnlyComponents: [], hydrationDirectives: /* @__PURE__ */ new Set(["load"]), hoisted: [] });
-const $$Astro$7 = createAstro("/@fs/C:/work-projects/pireactor/main-site/client/src/pages/tr/work/[slug].astro", "http://localhost:3000/", "file:///C:/work-projects/pireactor/main-site/client/");
+const $$metadata$7 = createMetadata("/@fs/C:/work-projects/pireactor/main-site/src/pages/tr/work/[slug].astro", { modules: [{ module: $$module1, specifier: "../../../components/shared/CallbackForm.astro", assert: {} }, { module: $$module2$3, specifier: "../../../components/shared/Section.astro", assert: {} }, { module: $$module3$3, specifier: "../../../components/solid/Counter", assert: {} }, { module: $$module4$2, specifier: "../../../enums/ELangs", assert: {} }, { module: $$module5, specifier: "../../../enums/EPhases", assert: {} }, { module: $$module5$3, specifier: "../../../layouts/Container.astro", assert: {} }, { module: $$module6$1, specifier: "../../../layouts/Layout.astro", assert: {} }, { module: $$module8$1, specifier: "../../../models/ContentModel", assert: {} }, { module: $$module7, specifier: "../../../models/ProjectModel", assert: {} }], hydratedComponents: [Counter$1], clientOnlyComponents: [], hydrationDirectives: /* @__PURE__ */ new Set(["load"]), hoisted: [] });
+const $$Astro$7 = createAstro("/@fs/C:/work-projects/pireactor/main-site/src/pages/tr/work/[slug].astro", "http://localhost:3000/", "file:///C:/work-projects/pireactor/main-site/");
 const Astro$2 = $$Astro$7;
 async function getStaticPaths$2() {
   const projects = await Astro$2.glob(
-    { "/public/assets/content/en/projects/Brewery.md": () => import('./chunks/chunk.29bcfbb2.mjs'), "/public/assets/content/en/projects/NewHope copy.md": () => import('./chunks/chunk.dbd11095.mjs'), "/public/assets/content/en/projects/NewHope.md": () => import('./chunks/chunk.79884e51.mjs'), "/public/assets/content/en/projects/NewHope2.md": () => import('./chunks/chunk.787538be.mjs'), "/public/assets/content/en/projects/NewHope3.md": () => import('./chunks/chunk.09debec5.mjs'),},
+    { "/public/assets/content/en/projects/Brewery.md": () => import('./chunks/chunk.c1a611e2.mjs'), "/public/assets/content/en/projects/NewHope copy.md": () => import('./chunks/chunk.1fa0ae9a.mjs'), "/public/assets/content/en/projects/NewHope.md": () => import('./chunks/chunk.8dce1602.mjs'), "/public/assets/content/en/projects/NewHope2.md": () => import('./chunks/chunk.f23f1ec4.mjs'), "/public/assets/content/en/projects/NewHope3.md": () => import('./chunks/chunk.b8b02486.mjs'),},
     () => "/public/assets/content/en/projects/*.md"
   );
   return projects.map((project) => {
@@ -3527,7 +3527,7 @@ const $$slug$2 = createComponent(async ($$result, $$props, $$slots) => {
     }
   }
   const [content] = await Astro2.glob(
-    { "/public/assets/content/en/content.md": () => import('./chunks/chunk.440c98c3.mjs'),},
+    { "/public/assets/content/en/content.md": () => import('./chunks/chunk.c9d3957c.mjs'),},
     () => "/public/assets/content/en/*.md"
   );
   const STYLES = [];
@@ -3549,7 +3549,7 @@ const $$slug$2 = createComponent(async ($$result, $$props, $$slots) => {
       </div>` })}${renderComponent($$result, "CallbackForm", $$CallbackForm, { "desc": content.frontmatter?.form.desc, "title": content.frontmatter?.form.title, "fields": content.frontmatter?.form.fields, "class": "astro-2CQBPXFM" })}` })}` })}`;
 });
 
-const $$file$7 = "C:/work-projects/pireactor/main-site/client/src/pages/tr/work/[slug].astro";
+const $$file$7 = "C:/work-projects/pireactor/main-site/src/pages/tr/work/[slug].astro";
 const $$url$7 = "/tr/work/[slug]";
 
 var _page29 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
@@ -3561,13 +3561,13 @@ var _page29 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
 	url: $$url$7
 }, Symbol.toStringTag, { value: 'Module' }));
 
-const $$metadata$6 = createMetadata("/@fs/C:/work-projects/pireactor/main-site/client/src/pages/tr/work.astro", { modules: [{ module: $$module1$2, specifier: "../../components/MainTitle.astro", assert: {} }, { module: $$module2, specifier: "../../components/shared/Breadcrums.astro", assert: {} }, { module: $$module3, specifier: "../../components/solid/Projects", assert: {} }, { module: $$module4$2, specifier: "../../enums/ELangs", assert: {} }, { module: $$module5$3, specifier: "../../layouts/Container.astro", assert: {} }, { module: $$module6$1, specifier: "../../layouts/Layout.astro", assert: {} }, { module: $$module7, specifier: "../../models/ProjectModel", assert: {} }, { module: $$module8, specifier: "../../models/ServicesModel", assert: {} }], hydratedComponents: [Projects], clientOnlyComponents: [], hydrationDirectives: /* @__PURE__ */ new Set(["load"]), hoisted: [] });
-const $$Astro$6 = createAstro("/@fs/C:/work-projects/pireactor/main-site/client/src/pages/tr/work.astro", "http://localhost:3000/", "file:///C:/work-projects/pireactor/main-site/client/");
+const $$metadata$6 = createMetadata("/@fs/C:/work-projects/pireactor/main-site/src/pages/tr/work.astro", { modules: [{ module: $$module1$2, specifier: "../../components/MainTitle.astro", assert: {} }, { module: $$module2, specifier: "../../components/shared/Breadcrums.astro", assert: {} }, { module: $$module3, specifier: "../../components/solid/Projects", assert: {} }, { module: $$module4$2, specifier: "../../enums/ELangs", assert: {} }, { module: $$module5$3, specifier: "../../layouts/Container.astro", assert: {} }, { module: $$module6$1, specifier: "../../layouts/Layout.astro", assert: {} }, { module: $$module7, specifier: "../../models/ProjectModel", assert: {} }, { module: $$module8, specifier: "../../models/ServicesModel", assert: {} }], hydratedComponents: [Projects], clientOnlyComponents: [], hydrationDirectives: /* @__PURE__ */ new Set(["load"]), hoisted: [] });
+const $$Astro$6 = createAstro("/@fs/C:/work-projects/pireactor/main-site/src/pages/tr/work.astro", "http://localhost:3000/", "file:///C:/work-projects/pireactor/main-site/");
 const $$Work$1 = createComponent(async ($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro$6, $$props, $$slots);
   Astro2.self = $$Work$1;
   const projectsRaw = await Astro2.glob(
-    { "/public/assets/content/en/projects/Brewery.md": () => import('./chunks/chunk.29bcfbb2.mjs'), "/public/assets/content/en/projects/NewHope copy.md": () => import('./chunks/chunk.dbd11095.mjs'), "/public/assets/content/en/projects/NewHope.md": () => import('./chunks/chunk.79884e51.mjs'), "/public/assets/content/en/projects/NewHope2.md": () => import('./chunks/chunk.787538be.mjs'), "/public/assets/content/en/projects/NewHope3.md": () => import('./chunks/chunk.09debec5.mjs'),},
+    { "/public/assets/content/en/projects/Brewery.md": () => import('./chunks/chunk.c1a611e2.mjs'), "/public/assets/content/en/projects/NewHope copy.md": () => import('./chunks/chunk.1fa0ae9a.mjs'), "/public/assets/content/en/projects/NewHope.md": () => import('./chunks/chunk.8dce1602.mjs'), "/public/assets/content/en/projects/NewHope2.md": () => import('./chunks/chunk.f23f1ec4.mjs'), "/public/assets/content/en/projects/NewHope3.md": () => import('./chunks/chunk.b8b02486.mjs'),},
     () => "/public/assets/content/en/projects/*.md"
   );
   const projects = projectsRaw.map((i) => {
@@ -3584,7 +3584,7 @@ const $$Work$1 = createComponent(async ($$result, $$props, $$slots) => {
   });
   const url = Astro2.request.url;
   const services = await Astro2.glob(
-    { "/public/assets/content/en/services/architecture.md": () => import('./chunks/chunk.93527cb3.mjs'), "/public/assets/content/en/services/automation.md": () => import('./chunks/chunk.59824c95.mjs'), "/public/assets/content/en/services/blockchain.md": () => import('./chunks/chunk.7c3d0c0b.mjs'), "/public/assets/content/en/services/strategy.md": () => import('./chunks/chunk.33bb18a9.mjs'), "/public/assets/content/en/services/wallets.md": () => import('./chunks/chunk.ee134a3e.mjs'),},
+    { "/public/assets/content/en/services/architecture.md": () => import('./chunks/chunk.c6afcfdc.mjs'), "/public/assets/content/en/services/automation.md": () => import('./chunks/chunk.c98e4cd0.mjs'), "/public/assets/content/en/services/blockchain.md": () => import('./chunks/chunk.ec6459d7.mjs'), "/public/assets/content/en/services/strategy.md": () => import('./chunks/chunk.d804232d.mjs'), "/public/assets/content/en/services/wallets.md": () => import('./chunks/chunk.bf2e9b1c.mjs'),},
     () => "/public/assets/content/en/services/*.md"
   );
   const servicesNames = services.map((i) => ({
@@ -3604,7 +3604,7 @@ const $$Work$1 = createComponent(async ($$result, $$props, $$slots) => {
 `;
 });
 
-const $$file$6 = "C:/work-projects/pireactor/main-site/client/src/pages/tr/work.astro";
+const $$file$6 = "C:/work-projects/pireactor/main-site/src/pages/tr/work.astro";
 const $$url$6 = "/tr/work";
 
 var _page30 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
@@ -3615,13 +3615,13 @@ var _page30 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
 	url: $$url$6
 }, Symbol.toStringTag, { value: 'Module' }));
 
-const $$metadata$5 = createMetadata("/@fs/C:/work-projects/pireactor/main-site/client/src/pages/ua/index.astro", { modules: [{ module: $$module6$1, specifier: "../../layouts/Layout.astro", assert: {} }, { module: $$module2$4, specifier: "../../components/main/Hero.astro", assert: {} }, { module: $$module3$2, specifier: "../../components/main/About.astro", assert: {} }, { module: $$module4, specifier: "../../components/main/Map.astro", assert: {} }, { module: $$module5$1, specifier: "../../components/main/How.astro", assert: {} }, { module: $$module6, specifier: "../../components/main/Services.astro", assert: {} }, { module: $$module7$1, specifier: "../../components/main/Technologies.astro", assert: {} }, { module: $$module5$3, specifier: "../../layouts/Container.astro", assert: {} }, { module: $$module1, specifier: "../../components/shared/CallbackForm.astro", assert: {} }, { module: $$module8$1, specifier: "../../models/ContentModel", assert: {} }, { module: $$module4$2, specifier: "../../enums/ELangs", assert: {} }], hydratedComponents: [], clientOnlyComponents: [], hydrationDirectives: /* @__PURE__ */ new Set([]), hoisted: [] });
-const $$Astro$5 = createAstro("/@fs/C:/work-projects/pireactor/main-site/client/src/pages/ua/index.astro", "http://localhost:3000/", "file:///C:/work-projects/pireactor/main-site/client/");
+const $$metadata$5 = createMetadata("/@fs/C:/work-projects/pireactor/main-site/src/pages/ua/index.astro", { modules: [{ module: $$module6$1, specifier: "../../layouts/Layout.astro", assert: {} }, { module: $$module2$4, specifier: "../../components/main/Hero.astro", assert: {} }, { module: $$module3$2, specifier: "../../components/main/About.astro", assert: {} }, { module: $$module4, specifier: "../../components/main/Map.astro", assert: {} }, { module: $$module5$1, specifier: "../../components/main/How.astro", assert: {} }, { module: $$module6, specifier: "../../components/main/Services.astro", assert: {} }, { module: $$module7$1, specifier: "../../components/main/Technologies.astro", assert: {} }, { module: $$module5$3, specifier: "../../layouts/Container.astro", assert: {} }, { module: $$module1, specifier: "../../components/shared/CallbackForm.astro", assert: {} }, { module: $$module8$1, specifier: "../../models/ContentModel", assert: {} }, { module: $$module4$2, specifier: "../../enums/ELangs", assert: {} }], hydratedComponents: [], clientOnlyComponents: [], hydrationDirectives: /* @__PURE__ */ new Set([]), hoisted: [] });
+const $$Astro$5 = createAstro("/@fs/C:/work-projects/pireactor/main-site/src/pages/ua/index.astro", "http://localhost:3000/", "file:///C:/work-projects/pireactor/main-site/");
 const $$Index = createComponent(async ($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro$5, $$props, $$slots);
   Astro2.self = $$Index;
   const [content] = await Astro2.glob(
-    { "/public/assets/content/en/content.md": () => import('./chunks/chunk.440c98c3.mjs'),},
+    { "/public/assets/content/en/content.md": () => import('./chunks/chunk.c9d3957c.mjs'),},
     () => "/public/assets/content/en/*.md"
   );
   const STYLES = [];
@@ -3634,7 +3634,7 @@ const $$Index = createComponent(async ($$result, $$props, $$slots) => {
     </div>` })}` })}`;
 });
 
-const $$file$5 = "C:/work-projects/pireactor/main-site/client/src/pages/ua/index.astro";
+const $$file$5 = "C:/work-projects/pireactor/main-site/src/pages/ua/index.astro";
 const $$url$5 = "/ua";
 
 var _page31 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
@@ -3647,7 +3647,7 @@ var _page31 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
 
 async function getStaticPaths$1() {
   const services = await Astro$1.glob(
-    { "/public/assets/content/en/services/architecture.md": () => import('./chunks/chunk.93527cb3.mjs'), "/public/assets/content/en/services/automation.md": () => import('./chunks/chunk.59824c95.mjs'), "/public/assets/content/en/services/blockchain.md": () => import('./chunks/chunk.7c3d0c0b.mjs'), "/public/assets/content/en/services/strategy.md": () => import('./chunks/chunk.33bb18a9.mjs'), "/public/assets/content/en/services/wallets.md": () => import('./chunks/chunk.ee134a3e.mjs'),},
+    { "/public/assets/content/en/services/architecture.md": () => import('./chunks/chunk.c6afcfdc.mjs'), "/public/assets/content/en/services/automation.md": () => import('./chunks/chunk.c98e4cd0.mjs'), "/public/assets/content/en/services/blockchain.md": () => import('./chunks/chunk.ec6459d7.mjs'), "/public/assets/content/en/services/strategy.md": () => import('./chunks/chunk.d804232d.mjs'), "/public/assets/content/en/services/wallets.md": () => import('./chunks/chunk.bf2e9b1c.mjs'),},
     () => "/public/assets/content/en/services/*.md"
   );
   return services.map((service) => {
@@ -3667,8 +3667,8 @@ async function getStaticPaths$1() {
     };
   });
 }
-const $$metadata$4 = createMetadata("/@fs/C:/work-projects/pireactor/main-site/client/src/pages/ua/services/[slug].astro", { modules: [{ module: $$module1$2, specifier: "../../../components/MainTitle.astro", assert: {} }, { module: $$module2$5, specifier: "../../../components/shared/Button.astro", assert: {} }, { module: $$module3$3, specifier: "../../../components/solid/Counter", assert: {} }, { module: $$module4$2, specifier: "../../../enums/ELangs", assert: {} }, { module: $$module5$3, specifier: "../../../layouts/Container.astro", assert: {} }, { module: $$module6$1, specifier: "../../../layouts/Layout.astro", assert: {} }, { module: $$module8, specifier: "../../../models/ServicesModel", assert: {} }], hydratedComponents: [Counter$1], clientOnlyComponents: [], hydrationDirectives: /* @__PURE__ */ new Set(["load"]), hoisted: [] });
-const $$Astro$4 = createAstro("/@fs/C:/work-projects/pireactor/main-site/client/src/pages/ua/services/[slug].astro", "http://localhost:3000/", "file:///C:/work-projects/pireactor/main-site/client/");
+const $$metadata$4 = createMetadata("/@fs/C:/work-projects/pireactor/main-site/src/pages/ua/services/[slug].astro", { modules: [{ module: $$module1$2, specifier: "../../../components/MainTitle.astro", assert: {} }, { module: $$module2$5, specifier: "../../../components/shared/Button.astro", assert: {} }, { module: $$module3$3, specifier: "../../../components/solid/Counter", assert: {} }, { module: $$module4$2, specifier: "../../../enums/ELangs", assert: {} }, { module: $$module5$3, specifier: "../../../layouts/Container.astro", assert: {} }, { module: $$module6$1, specifier: "../../../layouts/Layout.astro", assert: {} }, { module: $$module8, specifier: "../../../models/ServicesModel", assert: {} }], hydratedComponents: [Counter$1], clientOnlyComponents: [], hydrationDirectives: /* @__PURE__ */ new Set(["load"]), hoisted: [] });
+const $$Astro$4 = createAstro("/@fs/C:/work-projects/pireactor/main-site/src/pages/ua/services/[slug].astro", "http://localhost:3000/", "file:///C:/work-projects/pireactor/main-site/");
 const Astro$1 = $$Astro$4;
 const $$slug$1 = createComponent(async ($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro$4, $$props, $$slots);
@@ -3703,7 +3703,7 @@ const $$slug$1 = createComponent(async ($$result, $$props, $$slots) => {
     </div>` })}` })}`;
 });
 
-const $$file$4 = "C:/work-projects/pireactor/main-site/client/src/pages/ua/services/[slug].astro";
+const $$file$4 = "C:/work-projects/pireactor/main-site/src/pages/ua/services/[slug].astro";
 const $$url$4 = "/ua/services/[slug]";
 
 var _page32 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
@@ -3715,18 +3715,18 @@ var _page32 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
 	url: $$url$4
 }, Symbol.toStringTag, { value: 'Module' }));
 
-const $$metadata$3 = createMetadata("/@fs/C:/work-projects/pireactor/main-site/client/src/pages/ua/about.astro", { modules: [{ module: $$module1$2, specifier: "../../components/MainTitle.astro", assert: {} }, { module: $$module2$1, specifier: "../../components/shared/AboutCard.astro", assert: {} }, { module: $$module2, specifier: "../../components/shared/Breadcrums.astro", assert: {} }, { module: $$module2$3, specifier: "../../components/shared/Section.astro", assert: {} }, { module: $$module3$3, specifier: "../../components/solid/Counter", assert: {} }, { module: $$module4$2, specifier: "../../enums/ELangs", assert: {} }, { module: $$module5$3, specifier: "../../layouts/Container.astro", assert: {} }, { module: $$module6$1, specifier: "../../layouts/Layout.astro", assert: {} }, { module: $$module8$1, specifier: "../../models/ContentModel", assert: {} }], hydratedComponents: [Counter$1], clientOnlyComponents: [], hydrationDirectives: /* @__PURE__ */ new Set(["load"]), hoisted: [] });
-const $$Astro$3 = createAstro("/@fs/C:/work-projects/pireactor/main-site/client/src/pages/ua/about.astro", "http://localhost:3000/", "file:///C:/work-projects/pireactor/main-site/client/");
+const $$metadata$3 = createMetadata("/@fs/C:/work-projects/pireactor/main-site/src/pages/ua/about.astro", { modules: [{ module: $$module1$2, specifier: "../../components/MainTitle.astro", assert: {} }, { module: $$module2$1, specifier: "../../components/shared/AboutCard.astro", assert: {} }, { module: $$module2, specifier: "../../components/shared/Breadcrums.astro", assert: {} }, { module: $$module2$3, specifier: "../../components/shared/Section.astro", assert: {} }, { module: $$module3$3, specifier: "../../components/solid/Counter", assert: {} }, { module: $$module4$2, specifier: "../../enums/ELangs", assert: {} }, { module: $$module5$3, specifier: "../../layouts/Container.astro", assert: {} }, { module: $$module6$1, specifier: "../../layouts/Layout.astro", assert: {} }, { module: $$module8$1, specifier: "../../models/ContentModel", assert: {} }], hydratedComponents: [Counter$1], clientOnlyComponents: [], hydrationDirectives: /* @__PURE__ */ new Set(["load"]), hoisted: [] });
+const $$Astro$3 = createAstro("/@fs/C:/work-projects/pireactor/main-site/src/pages/ua/about.astro", "http://localhost:3000/", "file:///C:/work-projects/pireactor/main-site/");
 const $$About = createComponent(async ($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro$3, $$props, $$slots);
   Astro2.self = $$About;
   const leads = await Astro2.glob(
-    { "/public/assets/content/en/leads/AlexAlejandre.md": () => import('./chunks/chunk.a5de9f52.mjs'), "/public/assets/content/en/leads/JohnVermazenSt.md": () => import('./chunks/chunk.198b97c3.mjs'), "/public/assets/content/en/leads/JustynaBorwik.md": () => import('./chunks/chunk.2f992be1.mjs'), "/public/assets/content/en/leads/StevenVermazen.md": () => import('./chunks/chunk.d08d6e4f.mjs'),},
+    { "/public/assets/content/en/leads/AlexAlejandre.md": () => import('./chunks/chunk.5790b932.mjs'), "/public/assets/content/en/leads/JohnVermazenSt.md": () => import('./chunks/chunk.e09586c6.mjs'), "/public/assets/content/en/leads/JustynaBorwik.md": () => import('./chunks/chunk.6b16a774.mjs'), "/public/assets/content/en/leads/StevenVermazen.md": () => import('./chunks/chunk.6c0c45b4.mjs'),},
     () => "/public/assets/content/en/leads/*.md"
   );
   const sortLeads = leads.sort((a, b) => a.frontmatter.id - b.frontmatter.id);
   const [content] = await Astro2.glob(
-    { "/public/assets/content/en/content.md": () => import('./chunks/chunk.440c98c3.mjs'),},
+    { "/public/assets/content/en/content.md": () => import('./chunks/chunk.c9d3957c.mjs'),},
     () => "/public/assets/content/en/*.md"
   );
   const STYLES = [];
@@ -3753,7 +3753,7 @@ const $$About = createComponent(async ($$result, $$props, $$slots) => {
       </ul>` })}` })}` })}`;
 });
 
-const $$file$3 = "C:/work-projects/pireactor/main-site/client/src/pages/ua/about.astro";
+const $$file$3 = "C:/work-projects/pireactor/main-site/src/pages/ua/about.astro";
 const $$url$3 = "/ua/about";
 
 var _page33 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
@@ -3764,8 +3764,8 @@ var _page33 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
 	url: $$url$3
 }, Symbol.toStringTag, { value: 'Module' }));
 
-const $$metadata$2 = createMetadata("/@fs/C:/work-projects/pireactor/main-site/client/src/pages/ua/brief.astro", { modules: [{ module: $$module2, specifier: "../../components/shared/Breadcrums.astro", assert: {} }, { module: $$module2$2, specifier: "../../components/shared/FormSection.astro", assert: {} }, { module: $$module3$1, specifier: "../../components/solid/Form", assert: {} }, { module: $$module4$2, specifier: "../../enums/ELangs", assert: {} }, { module: $$module5$3, specifier: "../../layouts/Container.astro", assert: {} }, { module: $$module6$1, specifier: "../../layouts/Layout.astro", assert: {} }], hydratedComponents: [Form], clientOnlyComponents: [], hydrationDirectives: /* @__PURE__ */ new Set(["load"]), hoisted: [] });
-const $$Astro$2 = createAstro("/@fs/C:/work-projects/pireactor/main-site/client/src/pages/ua/brief.astro", "http://localhost:3000/", "file:///C:/work-projects/pireactor/main-site/client/");
+const $$metadata$2 = createMetadata("/@fs/C:/work-projects/pireactor/main-site/src/pages/ua/brief.astro", { modules: [{ module: $$module2, specifier: "../../components/shared/Breadcrums.astro", assert: {} }, { module: $$module2$2, specifier: "../../components/shared/FormSection.astro", assert: {} }, { module: $$module3$1, specifier: "../../components/solid/Form", assert: {} }, { module: $$module4$2, specifier: "../../enums/ELangs", assert: {} }, { module: $$module5$3, specifier: "../../layouts/Container.astro", assert: {} }, { module: $$module6$1, specifier: "../../layouts/Layout.astro", assert: {} }], hydratedComponents: [Form], clientOnlyComponents: [], hydrationDirectives: /* @__PURE__ */ new Set(["load"]), hoisted: [] });
+const $$Astro$2 = createAstro("/@fs/C:/work-projects/pireactor/main-site/src/pages/ua/brief.astro", "http://localhost:3000/", "file:///C:/work-projects/pireactor/main-site/");
 const $$Brief = createComponent(async ($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro$2, $$props, $$slots);
   Astro2.self = $$Brief;
@@ -3775,7 +3775,7 @@ const $$Brief = createComponent(async ($$result, $$props, $$slots) => {
   return render`${renderComponent($$result, "Layout", $$Layout, { "title": "Brief", "lang": ELangs.en, "class": "astro-ERY3GRSQ" }, { "default": () => render`${renderComponent($$result, "Container", $$Container, { "class": "astro-ERY3GRSQ" }, { "default": () => render`${renderComponent($$result, "Breadcrums", $$Breadcrums, { "currentPath": "Brief", "class": "astro-ERY3GRSQ" })}${renderComponent($$result, "FormSection", $$FormSection, { "class": "astro-ERY3GRSQ" }, { "default": () => render`${renderComponent($$result, "Form", Form, { "client:load": true, "client:component-hydration": "load", "client:component-path": $$metadata$2.getPath(Form), "client:component-export": $$metadata$2.getExport(Form), "class": "astro-ERY3GRSQ" })}` })}` })}` })}`;
 });
 
-const $$file$2 = "C:/work-projects/pireactor/main-site/client/src/pages/ua/brief.astro";
+const $$file$2 = "C:/work-projects/pireactor/main-site/src/pages/ua/brief.astro";
 const $$url$2 = "/ua/brief";
 
 var _page34 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
@@ -3786,12 +3786,12 @@ var _page34 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
 	url: $$url$2
 }, Symbol.toStringTag, { value: 'Module' }));
 
-const $$metadata$1 = createMetadata("/@fs/C:/work-projects/pireactor/main-site/client/src/pages/ua/work/[slug].astro", { modules: [{ module: $$module1, specifier: "../../../components/shared/CallbackForm.astro", assert: {} }, { module: $$module2$3, specifier: "../../../components/shared/Section.astro", assert: {} }, { module: $$module3$3, specifier: "../../../components/solid/Counter", assert: {} }, { module: $$module4$2, specifier: "../../../enums/ELangs", assert: {} }, { module: $$module5, specifier: "../../../enums/EPhases", assert: {} }, { module: $$module5$3, specifier: "../../../layouts/Container.astro", assert: {} }, { module: $$module6$1, specifier: "../../../layouts/Layout.astro", assert: {} }, { module: $$module8$1, specifier: "../../../models/ContentModel", assert: {} }, { module: $$module7, specifier: "../../../models/ProjectModel", assert: {} }], hydratedComponents: [Counter$1], clientOnlyComponents: [], hydrationDirectives: /* @__PURE__ */ new Set(["load"]), hoisted: [] });
-const $$Astro$1 = createAstro("/@fs/C:/work-projects/pireactor/main-site/client/src/pages/ua/work/[slug].astro", "http://localhost:3000/", "file:///C:/work-projects/pireactor/main-site/client/");
+const $$metadata$1 = createMetadata("/@fs/C:/work-projects/pireactor/main-site/src/pages/ua/work/[slug].astro", { modules: [{ module: $$module1, specifier: "../../../components/shared/CallbackForm.astro", assert: {} }, { module: $$module2$3, specifier: "../../../components/shared/Section.astro", assert: {} }, { module: $$module3$3, specifier: "../../../components/solid/Counter", assert: {} }, { module: $$module4$2, specifier: "../../../enums/ELangs", assert: {} }, { module: $$module5, specifier: "../../../enums/EPhases", assert: {} }, { module: $$module5$3, specifier: "../../../layouts/Container.astro", assert: {} }, { module: $$module6$1, specifier: "../../../layouts/Layout.astro", assert: {} }, { module: $$module8$1, specifier: "../../../models/ContentModel", assert: {} }, { module: $$module7, specifier: "../../../models/ProjectModel", assert: {} }], hydratedComponents: [Counter$1], clientOnlyComponents: [], hydrationDirectives: /* @__PURE__ */ new Set(["load"]), hoisted: [] });
+const $$Astro$1 = createAstro("/@fs/C:/work-projects/pireactor/main-site/src/pages/ua/work/[slug].astro", "http://localhost:3000/", "file:///C:/work-projects/pireactor/main-site/");
 const Astro = $$Astro$1;
 async function getStaticPaths() {
   const projects = await Astro.glob(
-    { "/public/assets/content/en/projects/Brewery.md": () => import('./chunks/chunk.29bcfbb2.mjs'), "/public/assets/content/en/projects/NewHope copy.md": () => import('./chunks/chunk.dbd11095.mjs'), "/public/assets/content/en/projects/NewHope.md": () => import('./chunks/chunk.79884e51.mjs'), "/public/assets/content/en/projects/NewHope2.md": () => import('./chunks/chunk.787538be.mjs'), "/public/assets/content/en/projects/NewHope3.md": () => import('./chunks/chunk.09debec5.mjs'),},
+    { "/public/assets/content/en/projects/Brewery.md": () => import('./chunks/chunk.c1a611e2.mjs'), "/public/assets/content/en/projects/NewHope copy.md": () => import('./chunks/chunk.1fa0ae9a.mjs'), "/public/assets/content/en/projects/NewHope.md": () => import('./chunks/chunk.8dce1602.mjs'), "/public/assets/content/en/projects/NewHope2.md": () => import('./chunks/chunk.f23f1ec4.mjs'), "/public/assets/content/en/projects/NewHope3.md": () => import('./chunks/chunk.b8b02486.mjs'),},
     () => "/public/assets/content/en/projects/*.md"
   );
   return projects.map((project) => {
@@ -3823,7 +3823,7 @@ const $$slug = createComponent(async ($$result, $$props, $$slots) => {
     }
   }
   const [content] = await Astro2.glob(
-    { "/public/assets/content/en/content.md": () => import('./chunks/chunk.440c98c3.mjs'),},
+    { "/public/assets/content/en/content.md": () => import('./chunks/chunk.c9d3957c.mjs'),},
     () => "/public/assets/content/en/*.md"
   );
   const STYLES = [];
@@ -3845,7 +3845,7 @@ const $$slug = createComponent(async ($$result, $$props, $$slots) => {
       </div>` })}${renderComponent($$result, "CallbackForm", $$CallbackForm, { "desc": content.frontmatter?.form.desc, "title": content.frontmatter?.form.title, "fields": content.frontmatter?.form.fields, "class": "astro-2CQBPXFM" })}` })}` })}`;
 });
 
-const $$file$1 = "C:/work-projects/pireactor/main-site/client/src/pages/ua/work/[slug].astro";
+const $$file$1 = "C:/work-projects/pireactor/main-site/src/pages/ua/work/[slug].astro";
 const $$url$1 = "/ua/work/[slug]";
 
 var _page35 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
@@ -3857,13 +3857,13 @@ var _page35 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
 	url: $$url$1
 }, Symbol.toStringTag, { value: 'Module' }));
 
-const $$metadata = createMetadata("/@fs/C:/work-projects/pireactor/main-site/client/src/pages/ua/work.astro", { modules: [{ module: $$module1$2, specifier: "../../components/MainTitle.astro", assert: {} }, { module: $$module2, specifier: "../../components/shared/Breadcrums.astro", assert: {} }, { module: $$module3, specifier: "../../components/solid/Projects", assert: {} }, { module: $$module4$2, specifier: "../../enums/ELangs", assert: {} }, { module: $$module5$3, specifier: "../../layouts/Container.astro", assert: {} }, { module: $$module6$1, specifier: "../../layouts/Layout.astro", assert: {} }, { module: $$module7, specifier: "../../models/ProjectModel", assert: {} }, { module: $$module8, specifier: "../../models/ServicesModel", assert: {} }], hydratedComponents: [Projects], clientOnlyComponents: [], hydrationDirectives: /* @__PURE__ */ new Set(["load"]), hoisted: [] });
-const $$Astro = createAstro("/@fs/C:/work-projects/pireactor/main-site/client/src/pages/ua/work.astro", "http://localhost:3000/", "file:///C:/work-projects/pireactor/main-site/client/");
+const $$metadata = createMetadata("/@fs/C:/work-projects/pireactor/main-site/src/pages/ua/work.astro", { modules: [{ module: $$module1$2, specifier: "../../components/MainTitle.astro", assert: {} }, { module: $$module2, specifier: "../../components/shared/Breadcrums.astro", assert: {} }, { module: $$module3, specifier: "../../components/solid/Projects", assert: {} }, { module: $$module4$2, specifier: "../../enums/ELangs", assert: {} }, { module: $$module5$3, specifier: "../../layouts/Container.astro", assert: {} }, { module: $$module6$1, specifier: "../../layouts/Layout.astro", assert: {} }, { module: $$module7, specifier: "../../models/ProjectModel", assert: {} }, { module: $$module8, specifier: "../../models/ServicesModel", assert: {} }], hydratedComponents: [Projects], clientOnlyComponents: [], hydrationDirectives: /* @__PURE__ */ new Set(["load"]), hoisted: [] });
+const $$Astro = createAstro("/@fs/C:/work-projects/pireactor/main-site/src/pages/ua/work.astro", "http://localhost:3000/", "file:///C:/work-projects/pireactor/main-site/");
 const $$Work = createComponent(async ($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro, $$props, $$slots);
   Astro2.self = $$Work;
   const projectsRaw = await Astro2.glob(
-    { "/public/assets/content/en/projects/Brewery.md": () => import('./chunks/chunk.29bcfbb2.mjs'), "/public/assets/content/en/projects/NewHope copy.md": () => import('./chunks/chunk.dbd11095.mjs'), "/public/assets/content/en/projects/NewHope.md": () => import('./chunks/chunk.79884e51.mjs'), "/public/assets/content/en/projects/NewHope2.md": () => import('./chunks/chunk.787538be.mjs'), "/public/assets/content/en/projects/NewHope3.md": () => import('./chunks/chunk.09debec5.mjs'),},
+    { "/public/assets/content/en/projects/Brewery.md": () => import('./chunks/chunk.c1a611e2.mjs'), "/public/assets/content/en/projects/NewHope copy.md": () => import('./chunks/chunk.1fa0ae9a.mjs'), "/public/assets/content/en/projects/NewHope.md": () => import('./chunks/chunk.8dce1602.mjs'), "/public/assets/content/en/projects/NewHope2.md": () => import('./chunks/chunk.f23f1ec4.mjs'), "/public/assets/content/en/projects/NewHope3.md": () => import('./chunks/chunk.b8b02486.mjs'),},
     () => "/public/assets/content/en/projects/*.md"
   );
   const projects = projectsRaw.map((i) => {
@@ -3880,7 +3880,7 @@ const $$Work = createComponent(async ($$result, $$props, $$slots) => {
   });
   const url = Astro2.request.url;
   const services = await Astro2.glob(
-    { "/public/assets/content/en/services/architecture.md": () => import('./chunks/chunk.93527cb3.mjs'), "/public/assets/content/en/services/automation.md": () => import('./chunks/chunk.59824c95.mjs'), "/public/assets/content/en/services/blockchain.md": () => import('./chunks/chunk.7c3d0c0b.mjs'), "/public/assets/content/en/services/strategy.md": () => import('./chunks/chunk.33bb18a9.mjs'), "/public/assets/content/en/services/wallets.md": () => import('./chunks/chunk.ee134a3e.mjs'),},
+    { "/public/assets/content/en/services/architecture.md": () => import('./chunks/chunk.c6afcfdc.mjs'), "/public/assets/content/en/services/automation.md": () => import('./chunks/chunk.c98e4cd0.mjs'), "/public/assets/content/en/services/blockchain.md": () => import('./chunks/chunk.ec6459d7.mjs'), "/public/assets/content/en/services/strategy.md": () => import('./chunks/chunk.d804232d.mjs'), "/public/assets/content/en/services/wallets.md": () => import('./chunks/chunk.bf2e9b1c.mjs'),},
     () => "/public/assets/content/en/services/*.md"
   );
   const servicesNames = services.map((i) => ({
@@ -3900,7 +3900,7 @@ const $$Work = createComponent(async ($$result, $$props, $$slots) => {
 `;
 });
 
-const $$file = "C:/work-projects/pireactor/main-site/client/src/pages/ua/work.astro";
+const $$file = "C:/work-projects/pireactor/main-site/src/pages/ua/work.astro";
 const $$url = "/ua/work";
 
 var _page36 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
@@ -7136,7 +7136,7 @@ function deserializeManifest(serializedManifest) {
   });
 }
 
-const _manifest = Object.assign(deserializeManifest({"routes":[{"file":"","links":[],"scripts":[],"routeData":{"type":"page","pattern":"^\\/$","segments":[],"params":[],"component":"src/pages/index.astro","pathname":"/","_meta":{"trailingSlash":"ignore"}}},{"file":"","links":["assets/asset.5de63fd1.css","assets/asset.946172d9.css","assets/asset.de888fcd.css","assets/asset.29a60217.css","assets/asset.370b5f3f.css","assets/asset.96c92a49.css","assets/asset.86927366.css","assets/asset.81951261.css","assets/asset.dffeaebb.css"],"scripts":["entry.a7bbb060.js"],"routeData":{"type":"page","pattern":"^\\/en\\/?$","segments":[[{"content":"en","dynamic":false,"spread":false}]],"params":[],"component":"src/pages/en/index.astro","pathname":"/en","_meta":{"trailingSlash":"ignore"}}},{"file":"","links":["assets/asset.5de63fd1.css","assets/asset.de888fcd.css","assets/asset.370b5f3f.css","assets/asset.86927366.css","assets/asset.ebc11f33.css"],"scripts":["entry.a7bbb060.js"],"routeData":{"type":"page","pattern":"^\\/en\\/services\\/([^/]+?)\\/?$","segments":[[{"content":"en","dynamic":false,"spread":false}],[{"content":"services","dynamic":false,"spread":false}],[{"content":"slug","dynamic":true,"spread":false}]],"params":["slug"],"component":"src/pages/en/services/[slug].astro","_meta":{"trailingSlash":"ignore"}}},{"file":"","links":["assets/asset.e2319853.css","assets/asset.946172d9.css","assets/asset.de888fcd.css","assets/asset.505750ae.css","assets/asset.0ed8ad27.css","assets/asset.370b5f3f.css","assets/asset.86927366.css"],"scripts":["entry.a7bbb060.js"],"routeData":{"type":"page","pattern":"^\\/en\\/about\\/?$","segments":[[{"content":"en","dynamic":false,"spread":false}],[{"content":"about","dynamic":false,"spread":false}]],"params":[],"component":"src/pages/en/about.astro","pathname":"/en/about","_meta":{"trailingSlash":"ignore"}}},{"file":"","links":["assets/asset.0ed8ad27.css","assets/asset.e52801f0.css","assets/asset.370b5f3f.css","assets/asset.96c92a49.css"],"scripts":["entry.a7bbb060.js"],"routeData":{"type":"page","pattern":"^\\/en\\/brief\\/?$","segments":[[{"content":"en","dynamic":false,"spread":false}],[{"content":"brief","dynamic":false,"spread":false}]],"params":[],"component":"src/pages/en/brief.astro","pathname":"/en/brief","_meta":{"trailingSlash":"ignore"}}},{"file":"","links":["assets/asset.16bb9790.css","assets/asset.946172d9.css","assets/asset.370b5f3f.css","assets/asset.96c92a49.css","assets/asset.86927366.css","assets/asset.dffeaebb.css"],"scripts":["entry.a7bbb060.js"],"routeData":{"type":"page","pattern":"^\\/en\\/work\\/([^/]+?)\\/?$","segments":[[{"content":"en","dynamic":false,"spread":false}],[{"content":"work","dynamic":false,"spread":false}],[{"content":"slug","dynamic":true,"spread":false}]],"params":["slug"],"component":"src/pages/en/work/[slug].astro","_meta":{"trailingSlash":"ignore"}}},{"file":"","links":["assets/asset.1bede975.css","assets/asset.de888fcd.css","assets/asset.0ed8ad27.css","assets/asset.370b5f3f.css","assets/asset.6640baa9.css"],"scripts":["entry.a7bbb060.js"],"routeData":{"type":"page","pattern":"^\\/en\\/work\\/?$","segments":[[{"content":"en","dynamic":false,"spread":false}],[{"content":"work","dynamic":false,"spread":false}]],"params":[],"component":"src/pages/en/work.astro","pathname":"/en/work","_meta":{"trailingSlash":"ignore"}}},{"file":"","links":["assets/asset.5de63fd1.css","assets/asset.946172d9.css","assets/asset.81951261.css","assets/asset.de888fcd.css","assets/asset.29a60217.css","assets/asset.370b5f3f.css","assets/asset.96c92a49.css","assets/asset.86927366.css","assets/asset.dffeaebb.css"],"scripts":["entry.a7bbb060.js"],"routeData":{"type":"page","pattern":"^\\/es\\/?$","segments":[[{"content":"es","dynamic":false,"spread":false}]],"params":[],"component":"src/pages/es/index.astro","pathname":"/es","_meta":{"trailingSlash":"ignore"}}},{"file":"","links":["assets/asset.5de63fd1.css","assets/asset.de888fcd.css","assets/asset.370b5f3f.css","assets/asset.8ad5c0dd.css","assets/asset.86927366.css"],"scripts":["entry.a7bbb060.js"],"routeData":{"type":"page","pattern":"^\\/es\\/services\\/([^/]+?)\\/?$","segments":[[{"content":"es","dynamic":false,"spread":false}],[{"content":"services","dynamic":false,"spread":false}],[{"content":"slug","dynamic":true,"spread":false}]],"params":["slug"],"component":"src/pages/es/services/[slug].astro","_meta":{"trailingSlash":"ignore"}}},{"file":"","links":["assets/asset.946172d9.css","assets/asset.de888fcd.css","assets/asset.5f24efe3.css","assets/asset.505750ae.css","assets/asset.0ed8ad27.css","assets/asset.370b5f3f.css","assets/asset.86927366.css"],"scripts":["entry.a7bbb060.js"],"routeData":{"type":"page","pattern":"^\\/es\\/about\\/?$","segments":[[{"content":"es","dynamic":false,"spread":false}],[{"content":"about","dynamic":false,"spread":false}]],"params":[],"component":"src/pages/es/about.astro","pathname":"/es/about","_meta":{"trailingSlash":"ignore"}}},{"file":"","links":["assets/asset.0ed8ad27.css","assets/asset.e52801f0.css","assets/asset.370b5f3f.css","assets/asset.96c92a49.css"],"scripts":["entry.a7bbb060.js"],"routeData":{"type":"page","pattern":"^\\/es\\/brief\\/?$","segments":[[{"content":"es","dynamic":false,"spread":false}],[{"content":"brief","dynamic":false,"spread":false}]],"params":[],"component":"src/pages/es/brief.astro","pathname":"/es/brief","_meta":{"trailingSlash":"ignore"}}},{"file":"","links":["assets/asset.946172d9.css","assets/asset.370b5f3f.css","assets/asset.96c92a49.css","assets/asset.86927366.css","assets/asset.dffeaebb.css","assets/asset.e86106df.css"],"scripts":["entry.a7bbb060.js"],"routeData":{"type":"page","pattern":"^\\/es\\/work\\/([^/]+?)\\/?$","segments":[[{"content":"es","dynamic":false,"spread":false}],[{"content":"work","dynamic":false,"spread":false}],[{"content":"slug","dynamic":true,"spread":false}]],"params":["slug"],"component":"src/pages/es/work/[slug].astro","_meta":{"trailingSlash":"ignore"}}},{"file":"","links":["assets/asset.de888fcd.css","assets/asset.0ed8ad27.css","assets/asset.aa027a5b.css","assets/asset.370b5f3f.css","assets/asset.6640baa9.css"],"scripts":["entry.a7bbb060.js"],"routeData":{"type":"page","pattern":"^\\/es\\/work\\/?$","segments":[[{"content":"es","dynamic":false,"spread":false}],[{"content":"work","dynamic":false,"spread":false}]],"params":[],"component":"src/pages/es/work.astro","pathname":"/es/work","_meta":{"trailingSlash":"ignore"}}},{"file":"","links":["assets/asset.5de63fd1.css","assets/asset.946172d9.css","assets/asset.de888fcd.css","assets/asset.29a60217.css","assets/asset.370b5f3f.css","assets/asset.96c92a49.css","assets/asset.81951261.css","assets/asset.86927366.css","assets/asset.dffeaebb.css"],"scripts":["entry.a7bbb060.js"],"routeData":{"type":"page","pattern":"^\\/pl\\/?$","segments":[[{"content":"pl","dynamic":false,"spread":false}]],"params":[],"component":"src/pages/pl/index.astro","pathname":"/pl","_meta":{"trailingSlash":"ignore"}}},{"file":"","links":["assets/asset.5de63fd1.css","assets/asset.de888fcd.css","assets/asset.6cc92049.css","assets/asset.370b5f3f.css","assets/asset.86927366.css"],"scripts":["entry.a7bbb060.js"],"routeData":{"type":"page","pattern":"^\\/pl\\/services\\/([^/]+?)\\/?$","segments":[[{"content":"pl","dynamic":false,"spread":false}],[{"content":"services","dynamic":false,"spread":false}],[{"content":"slug","dynamic":true,"spread":false}]],"params":["slug"],"component":"src/pages/pl/services/[slug].astro","_meta":{"trailingSlash":"ignore"}}},{"file":"","links":["assets/asset.946172d9.css","assets/asset.de888fcd.css","assets/asset.505750ae.css","assets/asset.914cdb31.css","assets/asset.0ed8ad27.css","assets/asset.370b5f3f.css","assets/asset.86927366.css"],"scripts":["entry.a7bbb060.js"],"routeData":{"type":"page","pattern":"^\\/pl\\/about\\/?$","segments":[[{"content":"pl","dynamic":false,"spread":false}],[{"content":"about","dynamic":false,"spread":false}]],"params":[],"component":"src/pages/pl/about.astro","pathname":"/pl/about","_meta":{"trailingSlash":"ignore"}}},{"file":"","links":["assets/asset.0ed8ad27.css","assets/asset.e52801f0.css","assets/asset.370b5f3f.css","assets/asset.96c92a49.css"],"scripts":["entry.a7bbb060.js"],"routeData":{"type":"page","pattern":"^\\/pl\\/brief\\/?$","segments":[[{"content":"pl","dynamic":false,"spread":false}],[{"content":"brief","dynamic":false,"spread":false}]],"params":[],"component":"src/pages/pl/brief.astro","pathname":"/pl/brief","_meta":{"trailingSlash":"ignore"}}},{"file":"","links":["assets/asset.194f94a1.css","assets/asset.946172d9.css","assets/asset.370b5f3f.css","assets/asset.96c92a49.css","assets/asset.86927366.css","assets/asset.dffeaebb.css"],"scripts":["entry.a7bbb060.js"],"routeData":{"type":"page","pattern":"^\\/pl\\/work\\/([^/]+?)\\/?$","segments":[[{"content":"pl","dynamic":false,"spread":false}],[{"content":"work","dynamic":false,"spread":false}],[{"content":"slug","dynamic":true,"spread":false}]],"params":["slug"],"component":"src/pages/pl/work/[slug].astro","_meta":{"trailingSlash":"ignore"}}},{"file":"","links":["assets/asset.1bede975.css","assets/asset.de888fcd.css","assets/asset.0ed8ad27.css","assets/asset.370b5f3f.css","assets/asset.6640baa9.css"],"scripts":["entry.a7bbb060.js"],"routeData":{"type":"page","pattern":"^\\/pl\\/work\\/?$","segments":[[{"content":"pl","dynamic":false,"spread":false}],[{"content":"work","dynamic":false,"spread":false}]],"params":[],"component":"src/pages/pl/work.astro","pathname":"/pl/work","_meta":{"trailingSlash":"ignore"}}},{"file":"","links":["assets/asset.5de63fd1.css","assets/asset.946172d9.css","assets/asset.de888fcd.css","assets/asset.81951261.css","assets/asset.29a60217.css","assets/asset.370b5f3f.css","assets/asset.96c92a49.css","assets/asset.86927366.css","assets/asset.dffeaebb.css"],"scripts":["entry.a7bbb060.js"],"routeData":{"type":"page","pattern":"^\\/ru\\/?$","segments":[[{"content":"ru","dynamic":false,"spread":false}]],"params":[],"component":"src/pages/ru/index.astro","pathname":"/ru","_meta":{"trailingSlash":"ignore"}}},{"file":"","links":["assets/asset.5de63fd1.css","assets/asset.ebc11f33.css","assets/asset.de888fcd.css","assets/asset.370b5f3f.css","assets/asset.86927366.css"],"scripts":["entry.a7bbb060.js"],"routeData":{"type":"page","pattern":"^\\/ru\\/services\\/([^/]+?)\\/?$","segments":[[{"content":"ru","dynamic":false,"spread":false}],[{"content":"services","dynamic":false,"spread":false}],[{"content":"slug","dynamic":true,"spread":false}]],"params":["slug"],"component":"src/pages/ru/services/[slug].astro","_meta":{"trailingSlash":"ignore"}}},{"file":"","links":["assets/asset.946172d9.css","assets/asset.de888fcd.css","assets/asset.e2319853.css","assets/asset.505750ae.css","assets/asset.0ed8ad27.css","assets/asset.370b5f3f.css","assets/asset.86927366.css"],"scripts":["entry.a7bbb060.js"],"routeData":{"type":"page","pattern":"^\\/ru\\/about\\/?$","segments":[[{"content":"ru","dynamic":false,"spread":false}],[{"content":"about","dynamic":false,"spread":false}]],"params":[],"component":"src/pages/ru/about.astro","pathname":"/ru/about","_meta":{"trailingSlash":"ignore"}}},{"file":"","links":["assets/asset.0ed8ad27.css","assets/asset.e52801f0.css","assets/asset.370b5f3f.css","assets/asset.96c92a49.css"],"scripts":["entry.a7bbb060.js"],"routeData":{"type":"page","pattern":"^\\/ru\\/brief\\/?$","segments":[[{"content":"ru","dynamic":false,"spread":false}],[{"content":"brief","dynamic":false,"spread":false}]],"params":[],"component":"src/pages/ru/brief.astro","pathname":"/ru/brief","_meta":{"trailingSlash":"ignore"}}},{"file":"","links":["assets/asset.16bb9790.css","assets/asset.946172d9.css","assets/asset.370b5f3f.css","assets/asset.96c92a49.css","assets/asset.86927366.css","assets/asset.dffeaebb.css"],"scripts":["entry.a7bbb060.js"],"routeData":{"type":"page","pattern":"^\\/ru\\/work\\/([^/]+?)\\/?$","segments":[[{"content":"ru","dynamic":false,"spread":false}],[{"content":"work","dynamic":false,"spread":false}],[{"content":"slug","dynamic":true,"spread":false}]],"params":["slug"],"component":"src/pages/ru/work/[slug].astro","_meta":{"trailingSlash":"ignore"}}},{"file":"","links":["assets/asset.de888fcd.css","assets/asset.1bede975.css","assets/asset.0ed8ad27.css","assets/asset.370b5f3f.css","assets/asset.6640baa9.css"],"scripts":["entry.a7bbb060.js"],"routeData":{"type":"page","pattern":"^\\/ru\\/work\\/?$","segments":[[{"content":"ru","dynamic":false,"spread":false}],[{"content":"work","dynamic":false,"spread":false}]],"params":[],"component":"src/pages/ru/work.astro","pathname":"/ru/work","_meta":{"trailingSlash":"ignore"}}},{"file":"","links":["assets/asset.5de63fd1.css","assets/asset.81951261.css","assets/asset.946172d9.css","assets/asset.de888fcd.css","assets/asset.29a60217.css","assets/asset.370b5f3f.css","assets/asset.96c92a49.css","assets/asset.86927366.css","assets/asset.dffeaebb.css"],"scripts":["entry.a7bbb060.js"],"routeData":{"type":"page","pattern":"^\\/tr\\/?$","segments":[[{"content":"tr","dynamic":false,"spread":false}]],"params":[],"component":"src/pages/tr/index.astro","pathname":"/tr","_meta":{"trailingSlash":"ignore"}}},{"file":"","links":["assets/asset.ebc11f33.css","assets/asset.5de63fd1.css","assets/asset.de888fcd.css","assets/asset.370b5f3f.css","assets/asset.86927366.css"],"scripts":["entry.a7bbb060.js"],"routeData":{"type":"page","pattern":"^\\/tr\\/services\\/([^/]+?)\\/?$","segments":[[{"content":"tr","dynamic":false,"spread":false}],[{"content":"services","dynamic":false,"spread":false}],[{"content":"slug","dynamic":true,"spread":false}]],"params":["slug"],"component":"src/pages/tr/services/[slug].astro","_meta":{"trailingSlash":"ignore"}}},{"file":"","links":["assets/asset.946172d9.css","assets/asset.e2319853.css","assets/asset.de888fcd.css","assets/asset.505750ae.css","assets/asset.0ed8ad27.css","assets/asset.370b5f3f.css","assets/asset.86927366.css"],"scripts":["entry.a7bbb060.js"],"routeData":{"type":"page","pattern":"^\\/tr\\/about\\/?$","segments":[[{"content":"tr","dynamic":false,"spread":false}],[{"content":"about","dynamic":false,"spread":false}]],"params":[],"component":"src/pages/tr/about.astro","pathname":"/tr/about","_meta":{"trailingSlash":"ignore"}}},{"file":"","links":["assets/asset.0ed8ad27.css","assets/asset.e52801f0.css","assets/asset.370b5f3f.css","assets/asset.96c92a49.css"],"scripts":["entry.a7bbb060.js"],"routeData":{"type":"page","pattern":"^\\/tr\\/brief\\/?$","segments":[[{"content":"tr","dynamic":false,"spread":false}],[{"content":"brief","dynamic":false,"spread":false}]],"params":[],"component":"src/pages/tr/brief.astro","pathname":"/tr/brief","_meta":{"trailingSlash":"ignore"}}},{"file":"","links":["assets/asset.946172d9.css","assets/asset.370b5f3f.css","assets/asset.16bb9790.css","assets/asset.96c92a49.css","assets/asset.86927366.css","assets/asset.dffeaebb.css"],"scripts":["entry.a7bbb060.js"],"routeData":{"type":"page","pattern":"^\\/tr\\/work\\/([^/]+?)\\/?$","segments":[[{"content":"tr","dynamic":false,"spread":false}],[{"content":"work","dynamic":false,"spread":false}],[{"content":"slug","dynamic":true,"spread":false}]],"params":["slug"],"component":"src/pages/tr/work/[slug].astro","_meta":{"trailingSlash":"ignore"}}},{"file":"","links":["assets/asset.de888fcd.css","assets/asset.0ed8ad27.css","assets/asset.370b5f3f.css","assets/asset.6640baa9.css","assets/asset.1bede975.css"],"scripts":["entry.a7bbb060.js"],"routeData":{"type":"page","pattern":"^\\/tr\\/work\\/?$","segments":[[{"content":"tr","dynamic":false,"spread":false}],[{"content":"work","dynamic":false,"spread":false}]],"params":[],"component":"src/pages/tr/work.astro","pathname":"/tr/work","_meta":{"trailingSlash":"ignore"}}},{"file":"","links":["assets/asset.5de63fd1.css","assets/asset.946172d9.css","assets/asset.de888fcd.css","assets/asset.81951261.css","assets/asset.29a60217.css","assets/asset.370b5f3f.css","assets/asset.96c92a49.css","assets/asset.86927366.css","assets/asset.dffeaebb.css"],"scripts":["entry.a7bbb060.js"],"routeData":{"type":"page","pattern":"^\\/ua\\/?$","segments":[[{"content":"ua","dynamic":false,"spread":false}]],"params":[],"component":"src/pages/ua/index.astro","pathname":"/ua","_meta":{"trailingSlash":"ignore"}}},{"file":"","links":["assets/asset.5de63fd1.css","assets/asset.de888fcd.css","assets/asset.370b5f3f.css","assets/asset.ebc11f33.css","assets/asset.86927366.css"],"scripts":["entry.a7bbb060.js"],"routeData":{"type":"page","pattern":"^\\/ua\\/services\\/([^/]+?)\\/?$","segments":[[{"content":"ua","dynamic":false,"spread":false}],[{"content":"services","dynamic":false,"spread":false}],[{"content":"slug","dynamic":true,"spread":false}]],"params":["slug"],"component":"src/pages/ua/services/[slug].astro","_meta":{"trailingSlash":"ignore"}}},{"file":"","links":["assets/asset.946172d9.css","assets/asset.de888fcd.css","assets/asset.e2319853.css","assets/asset.505750ae.css","assets/asset.0ed8ad27.css","assets/asset.370b5f3f.css","assets/asset.86927366.css"],"scripts":["entry.a7bbb060.js"],"routeData":{"type":"page","pattern":"^\\/ua\\/about\\/?$","segments":[[{"content":"ua","dynamic":false,"spread":false}],[{"content":"about","dynamic":false,"spread":false}]],"params":[],"component":"src/pages/ua/about.astro","pathname":"/ua/about","_meta":{"trailingSlash":"ignore"}}},{"file":"","links":["assets/asset.0ed8ad27.css","assets/asset.e52801f0.css","assets/asset.370b5f3f.css","assets/asset.96c92a49.css"],"scripts":["entry.a7bbb060.js"],"routeData":{"type":"page","pattern":"^\\/ua\\/brief\\/?$","segments":[[{"content":"ua","dynamic":false,"spread":false}],[{"content":"brief","dynamic":false,"spread":false}]],"params":[],"component":"src/pages/ua/brief.astro","pathname":"/ua/brief","_meta":{"trailingSlash":"ignore"}}},{"file":"","links":["assets/asset.946172d9.css","assets/asset.16bb9790.css","assets/asset.370b5f3f.css","assets/asset.96c92a49.css","assets/asset.86927366.css","assets/asset.dffeaebb.css"],"scripts":["entry.a7bbb060.js"],"routeData":{"type":"page","pattern":"^\\/ua\\/work\\/([^/]+?)\\/?$","segments":[[{"content":"ua","dynamic":false,"spread":false}],[{"content":"work","dynamic":false,"spread":false}],[{"content":"slug","dynamic":true,"spread":false}]],"params":["slug"],"component":"src/pages/ua/work/[slug].astro","_meta":{"trailingSlash":"ignore"}}},{"file":"","links":["assets/asset.de888fcd.css","assets/asset.1bede975.css","assets/asset.0ed8ad27.css","assets/asset.370b5f3f.css","assets/asset.6640baa9.css"],"scripts":["entry.a7bbb060.js"],"routeData":{"type":"page","pattern":"^\\/ua\\/work\\/?$","segments":[[{"content":"ua","dynamic":false,"spread":false}],[{"content":"work","dynamic":false,"spread":false}]],"params":[],"component":"src/pages/ua/work.astro","pathname":"/ua/work","_meta":{"trailingSlash":"ignore"}}}],"base":"/","markdown":{"mode":"mdx","drafts":false,"syntaxHighlight":"shiki","shikiConfig":{"langs":[],"theme":"github-dark","wrap":false},"remarkPlugins":[],"rehypePlugins":[]},"pageMap":null,"renderers":[],"entryModules":{"@astrojs/solid-js/client.js":"entry.9c9d1692.js","/@fs/C:/work-projects/pireactor/main-site/client/src/components/solid/LangPicker":"entry.36ad41d9.js","/@fs/C:/work-projects/pireactor/main-site/client/src/components/solid/Counter":"entry.581459f7.js","/@fs/C:/work-projects/pireactor/main-site/client/src/components/solid/FormSubmit":"entry.e5802460.js","astro/client/load.js":"entry.316778ed.js","/astro/hoisted.js?q=0":"entry.a7bbb060.js","/@fs/C:/work-projects/pireactor/main-site/client/src/components/solid/Form":"entry.872f2add.js","/@fs/C:/work-projects/pireactor/main-site/client/src/components/solid/Projects":"entry.844c19e3.js","\u0000@astrojs-ssr-virtual-entry":"entry.mjs","C:/work-projects/pireactor/main-site/client/public/assets/content/en/content.md?mdImport":"chunks/chunk.440c98c3.mjs","C:/work-projects/pireactor/main-site/client/public/assets/content/en/services/architecture.md?mdImport":"chunks/chunk.93527cb3.mjs","C:/work-projects/pireactor/main-site/client/public/assets/content/en/services/automation.md?mdImport":"chunks/chunk.59824c95.mjs","C:/work-projects/pireactor/main-site/client/public/assets/content/en/services/blockchain.md?mdImport":"chunks/chunk.7c3d0c0b.mjs","C:/work-projects/pireactor/main-site/client/public/assets/content/en/services/strategy.md?mdImport":"chunks/chunk.33bb18a9.mjs","C:/work-projects/pireactor/main-site/client/public/assets/content/en/services/wallets.md?mdImport":"chunks/chunk.ee134a3e.mjs","C:/work-projects/pireactor/main-site/client/public/assets/content/en/leads/AlexAlejandre.md?mdImport":"chunks/chunk.a5de9f52.mjs","C:/work-projects/pireactor/main-site/client/public/assets/content/en/leads/JohnVermazenSt.md?mdImport":"chunks/chunk.198b97c3.mjs","C:/work-projects/pireactor/main-site/client/public/assets/content/en/leads/JustynaBorwik.md?mdImport":"chunks/chunk.2f992be1.mjs","C:/work-projects/pireactor/main-site/client/public/assets/content/en/leads/StevenVermazen.md?mdImport":"chunks/chunk.d08d6e4f.mjs","C:/work-projects/pireactor/main-site/client/public/assets/content/en/projects/Brewery.md?mdImport":"chunks/chunk.29bcfbb2.mjs","C:/work-projects/pireactor/main-site/client/public/assets/content/en/projects/NewHope copy.md?mdImport":"chunks/chunk.dbd11095.mjs","C:/work-projects/pireactor/main-site/client/public/assets/content/en/projects/NewHope.md?mdImport":"chunks/chunk.79884e51.mjs","C:/work-projects/pireactor/main-site/client/public/assets/content/en/projects/NewHope2.md?mdImport":"chunks/chunk.787538be.mjs","C:/work-projects/pireactor/main-site/client/public/assets/content/en/projects/NewHope3.md?mdImport":"chunks/chunk.09debec5.mjs","C:/work-projects/pireactor/main-site/client/public/assets/content/es/content.md?mdImport":"chunks/chunk.4896bd4a.mjs","C:/work-projects/pireactor/main-site/client/public/assets/content/es/services/architecture.md?mdImport":"chunks/chunk.ccbb07d8.mjs","C:/work-projects/pireactor/main-site/client/public/assets/content/es/services/automation.md?mdImport":"chunks/chunk.938b4c4d.mjs","C:/work-projects/pireactor/main-site/client/public/assets/content/es/services/blockchain.md?mdImport":"chunks/chunk.5f73559c.mjs","C:/work-projects/pireactor/main-site/client/public/assets/content/es/services/strategy.md?mdImport":"chunks/chunk.9d579503.mjs","C:/work-projects/pireactor/main-site/client/public/assets/content/es/services/wallets.md?mdImport":"chunks/chunk.000bd02f.mjs","C:/work-projects/pireactor/main-site/client/public/assets/content/es/leads/AlexAlejandre.md?mdImport":"chunks/chunk.9316eb1e.mjs","C:/work-projects/pireactor/main-site/client/public/assets/content/es/leads/JohnVermazenSt.md?mdImport":"chunks/chunk.521dead4.mjs","C:/work-projects/pireactor/main-site/client/public/assets/content/es/leads/JustynaBorwik.md?mdImport":"chunks/chunk.35d644fe.mjs","C:/work-projects/pireactor/main-site/client/public/assets/content/es/leads/StevenVermazen.md?mdImport":"chunks/chunk.3899904f.mjs","C:/work-projects/pireactor/main-site/client/public/assets/content/es/projects/Brewery.md?mdImport":"chunks/chunk.f075a1b0.mjs","C:/work-projects/pireactor/main-site/client/public/assets/content/es/projects/NewHope copy.md?mdImport":"chunks/chunk.c40d7ba2.mjs","C:/work-projects/pireactor/main-site/client/public/assets/content/es/projects/NewHope.md?mdImport":"chunks/chunk.474beff1.mjs","C:/work-projects/pireactor/main-site/client/public/assets/content/es/projects/NewHope2.md?mdImport":"chunks/chunk.c534737f.mjs","C:/work-projects/pireactor/main-site/client/public/assets/content/es/projects/NewHope3.md?mdImport":"chunks/chunk.0d4b752c.mjs","C:/work-projects/pireactor/main-site/client/public/assets/content/pl/content.md?mdImport":"chunks/chunk.832d7e87.mjs","C:/work-projects/pireactor/main-site/client/public/assets/content/pl/services/architecture.md?mdImport":"chunks/chunk.2186ae96.mjs","C:/work-projects/pireactor/main-site/client/public/assets/content/pl/services/automation.md?mdImport":"chunks/chunk.b391d7bf.mjs","C:/work-projects/pireactor/main-site/client/public/assets/content/pl/services/blockchain.md?mdImport":"chunks/chunk.f9b7a791.mjs","C:/work-projects/pireactor/main-site/client/public/assets/content/pl/services/strategy.md?mdImport":"chunks/chunk.64fc4e6e.mjs","C:/work-projects/pireactor/main-site/client/public/assets/content/pl/services/wallets.md?mdImport":"chunks/chunk.e49a8342.mjs","C:/work-projects/pireactor/main-site/client/public/assets/content/pl/leads/AlexAlejandre.md?mdImport":"chunks/chunk.cfba225e.mjs","C:/work-projects/pireactor/main-site/client/public/assets/content/pl/leads/JohnVermazenSt.md?mdImport":"chunks/chunk.45b86101.mjs","C:/work-projects/pireactor/main-site/client/public/assets/content/pl/leads/JustynaBorwik.md?mdImport":"chunks/chunk.b711c874.mjs","C:/work-projects/pireactor/main-site/client/public/assets/content/pl/leads/StevenVermazen.md?mdImport":"chunks/chunk.ba210a2f.mjs","C:/work-projects/pireactor/main-site/client/public/assets/content/pl/projects/Brewery.md?mdImport":"chunks/chunk.6d7ffc88.mjs","C:/work-projects/pireactor/main-site/client/public/assets/content/pl/projects/NewHope copy.md?mdImport":"chunks/chunk.dcec0156.mjs","C:/work-projects/pireactor/main-site/client/public/assets/content/pl/projects/NewHope.md?mdImport":"chunks/chunk.02d4d6c8.mjs","C:/work-projects/pireactor/main-site/client/public/assets/content/pl/projects/NewHope2.md?mdImport":"chunks/chunk.9053395b.mjs","C:/work-projects/pireactor/main-site/client/public/assets/content/pl/projects/NewHope3.md?mdImport":"chunks/chunk.ae655f4f.mjs","C:/work-projects/pireactor/main-site/client/public/assets/content/ru/content.md?mdImport":"chunks/chunk.a999f7dd.mjs","C:/work-projects/pireactor/main-site/client/public/assets/content/tr/content.md?mdImport":"chunks/chunk.70ae4c85.mjs","C:/work-projects/pireactor/main-site/client/public/assets/content/ua/content.md?mdImport":"chunks/chunk.164f6447.mjs","C:/work-projects/pireactor/main-site/client/public/assets/content/ru/services/architecture.md?mdImport":"chunks/chunk.a7a267b0.mjs","C:/work-projects/pireactor/main-site/client/public/assets/content/ru/services/automation.md?mdImport":"chunks/chunk.70e6007d.mjs","C:/work-projects/pireactor/main-site/client/public/assets/content/ru/services/blockchain.md?mdImport":"chunks/chunk.2f9977d7.mjs","C:/work-projects/pireactor/main-site/client/public/assets/content/ru/services/strategy.md?mdImport":"chunks/chunk.513b3675.mjs","C:/work-projects/pireactor/main-site/client/public/assets/content/ru/services/wallets.md?mdImport":"chunks/chunk.a237989c.mjs","C:/work-projects/pireactor/main-site/client/public/assets/content/tr/services/architecture.md?mdImport":"chunks/chunk.91c8893a.mjs","C:/work-projects/pireactor/main-site/client/public/assets/content/tr/services/automation.md?mdImport":"chunks/chunk.acb3f924.mjs","C:/work-projects/pireactor/main-site/client/public/assets/content/tr/services/blockchain.md?mdImport":"chunks/chunk.f1a695b8.mjs","C:/work-projects/pireactor/main-site/client/public/assets/content/tr/services/strategy.md?mdImport":"chunks/chunk.520832bb.mjs","C:/work-projects/pireactor/main-site/client/public/assets/content/tr/services/wallets.md?mdImport":"chunks/chunk.8508d622.mjs","C:/work-projects/pireactor/main-site/client/public/assets/content/ua/services/architecture.md?mdImport":"chunks/chunk.0b834678.mjs","C:/work-projects/pireactor/main-site/client/public/assets/content/ua/services/automation.md?mdImport":"chunks/chunk.dd708ad7.mjs","C:/work-projects/pireactor/main-site/client/public/assets/content/ua/services/blockchain.md?mdImport":"chunks/chunk.28640239.mjs","C:/work-projects/pireactor/main-site/client/public/assets/content/ua/services/strategy.md?mdImport":"chunks/chunk.6668f04f.mjs","C:/work-projects/pireactor/main-site/client/public/assets/content/ua/services/wallets.md?mdImport":"chunks/chunk.e2320abe.mjs","C:/work-projects/pireactor/main-site/client/public/assets/content/en/content.md":"chunks/chunk.9148dd73.mjs","C:/work-projects/pireactor/main-site/client/public/assets/content/en/services/architecture.md":"chunks/chunk.40339654.mjs","C:/work-projects/pireactor/main-site/client/public/assets/content/en/services/automation.md":"chunks/chunk.592cf9ca.mjs","C:/work-projects/pireactor/main-site/client/public/assets/content/en/services/blockchain.md":"chunks/chunk.8b79ead7.mjs","C:/work-projects/pireactor/main-site/client/public/assets/content/en/services/strategy.md":"chunks/chunk.955107b1.mjs","C:/work-projects/pireactor/main-site/client/public/assets/content/en/services/wallets.md":"chunks/chunk.da6f6002.mjs","C:/work-projects/pireactor/main-site/client/public/assets/content/en/leads/AlexAlejandre.md":"chunks/chunk.337dcf97.mjs","C:/work-projects/pireactor/main-site/client/public/assets/content/en/leads/JohnVermazenSt.md":"chunks/chunk.210d7145.mjs","C:/work-projects/pireactor/main-site/client/public/assets/content/en/leads/JustynaBorwik.md":"chunks/chunk.2e3faddc.mjs","C:/work-projects/pireactor/main-site/client/public/assets/content/en/leads/StevenVermazen.md":"chunks/chunk.56aa5c38.mjs","C:/work-projects/pireactor/main-site/client/public/assets/content/en/projects/Brewery.md":"chunks/chunk.1ed83c9e.mjs","C:/work-projects/pireactor/main-site/client/public/assets/content/en/projects/NewHope copy.md":"chunks/chunk.cf3b0f36.mjs","C:/work-projects/pireactor/main-site/client/public/assets/content/en/projects/NewHope.md":"chunks/chunk.d0dc6056.mjs","C:/work-projects/pireactor/main-site/client/public/assets/content/en/projects/NewHope2.md":"chunks/chunk.b898967b.mjs","C:/work-projects/pireactor/main-site/client/public/assets/content/en/projects/NewHope3.md":"chunks/chunk.01a883c1.mjs","C:/work-projects/pireactor/main-site/client/public/assets/content/es/content.md":"chunks/chunk.843cb283.mjs","C:/work-projects/pireactor/main-site/client/public/assets/content/es/services/architecture.md":"chunks/chunk.53ca1e11.mjs","C:/work-projects/pireactor/main-site/client/public/assets/content/es/services/automation.md":"chunks/chunk.14a278d8.mjs","C:/work-projects/pireactor/main-site/client/public/assets/content/es/services/blockchain.md":"chunks/chunk.8b39fb73.mjs","C:/work-projects/pireactor/main-site/client/public/assets/content/es/services/strategy.md":"chunks/chunk.6b999d7a.mjs","C:/work-projects/pireactor/main-site/client/public/assets/content/es/services/wallets.md":"chunks/chunk.7c41bc2f.mjs","C:/work-projects/pireactor/main-site/client/public/assets/content/es/leads/AlexAlejandre.md":"chunks/chunk.ba487c41.mjs","C:/work-projects/pireactor/main-site/client/public/assets/content/es/leads/JohnVermazenSt.md":"chunks/chunk.8dfa4ea3.mjs","C:/work-projects/pireactor/main-site/client/public/assets/content/es/leads/JustynaBorwik.md":"chunks/chunk.a02fee95.mjs","C:/work-projects/pireactor/main-site/client/public/assets/content/es/leads/StevenVermazen.md":"chunks/chunk.a9d93241.mjs","C:/work-projects/pireactor/main-site/client/public/assets/content/es/projects/Brewery.md":"chunks/chunk.44333d5b.mjs","C:/work-projects/pireactor/main-site/client/public/assets/content/es/projects/NewHope copy.md":"chunks/chunk.6e258234.mjs","C:/work-projects/pireactor/main-site/client/public/assets/content/es/projects/NewHope.md":"chunks/chunk.df9968b2.mjs","C:/work-projects/pireactor/main-site/client/public/assets/content/es/projects/NewHope2.md":"chunks/chunk.f5cd10f6.mjs","C:/work-projects/pireactor/main-site/client/public/assets/content/es/projects/NewHope3.md":"chunks/chunk.5a15de34.mjs","C:/work-projects/pireactor/main-site/client/public/assets/content/pl/content.md":"chunks/chunk.ab0ec2c9.mjs","C:/work-projects/pireactor/main-site/client/public/assets/content/pl/services/architecture.md":"chunks/chunk.84b6de18.mjs","C:/work-projects/pireactor/main-site/client/public/assets/content/pl/services/automation.md":"chunks/chunk.dc608a9d.mjs","C:/work-projects/pireactor/main-site/client/public/assets/content/pl/services/blockchain.md":"chunks/chunk.81379615.mjs","C:/work-projects/pireactor/main-site/client/public/assets/content/pl/services/strategy.md":"chunks/chunk.522dfacb.mjs","C:/work-projects/pireactor/main-site/client/public/assets/content/pl/services/wallets.md":"chunks/chunk.833713da.mjs","C:/work-projects/pireactor/main-site/client/public/assets/content/pl/leads/AlexAlejandre.md":"chunks/chunk.32dd9d62.mjs","C:/work-projects/pireactor/main-site/client/public/assets/content/pl/leads/JohnVermazenSt.md":"chunks/chunk.68a7fe72.mjs","C:/work-projects/pireactor/main-site/client/public/assets/content/pl/leads/JustynaBorwik.md":"chunks/chunk.2eac3f9f.mjs","C:/work-projects/pireactor/main-site/client/public/assets/content/pl/leads/StevenVermazen.md":"chunks/chunk.9742bdb7.mjs","C:/work-projects/pireactor/main-site/client/public/assets/content/pl/projects/Brewery.md":"chunks/chunk.2862ed70.mjs","C:/work-projects/pireactor/main-site/client/public/assets/content/pl/projects/NewHope copy.md":"chunks/chunk.51600d94.mjs","C:/work-projects/pireactor/main-site/client/public/assets/content/pl/projects/NewHope.md":"chunks/chunk.c0bb1557.mjs","C:/work-projects/pireactor/main-site/client/public/assets/content/pl/projects/NewHope2.md":"chunks/chunk.8b88baf6.mjs","C:/work-projects/pireactor/main-site/client/public/assets/content/pl/projects/NewHope3.md":"chunks/chunk.7f127e2f.mjs","C:/work-projects/pireactor/main-site/client/public/assets/content/ru/content.md":"chunks/chunk.188bfe80.mjs","C:/work-projects/pireactor/main-site/client/public/assets/content/tr/content.md":"chunks/chunk.8eafa584.mjs","C:/work-projects/pireactor/main-site/client/public/assets/content/ua/content.md":"chunks/chunk.e3988815.mjs","C:/work-projects/pireactor/main-site/client/public/assets/content/ru/services/architecture.md":"chunks/chunk.a78df52a.mjs","C:/work-projects/pireactor/main-site/client/public/assets/content/ru/services/automation.md":"chunks/chunk.51e6b3ea.mjs","C:/work-projects/pireactor/main-site/client/public/assets/content/ru/services/blockchain.md":"chunks/chunk.42f094b5.mjs","C:/work-projects/pireactor/main-site/client/public/assets/content/ru/services/strategy.md":"chunks/chunk.08e2f895.mjs","C:/work-projects/pireactor/main-site/client/public/assets/content/ru/services/wallets.md":"chunks/chunk.6587d0fa.mjs","C:/work-projects/pireactor/main-site/client/public/assets/content/tr/services/architecture.md":"chunks/chunk.8215cebf.mjs","C:/work-projects/pireactor/main-site/client/public/assets/content/tr/services/automation.md":"chunks/chunk.437a3593.mjs","C:/work-projects/pireactor/main-site/client/public/assets/content/tr/services/blockchain.md":"chunks/chunk.3a1fbd9f.mjs","C:/work-projects/pireactor/main-site/client/public/assets/content/tr/services/strategy.md":"chunks/chunk.736bd8d5.mjs","C:/work-projects/pireactor/main-site/client/public/assets/content/tr/services/wallets.md":"chunks/chunk.d92e366a.mjs","C:/work-projects/pireactor/main-site/client/public/assets/content/ua/services/architecture.md":"chunks/chunk.d7c3ac20.mjs","C:/work-projects/pireactor/main-site/client/public/assets/content/ua/services/automation.md":"chunks/chunk.48b4ff2a.mjs","C:/work-projects/pireactor/main-site/client/public/assets/content/ua/services/blockchain.md":"chunks/chunk.b84d5e43.mjs","C:/work-projects/pireactor/main-site/client/public/assets/content/ua/services/strategy.md":"chunks/chunk.c43dd886.mjs","C:/work-projects/pireactor/main-site/client/public/assets/content/ua/services/wallets.md":"chunks/chunk.73df7017.mjs","astro:scripts/before-hydration.js":"data:text/javascript;charset=utf-8,//[no before-hydration script]"},"assets":["/entry.316778ed.js","/entry.36ad41d9.js","/entry.581459f7.js","/entry.844c19e3.js","/entry.872f2add.js","/entry.9c9d1692.js","/entry.a7bbb060.js","/entry.e5802460.js","/favicon.ico","/assets/asset.9cf15e46.css","/chunks/chunk.031f193a.js","/chunks/chunk.779f1add.js","/chunks/chunk.cfb46bdd.js","/assets/content/en/content.md","/assets/content/es/content.md","/assets/content/pl/content.md","/assets/content/ru/content.md","/assets/content/tr/content.md","/assets/content/ua/content.md","/assets/fonts/AvantGardeCTT/AvantGardeCTT-Bold.woff","/assets/fonts/AvantGardeCTT/AvantGardeCTT-Bold.woff2","/assets/fonts/Inter/Inter-Bold.woff","/assets/fonts/Inter/Inter-Bold.woff2","/assets/fonts/Inter/Inter-Regular.woff","/assets/fonts/Inter/Inter-Regular.woff2","/assets/fonts/Inter/Inter-SemiBold.woff","/assets/fonts/Inter/Inter-SemiBold.woff2","/assets/fonts/PlusJakartaSans/PlusJakartaSans-Bold.woff","/assets/fonts/PlusJakartaSans/PlusJakartaSans-Bold.woff2","/assets/fonts/PlusJakartaSans/PlusJakartaSans-Medium.woff","/assets/fonts/PlusJakartaSans/PlusJakartaSans-Medium.woff2","/assets/fonts/PlusJakartaSans/PlusJakartaSans-Regular.woff","/assets/fonts/PlusJakartaSans/PlusJakartaSans-Regular.woff2","/assets/fonts/PlusJakartaSans/PlusJakartaSans-SemiBold.woff","/assets/fonts/PlusJakartaSans/PlusJakartaSans-SemiBold.woff2","/assets/img/about/about.svg","/assets/img/footer/f.svg","/assets/img/footer/in.svg","/assets/img/footer/mail.svg","/assets/img/footer/pin.svg","/assets/img/footer/t.svg","/assets/img/header/arrow.svg","/assets/img/header/close.svg","/assets/img/header/menu_btn.svg","/assets/img/main/architecture.svg","/assets/img/main/automation.svg","/assets/img/main/backend.svg","/assets/img/main/blockchain.svg","/assets/img/main/building.svg","/assets/img/main/cloud.svg","/assets/img/main/data.svg","/assets/img/main/defining.svg","/assets/img/main/deployment.svg","/assets/img/main/design.svg","/assets/img/main/designing.svg","/assets/img/main/frontend.svg","/assets/img/main/how.webp","/assets/img/main/how_mob.webp","/assets/img/main/main.webp","/assets/img/main/mainPage.svg","/assets/img/main/maintenance.svg","/assets/img/main/map.webp","/assets/img/main/ml.svg","/assets/img/main/planning.svg","/assets/img/main/strategy.svg","/assets/img/main/testing.svg","/assets/img/main/wallets.svg","/assets/img/project/check.svg","/assets/img/project/d.svg","/assets/img/works/clocks.svg","/assets/img/works/des.svg","/assets/img/works/dev.svg","/assets/img/works/devs.svg","/assets/img/works/star.svg","/assets/img/works/star.webp","/assets/img/works/strat.svg","/assets/content/en/leads/AlexAlejandre.md","/assets/content/en/leads/JohnVermazenSt.md","/assets/content/en/leads/JustynaBorwik.md","/assets/content/en/leads/StevenVermazen.md","/assets/content/en/projects/Brewery.md","/assets/content/en/projects/NewHope copy.md","/assets/content/en/projects/NewHope.md","/assets/content/en/projects/NewHope2.md","/assets/content/en/projects/NewHope3.md","/assets/content/en/services/architecture.md","/assets/content/en/services/automation.md","/assets/content/en/services/blockchain.md","/assets/content/en/services/strategy.md","/assets/content/en/services/wallets.md","/assets/content/es/leads/AlexAlejandre.md","/assets/content/es/leads/JohnVermazenSt.md","/assets/content/es/leads/JustynaBorwik.md","/assets/content/es/leads/StevenVermazen.md","/assets/content/es/projects/Brewery.md","/assets/content/es/projects/NewHope copy.md","/assets/content/es/projects/NewHope.md","/assets/content/es/projects/NewHope2.md","/assets/content/es/projects/NewHope3.md","/assets/content/es/services/architecture.md","/assets/content/es/services/automation.md","/assets/content/es/services/blockchain.md","/assets/content/es/services/strategy.md","/assets/content/es/services/wallets.md","/assets/content/pl/leads/AlexAlejandre.md","/assets/content/pl/leads/JohnVermazenSt.md","/assets/content/pl/leads/JustynaBorwik.md","/assets/content/pl/leads/StevenVermazen.md","/assets/content/pl/projects/Brewery.md","/assets/content/pl/projects/NewHope copy.md","/assets/content/pl/projects/NewHope.md","/assets/content/pl/projects/NewHope2.md","/assets/content/pl/projects/NewHope3.md","/assets/content/pl/services/architecture.md","/assets/content/pl/services/automation.md","/assets/content/pl/services/blockchain.md","/assets/content/pl/services/strategy.md","/assets/content/pl/services/wallets.md","/assets/content/ru/leads/AlexAlejandre.md","/assets/content/ru/leads/JohnVermazenSt.md","/assets/content/ru/leads/JustynaBorwik.md","/assets/content/ru/leads/StevenVermazen.md","/assets/content/ru/projects/Brewery.md","/assets/content/ru/projects/NewHope copy.md","/assets/content/ru/projects/NewHope.md","/assets/content/ru/projects/NewHope2.md","/assets/content/ru/projects/NewHope3.md","/assets/content/ru/services/architecture.md","/assets/content/ru/services/automation.md","/assets/content/ru/services/blockchain.md","/assets/content/ru/services/strategy.md","/assets/content/ru/services/wallets.md","/assets/content/tr/leads/AlexAlejandre.md","/assets/content/tr/leads/JohnVermazenSt.md","/assets/content/tr/leads/JustynaBorwik.md","/assets/content/tr/leads/StevenVermazen.md","/assets/content/tr/projects/Brewery.md","/assets/content/tr/projects/NewHope copy.md","/assets/content/tr/projects/NewHope.md","/assets/content/tr/projects/NewHope2.md","/assets/content/tr/projects/NewHope3.md","/assets/content/tr/services/architecture.md","/assets/content/tr/services/automation.md","/assets/content/tr/services/blockchain.md","/assets/content/tr/services/strategy.md","/assets/content/tr/services/wallets.md","/assets/content/ua/leads/AlexAlejandre.md","/assets/content/ua/leads/JohnVermazenSt.md","/assets/content/ua/leads/JustynaBorwik.md","/assets/content/ua/leads/StevenVermazen.md","/assets/content/ua/projects/Brewery.md","/assets/content/ua/projects/NewHope copy.md","/assets/content/ua/projects/NewHope.md","/assets/content/ua/projects/NewHope2.md","/assets/content/ua/projects/NewHope3.md","/assets/content/ua/services/architecture.md","/assets/content/ua/services/automation.md","/assets/content/ua/services/blockchain.md","/assets/content/ua/services/strategy.md","/assets/content/ua/services/wallets.md","/assets/img/about/location/g.webp","/assets/img/about/location/k.webp","/assets/img/about/location/ny.webp","/assets/img/about/team/1.webp","/assets/img/about/team/2.webp","/assets/img/about/team/3.webp","/assets/img/about/team/4.webp","/assets/asset.ebc11f33.css","/assets/asset.e2319853.css","/assets/asset.194f94a1.css","/assets/asset.16bb9790.css","/assets/asset.5de63fd1.css","/assets/asset.1bede975.css","/assets/asset.81951261.css","/assets/asset.946172d9.css","/assets/asset.de888fcd.css","/assets/asset.5f24efe3.css","/assets/asset.6cc92049.css","/assets/asset.505750ae.css","/assets/asset.914cdb31.css","/assets/asset.0ed8ad27.css","/assets/asset.aa027a5b.css","/assets/asset.29a60217.css","/assets/asset.e52801f0.css","/assets/asset.370b5f3f.css","/assets/asset.6640baa9.css","/assets/asset.8ad5c0dd.css","/assets/asset.96c92a49.css","/assets/asset.86927366.css","/assets/asset.dffeaebb.css","/assets/asset.e86106df.css"]}), {
+const _manifest = Object.assign(deserializeManifest({"routes":[{"file":"","links":[],"scripts":[],"routeData":{"type":"page","pattern":"^\\/$","segments":[],"params":[],"component":"src/pages/index.astro","pathname":"/","_meta":{"trailingSlash":"ignore"}}},{"file":"","links":["assets/asset.f0d731c3.css","assets/asset.0419d374.css","assets/asset.4d9c5fa3.css","assets/asset.c1cf99fc.css","assets/asset.66de8b0c.css","assets/asset.3ee6da18.css","assets/asset.c0f0e941.css","assets/asset.79d9a383.css","assets/asset.713551ad.css"],"scripts":["entry.a7bbb060.js"],"routeData":{"type":"page","pattern":"^\\/en\\/?$","segments":[[{"content":"en","dynamic":false,"spread":false}]],"params":[],"component":"src/pages/en/index.astro","pathname":"/en","_meta":{"trailingSlash":"ignore"}}},{"file":"","links":["assets/asset.f0d731c3.css","assets/asset.4d9c5fa3.css","assets/asset.65f3117a.css","assets/asset.66de8b0c.css","assets/asset.79d9a383.css"],"scripts":["entry.a7bbb060.js"],"routeData":{"type":"page","pattern":"^\\/en\\/services\\/([^/]+?)\\/?$","segments":[[{"content":"en","dynamic":false,"spread":false}],[{"content":"services","dynamic":false,"spread":false}],[{"content":"slug","dynamic":true,"spread":false}]],"params":["slug"],"component":"src/pages/en/services/[slug].astro","_meta":{"trailingSlash":"ignore"}}},{"file":"","links":["assets/asset.f0d731c3.css","assets/asset.0419d374.css","assets/asset.4d9c5fa3.css","assets/asset.6d59f92f.css","assets/asset.edf35b89.css","assets/asset.cc80275b.css","assets/asset.79d9a383.css"],"scripts":["entry.a7bbb060.js"],"routeData":{"type":"page","pattern":"^\\/en\\/about\\/?$","segments":[[{"content":"en","dynamic":false,"spread":false}],[{"content":"about","dynamic":false,"spread":false}]],"params":[],"component":"src/pages/en/about.astro","pathname":"/en/about","_meta":{"trailingSlash":"ignore"}}},{"file":"","links":["assets/asset.4d9c5fa3.css","assets/asset.c1cf99fc.css","assets/asset.edf35b89.css","assets/asset.337befd3.css"],"scripts":["entry.a7bbb060.js"],"routeData":{"type":"page","pattern":"^\\/en\\/brief\\/?$","segments":[[{"content":"en","dynamic":false,"spread":false}],[{"content":"brief","dynamic":false,"spread":false}]],"params":[],"component":"src/pages/en/brief.astro","pathname":"/en/brief","_meta":{"trailingSlash":"ignore"}}},{"file":"","links":["assets/asset.f0d731c3.css","assets/asset.0419d374.css","assets/asset.4d9c5fa3.css","assets/asset.c1cf99fc.css","assets/asset.3ee6da18.css","assets/asset.04e4aca7.css"],"scripts":["entry.a7bbb060.js"],"routeData":{"type":"page","pattern":"^\\/en\\/work\\/([^/]+?)\\/?$","segments":[[{"content":"en","dynamic":false,"spread":false}],[{"content":"work","dynamic":false,"spread":false}],[{"content":"slug","dynamic":true,"spread":false}]],"params":["slug"],"component":"src/pages/en/work/[slug].astro","_meta":{"trailingSlash":"ignore"}}},{"file":"","links":["assets/asset.4d9c5fa3.css","assets/asset.edf35b89.css","assets/asset.9fa0a0bb.css","assets/asset.bbe8752c.css","assets/asset.79d9a383.css"],"scripts":["entry.a7bbb060.js"],"routeData":{"type":"page","pattern":"^\\/en\\/work\\/?$","segments":[[{"content":"en","dynamic":false,"spread":false}],[{"content":"work","dynamic":false,"spread":false}]],"params":[],"component":"src/pages/en/work.astro","pathname":"/en/work","_meta":{"trailingSlash":"ignore"}}},{"file":"","links":["assets/asset.f0d731c3.css","assets/asset.0419d374.css","assets/asset.4d9c5fa3.css","assets/asset.c1cf99fc.css","assets/asset.66de8b0c.css","assets/asset.3ee6da18.css","assets/asset.79d9a383.css","assets/asset.c0f0e941.css","assets/asset.713551ad.css"],"scripts":["entry.a7bbb060.js"],"routeData":{"type":"page","pattern":"^\\/es\\/?$","segments":[[{"content":"es","dynamic":false,"spread":false}]],"params":[],"component":"src/pages/es/index.astro","pathname":"/es","_meta":{"trailingSlash":"ignore"}}},{"file":"","links":["assets/asset.f0d731c3.css","assets/asset.4d9c5fa3.css","assets/asset.66de8b0c.css","assets/asset.20759893.css","assets/asset.79d9a383.css"],"scripts":["entry.a7bbb060.js"],"routeData":{"type":"page","pattern":"^\\/es\\/services\\/([^/]+?)\\/?$","segments":[[{"content":"es","dynamic":false,"spread":false}],[{"content":"services","dynamic":false,"spread":false}],[{"content":"slug","dynamic":true,"spread":false}]],"params":["slug"],"component":"src/pages/es/services/[slug].astro","_meta":{"trailingSlash":"ignore"}}},{"file":"","links":["assets/asset.f0d731c3.css","assets/asset.0419d374.css","assets/asset.4d9c5fa3.css","assets/asset.6d59f92f.css","assets/asset.edf35b89.css","assets/asset.79d9a383.css","assets/asset.0d4cc372.css"],"scripts":["entry.a7bbb060.js"],"routeData":{"type":"page","pattern":"^\\/es\\/about\\/?$","segments":[[{"content":"es","dynamic":false,"spread":false}],[{"content":"about","dynamic":false,"spread":false}]],"params":[],"component":"src/pages/es/about.astro","pathname":"/es/about","_meta":{"trailingSlash":"ignore"}}},{"file":"","links":["assets/asset.4d9c5fa3.css","assets/asset.c1cf99fc.css","assets/asset.edf35b89.css","assets/asset.337befd3.css"],"scripts":["entry.a7bbb060.js"],"routeData":{"type":"page","pattern":"^\\/es\\/brief\\/?$","segments":[[{"content":"es","dynamic":false,"spread":false}],[{"content":"brief","dynamic":false,"spread":false}]],"params":[],"component":"src/pages/es/brief.astro","pathname":"/es/brief","_meta":{"trailingSlash":"ignore"}}},{"file":"","links":["assets/asset.f0d731c3.css","assets/asset.0419d374.css","assets/asset.4d9c5fa3.css","assets/asset.c1cf99fc.css","assets/asset.3ee6da18.css","assets/asset.04e4aca7.css"],"scripts":["entry.a7bbb060.js"],"routeData":{"type":"page","pattern":"^\\/es\\/work\\/([^/]+?)\\/?$","segments":[[{"content":"es","dynamic":false,"spread":false}],[{"content":"work","dynamic":false,"spread":false}],[{"content":"slug","dynamic":true,"spread":false}]],"params":["slug"],"component":"src/pages/es/work/[slug].astro","_meta":{"trailingSlash":"ignore"}}},{"file":"","links":["assets/asset.4d9c5fa3.css","assets/asset.edf35b89.css","assets/asset.9fa0a0bb.css","assets/asset.bbe8752c.css","assets/asset.79d9a383.css"],"scripts":["entry.a7bbb060.js"],"routeData":{"type":"page","pattern":"^\\/es\\/work\\/?$","segments":[[{"content":"es","dynamic":false,"spread":false}],[{"content":"work","dynamic":false,"spread":false}]],"params":[],"component":"src/pages/es/work.astro","pathname":"/es/work","_meta":{"trailingSlash":"ignore"}}},{"file":"","links":["assets/asset.c0f0e941.css","assets/asset.f0d731c3.css","assets/asset.0419d374.css","assets/asset.4d9c5fa3.css","assets/asset.c1cf99fc.css","assets/asset.66de8b0c.css","assets/asset.3ee6da18.css","assets/asset.79d9a383.css","assets/asset.713551ad.css"],"scripts":["entry.a7bbb060.js"],"routeData":{"type":"page","pattern":"^\\/pl\\/?$","segments":[[{"content":"pl","dynamic":false,"spread":false}]],"params":[],"component":"src/pages/pl/index.astro","pathname":"/pl","_meta":{"trailingSlash":"ignore"}}},{"file":"","links":["assets/asset.f0d731c3.css","assets/asset.4d9c5fa3.css","assets/asset.66de8b0c.css","assets/asset.fe0f7d65.css","assets/asset.79d9a383.css"],"scripts":["entry.a7bbb060.js"],"routeData":{"type":"page","pattern":"^\\/pl\\/services\\/([^/]+?)\\/?$","segments":[[{"content":"pl","dynamic":false,"spread":false}],[{"content":"services","dynamic":false,"spread":false}],[{"content":"slug","dynamic":true,"spread":false}]],"params":["slug"],"component":"src/pages/pl/services/[slug].astro","_meta":{"trailingSlash":"ignore"}}},{"file":"","links":["assets/asset.f0d731c3.css","assets/asset.0419d374.css","assets/asset.4d9c5fa3.css","assets/asset.6d59f92f.css","assets/asset.edf35b89.css","assets/asset.79d9a383.css","assets/asset.0e7e55c7.css"],"scripts":["entry.a7bbb060.js"],"routeData":{"type":"page","pattern":"^\\/pl\\/about\\/?$","segments":[[{"content":"pl","dynamic":false,"spread":false}],[{"content":"about","dynamic":false,"spread":false}]],"params":[],"component":"src/pages/pl/about.astro","pathname":"/pl/about","_meta":{"trailingSlash":"ignore"}}},{"file":"","links":["assets/asset.4d9c5fa3.css","assets/asset.c1cf99fc.css","assets/asset.edf35b89.css","assets/asset.337befd3.css"],"scripts":["entry.a7bbb060.js"],"routeData":{"type":"page","pattern":"^\\/pl\\/brief\\/?$","segments":[[{"content":"pl","dynamic":false,"spread":false}],[{"content":"brief","dynamic":false,"spread":false}]],"params":[],"component":"src/pages/pl/brief.astro","pathname":"/pl/brief","_meta":{"trailingSlash":"ignore"}}},{"file":"","links":["assets/asset.f0d731c3.css","assets/asset.0419d374.css","assets/asset.4d9c5fa3.css","assets/asset.c1cf99fc.css","assets/asset.3ee6da18.css","assets/asset.2e3c7375.css"],"scripts":["entry.a7bbb060.js"],"routeData":{"type":"page","pattern":"^\\/pl\\/work\\/([^/]+?)\\/?$","segments":[[{"content":"pl","dynamic":false,"spread":false}],[{"content":"work","dynamic":false,"spread":false}],[{"content":"slug","dynamic":true,"spread":false}]],"params":["slug"],"component":"src/pages/pl/work/[slug].astro","_meta":{"trailingSlash":"ignore"}}},{"file":"","links":["assets/asset.4d9c5fa3.css","assets/asset.edf35b89.css","assets/asset.bbe8752c.css","assets/asset.79d9a383.css","assets/asset.9fa0a0bb.css"],"scripts":["entry.a7bbb060.js"],"routeData":{"type":"page","pattern":"^\\/pl\\/work\\/?$","segments":[[{"content":"pl","dynamic":false,"spread":false}],[{"content":"work","dynamic":false,"spread":false}]],"params":[],"component":"src/pages/pl/work.astro","pathname":"/pl/work","_meta":{"trailingSlash":"ignore"}}},{"file":"","links":["assets/asset.f0d731c3.css","assets/asset.0419d374.css","assets/asset.4d9c5fa3.css","assets/asset.c1cf99fc.css","assets/asset.c0f0e941.css","assets/asset.66de8b0c.css","assets/asset.3ee6da18.css","assets/asset.79d9a383.css","assets/asset.713551ad.css"],"scripts":["entry.a7bbb060.js"],"routeData":{"type":"page","pattern":"^\\/ru\\/?$","segments":[[{"content":"ru","dynamic":false,"spread":false}]],"params":[],"component":"src/pages/ru/index.astro","pathname":"/ru","_meta":{"trailingSlash":"ignore"}}},{"file":"","links":["assets/asset.f0d731c3.css","assets/asset.4d9c5fa3.css","assets/asset.66de8b0c.css","assets/asset.79d9a383.css","assets/asset.65f3117a.css"],"scripts":["entry.a7bbb060.js"],"routeData":{"type":"page","pattern":"^\\/ru\\/services\\/([^/]+?)\\/?$","segments":[[{"content":"ru","dynamic":false,"spread":false}],[{"content":"services","dynamic":false,"spread":false}],[{"content":"slug","dynamic":true,"spread":false}]],"params":["slug"],"component":"src/pages/ru/services/[slug].astro","_meta":{"trailingSlash":"ignore"}}},{"file":"","links":["assets/asset.f0d731c3.css","assets/asset.0419d374.css","assets/asset.4d9c5fa3.css","assets/asset.6d59f92f.css","assets/asset.edf35b89.css","assets/asset.79d9a383.css","assets/asset.cc80275b.css"],"scripts":["entry.a7bbb060.js"],"routeData":{"type":"page","pattern":"^\\/ru\\/about\\/?$","segments":[[{"content":"ru","dynamic":false,"spread":false}],[{"content":"about","dynamic":false,"spread":false}]],"params":[],"component":"src/pages/ru/about.astro","pathname":"/ru/about","_meta":{"trailingSlash":"ignore"}}},{"file":"","links":["assets/asset.4d9c5fa3.css","assets/asset.c1cf99fc.css","assets/asset.edf35b89.css","assets/asset.337befd3.css"],"scripts":["entry.a7bbb060.js"],"routeData":{"type":"page","pattern":"^\\/ru\\/brief\\/?$","segments":[[{"content":"ru","dynamic":false,"spread":false}],[{"content":"brief","dynamic":false,"spread":false}]],"params":[],"component":"src/pages/ru/brief.astro","pathname":"/ru/brief","_meta":{"trailingSlash":"ignore"}}},{"file":"","links":["assets/asset.f0d731c3.css","assets/asset.0419d374.css","assets/asset.4d9c5fa3.css","assets/asset.c1cf99fc.css","assets/asset.3ee6da18.css","assets/asset.04e4aca7.css"],"scripts":["entry.a7bbb060.js"],"routeData":{"type":"page","pattern":"^\\/ru\\/work\\/([^/]+?)\\/?$","segments":[[{"content":"ru","dynamic":false,"spread":false}],[{"content":"work","dynamic":false,"spread":false}],[{"content":"slug","dynamic":true,"spread":false}]],"params":["slug"],"component":"src/pages/ru/work/[slug].astro","_meta":{"trailingSlash":"ignore"}}},{"file":"","links":["assets/asset.4d9c5fa3.css","assets/asset.edf35b89.css","assets/asset.9fa0a0bb.css","assets/asset.bbe8752c.css","assets/asset.79d9a383.css"],"scripts":["entry.a7bbb060.js"],"routeData":{"type":"page","pattern":"^\\/ru\\/work\\/?$","segments":[[{"content":"ru","dynamic":false,"spread":false}],[{"content":"work","dynamic":false,"spread":false}]],"params":[],"component":"src/pages/ru/work.astro","pathname":"/ru/work","_meta":{"trailingSlash":"ignore"}}},{"file":"","links":["assets/asset.f0d731c3.css","assets/asset.0419d374.css","assets/asset.4d9c5fa3.css","assets/asset.c1cf99fc.css","assets/asset.66de8b0c.css","assets/asset.3ee6da18.css","assets/asset.79d9a383.css","assets/asset.c0f0e941.css","assets/asset.713551ad.css"],"scripts":["entry.a7bbb060.js"],"routeData":{"type":"page","pattern":"^\\/tr\\/?$","segments":[[{"content":"tr","dynamic":false,"spread":false}]],"params":[],"component":"src/pages/tr/index.astro","pathname":"/tr","_meta":{"trailingSlash":"ignore"}}},{"file":"","links":["assets/asset.f0d731c3.css","assets/asset.4d9c5fa3.css","assets/asset.66de8b0c.css","assets/asset.79d9a383.css","assets/asset.65f3117a.css"],"scripts":["entry.a7bbb060.js"],"routeData":{"type":"page","pattern":"^\\/tr\\/services\\/([^/]+?)\\/?$","segments":[[{"content":"tr","dynamic":false,"spread":false}],[{"content":"services","dynamic":false,"spread":false}],[{"content":"slug","dynamic":true,"spread":false}]],"params":["slug"],"component":"src/pages/tr/services/[slug].astro","_meta":{"trailingSlash":"ignore"}}},{"file":"","links":["assets/asset.cc80275b.css","assets/asset.f0d731c3.css","assets/asset.0419d374.css","assets/asset.4d9c5fa3.css","assets/asset.6d59f92f.css","assets/asset.edf35b89.css","assets/asset.79d9a383.css"],"scripts":["entry.a7bbb060.js"],"routeData":{"type":"page","pattern":"^\\/tr\\/about\\/?$","segments":[[{"content":"tr","dynamic":false,"spread":false}],[{"content":"about","dynamic":false,"spread":false}]],"params":[],"component":"src/pages/tr/about.astro","pathname":"/tr/about","_meta":{"trailingSlash":"ignore"}}},{"file":"","links":["assets/asset.4d9c5fa3.css","assets/asset.c1cf99fc.css","assets/asset.edf35b89.css","assets/asset.337befd3.css"],"scripts":["entry.a7bbb060.js"],"routeData":{"type":"page","pattern":"^\\/tr\\/brief\\/?$","segments":[[{"content":"tr","dynamic":false,"spread":false}],[{"content":"brief","dynamic":false,"spread":false}]],"params":[],"component":"src/pages/tr/brief.astro","pathname":"/tr/brief","_meta":{"trailingSlash":"ignore"}}},{"file":"","links":["assets/asset.f0d731c3.css","assets/asset.0419d374.css","assets/asset.4d9c5fa3.css","assets/asset.c1cf99fc.css","assets/asset.04e4aca7.css","assets/asset.3ee6da18.css"],"scripts":["entry.a7bbb060.js"],"routeData":{"type":"page","pattern":"^\\/tr\\/work\\/([^/]+?)\\/?$","segments":[[{"content":"tr","dynamic":false,"spread":false}],[{"content":"work","dynamic":false,"spread":false}],[{"content":"slug","dynamic":true,"spread":false}]],"params":["slug"],"component":"src/pages/tr/work/[slug].astro","_meta":{"trailingSlash":"ignore"}}},{"file":"","links":["assets/asset.4d9c5fa3.css","assets/asset.edf35b89.css","assets/asset.9fa0a0bb.css","assets/asset.bbe8752c.css","assets/asset.79d9a383.css"],"scripts":["entry.a7bbb060.js"],"routeData":{"type":"page","pattern":"^\\/tr\\/work\\/?$","segments":[[{"content":"tr","dynamic":false,"spread":false}],[{"content":"work","dynamic":false,"spread":false}]],"params":[],"component":"src/pages/tr/work.astro","pathname":"/tr/work","_meta":{"trailingSlash":"ignore"}}},{"file":"","links":["assets/asset.f0d731c3.css","assets/asset.0419d374.css","assets/asset.4d9c5fa3.css","assets/asset.c1cf99fc.css","assets/asset.66de8b0c.css","assets/asset.3ee6da18.css","assets/asset.79d9a383.css","assets/asset.c0f0e941.css","assets/asset.713551ad.css"],"scripts":["entry.a7bbb060.js"],"routeData":{"type":"page","pattern":"^\\/ua\\/?$","segments":[[{"content":"ua","dynamic":false,"spread":false}]],"params":[],"component":"src/pages/ua/index.astro","pathname":"/ua","_meta":{"trailingSlash":"ignore"}}},{"file":"","links":["assets/asset.f0d731c3.css","assets/asset.4d9c5fa3.css","assets/asset.66de8b0c.css","assets/asset.65f3117a.css","assets/asset.79d9a383.css"],"scripts":["entry.a7bbb060.js"],"routeData":{"type":"page","pattern":"^\\/ua\\/services\\/([^/]+?)\\/?$","segments":[[{"content":"ua","dynamic":false,"spread":false}],[{"content":"services","dynamic":false,"spread":false}],[{"content":"slug","dynamic":true,"spread":false}]],"params":["slug"],"component":"src/pages/ua/services/[slug].astro","_meta":{"trailingSlash":"ignore"}}},{"file":"","links":["assets/asset.f0d731c3.css","assets/asset.0419d374.css","assets/asset.4d9c5fa3.css","assets/asset.6d59f92f.css","assets/asset.edf35b89.css","assets/asset.79d9a383.css","assets/asset.cc80275b.css"],"scripts":["entry.a7bbb060.js"],"routeData":{"type":"page","pattern":"^\\/ua\\/about\\/?$","segments":[[{"content":"ua","dynamic":false,"spread":false}],[{"content":"about","dynamic":false,"spread":false}]],"params":[],"component":"src/pages/ua/about.astro","pathname":"/ua/about","_meta":{"trailingSlash":"ignore"}}},{"file":"","links":["assets/asset.4d9c5fa3.css","assets/asset.c1cf99fc.css","assets/asset.edf35b89.css","assets/asset.337befd3.css"],"scripts":["entry.a7bbb060.js"],"routeData":{"type":"page","pattern":"^\\/ua\\/brief\\/?$","segments":[[{"content":"ua","dynamic":false,"spread":false}],[{"content":"brief","dynamic":false,"spread":false}]],"params":[],"component":"src/pages/ua/brief.astro","pathname":"/ua/brief","_meta":{"trailingSlash":"ignore"}}},{"file":"","links":["assets/asset.f0d731c3.css","assets/asset.0419d374.css","assets/asset.4d9c5fa3.css","assets/asset.c1cf99fc.css","assets/asset.3ee6da18.css","assets/asset.04e4aca7.css"],"scripts":["entry.a7bbb060.js"],"routeData":{"type":"page","pattern":"^\\/ua\\/work\\/([^/]+?)\\/?$","segments":[[{"content":"ua","dynamic":false,"spread":false}],[{"content":"work","dynamic":false,"spread":false}],[{"content":"slug","dynamic":true,"spread":false}]],"params":["slug"],"component":"src/pages/ua/work/[slug].astro","_meta":{"trailingSlash":"ignore"}}},{"file":"","links":["assets/asset.4d9c5fa3.css","assets/asset.edf35b89.css","assets/asset.bbe8752c.css","assets/asset.79d9a383.css","assets/asset.9fa0a0bb.css"],"scripts":["entry.a7bbb060.js"],"routeData":{"type":"page","pattern":"^\\/ua\\/work\\/?$","segments":[[{"content":"ua","dynamic":false,"spread":false}],[{"content":"work","dynamic":false,"spread":false}]],"params":[],"component":"src/pages/ua/work.astro","pathname":"/ua/work","_meta":{"trailingSlash":"ignore"}}}],"base":"/","markdown":{"mode":"mdx","drafts":false,"syntaxHighlight":"shiki","shikiConfig":{"langs":[],"theme":"github-dark","wrap":false},"remarkPlugins":[],"rehypePlugins":[]},"pageMap":null,"renderers":[],"entryModules":{"@astrojs/solid-js/client.js":"entry.9c9d1692.js","/@fs/C:/work-projects/pireactor/main-site/src/components/solid/LangPicker":"entry.4a1b77f9.js","/@fs/C:/work-projects/pireactor/main-site/src/components/solid/Counter":"entry.736c6b9b.js","/@fs/C:/work-projects/pireactor/main-site/src/components/solid/FormSubmit":"entry.e6a67f28.js","astro/client/load.js":"entry.316778ed.js","/astro/hoisted.js?q=0":"entry.a7bbb060.js","/@fs/C:/work-projects/pireactor/main-site/src/components/solid/Form":"entry.e577ad92.js","/@fs/C:/work-projects/pireactor/main-site/src/components/solid/Projects":"entry.dbd39899.js","\u0000@astrojs-ssr-virtual-entry":"entry.mjs","C:/work-projects/pireactor/main-site/public/assets/content/en/content.md?mdImport":"chunks/chunk.c9d3957c.mjs","C:/work-projects/pireactor/main-site/public/assets/content/en/services/architecture.md?mdImport":"chunks/chunk.c6afcfdc.mjs","C:/work-projects/pireactor/main-site/public/assets/content/en/services/automation.md?mdImport":"chunks/chunk.c98e4cd0.mjs","C:/work-projects/pireactor/main-site/public/assets/content/en/services/blockchain.md?mdImport":"chunks/chunk.ec6459d7.mjs","C:/work-projects/pireactor/main-site/public/assets/content/en/services/strategy.md?mdImport":"chunks/chunk.d804232d.mjs","C:/work-projects/pireactor/main-site/public/assets/content/en/services/wallets.md?mdImport":"chunks/chunk.bf2e9b1c.mjs","C:/work-projects/pireactor/main-site/public/assets/content/en/leads/AlexAlejandre.md?mdImport":"chunks/chunk.5790b932.mjs","C:/work-projects/pireactor/main-site/public/assets/content/en/leads/JohnVermazenSt.md?mdImport":"chunks/chunk.e09586c6.mjs","C:/work-projects/pireactor/main-site/public/assets/content/en/leads/JustynaBorwik.md?mdImport":"chunks/chunk.6b16a774.mjs","C:/work-projects/pireactor/main-site/public/assets/content/en/leads/StevenVermazen.md?mdImport":"chunks/chunk.6c0c45b4.mjs","C:/work-projects/pireactor/main-site/public/assets/content/en/projects/Brewery.md?mdImport":"chunks/chunk.c1a611e2.mjs","C:/work-projects/pireactor/main-site/public/assets/content/en/projects/NewHope copy.md?mdImport":"chunks/chunk.1fa0ae9a.mjs","C:/work-projects/pireactor/main-site/public/assets/content/en/projects/NewHope.md?mdImport":"chunks/chunk.8dce1602.mjs","C:/work-projects/pireactor/main-site/public/assets/content/en/projects/NewHope2.md?mdImport":"chunks/chunk.f23f1ec4.mjs","C:/work-projects/pireactor/main-site/public/assets/content/en/projects/NewHope3.md?mdImport":"chunks/chunk.b8b02486.mjs","C:/work-projects/pireactor/main-site/public/assets/content/es/content.md?mdImport":"chunks/chunk.a70b9817.mjs","C:/work-projects/pireactor/main-site/public/assets/content/es/services/architecture.md?mdImport":"chunks/chunk.b31d322e.mjs","C:/work-projects/pireactor/main-site/public/assets/content/es/services/automation.md?mdImport":"chunks/chunk.e89ab15e.mjs","C:/work-projects/pireactor/main-site/public/assets/content/es/services/blockchain.md?mdImport":"chunks/chunk.553bc06b.mjs","C:/work-projects/pireactor/main-site/public/assets/content/es/services/strategy.md?mdImport":"chunks/chunk.3c563026.mjs","C:/work-projects/pireactor/main-site/public/assets/content/es/services/wallets.md?mdImport":"chunks/chunk.165e007d.mjs","C:/work-projects/pireactor/main-site/public/assets/content/es/leads/AlexAlejandre.md?mdImport":"chunks/chunk.efd8f2e3.mjs","C:/work-projects/pireactor/main-site/public/assets/content/es/leads/JohnVermazenSt.md?mdImport":"chunks/chunk.c3803efd.mjs","C:/work-projects/pireactor/main-site/public/assets/content/es/leads/JustynaBorwik.md?mdImport":"chunks/chunk.3f76bef5.mjs","C:/work-projects/pireactor/main-site/public/assets/content/es/leads/StevenVermazen.md?mdImport":"chunks/chunk.2e39d252.mjs","C:/work-projects/pireactor/main-site/public/assets/content/pl/content.md?mdImport":"chunks/chunk.7554dae3.mjs","C:/work-projects/pireactor/main-site/public/assets/content/pl/services/architecture.md?mdImport":"chunks/chunk.7ab29271.mjs","C:/work-projects/pireactor/main-site/public/assets/content/pl/services/automation.md?mdImport":"chunks/chunk.10e50542.mjs","C:/work-projects/pireactor/main-site/public/assets/content/pl/services/blockchain.md?mdImport":"chunks/chunk.2b4629e3.mjs","C:/work-projects/pireactor/main-site/public/assets/content/pl/services/strategy.md?mdImport":"chunks/chunk.67f22cca.mjs","C:/work-projects/pireactor/main-site/public/assets/content/pl/services/wallets.md?mdImport":"chunks/chunk.d3d93e58.mjs","C:/work-projects/pireactor/main-site/public/assets/content/pl/leads/AlexAlejandre.md?mdImport":"chunks/chunk.41e9167d.mjs","C:/work-projects/pireactor/main-site/public/assets/content/pl/leads/JohnVermazenSt.md?mdImport":"chunks/chunk.68fc1448.mjs","C:/work-projects/pireactor/main-site/public/assets/content/pl/leads/JustynaBorwik.md?mdImport":"chunks/chunk.03a6dc40.mjs","C:/work-projects/pireactor/main-site/public/assets/content/pl/leads/StevenVermazen.md?mdImport":"chunks/chunk.6cf3c4a4.mjs","C:/work-projects/pireactor/main-site/public/assets/content/pl/projects/Brewery.md?mdImport":"chunks/chunk.0da3919e.mjs","C:/work-projects/pireactor/main-site/public/assets/content/pl/projects/NewHope copy.md?mdImport":"chunks/chunk.2e94afe0.mjs","C:/work-projects/pireactor/main-site/public/assets/content/pl/projects/NewHope.md?mdImport":"chunks/chunk.7d2c8f1b.mjs","C:/work-projects/pireactor/main-site/public/assets/content/pl/projects/NewHope2.md?mdImport":"chunks/chunk.31893b22.mjs","C:/work-projects/pireactor/main-site/public/assets/content/pl/projects/NewHope3.md?mdImport":"chunks/chunk.726d82cf.mjs","C:/work-projects/pireactor/main-site/public/assets/content/ru/content.md?mdImport":"chunks/chunk.ad1611b2.mjs","C:/work-projects/pireactor/main-site/public/assets/content/tr/content.md?mdImport":"chunks/chunk.ccb8540d.mjs","C:/work-projects/pireactor/main-site/public/assets/content/ua/content.md?mdImport":"chunks/chunk.76ad3dcc.mjs","C:/work-projects/pireactor/main-site/public/assets/content/ru/services/architecture.md?mdImport":"chunks/chunk.554d4dc5.mjs","C:/work-projects/pireactor/main-site/public/assets/content/ru/services/automation.md?mdImport":"chunks/chunk.e38eb8e6.mjs","C:/work-projects/pireactor/main-site/public/assets/content/ru/services/blockchain.md?mdImport":"chunks/chunk.9ece0295.mjs","C:/work-projects/pireactor/main-site/public/assets/content/ru/services/strategy.md?mdImport":"chunks/chunk.2d3f63a8.mjs","C:/work-projects/pireactor/main-site/public/assets/content/ru/services/wallets.md?mdImport":"chunks/chunk.39677201.mjs","C:/work-projects/pireactor/main-site/public/assets/content/tr/services/architecture.md?mdImport":"chunks/chunk.9d601bcb.mjs","C:/work-projects/pireactor/main-site/public/assets/content/tr/services/automation.md?mdImport":"chunks/chunk.0a29b555.mjs","C:/work-projects/pireactor/main-site/public/assets/content/tr/services/blockchain.md?mdImport":"chunks/chunk.7363e747.mjs","C:/work-projects/pireactor/main-site/public/assets/content/tr/services/strategy.md?mdImport":"chunks/chunk.d8c09329.mjs","C:/work-projects/pireactor/main-site/public/assets/content/tr/services/wallets.md?mdImport":"chunks/chunk.873f2a22.mjs","C:/work-projects/pireactor/main-site/public/assets/content/ua/services/architecture.md?mdImport":"chunks/chunk.52e3bf1b.mjs","C:/work-projects/pireactor/main-site/public/assets/content/ua/services/automation.md?mdImport":"chunks/chunk.343126a2.mjs","C:/work-projects/pireactor/main-site/public/assets/content/ua/services/blockchain.md?mdImport":"chunks/chunk.1c6f6212.mjs","C:/work-projects/pireactor/main-site/public/assets/content/ua/services/strategy.md?mdImport":"chunks/chunk.2e67f1fb.mjs","C:/work-projects/pireactor/main-site/public/assets/content/ua/services/wallets.md?mdImport":"chunks/chunk.1e8278ce.mjs","C:/work-projects/pireactor/main-site/public/assets/content/en/content.md":"chunks/chunk.5e16a30b.mjs","C:/work-projects/pireactor/main-site/public/assets/content/en/services/architecture.md":"chunks/chunk.3677723b.mjs","C:/work-projects/pireactor/main-site/public/assets/content/en/services/automation.md":"chunks/chunk.da1b1bde.mjs","C:/work-projects/pireactor/main-site/public/assets/content/en/services/blockchain.md":"chunks/chunk.9b8fee83.mjs","C:/work-projects/pireactor/main-site/public/assets/content/en/services/strategy.md":"chunks/chunk.72746ad1.mjs","C:/work-projects/pireactor/main-site/public/assets/content/en/services/wallets.md":"chunks/chunk.19b6c5b7.mjs","C:/work-projects/pireactor/main-site/public/assets/content/en/leads/AlexAlejandre.md":"chunks/chunk.3c153e1e.mjs","C:/work-projects/pireactor/main-site/public/assets/content/en/leads/JohnVermazenSt.md":"chunks/chunk.7a3612d0.mjs","C:/work-projects/pireactor/main-site/public/assets/content/en/leads/JustynaBorwik.md":"chunks/chunk.46294fba.mjs","C:/work-projects/pireactor/main-site/public/assets/content/en/leads/StevenVermazen.md":"chunks/chunk.4195bd29.mjs","C:/work-projects/pireactor/main-site/public/assets/content/en/projects/Brewery.md":"chunks/chunk.2ba17b57.mjs","C:/work-projects/pireactor/main-site/public/assets/content/en/projects/NewHope copy.md":"chunks/chunk.8f49727f.mjs","C:/work-projects/pireactor/main-site/public/assets/content/en/projects/NewHope.md":"chunks/chunk.e3e3886d.mjs","C:/work-projects/pireactor/main-site/public/assets/content/en/projects/NewHope2.md":"chunks/chunk.6ffd3df4.mjs","C:/work-projects/pireactor/main-site/public/assets/content/en/projects/NewHope3.md":"chunks/chunk.230d152d.mjs","C:/work-projects/pireactor/main-site/public/assets/content/es/content.md":"chunks/chunk.d1556035.mjs","C:/work-projects/pireactor/main-site/public/assets/content/es/services/architecture.md":"chunks/chunk.b863d8b9.mjs","C:/work-projects/pireactor/main-site/public/assets/content/es/services/automation.md":"chunks/chunk.1cb67a4f.mjs","C:/work-projects/pireactor/main-site/public/assets/content/es/services/blockchain.md":"chunks/chunk.568cb922.mjs","C:/work-projects/pireactor/main-site/public/assets/content/es/services/strategy.md":"chunks/chunk.14d8e118.mjs","C:/work-projects/pireactor/main-site/public/assets/content/es/services/wallets.md":"chunks/chunk.78b7c01d.mjs","C:/work-projects/pireactor/main-site/public/assets/content/es/leads/AlexAlejandre.md":"chunks/chunk.6b6b6ee3.mjs","C:/work-projects/pireactor/main-site/public/assets/content/es/leads/JohnVermazenSt.md":"chunks/chunk.0048259b.mjs","C:/work-projects/pireactor/main-site/public/assets/content/es/leads/JustynaBorwik.md":"chunks/chunk.63972846.mjs","C:/work-projects/pireactor/main-site/public/assets/content/es/leads/StevenVermazen.md":"chunks/chunk.36dcdcdf.mjs","C:/work-projects/pireactor/main-site/public/assets/content/pl/content.md":"chunks/chunk.57376fd2.mjs","C:/work-projects/pireactor/main-site/public/assets/content/pl/services/architecture.md":"chunks/chunk.0e9fcfce.mjs","C:/work-projects/pireactor/main-site/public/assets/content/pl/services/automation.md":"chunks/chunk.dfd72786.mjs","C:/work-projects/pireactor/main-site/public/assets/content/pl/services/blockchain.md":"chunks/chunk.b29fe0c0.mjs","C:/work-projects/pireactor/main-site/public/assets/content/pl/services/strategy.md":"chunks/chunk.9f5a04b0.mjs","C:/work-projects/pireactor/main-site/public/assets/content/pl/services/wallets.md":"chunks/chunk.21f33fcd.mjs","C:/work-projects/pireactor/main-site/public/assets/content/pl/leads/AlexAlejandre.md":"chunks/chunk.632e3996.mjs","C:/work-projects/pireactor/main-site/public/assets/content/pl/leads/JohnVermazenSt.md":"chunks/chunk.d6e9935b.mjs","C:/work-projects/pireactor/main-site/public/assets/content/pl/leads/JustynaBorwik.md":"chunks/chunk.33615634.mjs","C:/work-projects/pireactor/main-site/public/assets/content/pl/leads/StevenVermazen.md":"chunks/chunk.467e42e5.mjs","C:/work-projects/pireactor/main-site/public/assets/content/pl/projects/Brewery.md":"chunks/chunk.221beb90.mjs","C:/work-projects/pireactor/main-site/public/assets/content/pl/projects/NewHope copy.md":"chunks/chunk.44b418e6.mjs","C:/work-projects/pireactor/main-site/public/assets/content/pl/projects/NewHope.md":"chunks/chunk.a153f1a3.mjs","C:/work-projects/pireactor/main-site/public/assets/content/pl/projects/NewHope2.md":"chunks/chunk.23027b50.mjs","C:/work-projects/pireactor/main-site/public/assets/content/pl/projects/NewHope3.md":"chunks/chunk.a129f2f7.mjs","C:/work-projects/pireactor/main-site/public/assets/content/ru/content.md":"chunks/chunk.0caf9a02.mjs","C:/work-projects/pireactor/main-site/public/assets/content/tr/content.md":"chunks/chunk.a70c2eac.mjs","C:/work-projects/pireactor/main-site/public/assets/content/ua/content.md":"chunks/chunk.e26d0b71.mjs","C:/work-projects/pireactor/main-site/public/assets/content/ru/services/architecture.md":"chunks/chunk.aacb32d6.mjs","C:/work-projects/pireactor/main-site/public/assets/content/ru/services/automation.md":"chunks/chunk.600d7c6f.mjs","C:/work-projects/pireactor/main-site/public/assets/content/ru/services/blockchain.md":"chunks/chunk.6b97c041.mjs","C:/work-projects/pireactor/main-site/public/assets/content/ru/services/strategy.md":"chunks/chunk.49fbd89e.mjs","C:/work-projects/pireactor/main-site/public/assets/content/ru/services/wallets.md":"chunks/chunk.b4572d3d.mjs","C:/work-projects/pireactor/main-site/public/assets/content/tr/services/architecture.md":"chunks/chunk.b63e5c2c.mjs","C:/work-projects/pireactor/main-site/public/assets/content/tr/services/automation.md":"chunks/chunk.ce9b31c7.mjs","C:/work-projects/pireactor/main-site/public/assets/content/tr/services/blockchain.md":"chunks/chunk.7fa87549.mjs","C:/work-projects/pireactor/main-site/public/assets/content/tr/services/strategy.md":"chunks/chunk.45f8b216.mjs","C:/work-projects/pireactor/main-site/public/assets/content/tr/services/wallets.md":"chunks/chunk.444aaa1b.mjs","C:/work-projects/pireactor/main-site/public/assets/content/ua/services/architecture.md":"chunks/chunk.0915290a.mjs","C:/work-projects/pireactor/main-site/public/assets/content/ua/services/automation.md":"chunks/chunk.36eb4c82.mjs","C:/work-projects/pireactor/main-site/public/assets/content/ua/services/blockchain.md":"chunks/chunk.6a4be6de.mjs","C:/work-projects/pireactor/main-site/public/assets/content/ua/services/strategy.md":"chunks/chunk.d14f03b9.mjs","C:/work-projects/pireactor/main-site/public/assets/content/ua/services/wallets.md":"chunks/chunk.e7391b23.mjs","astro:scripts/before-hydration.js":"data:text/javascript;charset=utf-8,//[no before-hydration script]"},"assets":["/entry.316778ed.js","/entry.4a1b77f9.js","/entry.736c6b9b.js","/entry.9c9d1692.js","/entry.a7bbb060.js","/entry.dbd39899.js","/entry.e577ad92.js","/entry.e6a67f28.js","/favicon.ico","/assets/asset.7ea2a113.css","/chunks/chunk.779f1add.js","/chunks/chunk.cb905574.js","/chunks/chunk.d291af66.js","/assets/content/en/content.md","/assets/content/es/content.md","/assets/content/pl/content.md","/assets/content/ru/content.md","/assets/content/tr/content.md","/assets/content/ua/content.md","/assets/fonts/AvantGardeCTT/AvantGardeCTT-Bold.woff","/assets/fonts/AvantGardeCTT/AvantGardeCTT-Bold.woff2","/assets/fonts/Inter/Inter-Bold.woff","/assets/fonts/Inter/Inter-Bold.woff2","/assets/fonts/Inter/Inter-Regular.woff","/assets/fonts/Inter/Inter-Regular.woff2","/assets/fonts/Inter/Inter-SemiBold.woff","/assets/fonts/Inter/Inter-SemiBold.woff2","/assets/fonts/PlusJakartaSans/PlusJakartaSans-Bold.woff","/assets/fonts/PlusJakartaSans/PlusJakartaSans-Bold.woff2","/assets/fonts/PlusJakartaSans/PlusJakartaSans-Medium.woff","/assets/fonts/PlusJakartaSans/PlusJakartaSans-Medium.woff2","/assets/fonts/PlusJakartaSans/PlusJakartaSans-Regular.woff","/assets/fonts/PlusJakartaSans/PlusJakartaSans-Regular.woff2","/assets/fonts/PlusJakartaSans/PlusJakartaSans-SemiBold.woff","/assets/fonts/PlusJakartaSans/PlusJakartaSans-SemiBold.woff2","/assets/img/about/about.svg","/assets/img/footer/f.svg","/assets/img/footer/in.svg","/assets/img/footer/mail.svg","/assets/img/footer/pin.svg","/assets/img/footer/t.svg","/assets/img/header/arrow.svg","/assets/img/header/close.svg","/assets/img/header/menu_btn.svg","/assets/img/main/architecture.svg","/assets/img/main/automation.svg","/assets/img/main/backend.svg","/assets/img/main/blockchain.svg","/assets/img/main/building.svg","/assets/img/main/cloud.svg","/assets/img/main/data.svg","/assets/img/main/defining.svg","/assets/img/main/deployment.svg","/assets/img/main/design.svg","/assets/img/main/designing.svg","/assets/img/main/frontend.svg","/assets/img/main/how.webp","/assets/img/main/how_mob.webp","/assets/img/main/main.webp","/assets/img/main/mainPage.svg","/assets/img/main/maintenance.svg","/assets/img/main/map.webp","/assets/img/main/ml.svg","/assets/img/main/planning.svg","/assets/img/main/strategy.svg","/assets/img/main/testing.svg","/assets/img/main/wallets.svg","/assets/img/project/check.svg","/assets/img/project/d.svg","/assets/img/works/clocks.svg","/assets/img/works/des.svg","/assets/img/works/dev.svg","/assets/img/works/devs.svg","/assets/img/works/star.svg","/assets/img/works/star.webp","/assets/img/works/strat.svg","/assets/content/en/leads/AlexAlejandre.md","/assets/content/en/leads/JohnVermazenSt.md","/assets/content/en/leads/JustynaBorwik.md","/assets/content/en/leads/StevenVermazen.md","/assets/content/en/projects/Brewery.md","/assets/content/en/projects/NewHope copy.md","/assets/content/en/projects/NewHope.md","/assets/content/en/projects/NewHope2.md","/assets/content/en/projects/NewHope3.md","/assets/content/en/services/architecture.md","/assets/content/en/services/automation.md","/assets/content/en/services/blockchain.md","/assets/content/en/services/strategy.md","/assets/content/en/services/wallets.md","/assets/content/es/projects/Brewery.md","/assets/content/es/projects/NewHope copy.md","/assets/content/es/projects/NewHope.md","/assets/content/es/projects/NewHope2.md","/assets/content/es/projects/NewHope3.md","/assets/content/es/services/architecture.md","/assets/content/es/services/automation.md","/assets/content/es/services/blockchain.md","/assets/content/es/services/strategy.md","/assets/content/es/services/wallets.md","/assets/content/es/leads/AlexAlejandre.md","/assets/content/es/leads/JohnVermazenSt.md","/assets/content/es/leads/JustynaBorwik.md","/assets/content/es/leads/StevenVermazen.md","/assets/content/pl/leads/AlexAlejandre.md","/assets/content/pl/leads/JohnVermazenSt.md","/assets/content/pl/leads/JustynaBorwik.md","/assets/content/pl/leads/StevenVermazen.md","/assets/content/ru/leads/AlexAlejandre.md","/assets/content/ru/leads/JohnVermazenSt.md","/assets/content/ru/leads/JustynaBorwik.md","/assets/content/ru/leads/StevenVermazen.md","/assets/content/pl/services/architecture.md","/assets/content/pl/services/automation.md","/assets/content/pl/services/blockchain.md","/assets/content/pl/services/strategy.md","/assets/content/pl/services/wallets.md","/assets/content/pl/projects/Brewery.md","/assets/content/pl/projects/NewHope copy.md","/assets/content/pl/projects/NewHope.md","/assets/content/pl/projects/NewHope2.md","/assets/content/pl/projects/NewHope3.md","/assets/content/ru/projects/Brewery.md","/assets/content/ru/projects/NewHope copy.md","/assets/content/ru/projects/NewHope.md","/assets/content/ru/projects/NewHope2.md","/assets/content/ru/projects/NewHope3.md","/assets/content/ru/services/architecture.md","/assets/content/ru/services/automation.md","/assets/content/ru/services/blockchain.md","/assets/content/ru/services/strategy.md","/assets/content/ru/services/wallets.md","/assets/content/tr/leads/AlexAlejandre.md","/assets/content/tr/leads/JohnVermazenSt.md","/assets/content/tr/leads/JustynaBorwik.md","/assets/content/tr/leads/StevenVermazen.md","/assets/content/tr/projects/Brewery.md","/assets/content/tr/projects/NewHope copy.md","/assets/content/tr/projects/NewHope.md","/assets/content/tr/projects/NewHope2.md","/assets/content/tr/projects/NewHope3.md","/assets/content/tr/services/architecture.md","/assets/content/tr/services/automation.md","/assets/content/tr/services/blockchain.md","/assets/content/tr/services/strategy.md","/assets/content/tr/services/wallets.md","/assets/content/ua/leads/AlexAlejandre.md","/assets/content/ua/leads/JohnVermazenSt.md","/assets/content/ua/leads/JustynaBorwik.md","/assets/content/ua/leads/StevenVermazen.md","/assets/content/ua/projects/Brewery.md","/assets/content/ua/projects/NewHope copy.md","/assets/content/ua/projects/NewHope.md","/assets/content/ua/projects/NewHope2.md","/assets/content/ua/projects/NewHope3.md","/assets/content/ua/services/architecture.md","/assets/content/ua/services/automation.md","/assets/content/ua/services/blockchain.md","/assets/content/ua/services/strategy.md","/assets/content/ua/services/wallets.md","/assets/img/about/location/g.webp","/assets/img/about/location/k.webp","/assets/img/about/location/ny.webp","/assets/img/about/team/1.webp","/assets/img/about/team/2.webp","/assets/img/about/team/3.webp","/assets/img/about/team/4.webp","/assets/asset.cc80275b.css","/assets/asset.c0f0e941.css","/assets/asset.f0d731c3.css","/assets/asset.0419d374.css","/assets/asset.4d9c5fa3.css","/assets/asset.65f3117a.css","/assets/asset.c1cf99fc.css","/assets/asset.04e4aca7.css","/assets/asset.6d59f92f.css","/assets/asset.edf35b89.css","/assets/asset.9fa0a0bb.css","/assets/asset.66de8b0c.css","/assets/asset.fe0f7d65.css","/assets/asset.3ee6da18.css","/assets/asset.bbe8752c.css","/assets/asset.20759893.css","/assets/asset.79d9a383.css","/assets/asset.0d4cc372.css","/assets/asset.337befd3.css","/assets/asset.0e7e55c7.css","/assets/asset.2e3c7375.css","/assets/asset.713551ad.css"]}), {
 	pageMap: pageMap,
 	renderers: renderers
 });
