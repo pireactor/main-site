@@ -1,5 +1,0 @@
-smtp_server: smtp.mail.ru
-smtp_port: 25
-sender_login: sender@mail.ru
-sender_pass: s3cr3t
-recipient: pirector@gmail.com
