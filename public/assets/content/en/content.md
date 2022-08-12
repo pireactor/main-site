@@ -1,12 +1,12 @@
 ---
 lang: "en"
 title: "Pireactor"
-description: "Global Resource Solutions"
+description: "Boutique Tech Solutions"
 href: "en"
 
 nav: {
   about: "About us",
-  work: "Our Work",
+  work: "Case Studies",
   services: "Our Services",
   btn: "Let's talk",
 }
@@ -14,15 +14,16 @@ nav: {
 
 index: {
   hero: {
-    redline: "Startup &",
-    title: "Product Catalyzer",
-    btnText: "Accelerate my Roadmap",
+    redline: "You Dream it",
+    title: "We Build it",
+    btnText: "Solve your Problems",
   },
-    desc: "We help clients explore requirements and work out what they really
-      need today and to plan for tomorrow tomorrow. Instead of reiterating
-      every week, we architect space for modular features and functionality
-      expansions. Wepractice discipline to keep all parties on track and avoid scope creep.
-      Only after the core project is complete do we start a new cycle",
+    desc: "Pireactor accelerates your business roadmap, giving you peace 
+    of mind to focus on your core competencies by taking charge of the
+    entire product development cycle. This makes your startup
+    better. Faster and leaner, you're no longer shackled to internal resources, knowledge and
+    hiring pipelines but can build what you need to land your next client. Pireactor's
+    subject matter experts work with discipline and avoid scope creep.",
     mapTitle: We develop projects for clients from all over the world,
 }
 about: {
@@ -30,28 +31,29 @@ about: {
     redline: About,
     title: pireactor,
   },
-  counterTitle: "We develop projects for clients from all over the world",
+  counterTitle: "We Our clients expand all over the world",
   desc: "Have you ever wondered what all the PMPs, the Fifth Degree Process Kata
           Thai Judo certified experts in project... actually do? Even with decades of
-          aggregate experience, we couldn't answer that question. So we made a better way.",
+          experience, we couldn't answer that question. So we made a better way.",
   whoWeAreTitle: Who we are,
   leadsTitle: Our Global Leads,
   text: [
-    "  [pi┃reactor] is reinventing straight through quality at speed global solutions
-  from resourcing to delivery—enabled by our proven & proprietary, Micro-Agile to
-  Beyond-Agile, specialized end-to-end methodologies & our fully global talent
-  management built atop of thirty years of combined industry experience across our
-  core team.
-  In short, we are a startup & product catalyzer, accelerating delivery of top quality
-  at fractional cost for: product design, implementation and scaling, thereby
-  unchaining funded founders and established businesses with our unparalleled
-  leanmax global resourcing system.
+    "Pireactor is a strategic digital partner, essential in a world where online sales drive revenue.
+    Pireactor reinvents global solutioning
+  from resourcing to delivery - enabled by our proven & proprietary end-to end-methodologies
+  & our global talent management system built on thirty years of combined industry experience across our
+  founding team.
+
+  In short, we are a startup ennabler, accelerating delivery of top quality
+  products
+  at a fraction of the cost. We unshackle funded founders and established businesses
+  from lenghthy development cycles  with our unparalleled leanmax global resourcing system.
   ",
   "
-  We do not seek equity and. We accept select, funded member
+  We do not seek equity and. We accept select, funded
   engagements: ranging from feature addition to functionality extension to full product development,
   from initial conception/scoping through release-to-market. We also provide
-  venture transformation including visioning, planning, implementation and handoff.
+  venture transformation including strategizing, visioning, planning and technical transformations.
   "
   ],
 
@@ -96,44 +98,47 @@ howSection: {
   title: How We Work,
   list: [
     {
-      title: Planning,
-      desc: "Our team examines your requirements and expectations, takes account
-        of your needs and creates a preliminary plan.",
+     
+             title: Plan,
+      desc: "We examine your requirements and expectations, take account
+        of your needs and create a preliminary plan.",
       class: Planning
+     
     },
     {
-      title: Designing,
-      desc: "Everything from an efficient framework to an easy-to-use interface is drawn up,
-        examined, evaluated and approved during the design phase.",
-        class: Designing
+title: Design,
+      desc: "We draw up everything from the framework to an user-friendly interface
+        for you to examine, evaluate and approve.",
+        class: Designing      
     },
     {
-      title: Defining,
-      desc: "We run due diligence checks, we have you approve features,
-        we agree on timelines, run feasibility tests and finalize the design.",
+                 title: Measure Twice,
+      desc: "We run due diligence checks and feasibility tests,
+        agree on timelines and finalize the design.",
         class: Defining
     },
     {
-      title: Testing,
-      desc: "We apply all kinds of tests to both check the function of the software
-        and test its security. We follow test-driven development.",
-        class: Testing
-    },
-    {
-      title: Building,
+      title: Build,
       desc: "Our developpers, graphic designers and development management team
         get hard to work ensuring that your software is as efficient as possible.",
         class: Building
     },
     {
-      title: Deployment,
-      desc: "With your approval, the software is deployed to the needed environment.
-        All rights to the custom solution are transferred to you.",
+
+      title: Test,
+      desc: "We follow test driven development and ensure the function of the
+      software and its security.",
+        class: Testing
+    },
+    {
+      title: Deploy,
+      desc: "With your approval, we deploy the software to the staging environment
+        and transfer all rights to the custom solution to you.",
       class: Deployment
     },
     {
-      title: Maintenance,
-      desc: "We ensure all maintenance can be done easily by your own staff,
+      title: Maintain,
+      desc: "We document throroughly with best practices so your staff can do all maintenance,
         but we also offer ongoing maintenance for highly complex and/or larger projects.",
       class: Maintenance
     }
