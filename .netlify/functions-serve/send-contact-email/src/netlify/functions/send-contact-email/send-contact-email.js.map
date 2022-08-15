@@ -1,8 +1,0 @@
-{
-  "version": 3,
-  "sources": ["../../../../../../work-projects/pireactor/main-site/client/netlify/functions/send-contact-email/send-contact-email.ts"],
-  "sourceRoot": "C:/Users/3D04~1/AppData/Local/Temp/tmp-128332-aRsC1eecIrR6",
-  "sourcesContent": ["import { Handler } from '@netlify/functions'\n\nexport const handler: Handler = async (event, context) => {\n  const { name = 'stranger' } = event.queryStringParameters\n\n  return {\n    statusCode: 200,\n    body: JSON.stringify({\n      message: `Hello, ${name}!`,\n    }),\n  }\n}\n"],
-  "mappings": ";;;;;;;;;;;;;;;;;;;;;;;;AAAA;AAAA;AAAA;AAAA;AAEO,IAAM,UAAmB,OAAO,OAAO,YAAY;AACxD,QAAM,EAAE,OAAO,eAAe,MAAM;AAEpC,SAAO;AAAA,IACL,YAAY;AAAA,IACZ,MAAM,KAAK,UAAU;AAAA,MACnB,SAAS,UAAU;AAAA,IACrB,CAAC;AAAA,EACH;AACF;",
-  "names": []
-}
