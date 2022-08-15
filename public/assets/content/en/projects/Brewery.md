@@ -5,7 +5,7 @@ developers: 12
 months: 55
 tags: ["Automation", "Product Developpment", "Architecture"]
 desc: "A Croatian-Belgian craftbrewer wanted a webshop and marketing campaign to bring customers to the new platform. He got much more."
-img: "https://api.time.com/wp-content/uploads/2017/05/star-wars_1024.jpg"
+img: "https://cdn.pixabay.com/photo/2020/04/17/16/14/tanks-5055929_960_720.jpg"
 phases: [
   {
     name: development,

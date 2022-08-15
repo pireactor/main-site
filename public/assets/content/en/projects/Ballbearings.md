@@ -5,7 +5,8 @@ developers: 12
 months: 55
 tags: ["Automation", "Product Developpment", "Architecture"]
 desc: "Designed and collected data with RHIDs and optimized Lithuanian ball bearing factory floor"
-img: "https://api.time.com/wp-content/uploads/2017/05/star-wars_1024.jpg"
+img: "https://cdn.thomasnet.com/insights-images/d33c0935-b5a5-49ea-8eb5-edf68b1edef4/750px.png"
+
 phases: [
   {
     name: development,
@@ -43,12 +44,13 @@ result: [
   {
     name: Minutes/Bearing Made,
     value: 8,
-    format: -
+    format: "-"
   },
 ]
 
 
 ---
+
 1. To start, we documented their processes. We further made RHIDs to see the most common paths (e.g. of forklifts), how often certain levers were used, doors crossed etc. Later on, we reused these RHID tags to keep track of expensive equipment and reduce theft.
 
 2. Crunching the data, we came up with a rationalization plan to reorganize the factory floor and minimize time and transit between steps, as well as allow single actions to do more than one production step at once, and save money on automation equipment.
