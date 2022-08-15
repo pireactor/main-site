@@ -7,13 +7,8 @@ tags: ["Automation", "Product Developpment", "Architecture"]
 desc: "Designed and collected data with RHIDs and optimized Lithuanian ball bearing factory floor"
 <<<<<<< HEAD
 <<<<<<< HEAD
-img: "https://cdn.pixabay.com/photo/2020/04/17/16/14/tanks-5055929_960_720.jpg"
-=======
-img: "https://api.time.com/wp-content/uploads/2017/05/star-wars_1024.jpg"
->>>>>>> c5783fd (Adding some content, testing update speed)
-=======
-img: "https://cdn.pixabay.com/photo/2020/04/17/16/14/tanks-5055929_960_720.jpg"
->>>>>>> aad85b1 (fixed ballbearings.md)
+img: "https://cdn.thomasnet.com/insights-images/d33c0935-b5a5-49ea-8eb5-edf68b1edef4/750px.png"
+
 phases: [
   {
     name: development,

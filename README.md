@@ -5,14 +5,7 @@
 
 ## 🚀 Project Structure
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 ```
-=======
->>>>>>> 277de74 (changed readme)
-=======
-```
->>>>>>> 11adb19 (Update readme again)
 /
 ├── public/
 │   └── favicon.ico
