@@ -42,7 +42,7 @@ function setClass(id: number) {
     <ul class="services__list">
       {services.map(i => (
       <li class={`services__item ${setClass(i.frontmatter.id)}`}>
-        <a href={`/services/${i.frontmatter.slug}`}>
+        <a href={"/" + lang + `/services/${i.frontmatter.slug}`}>
           <h3 class="services__title">{i.frontmatter.title}</h3>
         </a>
         <p class="services__desc">{i.frontmatter.desc}</p>
