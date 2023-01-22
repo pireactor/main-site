@@ -1,7 +1,7 @@
 ---
 id: 3
 desc: "Resourcing and Insights"
-name: "Steven Vermazen"
+name: "Steven Vermassen"
 imgSource: "/assets/img/about/team/3.webp"
 linkT: "#"
 linkLI: "#"
